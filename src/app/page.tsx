@@ -12,7 +12,7 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
             <div className="inline-block max-w-lg text-center justify-center">
                 <h1 className={title()}>Answer the&nbsp;</h1>
-                <h1 className={title({ color: 'yellow' })}>
+                <h1 className={title({ color: 'green' })}>
                     Call Of Luci&nbsp;
                 </h1>
                 <br />
@@ -29,7 +29,6 @@ export default function Home() {
                     className={buttonStyles({
                         color: 'primary',
                         radius: 'full',
-                        variant: 'shadow',
                     })}
                 >
                     Documentation

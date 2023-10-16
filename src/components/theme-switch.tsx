@@ -9,22 +9,28 @@ import clsx from 'clsx'
 
 import { SunFilledIcon, MoonFilledIcon } from '@/src/components/icons'
 
+// Define the props for the ThemeSwitch component
 export interface ThemeSwitchProps {
     className?: string
     classNames?: SwitchProps['classNames']
 }
 
+// Define the ThemeSwitch component
 export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     className,
     classNames,
 }) => {
+    // Get the current theme and set the theme
     const { theme, setTheme } = useTheme()
+    // Check if the app is running on the server
     const isSSR = useIsSSR()
 
+    // Define the onChange function to toggle the theme
     const onChange = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light')
     }
 
+    // Get the Switch component and its props
     const {
         Component,
         slots,
@@ -40,6 +46,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         onChange,
     })
 
+    // Render the ThemeSwitch component
     return (
         <Component
             {...getBaseProps({
@@ -72,6 +79,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
                     ),
                 })}
             >
+                {/* Render the SunFilledIcon or MoonFilledIcon based on the current theme */}
                 {!isSelected || isSSR ? (
                     <SunFilledIcon size={22} />
                 ) : (
