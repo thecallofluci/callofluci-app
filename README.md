@@ -16,7 +16,7 @@ and the flames of destiny dance.
 
 ---
 
-Call Of Luci was built using:
+Call Of Luci is in development. Call Of Luci was built using:
 
 # Next.js & NextUI Template
 
