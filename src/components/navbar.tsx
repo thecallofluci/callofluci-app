@@ -14,20 +14,19 @@ import { Input } from '@nextui-org/input'
 
 import { link as linkStyles } from '@nextui-org/theme'
 
-import { siteConfig } from '@/config/site'
+import { siteConfig } from '@/src/config/site'
 import NextLink from 'next/link'
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/components/theme-switch'
+import { ThemeSwitch } from '@/src/components/theme-switch'
 import {
     TwitterIcon,
     GithubIcon,
-    DiscordIcon,
     HeartFilledIcon,
     SearchIcon,
-} from '@/components/icons'
+} from '@/src/components/icons'
 
-import { Logo } from '@/components/icons'
+import { Logo } from '@/src/components/icons'
 
 export const Navbar = () => {
     const searchInput = (
@@ -60,7 +59,7 @@ export const Navbar = () => {
                         href="/"
                     >
                         <Logo />
-                        <p className="font-bold text-inherit">ACME</p>
+                        <p className="font-bold text-inherit">CALLOFLUCI</p>
                     </NextLink>
                 </NavbarBrand>
                 <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -92,13 +91,6 @@ export const Navbar = () => {
                         aria-label="Twitter"
                     >
                         <TwitterIcon className="text-default-500" />
-                    </Link>
-                    <Link
-                        isExternal
-                        href={siteConfig.links.discord}
-                        aria-label="Discord"
-                    >
-                        <DiscordIcon className="text-default-500" />
                     </Link>
                     <Link
                         isExternal

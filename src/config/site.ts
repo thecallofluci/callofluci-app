@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-    name: 'Next.js + NextUI',
+    name: 'Call Of Luci',
     description:
         'Make beautiful websites regardless of your design experience.',
     navItems: [
@@ -14,8 +14,8 @@ export const siteConfig = {
             href: '/docs',
         },
         {
-            label: 'Pricing',
-            href: '/pricing',
+            label: 'Gallery',
+            href: '/gallery',
         },
         {
             label: 'Blog',
@@ -61,10 +61,9 @@ export const siteConfig = {
         },
     ],
     links: {
-        github: 'https://github.com/nextui-org/nextui',
-        twitter: 'https://twitter.com/getnextui',
+        github: 'https://github.com/thecallofluci/callofluci-app',
+        twitter: 'https://twitter.com/callofluci',
         docs: 'https://nextui.org',
-        discord: 'https://discord.gg/9b6yyZKmH4',
         sponsor: 'https://patreon.com/jrgarciadev',
     },
 }
