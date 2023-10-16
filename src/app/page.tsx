@@ -6,6 +6,7 @@ import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
 import { title, subtitle } from '@/src/components/primitives'
 import { GithubIcon } from '@/src/components/icons'
+import packageJson from '../../package.json'
 
 export default function Home() {
     return (
@@ -52,6 +53,18 @@ export default function Home() {
                     <span>
                         Get started by editing{' '}
                         <Code color="primary">app/page.tsx</Code>
+                    </span>
+                </Snippet>
+            </div>
+
+            <div className="mt-8">
+                <Snippet hideSymbol hideCopyButton variant="flat">
+                    <span>
+                        Luci{' '}
+                        <Code color="primary">
+                            v{packageJson.version}+
+                            {process.env.REACT_APP_GIT_HASH}
+                        </Code>
                     </span>
                 </Snippet>
             </div>

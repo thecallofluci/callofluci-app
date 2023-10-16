@@ -6,6 +6,10 @@ import { Providers } from './providers'
 import { Navbar } from '@/src/components/navbar'
 import { Link } from '@nextui-org/link'
 import clsx from 'clsx'
+import { Snippet } from '@nextui-org/snippet'
+import { Code } from '@nextui-org/code'
+import { button as buttonStyles } from '@nextui-org/theme'
+import packageJson from '../../package.json'
 
 export const metadata: Metadata = {
     title: {
@@ -43,21 +47,27 @@ export default function RootLayout({
                 >
                     <div className="relative flex flex-col h-screen">
                         <Navbar />
-                        <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+                        <main className="container mx-auto max-w-7xl pt-8 px-4 flex-grow">
                             {children}
                         </main>
                         <footer className="w-full flex items-center justify-center py-3">
-                            <Link
-                                isExternal
-                                className="flex items-center gap-1 text-current"
-                                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                                title="nextui.org homepage"
-                            >
-                                <span className="text-default-600">
-                                    Powered by
-                                </span>
-                                <p className="text-primary">NextUI</p>
-                            </Link>
+                            <div className="mt-8">
+                                <Snippet
+                                    hideSymbol
+                                    hideCopyButton
+                                    variant="flat"
+                                >
+                                    <span>
+                                        <Link href="https://github.com/thecallofluci/callofluci-app">
+                                            {' '}
+                                            <Code color="primary">
+                                                v{packageJson.version}+
+                                                {process.env.REACT_APP_GIT_HASH}
+                                            </Code>
+                                        </Link>
+                                    </span>
+                                </Snippet>
+                            </div>
                         </footer>
                     </div>
                 </Providers>

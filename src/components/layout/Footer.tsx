@@ -1,0 +1,1 @@
+// Sarcophagus UI footer component
