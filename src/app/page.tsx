@@ -18,7 +18,7 @@ export default function Home() {
                 </h1>
                 <br />
                 <h2 className={subtitle({ class: 'mt-4' })}>
-                    Create a new Observation.
+                    Welcome, Player. Create a new Observation.
                 </h2>
             </div>
 
