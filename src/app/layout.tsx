@@ -4,6 +4,7 @@ import '@/src/styles/globals.css'
 import { Metadata } from 'next'
 import { siteConfig } from '@/src/config/site'
 import { fontSans } from '@/src/config/fonts'
+import { fontMono } from '@/src/config/fonts'
 import { Providers } from './providers'
 import { Navbar } from '@/src/components/navbar'
 import { Link } from '@nextui-org/link'
@@ -40,7 +41,7 @@ export default function RootLayout({
             <head />
             <body
                 className={clsx(
-                    'min-h-screen bg-background font-sans antialiased',
+                    'min-h-screen bg-background font-Sans antialiased',
                     fontSans.variable
                 )}
             >

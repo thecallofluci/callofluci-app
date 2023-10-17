@@ -2,8 +2,7 @@ export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
     name: 'Call Of Luci',
-    description:
-        'Make beautiful websites regardless of your design experience.',
+    description: 'Add your Observation through Call Of Luci.',
     navItems: [
         {
             label: 'Home',

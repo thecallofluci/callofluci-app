@@ -1,6 +1,6 @@
 import {
-    Roboto_Mono as FontMono,
-    Nunito_Sans as FontSans,
+    Overpass_Mono as FontMono,
+    Overpass as FontSans,
 } from 'next/font/google'
 
 export const fontSans = FontSans({
