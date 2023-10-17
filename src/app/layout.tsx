@@ -1,3 +1,5 @@
+// I need to organize into individual components
+
 import '@/src/styles/globals.css'
 import { Metadata } from 'next'
 import { siteConfig } from '@/src/config/site'
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
         apple: '/apple-touch-icon.png',
     },
 }
-
+// I need to organize into individual components
 export default function RootLayout({
     children,
 }: {
@@ -50,7 +52,7 @@ export default function RootLayout({
                         <main className="container mx-auto max-w-7xl pt-8 px-4 flex-grow">
                             {children}
                         </main>
-                        <footer className="w-full flex items-center justify-center py-3">
+                        <footer className="w-full flex items-center justify-center py-8">
                             <div className="mt-8">
                                 <Snippet
                                     hideSymbol
