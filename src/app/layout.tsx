@@ -1,3 +1,7 @@
+// This is the root layout of your application. 
+// It sets up the global styles, context providers, and the structure of your application. 
+// It also imports and uses various components and modules.
+
 // Importing necessary modules and components
 import '@/src/styles/globals.css'
 import { Metadata } from 'next'
