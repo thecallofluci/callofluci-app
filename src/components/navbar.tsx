@@ -11,6 +11,8 @@ import { Button } from '@nextui-org/button'
 import { Kbd } from '@nextui-org/kbd'
 import { Link } from '@nextui-org/link'
 import { Input } from '@nextui-org/input'
+import { fontSans } from '@/src/config/fonts'
+import { fontMono } from '@/src/config/fonts'
 
 import { link as linkStyles } from '@nextui-org/theme'
 
@@ -67,8 +69,7 @@ export const Navbar = () => {
                         <NavbarItem key={item.href}>
                             <NextLink
                                 className={clsx(
-                                    linkStyles({ color: 'foreground' }),
-                                    'data-[active=true]:text-primary data-[active=true]:font-medium'
+                                    linkStyles({ color: 'foreground' }),fontMono.variable
                                 )}
                                 color="foreground"
                                 href={item.href}

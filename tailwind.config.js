@@ -11,6 +11,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['var(--font-overpass)'],
+                mono: ['var(--font-overpass-mono)'],
+              },
             colors: {
                 white: '#FFFFFF',
                 black: '#000000',

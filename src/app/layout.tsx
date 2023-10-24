@@ -1,10 +1,8 @@
-// I need to organize into individual components
-
+// Importing necessary modules and components
 import '@/src/styles/globals.css'
 import { Metadata } from 'next'
 import { siteConfig } from '@/src/config/site'
-import { fontSans } from '@/src/config/fonts'
-import { fontMono } from '@/src/config/fonts'
+import { fontSans, fontMono } from '@/src/config/fonts'
 import { Providers } from './providers'
 import { Navbar } from '@/src/components/navbar'
 import { Link } from '@nextui-org/link'
@@ -14,6 +12,7 @@ import { Code } from '@nextui-org/code'
 import { button as buttonStyles } from '@nextui-org/theme'
 import packageJson from '../../package.json'
 
+// Defining metadata for the site
 export const metadata: Metadata = {
     title: {
         default: siteConfig.name,
@@ -30,26 +29,29 @@ export const metadata: Metadata = {
         apple: '/apple-touch-icon.png',
     },
 }
-// I need to organize into individual components
+// Defining the RootLayout component
 export default function RootLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        // Defining the basic HTML structure
+        <html lang="en" suppressHydrationWarning
+        className={`${fontSans.variable} ${fontMono.variable}`}
+        >
             <head />
             <body
+                // Applying CSS styles to the body
                 className={clsx(
-                    'min-h-screen bg-background font-Sans antialiased',
-                    fontSans.variable
+                    'min-h-screen bg-background antialiased',
                 )}
             >
-                <Providers
+                <Providers // Using the Providers component to provide context values
                     themeProps={{ attribute: 'class', defaultTheme: 'dark' }}
                 >
                     <div className="relative flex flex-col h-screen">
-                        <Navbar />
+                    <Navbar /> 
                         <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                             {children}
                         </main>

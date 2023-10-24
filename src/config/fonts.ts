@@ -1,14 +1,11 @@
-import {
-    Overpass_Mono as FontMono,
-    Overpass as FontSans,
-} from 'next/font/google'
+import { Overpass, Overpass_Mono } from 'next/font/google'
 
-export const fontSans = FontSans({
-    subsets: ['latin'],
-    variable: '--font-sans',
+export const fontSans = Overpass({
+  subsets: ['latin'],
+  variable: '--font-overpass',
 })
 
-export const fontMono = FontMono({
-    subsets: ['latin'],
-    variable: '--font-mono',
+export const fontMono = Overpass_Mono({
+  subsets: ['latin'],
+  variable: '--font-overpass-mono',
 })
