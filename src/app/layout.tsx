@@ -4,7 +4,7 @@
 
 // Importing necessary modules and components
 import '@/src/styles/globals.css'
-import { fontSans, fontMono } from '@/src/config/fonts'
+import { fontSans, fontMono } from '@/src/styles/fonts'
 import { Providers } from './providers'
 import { Navbar } from '@/src/components/navbar'
 import clsx from 'clsx'

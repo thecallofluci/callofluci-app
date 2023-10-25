@@ -11,8 +11,8 @@ import { Button } from '@nextui-org/button'
 import { Kbd } from '@nextui-org/kbd'
 import { Link } from '@nextui-org/link'
 import { Input } from '@nextui-org/input'
-import { fontSans } from '@/src/config/fonts'
-import { fontMono } from '@/src/config/fonts'
+import { fontSans } from '@/src/styles/fonts'
+import { fontMono } from '@/src/styles/fonts'
 
 import { link as linkStyles } from '@nextui-org/theme'
 

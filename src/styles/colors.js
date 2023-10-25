@@ -1,4 +1,4 @@
-// colors.js
+// colors.js TBD file to store custom colors for Call Of Luci
 module.exports = {
     luci: {
       DEFAULT: '#b4682c',

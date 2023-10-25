@@ -2,7 +2,7 @@
 import '@/src/styles/globals.css'
 import { Metadata } from 'next'
 import { siteConfig } from '@/src/config/site'
-import { fontSans, fontMono } from '@/src/config/fonts'
+import { fontSans, fontMono } from '@/src/styles/fonts'
 import { Providers } from '@/src/app/providers'
 import { Navbar } from '@/src/components/navbar'
 import { Link } from '@nextui-org/link'
