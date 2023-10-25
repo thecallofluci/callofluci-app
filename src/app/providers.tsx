@@ -9,8 +9,7 @@ export interface ProvidersProps {
     children: React.ReactNode
     themeProps?: ThemeProviderProps
 }
-
-export function Providers({ children, themeProps }: ProvidersProps) {
+  export function Providers({ children, themeProps }: ProvidersProps) {
     return (
         <NextUIProvider>
             <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>

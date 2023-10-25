@@ -14,7 +14,7 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
             <div className="inline-block max-w-lg text-center justify-center">
                 <h1 className={title()}>I am&nbsp;</h1>
-                <h1 className={title({ color: 'luciprimitive' })}>
+                <h1 className={title({ color: 'luci' })}>
                     Call Of Luci&nbsp;
                 </h1>
                 <br />

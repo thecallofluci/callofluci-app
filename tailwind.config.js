@@ -14,7 +14,7 @@ module.exports = {
             fontFamily: {
                 sans: ['var(--font-overpass)'],
                 mono: ['var(--font-overpass-mono)'],
-              },
+            },
             colors: {
                 white: '#FFFFFF',
                 black: '#000000',
@@ -42,26 +42,40 @@ module.exports = {
             themes: {
                 dark: {
                     colors: {
-                        // background: '#000000', // or DEFAULT
-                        // foreground: '#ECEDEE', // or 50 to 900 DEFAULT
-                        primary: {
-                            //... 50 to 900
+                        primary: '#b4682c',
+                        focus: '#b4682c',
+                        luci: {
                             DEFAULT: '#b4682c',
-                            foreground: '#000000',
+                            50: '#f4e9d6',
+                            100: '#efddbe',
+                            200: '#e5c68f',
+                            300: '#d9ac67',
+                            400: '#c98c45',
+                            500: '#b4682c',
+                            600: '#99411c',
+                            700: '#7a1e12',
+                            800: '#570c13',
+                            900: '#310716',
                         },
-                        focus: '#b4682c', //... 50 to 900
                     },
                 },
                 light: {
                     colors: {
-                        // background: '#FFFFFF', // or DEFAULT
-                        // foreground: '#11181C', // or 50 to 900 DEFAULT
-                        primary: {
-                            //... 50 to 900
+                        primary: '#b4682c',
+                        focus: '#b4682c',
+                        luci: {
                             DEFAULT: '#b4682c',
-                            foreground: '#FFFFFF',
+                            50: '#f4e9d6',
+                            100: '#efddbe',
+                            200: '#e5c68f',
+                            300: '#d9ac67',
+                            400: '#c98c45',
+                            500: '#b4682c',
+                            600: '#99411c',
+                            700: '#7a1e12',
+                            800: '#570c13',
+                            900: '#310716',
                         },
-                        focus: '#b4682c', //... 50 to 900
                     },
                 },
             },

@@ -1,5 +1,4 @@
 'use client'
-
 import { FC } from 'react'
 import { VisuallyHidden } from '@react-aria/visually-hidden'
 import { SwitchProps, useSwitch } from '@nextui-org/switch'
@@ -27,6 +26,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 
     // Define the onChange function to toggle the theme
     const onChange = () => {
+        // If the current theme is 'light', set it to 'dark', otherwise set it to 'light'
         theme === 'light' ? setTheme('dark') : setTheme('light')
     }
 
@@ -39,16 +39,21 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         getInputProps,
         getWrapperProps,
     } = useSwitch({
+        // Set isSelected to true if the current theme is 'light' or the app is running on the server
         isSelected: theme === 'light' || isSSR,
+        // Set the aria-label for accessibility
         'aria-label': `Switch to ${
             theme === 'light' || isSSR ? 'dark' : 'light'
         } mode`,
+        // Set the onChange function
         onChange,
     })
 
     // Render the ThemeSwitch component
     return (
+        // Use the Component from useSwitch
         <Component
+            // Get the base props and add custom classes    
             {...getBaseProps({
                 className: clsx(
                     'px-px transition-opacity hover:opacity-80 cursor-pointer',
@@ -61,6 +66,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
                 <input {...getInputProps()} />
             </VisuallyHidden>
             <div
+                // Get the wrapper props and add custom classes
                 {...getWrapperProps()}
                 className={slots.wrapper({
                     class: clsx(
