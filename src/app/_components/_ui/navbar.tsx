@@ -64,12 +64,12 @@ export const Navbar = () => {
                         <p className="font-bold text-inherit">CALLOFLUCI</p>
                     </NextLink>
                 </NavbarBrand>
-                <ul className="hidden lg:flex gap-4 justify-start ml-2">
+                <ul className="hidden lg:flex gap-4 justify-start ml-2 font-mono font-bold">
                     {siteConfig.navItems.map((item) => (
                         <NavbarItem key={item.href}>
                             <NextLink
                                 className={clsx(
-                                    linkStyles({ color: 'foreground' }),fontMono.variable
+                                    linkStyles({ color: 'foreground' })
                                 )}
                                 color="foreground"
                                 href={item.href}

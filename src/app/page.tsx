@@ -30,7 +30,7 @@ export default function Home() {
                     href={siteConfig.links.docs}
                     className={buttonStyles({
                         color: 'primary',
-                        radius: 'full',
+                        radius: 'sm',
                     })}
                 >
                     Documentation
@@ -39,8 +39,8 @@ export default function Home() {
                     isExternal
                     as={NextLink}
                     className={buttonStyles({
-                        variant: 'bordered',
-                        radius: 'full',
+                        variant: 'ghost',
+                        radius: 'sm',
                     })}
                     href={siteConfig.links.github}
                 >
@@ -50,19 +50,19 @@ export default function Home() {
             </div>
 
             <div className="mt-8">
-                <Snippet hideSymbol hideCopyButton variant="flat">
+                <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm">
                     <span>
                         Get started by editing{' '}
-                        <Code color="primary">app/page.tsx</Code>
+                        <Code radius="sm" color="primary">app/page.tsx</Code>
                     </span>
                 </Snippet>
             </div>
 
             <div className="mt-8">
-                <Snippet hideSymbol hideCopyButton variant="flat">
+                <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm">
                     <span>
                         Luci{' '}
-                        <Code color="primary">
+                        <Code radius="sm" color="primary">
                             v{packageJson.version}+
                             {process.env.REACT_APP_GIT_HASH}
                         </Code>

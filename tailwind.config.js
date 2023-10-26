@@ -12,30 +12,14 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-overpass)'],
-                mono: ['var(--font-overpass-mono)'],
-            },
-            colors: {
-                white: '#FFFFFF',
-                black: '#000000',
-                luci: {
-                    // custom orange colorset
-                    DEFAULT: '#b4682c',
-                    50: '#f4e9d6',
-                    100: '#efddbe',
-                    200: '#e5c68f',
-                    300: '#d9ac67',
-                    400: '#c98c45',
-                    500: '#b4682c',
-                    600: '#99411c',
-                    700: '#7a1e12',
-                    800: '#570c13',
-                    900: '#310716',
-                },
-                // .. rest of the colors
+                sans: ['var(--font-overpass)', 'sans-serif'],
+                mono: ['var(--font-overpass-mono)', 'monospace'],
             },
         },
     },
+
+    // Customizations applied within NextUI 'nextui' plugin 
+    // Consider importing a colors.js here to keep things clean
     darkMode: 'class',
     plugins: [
         nextui({

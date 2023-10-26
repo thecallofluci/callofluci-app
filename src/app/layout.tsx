@@ -3,7 +3,7 @@
 // It also imports and uses various components and modules.
 
 // Importing necessary modules and components
-import '@/src/styles/globals.css'
+import '@/src/app/_styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/_styles/fonts'
 import { Providers } from '@/src/app/_components/_NextUI/providers'
 import { Navbar } from '@/src/app/_components/_ui/navbar'
