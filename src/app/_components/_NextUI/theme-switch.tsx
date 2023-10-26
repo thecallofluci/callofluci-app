@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
 import clsx from 'clsx'
 
-import { SunFilledIcon, MoonFilledIcon } from '@/src/components/icons'
+import { SunFilledIcon, MoonFilledIcon } from '@/src/app/_components/_ui/icons'
 
 // Define the props for the ThemeSwitch component
 export interface ThemeSwitchProps {

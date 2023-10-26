@@ -11,8 +11,8 @@ import { Button } from '@nextui-org/button'
 import { Kbd } from '@nextui-org/kbd'
 import { Link } from '@nextui-org/link'
 import { Input } from '@nextui-org/input'
-import { fontSans } from '@/src/styles/fonts'
-import { fontMono } from '@/src/styles/fonts'
+import { fontSans } from '@/src/app/_styles/fonts'
+import { fontMono } from '@/src/app/_styles/fonts'
 
 import { link as linkStyles } from '@nextui-org/theme'
 
@@ -20,15 +20,15 @@ import { siteConfig } from '@/src/config/site'
 import NextLink from 'next/link'
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/src/components/theme-switch'
+import { ThemeSwitch } from '@/src/app/_components/_NextUI/theme-switch'
 import {
     TwitterIcon,
     GithubIcon,
     HeartFilledIcon,
     SearchIcon,
-} from '@/src/components/icons'
+} from '@/src/app/_components/_ui/icons'
 
-import { Logo } from '@/src/components/icons'
+import { Logo } from '@/src/app/_components/_ui/icons'
 
 export const Navbar = () => {
     const searchInput = (

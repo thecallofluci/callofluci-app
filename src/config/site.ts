@@ -17,6 +17,10 @@ export const siteConfig = {
             href: '/gallery',
         },
         {
+            label: 'Observation',
+            href: '/observation',
+        },
+        {
             label: 'Blog',
             href: '/blog',
         },

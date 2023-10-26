@@ -1,4 +1,4 @@
-import { title } from '@/src/components/primitives'
+import { title } from '@/src/app/_components/_NextUI/primitives'
 
 export default function DocsPage() {
     return (

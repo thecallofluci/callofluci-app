@@ -35,6 +35,26 @@ https://github.com/nextui-org/next-app-template
 -   [Framer Motion](https://www.framer.com/motion/)
 -   [next-themes](https://github.com/pacocoursey/next-themes)
 
+## Code Structure (TBD)
+
+| Folder                   | Primary use                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------- |
+| `/src`                   | Main source folder for development                                                              |
+| `/src/components`        | React components that do not function as standalone pages                                       |
+| `/src/events`            | Markdown files for **events**                                                                   |
+| `/src/hooks`             | Custom React hooks                                                                              |
+| `/src/pages`             | React components that function as standalone pages and will create URL paths                    |
+| `/src/posts`             | Markdown files for **blog posts**                                                               |
+| `/src/styles`            | Custom style declarations                                                                       |
+| `/src/theme`             | Declares site color themes, breakpoints and other constants (try to utilize these colors first) |
+| `/src/theme/foundations` | Theme foundations imported by theme config at `/src/theme`                                      |
+| `/src/utils`             | Custom utility scripts                                                                          |
+| `/src/constants.ts`      | Declares all constants that are used throughout the site.                                       |
+| `/src/interfaces.ts`     | Declared interfaces and types for to be used throughout the site                                |
+| `/public`                | Storage for assets that will be available at URL path after build                               |
+| `/public/assets`         | General image assets                                                                            |
+| `/public/img`            | Image assets used in blog posts                                                                 |
+
 ## License
 
 Licensed under the

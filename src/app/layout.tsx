@@ -4,11 +4,11 @@
 
 // Importing necessary modules and components
 import '@/src/styles/globals.css'
-import { fontSans, fontMono } from '@/src/styles/fonts'
-import { Providers } from './providers'
-import { Navbar } from '@/src/components/navbar'
+import { fontSans, fontMono } from '@/src/app/_styles/fonts'
+import { Providers } from '@/src/app/_components/_NextUI/providers'
+import { Navbar } from '@/src/app/_components/_ui/navbar'
 import clsx from 'clsx'
-import Footer from '@/src/app/Footer'
+import Footer from '@/src/app/_components/_ui/footer'
 
 // Defining the RootLayout component
 export default function RootLayout({

@@ -1,7 +1,7 @@
 import { Link } from '@nextui-org/link'
 import { Snippet } from '@nextui-org/snippet'
 import { Code } from '@nextui-org/code'
-import packageJson from '../../package.json' 
+import packageJson from '../../../../package.json' 
 
 export default async function Footer() {
     return (
