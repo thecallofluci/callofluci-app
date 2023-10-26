@@ -6,7 +6,7 @@
 import '@/src/app/_styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/_styles/fonts'
 import { Providers } from '@/src/app/_components/_NextUI/providers'
-import { Navbar } from '@/src/app/_components/_ui/navbar'
+import { SlimNavbar } from '@/src/app/_components/_ui/slimnavbar'
 import clsx from 'clsx'
 import Footer from '@/src/app/_components/_ui/footer'
 
@@ -32,7 +32,7 @@ export default function RootLayout({
                     themeProps={{ attribute: 'class', defaultTheme: 'dark' }}
                 >
                     <div className="relative flex flex-col h-screen">
-                        <Navbar />
+                        <SlimNavbar />
                         <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                             {children}
                         </main>
