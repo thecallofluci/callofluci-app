@@ -1,5 +1,5 @@
-// This is the root layout of your application. 
-// It sets up the global styles, context providers, and the structure of your application. 
+// This is the root layout of your application.
+// It sets up the global styles, context providers, and the structure of your application.
 // It also imports and uses various components and modules.
 
 // Importing necessary modules and components
@@ -18,21 +18,21 @@ export default function RootLayout({
 }) {
     return (
         // Defining the basic HTML structure
-        <html lang="en" suppressHydrationWarning
-        className={`${fontSans.variable} ${fontMono.variable}`}
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className={`${fontSans.variable} ${fontMono.variable}`}
         >
             <head />
             <body
                 // Applying CSS styles to the body
-                className={clsx(
-                    'min-h-screen bg-background antialiased',
-                )}
+                className={clsx('min-h-screen bg-background antialiased')}
             >
                 <Providers // Using the Providers component to provide context values
                     themeProps={{ attribute: 'class', defaultTheme: 'dark' }}
                 >
                     <div className="relative flex flex-col h-screen">
-                    <Navbar /> 
+                        <Navbar />
                         <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                             {children}
                         </main>

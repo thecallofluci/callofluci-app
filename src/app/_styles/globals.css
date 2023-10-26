@@ -4,8 +4,9 @@
 
 body {
     @apply font-sans;
-  }
-  
-  code, pre {
+}
+
+code,
+pre {
     @apply font-mono;
-  }
+}

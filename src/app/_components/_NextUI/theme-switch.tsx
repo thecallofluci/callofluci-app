@@ -53,7 +53,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     return (
         // Use the Component from useSwitch
         <Component
-            // Get the base props and add custom classes    
+            // Get the base props and add custom classes
             {...getBaseProps({
                 className: clsx(
                     'px-px transition-opacity hover:opacity-80 cursor-pointer',

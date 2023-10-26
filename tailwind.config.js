@@ -18,7 +18,7 @@ module.exports = {
         },
     },
 
-    // Customizations applied within NextUI 'nextui' plugin 
+    // Customizations applied within NextUI 'nextui' plugin
     // Consider importing a colors.js here to keep things clean
     darkMode: 'class',
     plugins: [

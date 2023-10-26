@@ -1,17 +1,13 @@
 import { Link } from '@nextui-org/link'
 import { Snippet } from '@nextui-org/snippet'
 import { Code } from '@nextui-org/code'
-import packageJson from '../../../../package.json' 
+import packageJson from '../../../../package.json'
 
 export default async function Footer() {
     return (
         <footer className="w-full flex items-center justify-center py-8">
             <div className="mt-8">
-                <Snippet
-                    hideSymbol
-                    hideCopyButton
-                    variant="flat"
-                >
+                <Snippet hideSymbol hideCopyButton variant="flat">
                     <span>
                         <Link href="https://github.com/thecallofluci/callofluci-app">
                             {' '}
@@ -24,5 +20,5 @@ export default async function Footer() {
                 </Snippet>
             </div>
         </footer>
-    );
+    )
 }

@@ -14,9 +14,7 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
             <div className="inline-block max-w-lg text-center justify-center">
                 <h1 className={title()}>I am&nbsp;</h1>
-                <h1 className={title({ color: 'luci' })}>
-                    Call Of Luci&nbsp;
-                </h1>
+                <h1 className={title({ color: 'luci' })}>Call Of Luci&nbsp;</h1>
                 <br />
                 <h2 className={subtitle({ class: 'mt-4' })}>
                     Welcome, Player. Create a new Observation.
@@ -53,7 +51,9 @@ export default function Home() {
                 <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm">
                     <span>
                         Get started by editing{' '}
-                        <Code radius="sm" color="primary">app/page.tsx</Code>
+                        <Code radius="sm" color="primary">
+                            app/page.tsx
+                        </Code>
                     </span>
                 </Snippet>
             </div>
