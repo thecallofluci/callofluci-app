@@ -1,69 +1,66 @@
-import { nextui } from '@nextui-org/theme'
+// tailwind.config.js
+import {nextui} from '@nextui-org/theme'
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
+    // The 'content' property specifies the paths to all files that will use Tailwind CSS class names.
+    // Tailwind will purge unused styles from these files in the production build.
     content: [
-        './src/**/*.{js,ts,jsx,tsx,mdx}', // added src directory
-        './pages/**/*.{js,ts,jsx,tsx,mdx}',
-        './components/**/*.{js,ts,jsx,tsx,mdx}',
-        './app/**/*.{js,ts,jsx,tsx,mdx}',
-        './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+        './src/**/*.{js,ts,jsx,tsx,mdx}', // All files in the 'src' directory
+        './pages/**/*.{js,ts,jsx,tsx,mdx}', // All files in the 'pages' directory
+        './components/**/*.{js,ts,jsx,tsx,mdx}', // All files in the 'components' directory
+        './app/**/*.{js,ts,jsx,tsx,mdx}', // All files in the 'app' directory
+        './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}', // All files in the 'node_modules/@nextui-org/theme/dist' directory
     ],
+    // The 'theme' property allows you to customize Tailwind's default configuration.
     theme: {
         extend: {
+            // The 'fontFamily' property allows you to specify custom font families.
             fontFamily: {
-                sans: ['var(--font-overpass)', 'sans-serif'],
-                mono: ['var(--font-overpass-mono)', 'monospace'],
+                sans: ['var(--font-overpass)', 'sans-serif'], // The 'sans' font family
+                mono: ['var(--font-overpass-mono)', 'monospace'], // The 'mono' font family
             },
         },
     },
-
-    // Customizations applied within NextUI 'nextui' plugin
-    // Consider importing a colors.js here to keep things clean
-    darkMode: 'class',
+    // The 'darkMode' property enables dark mode in Tailwind. 
+    // The value 'class' means that dark mode styles will be applied when the 'dark' class is present on the root element.
+    // darkMode: "class",
+    // The 'plugins' property allows you to add custom plugins to Tailwind.
+    // Here, we're adding the NextUI theme as a plugin.
     plugins: [
-        nextui({
-        //    addCommonColors: true,
-            themes: {
-                dark: {
-                    colors: {
-                        primary: '#b4682c',
-                        focus: '#b4682c',
-                        luci: {
-                            DEFAULT: '#b4682c',
-                            50: '#f4e9d6',
-                            100: '#efddbe',
-                            200: '#e5c68f',
-                            300: '#d9ac67',
-                            400: '#c98c45',
-                            500: '#b4682c',
-                            600: '#99411c',
-                            700: '#7a1e12',
-                            800: '#570c13',
-                            900: '#310716',
-                        },
-                    },
-                },
-                light: {
-                    colors: {
-                        primary: '#b4682c',
-                        focus: '#b4682c',
-                        luci: {
-                            DEFAULT: '#b4682c',
-                            50: '#f4e9d6',
-                            100: '#efddbe',
-                            200: '#e5c68f',
-                            300: '#d9ac67',
-                            400: '#c98c45',
-                            500: '#b4682c',
-                            600: '#99411c',
-                            700: '#7a1e12',
-                            800: '#570c13',
-                            900: '#310716',
-                        },
-                    },
-                },
+      nextui({
+        themes: {
+          dark: {
+            colors: {
+              background: "#FAAD14",
+              primary: {
+                DEFAULT: "#BEF264",
+                foreground: "#000000",
+              },
+              focus: "#FAAD14",
+              secondary: {
+                DEFAULT: "#52C41A",
+                foreground: "#000000",
+              },
+              success: {
+                DEFAULT: "#52C41A",
+                foreground: "#000000",
+              },
+              warning: {
+                DEFAULT: "#F5A524",
+                foreground: "#000000",
+              },
+              danger: {
+                DEFAULT: "#006FEE",
+                foreground: "#000000",
+              },
+              content1: "#1A1A1A",
+              content2: "#333333",
+              content3: "#4D4D4D",
+              content4: "#666666",
             },
-        }),
+          },
+        },
+      }),
     ],
-}
+  };

@@ -34,7 +34,7 @@ import { Logo } from '@/src/app/_components/_ui/icons'
 export const SlimNavbar = () => {
 
     return (
-        <NextUINavbar maxWidth="xl" position="sticky">
+        <NextUINavbar isBordered maxWidth="xl" position="sticky">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
                 <NavbarBrand as="li" className="gap-3 max-w-fit">
                     <NextLink
@@ -45,7 +45,7 @@ export const SlimNavbar = () => {
                         <p className="font-bold text-inherit">CALLOFLUCI</p>
                     </NextLink>
                 </NavbarBrand>
-                <ul className="hidden lg:flex gap-4 justify-start ml-2 font-mono font-bold">
+                <ul className="hidden lg:flex gap-4 justify-start ml-2 font-sans font-bold">
                     {siteConfig.navItems.map((item) => (
                         <NavbarItem key={item.href}>
                             <NextLink

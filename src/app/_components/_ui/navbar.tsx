@@ -98,7 +98,7 @@ export const Navbar = () => {
                         href={siteConfig.links.github}
                         aria-label="Github"
                     >
-                        <GithubIcon className="text-default-500" />
+                        <GithubIcon className="text-default-500 text-success" />
                     </Link>
                     <ThemeSwitch />
                 </NavbarItem>

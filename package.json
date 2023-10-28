@@ -6,7 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "tailwind-config-viewer": "tailwind-config-viewer -o"
     },
     "dependencies": {
         "@irys/query": "^0.0.2",
@@ -43,6 +44,7 @@
     },
     "devDependencies": {
         "eslint-config-prettier": "^9.0.0",
-        "prettier": "3.0.3"
+        "prettier": "3.0.3",
+        "tailwind-config-viewer": "^1.7.2"
     }
 }

@@ -28,9 +28,7 @@ export default function RootLayout({
                 // Applying CSS styles to the body
                 className={clsx('min-h-screen bg-background antialiased')}
             >
-                <Providers // Using the Providers component to provide context values
-                    themeProps={{ attribute: 'class', defaultTheme: 'dark' }}
-                >
+                <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
                     <div className="relative flex flex-col h-screen">
                         <SlimNavbar />
                         <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
