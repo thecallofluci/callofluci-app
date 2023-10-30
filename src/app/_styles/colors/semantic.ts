@@ -2,28 +2,75 @@
 // a copy of the NextUI Semantic Color Mapping
 // note this requires several import utilities
 
-import type {ThemeColors, SemanticBaseColors} from "./types";
+dark: {
+  colors: {
+    background: {
+      DEFAULT: "#000000",
+    },
+    foreground: {
+      DEFAULT: "#ECEDEE",
+    },
+    focus: {
+      DEFAULT: "#006FEE",
+    },
+    overlay: {
+      DEFAULT: "#000000",
+    },
+    divider: {
+      DEFAULT: "rgba(255, 255, 255, 0.15)",
+    },
+    content1: {
+      DEFAULT: "#18181B",
+      foreground: "#FAFAFA",
+    },
+    content2: {
+      DEFAULT: "#27272A",
+      foreground: "#F4F4F5",
+    },
+    content3: {
+      DEFAULT: "#3F3F46",
+      foreground: "#E4E4E7",
+    },
+    content4: {
+      DEFAULT: "#52525B",
+      foreground: "#D4D4D8",
+    },
+    primary: {
+      foreground: "#FFFFFF",
+      DEFAULT: "#006FEE",
+    },
+    secondary: {
+      foreground: "#FFFFFF",
+      DEFAULT: "#9353D3",
+    },
+    success: {
+      foreground: "#FFFFFF",
+      DEFAULT: "#17C964",
+    },
+    warning: {
+      foreground: "#FFFFFF",
+      DEFAULT: "#F5A524",
+    },
+    danger: {
+      foreground: "#FFFFFF",
+      DEFAULT: "#F31260",
+    },
 
-import {readableColor} from "color2k";
 
-import {swapColorValues} from "../utils/object";
 
-import {commonColors as common} from "./common";
-
-const base: SemanticBaseColors = {
-  light: {
+light: {
+  colors: {
     background: {
       DEFAULT: "#FFFFFF",
     },
     foreground: {
-      ...common.zinc,
       DEFAULT: "#11181C",
     },
     divider: {
       DEFAULT: "rgba(17, 17, 17, 0.15)",
     },
     focus: {
-      DEFAULT: common.blue[500],
+      DEFAULT: "#006FEE",
     },
     overlay: {
       DEFAULT: "#000000",
@@ -33,123 +80,34 @@ const base: SemanticBaseColors = {
       foreground: "#11181C",
     },
     content2: {
-      DEFAULT: common.zinc[100],
-      foreground: common.zinc[800],
+      DEFAULT: "#F4F4F5",
+      foreground: "#27272A",
     },
     content3: {
-      DEFAULT: common.zinc[200],
-      foreground: common.zinc[700],
+      DEFAULT: "#E4E4E7",
+      foreground: "#3F3F46",
     },
     content4: {
-      DEFAULT: common.zinc[300],
-      foreground: common.zinc[600],
+      DEFAULT: "#D4D4D8",
+      foreground: "#52525B",
     },
-  },
-  dark: {
-    background: {
-      DEFAULT: "#000000",
+    primary: {
+      foreground: "#000000",
+      DEFAULT: "#006FEE",
     },
-    foreground: {
-      ...swapColorValues(common.zinc),
-      DEFAULT: "#ECEDEE",
+    secondary: {
+      foreground: "#7828C8",
+      DEFAULT: "#7828C8",
     },
-    focus: {
-      DEFAULT: common.blue[500],
+    success: {
+      foreground: "#17C964",
+      DEFAULT: "#17C964",
     },
-    overlay: {
-      DEFAULT: "#000000",
+    warning: {
+      foreground: "#F5A524",
+      DEFAULT: "#F5A524",
     },
-    divider: {
-      DEFAULT: "rgba(255, 255, 255, 0.15)",
+    danger: {
+      foreground: "#FFFFFF",
+      DEFAULT: "#F31260",
     },
-    content1: {
-      DEFAULT: common.zinc[900],
-      foreground: common.zinc[50],
-    },
-    content2: {
-      DEFAULT: common.zinc[800],
-      foreground: common.zinc[100],
-    },
-    content3: {
-      DEFAULT: common.zinc[700],
-      foreground: common.zinc[200],
-    },
-    content4: {
-      DEFAULT: common.zinc[600],
-      foreground: common.zinc[300],
-    },
-  },
-};
-
-export const themeColorsLight: ThemeColors = {
-  ...base.light,
-  default: {
-    ...common.zinc,
-    foreground: readableColor(common.zinc[300]),
-    DEFAULT: common.zinc[300],
-  },
-  primary: {
-    ...common.blue,
-    foreground: readableColor(common.blue[500]),
-    DEFAULT: common.blue[500],
-  },
-  secondary: {
-    ...common.purple,
-    foreground: readableColor(common.purple[500]),
-    DEFAULT: common.purple[500],
-  },
-  success: {
-    ...common.green,
-    foreground: readableColor(common.green[500]),
-    DEFAULT: common.green[500],
-  },
-  warning: {
-    ...common.yellow,
-    foreground: readableColor(common.yellow[500]),
-    DEFAULT: common.yellow[500],
-  },
-  danger: {
-    ...common.red,
-    foreground: common.white,
-    DEFAULT: common.red[500],
-  },
-};
-
-export const themeColorsDark: ThemeColors = {
-  ...base.dark,
-  default: {
-    ...swapColorValues(common.zinc),
-    foreground: readableColor(common.zinc[700]),
-    DEFAULT: common.zinc[700],
-  },
-  primary: {
-    ...swapColorValues(common.blue),
-    foreground: readableColor(common.blue[500]),
-    DEFAULT: common.blue[500],
-  },
-  secondary: {
-    ...swapColorValues(common.purple),
-    foreground: readableColor(common.purple[400]),
-    DEFAULT: common.purple[400],
-  },
-  success: {
-    ...swapColorValues(common.green),
-    foreground: readableColor(common.green[500]),
-    DEFAULT: common.green[500],
-  },
-  warning: {
-    ...swapColorValues(common.yellow),
-    foreground: readableColor(common.yellow[500]),
-    DEFAULT: common.yellow[500],
-  },
-  danger: {
-    ...swapColorValues(common.red),
-    foreground: common.white,
-    DEFAULT: common.red[500],
-  },
-};
-
-export const semanticColors = {
-  light: themeColorsLight,
-  dark: themeColorsDark,
-};
