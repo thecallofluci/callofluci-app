@@ -71,15 +71,17 @@ export const SlimNavbar = () => {
                         isExternal
                         href={siteConfig.links.twitter}
                         aria-label="Twitter"
+                        
                     >
-                        <TwitterIcon className="text-default-500" />
+                        <TwitterIcon />
                     </Link>
                     <Link
                         isExternal
                         href={siteConfig.links.github}
                         aria-label="Github"
+                        
                     >
-                        <GithubIcon className="text-default-500" />
+                        <GithubIcon />
                     </Link>
                     <ThemeSwitch />
                 </NavbarItem>
@@ -90,7 +92,7 @@ export const SlimNavbar = () => {
                         className="text-sm font-normal text-default-600 bg-default-100"
                         href={siteConfig.links.sponsor}
                         startContent={
-                            <GithubIcon className="text-danger" />
+                            <GithubIcon />
                         }
                         variant="flat"
                     >
@@ -105,7 +107,7 @@ export const SlimNavbar = () => {
                     href={siteConfig.links.github}
                     aria-label="Github"
                 >
-                    <GithubIcon className="text-default-500" />
+                    <GithubIcon />
                 </Link>
                 <ThemeSwitch />
                 <NavbarMenuToggle />

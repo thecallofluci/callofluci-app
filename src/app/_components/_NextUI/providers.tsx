@@ -19,8 +19,8 @@ export function Providers({ children, themeProps }: ProvidersProps) {
             {' '}
             <NextThemesProvider
                 attribute="class"
-                defaultTheme="dark"
-                themes={['light', 'dark']}
+                defaultTheme="luci-dark"
+                themes={['luci-light', 'luci-dark']}
             >
                 {children} 
             </NextThemesProvider>

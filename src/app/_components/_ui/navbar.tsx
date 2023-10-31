@@ -91,7 +91,7 @@ export const Navbar = () => {
                         href={siteConfig.links.twitter}
                         aria-label="Twitter"
                     >
-                        <TwitterIcon className="text-default-500" />
+                        <TwitterIcon  />
                     </Link>
                     <Link
                         isExternal

@@ -1,84 +1,28 @@
-// lucicolors.ts
-// custom colors to be used in replace of a copy of the NextUI Common Colors
+// luciColors.ts
+export const luci = {
+    50: '#FBF4EF',
+    100: '#F7E9DE',
+    200: '#EFD3BD',
+    300: '#E4B590',
+    400: '#D7915B',
+    500: '#B4682C',
+    600: '#A45E28',
+    700: '#8F5223',
+    800: '#77441D',
+    900: '#522F14',
+    950: '#39210E',
+};
 
-export const commonColors = {
-    white: '#FFFFFF',
-    black: '#000000',
-    luciBlue: {
-        50: '#F9EDD9',
-        100: '#FAE6C3',
-        200: '#FBDA97',
-        300: '#F8CF6F',
-        400: '#EFC251',
-        500: '#DEB23E',
-        600: '#C49D38',
-        700: '#A38437',
-        800: '#7C6636',
-        900: '#51452D',
-    },
-    luciGreen: {
-        50: '#ECEFE7',
-        100: '#E2E6DE',
-        200: '#CED4CB',
-        300: '#B9C2B8',
-        400: '#A3AFA3',
-        500: '#8C9A8D',
-        600: '#748474',
-        700: '#5D6D5B',
-        800: '#485544',
-        900: '#343D2D',
-    },
-    luciRed: {
-        50: '#F2E9E7',
-        100: '#E6D3CF',
-        200: '#D9BEB7',
-        300: '#CCA9A0',
-        400: '#BE9589',
-        500: '#B18073',
-        600: '#A36C5D',
-        700: '#965848',
-        800: '#874433',
-        900: '#79301D',
-    },
-    luciYellow: {
-        50: '#F9EDD9',
-        100: '#FAE6C3',
-        200: '#FBDA97',
-        300: '#F8CF6F',
-        400: '#EFC251',
-        500: '#DEB23E',
-        600: '#C49D38',
-        700: '#A38437',
-        800: '#7C6636',
-        900: '#51452D',
-    },
-    luciZinc: {
-        // Luci Stone
-        50: '#FAFAF9',
-        100: '#F5F5F4',
-        200: '#E7E5E4',
-        300: '#D6D3D1',
-        400: '#A8A29E',
-        500: '#78716C',
-        600: '#57534E',
-        700: '#44403C',
-        800: '#292524',
-        900: '#1C1917',
-        950: '#0C0A09',
-    },
-    luciBone: {
-        50: '#FBFBF9',
-        100: '#F9F8F6',
-        200: '#F5F4EF',
-        300: '#EFEDE6',
-        400: '#E9E6DC',
-        500: '#E3DFD2',
-        600: '#DAD5C3',
-        700: '#D2CCB7',
-        800: '#CAC3AA',
-        900: '#BEB597',
-        950: '#B9AF8E',
-    },
-}
-
-export type CommonColors = typeof commonColors
+export const luciCSSVariables = `
+    --luci-50: #FBF4EF;
+    --luci-100: #F7E9DE;
+    --luci-200: #EFD3BD;
+    --luci-300: #E4B590;
+    --luci-400: #D7915B;
+    --luci-500: #B4682C;
+    --luci-600: #A45E28;
+    --luci-700: #8F5223;
+    --luci-800: #77441D;
+    --luci-900: #522F14;
+    --luci-950: #39210E;
+`;
