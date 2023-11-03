@@ -20,7 +20,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
             <NextThemesProvider
                 attribute="class"
                 defaultTheme="luci-dark"
-                themes={['luci-light', 'luci-dark']}
+                themes={['light', 'dark', 'luci-light', 'luci-dark']}
             >
                 {children} 
             </NextThemesProvider>

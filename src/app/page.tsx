@@ -13,8 +13,8 @@ export default function Home() {
     return (
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
             <div className="inline-block max-w-lg text-center justify-center">
-                <h1 className={title()}>I am&nbsp;</h1>
-                <h1 className={title()}>Call Of Luci&nbsp;</h1>
+              
+            <h1 className={`${title()}`}>I am Call Of Luci&nbsp;</h1>
                 <br />
                 <h2 className={subtitle({ class: 'mt-4' })}>
                     Welcome, Player. Create a new Observation.
@@ -28,6 +28,7 @@ export default function Home() {
                     href={siteConfig.links.docs}
                     className={buttonStyles({
                         color: 'primary',
+                        variant: 'solid',
                         radius: 'sm',
                     })}
                 >
@@ -37,7 +38,8 @@ export default function Home() {
                     isExternal
                     as={NextLink}
                     className={buttonStyles({
-                        variant: 'ghost',
+                        color: 'primary',
+                        variant: 'solid',
                         radius: 'sm',
                     })}
                     href={siteConfig.links.github}
@@ -51,7 +53,7 @@ export default function Home() {
                 <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm" >
                     <span>
                         Get started by editing{' '}
-                        <Code radius="sm" color="success">
+                        <Code radius="sm" color="primary">
                             app/page.tsx
                         </Code>
                     </span>
@@ -62,7 +64,7 @@ export default function Home() {
                 <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm">
                     <span>
                         Luci{' '}
-                        <Code radius="sm" color="warning">
+                        <Code radius="sm" color="primary" >
                             v{packageJson.version}+
                             {process.env.REACT_APP_GIT_HASH}
                         </Code>

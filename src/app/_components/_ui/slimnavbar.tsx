@@ -32,13 +32,12 @@ import {
 import { Logo } from '@/src/app/_components/_ui/icons'
 
 export const SlimNavbar = () => {
-
     return (
         <NextUINavbar isBordered maxWidth="xl" position="sticky">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
                 <NavbarBrand as="li" className="gap-3 max-w-fit">
                     <NextLink
-                        className="flex justify-start items-center gap-1"
+                        className="flex justify-start items-center gap-1 text-primary"
                         href="/"
                     >
                         <Logo />
@@ -71,17 +70,15 @@ export const SlimNavbar = () => {
                         isExternal
                         href={siteConfig.links.twitter}
                         aria-label="Twitter"
-                        
                     >
-                        <TwitterIcon />
+                        <TwitterIcon className="text-default-500" />
                     </Link>
                     <Link
                         isExternal
                         href={siteConfig.links.github}
                         aria-label="Github"
-                        
                     >
-                        <GithubIcon />
+                        <GithubIcon className="text-default-500" />
                     </Link>
                     <ThemeSwitch />
                 </NavbarItem>
@@ -89,15 +86,14 @@ export const SlimNavbar = () => {
                     <Button
                         isExternal
                         as={Link}
-                        className="text-sm font-normal text-default-600 bg-default-100"
                         href={siteConfig.links.sponsor}
-                        startContent={
-                            <GithubIcon />
-                        }
-                        variant="flat"
+                        // startContent={<GithubIcon />}
+                        
+                        variant="solid"
                     >
                         Wallet
                     </Button>
+
                 </NavbarItem>
             </NavbarContent>
 
@@ -112,7 +108,6 @@ export const SlimNavbar = () => {
                 <ThemeSwitch />
                 <NavbarMenuToggle />
             </NavbarContent>
-
         </NextUINavbar>
     )
 }

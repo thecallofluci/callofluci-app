@@ -3,9 +3,10 @@
 import { nextui } from '@nextui-org/theme'
 import { luciDarkTheme } from './src/app/_styles/colors/luciDarkTheme';
 import { luciLightTheme } from './src/app/_styles/colors/luciLightTheme';
+import { purpleDarkTheme } from './src/app/_styles/colors/purpleDarkTheme';
 
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
     // Specify the paths to all files that will use Tailwind CSS class names.
     // Unused styles will be purged from these files in the production build.
     content: [
@@ -33,10 +34,23 @@ export default {
     plugins: [
         nextui({
             themes: {
-                'luci-dark': luciDarkTheme, // Use the 'luci-dark' theme configuration imported from 'luciDarkTheme.ts'
-                'luci-light': luciLightTheme, // Use the 'luci-light' theme configuration imported from 'luciLightTheme.ts'
+              
+                    'luci-dark': luciDarkTheme,
+                    'luci-light': luciLightTheme,
+                    // 'purple-dark': purpleDarkTheme // Use the 'purple-dark' theme configuration imported from 'purpleDarkTheme.js'
+
+            //    'dark': luciDarkTheme, // Use the 'luci-dark' theme configuration imported from 'luciDarkTheme.ts'
+            //    'light': luciLightTheme, // Use the 'luci-light' theme configuration imported from 'luciLightTheme.ts'
+
                 // ... other themes
+
+
+
             },
         }),
     ],
 }
+
+export default config;
+
+
