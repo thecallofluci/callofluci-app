@@ -13,8 +13,8 @@ import { Button } from '@nextui-org/button'
 import { Kbd } from '@nextui-org/kbd'
 import { Link } from '@nextui-org/link'
 import { Input } from '@nextui-org/input'
-import { fontSans } from '@/src/app/_styles/fonts'
-import { fontMono } from '@/src/app/_styles/fonts'
+import { fontSans } from '@/src/app/_styles/fonts/fonts'
+import { fontMono } from '@/src/app/_styles/fonts/fonts'
 
 import { link as linkStyles } from '@nextui-org/theme'
 
@@ -31,17 +31,21 @@ import {
 
 import { Logo } from '@/src/app/_components/_ui/icons'
 
+// NavbarContent1: {This section is for the brand logo and navigation items}
+// NavbarContent2: {This section is for social media links and theme switch}
+// NavbarContent3: {This section is for mobile view with Github link, theme switch, and menu toggle}
+
 export const SlimNavbar = () => {
     return (
         <NextUINavbar isBordered maxWidth="xl" position="sticky">
             <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
                 <NavbarBrand as="li" className="gap-3 max-w-fit">
                     <NextLink
-                        className="flex justify-start items-center gap-1 text-primary"
+                        className="flex justify-start items-center gap-1"
                         href="/"
                     >
-                        <Logo />
-                        <p className="font-bold text-inherit">CALLOFLUCI</p>
+                       <GithubIcon />   
+                        <p className="font-bold ">LUCI</p>
                     </NextLink>
                 </NavbarBrand>
                 <ul className="hidden lg:flex gap-4 justify-start ml-2 font-sans font-bold">
@@ -70,15 +74,19 @@ export const SlimNavbar = () => {
                         isExternal
                         href={siteConfig.links.twitter}
                         aria-label="Twitter"
+                        // color="primary"
+                    
                     >
-                        <TwitterIcon className="text-default-500" />
+                        <TwitterIcon  />
                     </Link>
                     <Link
                         isExternal
                         href={siteConfig.links.github}
                         aria-label="Github"
+                        // color="primary"
+          
                     >
-                        <GithubIcon className="text-default-500" />
+                        <GithubIcon  />
                     </Link>
                     <ThemeSwitch />
                 </NavbarItem>
@@ -88,8 +96,9 @@ export const SlimNavbar = () => {
                         as={Link}
                         href={siteConfig.links.sponsor}
                         // startContent={<GithubIcon />}
-                        
+                        color="primary"
                         variant="solid"
+                        radius="sm"
                     >
                         Wallet
                     </Button>
@@ -97,7 +106,7 @@ export const SlimNavbar = () => {
                 </NavbarItem>
             </NavbarContent>
 
-            <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+            <NavbarContent className="sm:hidden basis-1 pl-4" justify="end" >
                 <Link
                     isExternal
                     href={siteConfig.links.github}

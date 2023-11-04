@@ -4,7 +4,7 @@
 
 // Importing necessary modules and components
 import '@/src/app/_styles/globals.css'
-import { fontSans, fontMono } from '@/src/app/_styles/fonts'
+import { fontSans, fontMono } from '@/src/app/_styles/fonts/fonts'
 import { Providers } from '@/src/app/_components/_NextUI/providers'
 import { SlimNavbar } from '@/src/app/_components/_ui/slimnavbar'
 import clsx from 'clsx'

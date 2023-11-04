@@ -6,7 +6,7 @@ import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
 import { title, subtitle } from '@/src/app/_components/_NextUI/primitives'
 import { GithubIcon } from '@/src/app/_components/_ui/icons'
-import { fontMono } from '@/src/app/_styles/fonts'
+import { fontMono } from '@/src/app/_styles/fonts/fonts'
 import packageJson from '../../package.json'
 
 export default function Home() {

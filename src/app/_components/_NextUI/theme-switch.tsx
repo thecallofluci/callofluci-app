@@ -62,8 +62,8 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
                                 'flex items-center justify-center',
                                 'group-data-[selected=true]:bg-transparent',
                                 isSelected
-                                    ? '!text-primary-500'
-                                    : 'text-default-700',
+                                    ? '!text-primary'
+                                    : '!text-foreground',
                                 'pt-px',
                                 'px-0',
                                 'mx-0',
@@ -73,9 +73,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
                     })}
                 >
                     {isSelected ? (
-                        <SunIcon className="text-default-500 size={22}" />
+                        <SunIcon className="size={22}" />
                     ) : (
-                        <MoonIcon className="text-default-500 size={22}" />
+                        <MoonIcon className="size={22}" />
                     )}
                 </div>
             </Component>

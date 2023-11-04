@@ -1,5 +1,4 @@
 // luciColors.ts
-import { ColorScale } from '../../../../types'
 
 // custom orange color palette
 const luci = {
@@ -14,21 +13,6 @@ const luci = {
 	800: '#77441D', // Very dark orange
 	900: '#522F14', // Extremely dark orange, almost brown
 	950: '#39210E', // Near-black orange
-}
-
-// custom gray color palette
-const shadow = {
-	50: '#FAFAFA', // Very light gray, almost white
-	100: '#F4F4F5', // Light gray
-	200: '#E4E4E7', // Light-medium gray
-	300: '#D4D4D8', // Medium gray, less saturated
-	400: '#A1A1AA', // Medium gray, more saturated
-	500: '#71717A', // Saturated medium-dark gray
-	600: '#52525B', // Dark gray
-	700: '#3F3F46', // Darker gray
-	800: '#27272A', // Very dark gray
-	900: '#18181B', // Extremely dark gray, almost black
-	950: '#09090B', // Near-black gray
 }
 
 // custom blue color palette
@@ -106,16 +90,31 @@ const bone = {
 	950: '#0C0A09',
 }
 
+// custom gray color palette
+const shadow = {
+	50: '#FAFAFA', // Very light gray, almost white
+	100: '#F4F4F5', // Light gray
+	200: '#E4E4E7', // Light-medium gray
+	300: '#D4D4D8', // Medium gray, less saturated
+	400: '#A1A1AA', // Medium gray, more saturated
+	500: '#71717A', // Saturated medium-dark gray
+	600: '#52525B', // Dark gray
+	700: '#3F3F46', // Darker gray
+	800: '#27272A', // Very dark gray
+	900: '#18181B', // Extremely dark gray, almost black
+	950: '#09090B', // Near-black gray
+}
+
 export const commonColors = {
-	white: "#ffffff",
-	black: "#000000",
+	white: shadow[50],
+	black: shadow[700],
 	luci,
-	shadow,
 	echo,
 	tendril,
 	flame,
 	sulfuric,
 	bone,
-  };
-  
-  export type CommonColors = typeof commonColors;
+	shadow,
+}
+
+export type CommonColors = typeof commonColors
