@@ -6,6 +6,7 @@ import { NextUIProvider } from '@nextui-org/system'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
 
+
 // Define the props for the Providers component
 export interface ProvidersProps {
     children: React.ReactNode // The child elements to be rendered within the Providers
@@ -14,8 +15,9 @@ export interface ProvidersProps {
 
 // The Providers component
 export function Providers({ children, themeProps }: ProvidersProps) {
+   
     return (
-        <NextUIProvider>
+        <NextUIProvider >
             {' '}
             <NextThemesProvider
                 attribute="class"
