@@ -36,46 +36,6 @@ const base: SemanticBaseColors = {
       foreground: common.shadow[600],
     },
   },
-
-  /*
-
-	dark: {
-    background: {
-      DEFAULT: common.shadow[950],
-    },
-    foreground: {
-      DEFAULT: common.bone[50],
-    },
-    focus: {
-      DEFAULT: common.luci[300],
-    },
-    overlay: {
-      DEFAULT: common.shadow[700],
-    },
-    divider: {
-      DEFAULT: common.shadow[800],
-    },
-    content1: {
-      DEFAULT: common.shadow[900],
-      foreground: common.shadow[50],
-    },
-    content2: {
-      DEFAULT: common.shadow[800],
-      foreground: common.shadow[100],
-    },
-    content3: {
-      DEFAULT: common.shadow[700],
-      foreground: common.shadow[200],
-    },
-    content4: {
-      DEFAULT: common.shadow[600],
-      foreground: common.shadow[300],
-    },
-  },
-};
-
-*/
-
 dark: {
   background: {
     DEFAULT: common.luci[500],

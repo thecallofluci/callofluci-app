@@ -28,7 +28,7 @@ export default function Home() {
                     href={siteConfig.links.docs}
                     className={buttonStyles({
                         color: 'primary',
-                        variant: 'solid',
+                        variant: 'shadow',
                         radius: 'sm',
                     })}
                 >
@@ -52,9 +52,9 @@ export default function Home() {
             <div className="mt-8">
                 <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm" >
                     <span>
-                        Get started by editing{' '}
+                        Get started by connecting a{' '}
                         <Code radius="sm" color="primary">
-                            app/page.tsx
+                            wallet
                         </Code>
                     </span>
                 </Snippet >
