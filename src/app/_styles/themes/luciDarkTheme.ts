@@ -1,12 +1,11 @@
 // luciDarkTheme.ts
 import { themeColorsDark, semanticColors } from '../colors/luciSemantic'
 
-export { semanticColors }
-
 export const luciDarkTheme = {
 	extend: 'dark', // <- inherit default values from dark theme
 	colors: {
 		...themeColorsDark,
+		...semanticColors.dark, // Include the dark semantic colors
 		// Add any additional color definitions here
 	},
 	layout: {

@@ -1,41 +1,21 @@
-import { title } from '@/src/app/_components/_NextUI/primitives'
-import { Textarea } from '@nextui-org/input'
-import LuciTextArea from '@/src/app/_components/_ui/LuciTextArea'
-import LuciCard from '@/src/app/_components/_ui/LuciCard'
-import LuciCardGallery from '@/src/app/_components/_ui/LuciCardGallery'
-import LuciImage from '@/src/app/_components/_ui/LuciImage'
-import Image from 'next/image'
+import {
+	lucititle,
+	lucisubtitle,
+	luciparagraph,
+} from '@/src/app/_components/_NextUI/primitives'
 
 export default function AboutPage() {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div>
-				<h1 className={title()}>About</h1>
-			</div>
-
-			<div>
-				<Textarea
-					label="Description"
-					labelPlacement="outside"
-					placeholder="Enter your description (Default autosize)"
-				/>
-			</div>
-			<div>
-				<LuciTextArea
-					variant="flat"
-					className="col-span-12 md:col-span-6 mb-6 md:mb-0"
-					label="Hello there"
-					labelPlacement="outside"
-					placeholder="Enter your Luci Description (Default autosize)"
-				/>
-			</div>
-			<div>
-				<LuciCard /> {/* Use LuciCard */}
-			</div>
-			<div>
-				<LuciImage />
-			</div>
-
-		</section>
+		<div>
+			<h1 className={lucititle({ color: 'primary' })}>About</h1>
+			<h2 className={lucisubtitle({ color: 'primary' })}>
+				Call Of Luci
+			</h2>
+			<p className={luciparagraph({ color: 'primary' })}>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+				euismod, nunc at aliquet pharetra, mauris lorem lacinia magna,
+				quis ultricies sem nunc id lorem. Donec id condimentum magna.
+			</p>
+		</div>
 	)
 }

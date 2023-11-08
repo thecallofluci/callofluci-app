@@ -16,7 +16,7 @@ export default function LuciImage() {
 				style={{
 					borderWidth: '2px',
 					borderStyle: 'solid',
-                    borderColor: 'default-500', // This does not seem to be importing theme colors
+                    borderColor: 'red', // This does not seem to be importing theme colors
 					borderRadius: '6px',
 					boxShadow: 'none',
 					boxSizing: 'border-box',

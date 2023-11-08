@@ -34,18 +34,15 @@ const config = {
     plugins: [
         nextui({
             themes: {
-              
-                    'luci-dark': luciDarkTheme,
-                    'luci-light': luciLightTheme,
-                    // 'purple-dark': purpleDarkTheme // Use the 'purple-dark' theme configuration imported from 'purpleDarkTheme.js'
-
-            //    'dark': luciDarkTheme, // Use the 'luci-dark' theme configuration imported from 'luciDarkTheme.ts'
-            //    'light': luciLightTheme, // Use the 'luci-light' theme configuration imported from 'luciLightTheme.ts'
-
+                'luci-dark': {
+                    extend: 'dark', // Extend the 'dark' theme
+                    ...luciDarkTheme, // Apply your custom 'luci-dark' theme
+                },
+                'luci-light': {
+                    extend: 'light', // Extend the 'light' theme
+                    ...luciLightTheme, // Apply your custom 'luci-light' theme
+                },
                 // ... other themes
-
-
-
             },
         }),
     ],
