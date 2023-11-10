@@ -74,9 +74,9 @@ dark: {
   export const themeColorsLight: ThemeColors = {
     ...base.light,
     default: {
-      ...common.shadow,
-      foreground: 'black', // black
-      DEFAULT: common.shadow[300],
+      ...common.luci,
+      foreground: common.luci[500],
+      DEFAULT: common.luci[500],
     },
     primary: {
       ...common.luci,
@@ -108,9 +108,9 @@ dark: {
   export const themeColorsDark: ThemeColors = {
     ...base.dark,
     default: {
-      ...common.bone,
+      ...common.shadow,
       foreground: 'white', // white
-      DEFAULT: common.bone[700],
+      DEFAULT: common.shadow[700],
     },
     primary: {
       ...common.bone,

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import {
 	Modal,
@@ -10,9 +12,16 @@ import { Input } from '@nextui-org/input'
 import { Checkbox } from '@nextui-org/checkbox'
 import { Link } from '@nextui-org/link'
 import { Button } from '@nextui-org/button'
-import { useDisclosure } from '@nextui-org/react'
+import { useDisclosure } from '@nextui-org/use-disclosure'
+import {
+	LuciButton,
+	LuciButtonWide,
+} from '@/src/app/_components/_ui/LuciButton'
 
-export default function App() {
+export default DefaultModal;
+
+// NextUI's Modal + Form default implementation
+export function DefaultModal() {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
 	return (
@@ -63,10 +72,76 @@ export default function App() {
 									variant="flat"
 									onPress={onClose}
 								>
-									Close
+									CLOSE
 								</Button>
 								<Button color="primary" onPress={onClose}>
-									Sign in
+									SIGN IN
+								</Button>
+							</ModalFooter>
+						</>
+					)}
+				</ModalContent>
+			</Modal>
+		</>
+	)
+}
+
+// customized Modal + Form for user's to create an Observation
+export function LuciModal() {
+	const { isOpen, onOpen, onOpenChange } = useDisclosure()
+
+	return (
+		<>
+			<LuciButton onPress={onOpen}>
+				OPEN LUCI MODAL
+			</LuciButton>
+			<Modal
+				isOpen={isOpen}
+				onOpenChange={onOpenChange}
+				placement="top-center"
+			>
+				<ModalContent>
+					{(onClose) => (
+						<>
+							<ModalHeader className="flex flex-col gap-1">
+								Luci Observation
+							</ModalHeader>
+							<ModalBody>
+								<Input
+									autoFocus
+									label="Player"
+									placeholder="Enter player number"
+									variant="bordered"
+								/>
+								<Input
+									label="Observation"
+									placeholder="Enter observation"
+									type="text"
+									variant="bordered"
+								/>
+								<div className="flex py-2 px-1 justify-between">
+									<Checkbox
+										classNames={{
+											label: 'text-small',
+										}}
+									>
+										Remember this observation
+									</Checkbox>
+									<Link color="primary" href="#" size="sm">
+										Forgot observation?
+									</Link>
+								</div>
+							</ModalBody>
+							<ModalFooter>
+							<Button
+									color="danger"
+									variant="flat"
+									onPress={onClose}
+								>
+									CLOSE
+								</Button>
+								<Button color="primary" onPress={onClose}>
+									SIGN IN
 								</Button>
 							</ModalFooter>
 						</>

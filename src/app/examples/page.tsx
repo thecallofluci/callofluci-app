@@ -11,10 +11,13 @@ import {
 	LuciButtonWide,
 } from '@/src/app/_components/_ui/LuciButton'
 import LuciCard from '@/src/app/_components/_ui/LuciCard'
+import DefaultModal from '@/src/app/_components/_ui/CreateObservation'
+import { LuciModal } from '@/src/app/_components/_ui/CreateObservation'
 import LuciCardGallery from '@/src/app/_components/_ui/LuciCardGallery'
 import LuciImage from '@/src/app/_components/_ui/LuciImage'
 import Image from 'next/image'
 import { siteConfig } from '@/src/config/site'
+import { Button } from '@nextui-org/button'
 
 export default function ExamplesPage() {
 	return (
@@ -24,6 +27,19 @@ export default function ExamplesPage() {
 			</div>
 
 			<div className="flex flex-wrap justify-center gap-8">
+			<div>
+					<h2
+						className={`${lucisubtitle({
+							color: 'secondary',
+						})} text-center`}
+					>
+						Default Button
+					</h2>
+					<Button href={siteConfig.links.sponsor} >
+						BUTTON
+					</Button>
+				</div>
+
 				<div>
 					<h2
 						className={`${lucisubtitle({
@@ -32,10 +48,24 @@ export default function ExamplesPage() {
 					>
 						Luci Button
 					</h2>
-					<LuciButton href={siteConfig.links.sponsor}>
+					<LuciButton variant="bordered" href={siteConfig.links.sponsor} >
 						BUTTON
 					</LuciButton>
 				</div>
+
+				<div>
+					<h2
+						className={`${lucisubtitle({
+							color: 'secondary',
+						})} text-center`}
+					>
+						Luci Button
+					</h2>
+					<LuciButton href={siteConfig.links.sponsor} >
+						BUTTON
+					</LuciButton>
+				</div>
+
 				<div>
 					<h2
 						className={`${lucisubtitle({
@@ -122,6 +152,32 @@ export default function ExamplesPage() {
 					</h2>
 					<LuciObservation /> {/* Use LuciObservation */}
 				</div>
+				
+				<div>
+					<h2
+						className={`${lucisubtitle({
+							color: 'secondary',
+						})} text-center`}
+					>
+						Default Modal Form
+					</h2>
+					<DefaultModal /> {/* Use LuciObservation */}
+				</div>
+
+				<div>
+					<h2
+						className={`${lucisubtitle({
+							color: 'secondary',
+						})} text-center`}
+					>
+						Luci Modal Form
+					</h2>
+					<LuciModal /> {/* Use LuciObservation */}
+				</div>
+
+				<div style={{ width: '100%' }}></div>{' '}
+				{/* This will force a line break */}
+				
 				<div>
 					<h2
 						className={`${lucisubtitle({
