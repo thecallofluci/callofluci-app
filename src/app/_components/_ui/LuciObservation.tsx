@@ -12,11 +12,11 @@ export default function LuciObservation() {
 					alt="nextui logo"
 					height={40}
 					radius="sm"
-					// src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+					src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
 					// src="https://images.squarespace-cdn.com/content/v1/53b6eb62e4b06e0feb2d8e86/1656776064476-ADETQUJY3NV2AOI39K3T/SamSpratt_LUCI_Chapter3_VI_TheMuck.jpg"
 					// src="https://images.squarespace-cdn.com/content/v1/53b6eb62e4b06e0feb2d8e86/1634843275702-X3H3JYTIJAOIEEU1XX9B/SamSpratt_LUCI_BirthofLuci_NFT_Superrare.jpg"
 					// src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
-					src="https://xhsuf55y7544mrt247xi4xahb4cfop3mb4xutbtocgnncodgcijq.arweave.net/ueVC97j_ecZGeufujlwHDwRXP2wPL0mGbhGa0ThmEhM"
+					// src="https://xhsuf55y7544mrt247xi4xahb4cfop3mb4xutbtocgnncodgcijq.arweave.net/ueVC97j_ecZGeufujlwHDwRXP2wPL0mGbhGa0ThmEhM"
 					width={40}
 					style={{
 						// borderWidth: '2px',

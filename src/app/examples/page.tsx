@@ -27,19 +27,6 @@ export default function ExamplesPage() {
 			</div>
 
 			<div className="flex flex-wrap justify-center gap-8">
-			<div>
-					<h2
-						className={`${lucisubtitle({
-							color: 'secondary',
-						})} text-center`}
-					>
-						Default Button
-					</h2>
-					<Button href={siteConfig.links.sponsor} >
-						BUTTON
-					</Button>
-				</div>
-
 				<div>
 					<h2
 						className={`${lucisubtitle({
@@ -48,24 +35,10 @@ export default function ExamplesPage() {
 					>
 						Luci Button
 					</h2>
-					<LuciButton variant="bordered" href={siteConfig.links.sponsor} >
+					<LuciButton href={siteConfig.links.sponsor}>
 						BUTTON
 					</LuciButton>
 				</div>
-
-				<div>
-					<h2
-						className={`${lucisubtitle({
-							color: 'secondary',
-						})} text-center`}
-					>
-						Luci Button
-					</h2>
-					<LuciButton href={siteConfig.links.sponsor} >
-						BUTTON
-					</LuciButton>
-				</div>
-
 				<div>
 					<h2
 						className={`${lucisubtitle({
@@ -78,57 +51,16 @@ export default function ExamplesPage() {
 						WIDE BUTTON
 					</LuciButtonWide>
 				</div>
-
-				<div style={{ width: '100%' }}></div>{' '}
-				{/* This will force a line break */}
-
 				<div>
 					<h2
 						className={`${lucisubtitle({
 							color: 'secondary',
 						})} text-center`}
 					>
-						Default Textarea
+						Luci Modal Form
 					</h2>
-					<Textarea
-						label="Description"
-						labelPlacement="outside"
-						placeholder="Enter your description (Default autosize)"
-					/>
+					<LuciModal /> {/* Use LuciObservation */}
 				</div>
-				<div>
-					<h2
-						className={`${lucisubtitle({
-							color: 'secondary',
-						})} text-center`}
-					>
-						Luci Textarea
-					</h2>
-					<LuciTextArea
-						variant="flat"
-						className="col-span-12 md:col-span-6 mb-6 md:mb-0"
-						label="Hello there"
-						labelPlacement="outside"
-						placeholder="Enter your Luci Description (Default autosize)"
-					/>
-				</div>
-				<div>
-					<h2
-						className={`${lucisubtitle({
-							color: 'secondary',
-						})} text-center`}
-					>
-						Luci Textarea
-					</h2>
-					<LuciTextArea
-						variant="flat"
-						className="col-span-12 md:col-span-6 mb-6 md:mb-0"
-						label="Hello there"
-						labelPlacement="outside"
-						placeholder="Enter your Luci Description (Default autosize)"
-					/>
-				</div>
-
 				<div style={{ width: '100%' }}></div>{' '}
 				{/* This will force a line break */}
 
@@ -152,32 +84,7 @@ export default function ExamplesPage() {
 					</h2>
 					<LuciObservation /> {/* Use LuciObservation */}
 				</div>
-				
-				<div>
-					<h2
-						className={`${lucisubtitle({
-							color: 'secondary',
-						})} text-center`}
-					>
-						Default Modal Form
-					</h2>
-					<DefaultModal /> {/* Use LuciObservation */}
-				</div>
-
-				<div>
-					<h2
-						className={`${lucisubtitle({
-							color: 'secondary',
-						})} text-center`}
-					>
-						Luci Modal Form
-					</h2>
-					<LuciModal /> {/* Use LuciObservation */}
-				</div>
-
-				<div style={{ width: '100%' }}></div>{' '}
-				{/* This will force a line break */}
-				
+			
 				<div>
 					<h2
 						className={`${lucisubtitle({
@@ -197,6 +104,23 @@ export default function ExamplesPage() {
 						Luci Image
 					</h2>
 					<LuciImage />
+				</div>
+
+				<div>
+					<h2
+						className={`${lucisubtitle({
+							color: 'secondary',
+						})} text-center`}
+					>
+						Luci Textarea
+					</h2>
+					<LuciTextArea
+						variant="flat"
+						className="col-span-12 md:col-span-6 mb-6 md:mb-0"
+						label="Hello there"
+						labelPlacement="outside"
+						placeholder="Enter your Luci Description (Default autosize)"
+					/>
 				</div>
 			</div>
 		</section>

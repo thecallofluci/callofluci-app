@@ -21,14 +21,14 @@ export default function Home() {
                 </h2>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 text-primary" >
                 <Link
                     isExternal
                     as={NextLink}
                     href={siteConfig.links.docs}
                     className={buttonStyles({
                         color: 'primary',
-                        variant: 'shadow',
+                        variant: 'ghost',
                         radius: 'sm',
                     })}
                 >
@@ -39,7 +39,7 @@ export default function Home() {
                     as={NextLink}
                     className={buttonStyles({
                         color: 'primary',
-                        variant: 'solid',
+                        variant: 'ghost',
                         radius: 'sm',
                     })}
                     href={siteConfig.links.github}
@@ -50,10 +50,10 @@ export default function Home() {
             </div>
 
             <div className="mt-8">
-                <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm" >
+                <Snippet hideSymbol hideCopyButton variant="bordered" radius="sm" >
                     <span>
                         Get started by connecting a{' '}
-                        <Code radius="sm" color="primary">
+                        <Code radius="sm" >
                             wallet
                         </Code>
                     </span>
@@ -61,10 +61,10 @@ export default function Home() {
             </div>
 
             <div className="mt-8">
-                <Snippet hideSymbol hideCopyButton variant="shadow" radius="sm">
+                <Snippet hideSymbol hideCopyButton variant="bordered" radius="sm">
                     <span>
                         Luci{' '}
-                        <Code radius="sm" color="primary" >
+                        <Code radius="sm"  >
                             v{packageJson.version}+
                             {process.env.REACT_APP_GIT_HASH}
                         </Code>

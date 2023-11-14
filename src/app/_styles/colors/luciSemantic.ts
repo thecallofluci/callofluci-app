@@ -4,13 +4,13 @@ import {commonColors as common} from "./luciColors";
 const base: SemanticBaseColors = {
   light: {
     background: {
-      DEFAULT: common.bone[50],
+      DEFAULT: common.bone[50], // page background
     },
     foreground: {
-      DEFAULT: common.shadow[900],
+      DEFAULT: common.luci[500],
     },
     divider: {
-      DEFAULT: common.shadow[500],
+      DEFAULT: common.shadow[900],
     },
     focus: {
       DEFAULT: common.luci[700],
@@ -38,10 +38,10 @@ const base: SemanticBaseColors = {
   },
 dark: {
   background: {
-    DEFAULT: common.luci[500],
+    DEFAULT: common.shadow[900],
   },
   foreground: {
-    DEFAULT: common.bone[50],
+    DEFAULT: common.luci[500],
   },
   focus: {
     DEFAULT: common.bone[300],
@@ -75,18 +75,18 @@ dark: {
     ...base.light,
     default: {
       ...common.luci,
-      foreground: common.luci[500],
+      foreground: 'black',
       DEFAULT: common.luci[500],
     },
     primary: {
       ...common.luci,
-      foreground: 'black', // black
+      foreground: common.luci[50],
       DEFAULT: common.luci[500],
     },
     secondary: {
       ...common.luci,
       foreground: 'black', // black
-      DEFAULT: common.luci[500],
+      DEFAULT: common.luci[400],
     },
     success: {
       ...common.tendril,
@@ -108,14 +108,14 @@ dark: {
   export const themeColorsDark: ThemeColors = {
     ...base.dark,
     default: {
-      ...common.shadow,
-      foreground: 'white', // white
-      DEFAULT: common.shadow[700],
+      ...common.luci,
+      foreground: common.shadow[950],
+      DEFAULT: common.luci[500],
     },
     primary: {
-      ...common.bone,
-      foreground: 'black', // white
-      DEFAULT: common.bone[100],
+      ...common.luci,
+      foreground: common.shadow[950],
+      DEFAULT: common.luci[500],
     },
     secondary: {
       ...common.bone,

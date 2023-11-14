@@ -18,7 +18,7 @@ export const LuciButton = ({ href, children, onPress, variant }: LuciButtonProps
 			isExternal
 			as={Link}
 			href={href}
-			color="default"
+			color="primary"
 			variant={variant || "ghost"} // Use the variant prop here
 			radius="sm"
 			style={{ fontWeight: 'bold' }}
@@ -37,7 +37,7 @@ export const LuciButtonWide = ({ href, children, onPress, variant }: LuciButtonP
             isExternal
             as={Link}
             href={href}
-            // color="default"
+            color="primary"
             variant={variant || "ghost"} // Use the variant prop here
             radius="sm"
             style={{ fontWeight: 'bold', paddingLeft: `${padding}rem`, paddingRight: `${padding}rem` }}
