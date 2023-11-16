@@ -4,7 +4,7 @@ import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
 import { Image } from '@nextui-org/image'
 
-export default function LuciCard() {
+export default function DefaultCard() {
 	return (
 		<Card className="max-w-[400px]">
 			<CardHeader className="flex gap-3">

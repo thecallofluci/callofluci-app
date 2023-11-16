@@ -4,11 +4,7 @@ import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
 import { Image } from '@nextui-org/image'
 
-type LuciObservationProps = {
-	text: string
-}
-
-const LuciObservation: React.FC<LuciObservationProps> = ({ text }) => {
+const ObservationMockup: React.FC = () => {
 	return (
 		<Card className="max-w-[400px] bg-primary">
 			<CardHeader className="flex gap-3">
@@ -22,12 +18,14 @@ const LuciObservation: React.FC<LuciObservationProps> = ({ text }) => {
 					// src="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
 					// src="https://xhsuf55y7544mrt247xi4xahb4cfop3mb4xutbtocgnncodgcijq.arweave.net/ueVC97j_ecZGeufujlwHDwRXP2wPL0mGbhGa0ThmEhM"
 					width={40}
-					style={{
-						// borderWidth: '2px',
-						// borderStyle: 'solid',
-						// borderColor: 'black', // This does not seem to be importing theme colors
-						// borderRadius: '6px',
-					}}
+					style={
+						{
+							// borderWidth: '2px',
+							// borderStyle: 'solid',
+							// borderColor: 'black', // This does not seem to be importing theme colors
+							// borderRadius: '6px',
+						}
+					}
 				/>
 				<div className="flex flex-col">
 					<p className="text-md text-background">Player 256</p>
@@ -36,39 +34,47 @@ const LuciObservation: React.FC<LuciObservationProps> = ({ text }) => {
 			</CardHeader>
 			<Divider />
 			<CardBody className="text-background">
-			<p>{text}</p> {/* Display the user's text */}
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia
+					deserunt mollit anim id est laborum.
+				</p>
 			</CardBody>
 			<Divider />
 			<CardFooter>
-			<div className="flex flex-col">
-			
+				<div className="flex flex-col">
 					<Link
-					className="text-sm text-background"
+						className="text-sm text-background"
 						isExternal
 						showAnchorIcon
 						href="https://github.com/nextui-org/nextui"
 					>
 						View Observation in Call Of Luci.
 					</Link>
-	
+
 					<Link
-					className="text-sm text-background"
+						className="text-sm text-background"
 						isExternal
 						showAnchorIcon
 						href="https://github.com/nextui-org/nextui"
 					>
 						View original Observation.
 					</Link>
-					<div 	className="text-left text-sm text-background">
-					Provenance Attribute 1
-				</div>
-				<div 	className="text-left text-sm text-background">
-					Provenance Attribute 2
-				</div>
+					<div className="text-left text-sm text-background">
+						Provenance Attribute 1
+					</div>
+					<div className="text-left text-sm text-background">
+						Provenance Attribute 2
+					</div>
 				</div>
 			</CardFooter>
 		</Card>
 	)
 }
 
-export default LuciObservation
+export default ObservationMockup

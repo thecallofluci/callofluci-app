@@ -1,5 +1,6 @@
 import { tv } from 'tailwind-variants'
 
+// lucititle: This style is used for the main title of the page. 
 export const lucititle = tv({
 	base: 'tracking-tight inline font-extrabold uppercase',
 	variants: {
@@ -23,6 +24,7 @@ export const lucititle = tv({
 	},
 })
 
+// lucisubtitle: This style is used for subtitles on the page. 
 export const lucisubtitle = tv({
 	base: 'w-full md:w-1/2 my-2 text-lg lg:text-xl block max-w-full text-left font-extrabold',
 	variants: {
@@ -43,8 +45,36 @@ export const lucisubtitle = tv({
 	},
 })
 
+// lucisubheading: This style is used for third-tier headers on the page.
+export const lucisubheading = tv({
+	base: 'w-full my-1 text-sm lg:text-md block max-w-full text-left font-semibold',
+	variants: {
+		color: {
+			primary: 'text-primary',
+			secondary: 'text-secondary',
+			danger: 'text-danger',
+            focus: 'text-focus',
+            content3: 'text-content3',
+			// Add more colors as needed
+		},
+		size: {
+			sm: 'text-sm',
+			md: 'text-base',
+			lg: 'text-lg',
+		},
+		fullWidth: {
+			true: 'w-full block',
+		},
+	},
+	defaultVariants: {
+		size: 'sm',
+		fullWidth: true,
+	},
+})
+
+// luciparagraph: This style is used for the main body text on the page. 
 export const luciparagraph = tv({
-	base: 'text-left font-semibold',
+	base: 'text-left font-semibold mb-4',
 	variants: {
 		color: {
 			primary: 'text-primary',
@@ -69,6 +99,8 @@ export const luciparagraph = tv({
 	},
 })
 
+
+// original primitives from template
 export const title = tv({
 	base: 'tracking-tight inline font-semibold',
 	variants: {

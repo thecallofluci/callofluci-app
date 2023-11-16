@@ -10,9 +10,10 @@ interface LuciButtonProps {
     children: string;
     color?: string; // Make this optional
     onPress?: () => void; // Make this optional
+    type?: 'button' | 'submit' | 'reset'; // Add this line
 }
 
-export const LuciButton = ({ href, children, onPress, variant }: LuciButtonProps) => {
+export const LuciButton = ({ href, children, onPress, variant, type }: LuciButtonProps) => {
 	return (
 		<Button
 			isExternal
@@ -23,13 +24,14 @@ export const LuciButton = ({ href, children, onPress, variant }: LuciButtonProps
 			radius="sm"
 			style={{ fontWeight: 'bold' }}
 			onPress={onPress} // And this line
+            type={type} // Add this line
 		>
 			{children}
 		</Button>
 	)
 }
 
-export const LuciButtonWide = ({ href, children, onPress, variant }: LuciButtonProps) => {
+export const LuciButtonWide = ({ href, children, onPress, variant, type }: LuciButtonProps) => {
     const padding = Math.min(2, children.length * 0.25); // Calculate padding based on text length
 
     return (
@@ -42,6 +44,7 @@ export const LuciButtonWide = ({ href, children, onPress, variant }: LuciButtonP
             radius="sm"
             style={{ fontWeight: 'bold', paddingLeft: `${padding}rem`, paddingRight: `${padding}rem` }}
             onPress={onPress} // And this line
+            type={type} // Add this line
         >
             {children}
         </Button>
