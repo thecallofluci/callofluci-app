@@ -1,22 +1,14 @@
+// LuciModal.tsx UI component
 'use client'
 
 import React from 'react'
-import {
-	Modal,
-	ModalContent,
-	ModalHeader,
-	ModalBody,
-	ModalFooter,
-} from '@nextui-org/modal'
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from '@nextui-org/modal'
 import { Input, Textarea } from '@nextui-org/input'
 import { Checkbox } from '@nextui-org/checkbox'
 import { Link } from '@nextui-org/link'
 import { Button } from '@nextui-org/button'
 import { useDisclosure } from '@nextui-org/use-disclosure'
-import {
-	LuciButton,
-	LuciButtonWide,
-} from '@/src/app/_components/_ui/LuciButton'
+import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui-completed/LuciButton'
 
 export default DefaultModal
 
@@ -29,17 +21,11 @@ export function DefaultModal() {
 			<Button onPress={onOpen} color="primary">
 				Open Modal
 			</Button>
-			<Modal
-				isOpen={isOpen}
-				onOpenChange={onOpenChange}
-				placement="top-center"
-			>
+			<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
 				<ModalContent>
 					{(onClose) => (
 						<>
-							<ModalHeader className="flex flex-col gap-1">
-								Log in
-							</ModalHeader>
+							<ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
 							<ModalBody>
 								<Input
 									autoFocus
@@ -67,11 +53,7 @@ export function DefaultModal() {
 								</div>
 							</ModalBody>
 							<ModalFooter>
-								<Button
-									color="danger"
-									variant="flat"
-									onPress={onClose}
-								>
+								<Button color="danger" variant="flat" onPress={onClose}>
 									CLOSE
 								</Button>
 								<Button color="primary" onPress={onClose}>
@@ -87,17 +69,13 @@ export function DefaultModal() {
 }
 
 // customized Modal + Form for user's to create an Observation
-export function LuciModal() {
+export function LuciModalForm() {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
 	return (
 		<>
 			<LuciButton onPress={onOpen}>OPEN LUCI MODAL</LuciButton>
-			<Modal
-				isOpen={isOpen}
-				onOpenChange={onOpenChange}
-				placement="top-center"
-			>
+			<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
 				<ModalContent>
 					{(onClose) => (
 						<>
@@ -131,11 +109,7 @@ export function LuciModal() {
 								</div>
 							</ModalBody>
 							<ModalFooter>
-								<Button
-									color="danger"
-									variant="flat"
-									onPress={onClose}
-								>
+								<Button color="danger" variant="flat" onPress={onClose}>
 									CLOSE
 								</Button>
 								<Button color="primary" onPress={onClose}>
@@ -151,17 +125,13 @@ export function LuciModal() {
 }
 
 // customized Modal + Form for user's to create an Observation
-export function LuciModalTest() {
+export function LuciModalObservationForm() {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
 	return (
 		<>
 			<LuciButton onPress={onOpen}>OPEN LUCI MODAL</LuciButton>
-			<Modal
-				isOpen={isOpen}
-				onOpenChange={onOpenChange}
-				placement="top-center"
-			>
+			<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
 				<ModalContent>
 					{(onClose) => (
 						<>
@@ -188,11 +158,7 @@ export function LuciModalTest() {
 								</div>
 							</ModalBody>
 							<ModalFooter>
-								<Button
-									color="danger"
-									variant="flat"
-									onPress={onClose}
-								>
+								<Button color="danger" variant="flat" onPress={onClose}>
 									CANCEL
 								</Button>
 								<Button color="primary" onPress={onClose}>
@@ -206,3 +172,50 @@ export function LuciModalTest() {
 		</>
 	)
 }
+
+// Simple LuciModal based on basic NextUI Modal
+export function LuciModal() {
+	const { isOpen, onOpen, onOpenChange } = useDisclosure()
+  
+	return (
+	  <>
+		<LuciButton onPress={onOpen}>OPEN LUCI MODAL</LuciButton>
+		<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+		  <ModalContent>
+			{(onClose) => (
+			  <>
+				<ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+				<ModalBody>
+				  <p> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Nullam pulvinar risus non risus hendrerit venenatis.
+					Pellentesque sit amet hendrerit risus, sed porttitor quam.
+				  </p>
+				  <p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Nullam pulvinar risus non risus hendrerit venenatis.
+					Pellentesque sit amet hendrerit risus, sed porttitor quam.
+				  </p>
+				  <p>
+					Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
+					dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
+					Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
+					Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
+					proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
+				  </p>
+				</ModalBody>
+				<ModalFooter>
+				  <LuciButton color="danger" variant="flat" onPress={onClose}>
+					CLOSE
+				  </LuciButton>
+				  <LuciButton color="primary" onPress={onClose}>
+					ACTION
+				  </LuciButton>
+				</ModalFooter>
+			  </>
+			)}
+		  </ModalContent>
+		</Modal>
+	  </>
+	)
+  }

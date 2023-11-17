@@ -17,7 +17,7 @@ import { Textarea } from '@nextui-org/input'
 import { Button } from '@nextui-org/react'
 import { submitObservation } from '@/src/app/_actions/submitObservation'
 import LuciObservation from '@/src/app/_components/_ui/LuciObservation'
-import { LuciButton } from '@/src/app/_components/_ui/LuciButton'
+import { LuciButton } from '@/src/app/_components/_ui-completed/LuciButton'
 import ObservationTextInput from '@/src/app/_components/_ui/LuciTextArea'
 
 // Define the shape of the form inputs

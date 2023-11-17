@@ -4,7 +4,7 @@ import { Input } from '@nextui-org/input';
 import {
 	LuciButton,
 	
-} from '@/src/app/_components/_ui/LuciButton'
+} from '@/src/app/_components/_ui-completed/LuciButton'
 
 type FormValues = {
   firstName: string;

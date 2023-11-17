@@ -6,7 +6,7 @@
 import '@/src/app/_styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/_styles/fonts/fonts'
 import { Providers } from '@/src/app/_components/_NextUI/providers'
-import { SlimNavbar } from '@/src/app/_components/_ui/slimnavbar'
+import { LuciNavbar } from '@/src/app/_components/_ui-completed/LuciNavbar'
 import clsx from 'clsx'
 import Footer from '@/src/app/_components/_ui/footer'
 
@@ -30,7 +30,7 @@ export default function RootLayout({
             >
                 <Providers themeProps={{ attribute: "class", defaultTheme: "luci-dark" }}>
                     <div className="relative flex flex-col h-screen">
-                        <SlimNavbar />
+                        <LuciNavbar />
                         <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                             {children}
                         </main>
