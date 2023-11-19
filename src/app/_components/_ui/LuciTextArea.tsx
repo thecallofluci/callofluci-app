@@ -1,5 +1,3 @@
-// src/app/_components/LuciTextArea.tsx
-// src/app/_components/_ui/LuciTextArea.tsx
 import { Textarea } from '@nextui-org/input'
 import React from 'react'
 
@@ -7,21 +5,29 @@ type TextareaProps = React.ComponentProps<typeof Textarea>
 
 const ObservationTextInput: React.FC<TextareaProps> = (props) => {
 	return (
-		<Textarea
-			// isRequired
-            size="lg"
-			minRows={10}
-			radius="sm"
-            fullWidth
-			variant="faded"
-			label="Observation Text"
-			placeholder="Enter the text of your Observation"
-            className="min-w-md"
-			{...props}
-		/>
+		<div className="w-full flex flex-col gap-2">
+			<Textarea
+				minRows={5}
+				maxRows={30}
+				cacheMeasurements={true}
+				variant="faded"
+				color="primary"
+				size="sm"
+				radius="sm"
+				label="Observation"
+				labelPlacement="outside"
+				placeholder="Enter the text of your Observation"
+				description="This is a description"
+				fullWidth
+				isRequired
+				// disableAutosize
+				className="max-w-lg"
+				{...props}
+			/>
+		</div>
 	)
 }
-
+//
 const DefaultTextarea: React.FC<TextareaProps> = (props) => {
 	return (
 		<Textarea

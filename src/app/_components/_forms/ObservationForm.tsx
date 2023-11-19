@@ -38,6 +38,7 @@ export default function App() {
       <Input 
         {...register("firstName")} 
         placeholder="Enter your first name" 
+   
         isClearable 
       />
       {errors?.firstName && <Input>{errors.firstName.message}</Input>}
@@ -45,6 +46,7 @@ export default function App() {
       <Input 
         {...register("lastName")} 
         placeholder="Enter your last name" 
+      
         isClearable 
       />
 

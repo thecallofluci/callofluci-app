@@ -13,6 +13,7 @@ import DefaultTextarea from '@/src/app/_components/_ui/LuciTextArea'
 import LuciTextArea2 from '@/src/app/_components/_ui/LuciTextArea'
 import LuciObservation from '@/src/app/_components/_ui/LuciObservation'
 import ObservationMockup from '@/src/app/_components/_callofluci/ObservationMockup'
+import MyForm from '@/src/app/_components/_forms/MyForm'
 
 import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui-completed/LuciButton'
 import LuciCard from '@/src/app/_components/_ui-completed/LuciCard'
@@ -311,9 +312,10 @@ export default function ExamplesPage() {
 										color: 'secondary',
 									})} text-center pb-1`}
 								>
-									NextUI Default Textarea
+									LuciTextArea.tsx
 								</h2>
-								<Textarea />
+
+								<ObservationTextInput />
 							</div>
 							<div>
 								<h2
@@ -323,8 +325,22 @@ export default function ExamplesPage() {
 								>
 									LuciTextArea.tsx
 								</h2>
+
 								<ObservationTextInput />
 							</div>
+							<div>
+								<h2
+									className={`${lucisubheading({
+										color: 'secondary',
+									})} text-center pb-1`}
+								>
+									MyForm.tsx
+								</h2>
+
+								<MyForm />
+							</div>
+				
+				
 							{/* Add more inputs here as needed */}
 						</div>
 					</div>

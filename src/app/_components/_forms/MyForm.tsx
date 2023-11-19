@@ -57,40 +57,59 @@ const MyForm: React.FC = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<Textarea
-				{...register('observationText', {
-					required: true,
-					maxLength: 256,
-				})}
-                size="lg"
-                minRows={10}
-                radius="sm"
-                variant="faded"
-                className="min-w-md"
-                label="Observation Text"
-				placeholder="Enter the text of your Observation"
-				isInvalid={!!errors.observationText}
-				errorMessage={
-					errors.observationText?.type === 'required'
-						? 'This field is required'
-						: errors.observationText?.type === 'maxLength'
-						? 'Observation text cannot exceed 256 characters'
-						: ''
-				}
-				classNames={{
-					base: 'max-w-xs',
-					input: 'min-h-[2rem] min-w-[4rem]',
-				}}
-			/>
+			<div className="w-full flex flex-col gap-2">
+				<Textarea
+					{...register('observationText', {
+						required: true,
+						maxLength: 256,
+					})}
+					minRows={10}
+					maxRows={30}
+					cacheMeasurements={true}
+					variant="faded"
+					color="primary"
+					size="sm"
+					radius="sm"
+					label="Observation"
+					labelPlacement="outside"
+					placeholder="Enter the text of your Observation"
+					description="This is a description"
+					errorMessage={
+						errors.observationText?.type === 'required'
+							? 'This field is required'
+							: errors.observationText?.type === 'maxLength'
+							? 'Observation text cannot exceed 256 characters'
+							: ''
+					}
+					fullWidth
+					isRequired
+					isInvalid={!!errors.observationText}
+					
+					className="min-w-[400px]"
+					classNames={{
+						// base: 'max-w-[400px]',
+						// input: 'max-w-[400px]',
+					}}
+					// {...props}
+				/>
+			</div>
+
 			{/* Show loading message */}
 			{loading && <p>Loading...</p>}
 			{/* Show server error message */}
 			{serverError && <p>{serverError}</p>}
-            <div className="flex justify-center items-center pt-4">
-			<Button type="submit" color="primary" variant="ghost" radius="sm" disabled={loading} style={{ fontWeight: 'bold' }}>
-				SUBMIT
-			</Button>
-            </div>
+			<div className="flex justify-center items-center pt-4">
+				<Button
+					type="submit"
+					color="primary"
+					variant="ghost"
+					radius="sm"
+					disabled={loading}
+					style={{ fontWeight: 'bold' }}
+				>
+					SUBMIT
+				</Button>
+			</div>
 			{/* Show LuciObservation component with user's text */}
 			{userText && <LuciObservation text={userText} />}
 		</form>
