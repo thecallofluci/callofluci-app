@@ -7,13 +7,12 @@ import { Card, CardHeader, CardBody, CardFooter, CardProps } from '@nextui-org/c
 import Image from 'next/image'
 
 import wormfood from '@/public/wormfood.jpg'
+import TheMuck from '@/public/TheMuck.jpg'
 
-import ObservationTextInput from '@/src/app/_components/_ui/LuciTextArea'
-import DefaultTextarea from '@/src/app/_components/_ui/LuciTextArea'
-import LuciTextArea2 from '@/src/app/_components/_ui/LuciTextArea'
-import LuciObservation from '@/src/app/_components/_ui/LuciObservation'
+import { LuciObservation } from '@/src/app/_components/_callofluci/LuciObservationArchived'
 import ObservationMockup from '@/src/app/_components/_callofluci/ObservationMockup'
-import MyForm from '@/src/app/_components/_forms/MyForm'
+import ObservationForm from '@/src/app/_components/_forms/ObservationForm'
+import App from '@/src/app/_components/_forms/ObservationForm'
 
 import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui-completed/LuciButton'
 import LuciCard from '@/src/app/_components/_ui-completed/LuciCard'
@@ -21,11 +20,12 @@ import NextUICard from '@/src/app/_components/_ui/NextUICard'
 import DefaultModal from '@/src/app/_components/_ui-completed/LuciModal'
 import {
 	LuciModal,
-	LuciModalForm,
+	LuciModalFormFields,
 	LuciModalObservationForm,
 } from '@/src/app/_components/_ui-completed/LuciModal'
 import LuciCardGallery from '@/src/app/_components/_ui/LuciCardGallery'
 import LuciImage from '@/src/app/_components/_ui-completed/LuciImage'
+import { LuciTextarea } from '@/src/app/_components/_ui-completed/LuciTextArea'
 
 import { siteConfig } from '@/src/config/site'
 
@@ -118,29 +118,30 @@ export default function ExamplesPage() {
 									color: 'secondary',
 								})} text-center pb-1`}
 							>
-								Luci Modal Form
-							</h2>
-							<LuciModalForm />
-						</div>
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Modal Observation Form
-							</h2>
-							<LuciModalObservationForm />
-						</div>
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
 								Luci Modal
 							</h2>
 							<LuciModal />
+						</div>
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Luci Modal + Form
+							</h2>
+							<LuciModalFormFields />
+						</div>
+
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Luci Modal + Observation Form
+							</h2>
+							<LuciModalObservationForm />
 						</div>
 					</div>
 				</div>
@@ -171,6 +172,7 @@ export default function ExamplesPage() {
 							</h2>
 							<NextUICard />
 						</div>
+
 						<div>
 							<h2
 								className={`${lucisubheading({
@@ -180,6 +182,50 @@ export default function ExamplesPage() {
 								Observation Mockup
 							</h2>
 							<ObservationMockup />
+						</div>
+					</div>
+
+					{/* This will force a space equivalent to 3 line breaks */}
+					<div style={{ height: '3rem' }}></div>
+					{/* Add a divider */}
+					<Divider />
+
+					{/* INPUTS Subsection */}
+					<div className="flex flex-col justify-center gap-1">
+						<div>
+							<h2
+								className={`${lucisubtitle({
+									color: 'secondary',
+								})} text-center`}
+							>
+								INPUTS
+							</h2>
+						</div>
+						<div className="flex flex-wrap justify-center gap-8">
+							<div>
+								<h2
+									className={`${lucisubheading({
+										color: 'secondary',
+									})} text-center pb-1`}
+								>
+									LuciTextArea.tsx
+								</h2>
+
+								<LuciTextarea />
+							</div>
+							<div>
+								<h2
+									className={`${lucisubheading({
+										color: 'secondary',
+									})} text-center pb-1`}
+								>
+									MyForm.tsx
+								</h2>
+
+								<ObservationForm />
+							</div>
+
+							{/* Add more inputs here as needed */}
 						</div>
 					</div>
 
@@ -256,6 +302,63 @@ export default function ExamplesPage() {
 										color: 'secondary',
 									})} text-center pb-1`}
 								>
+									Luci Image - Automatic Sizing
+								</h2>
+								<LuciImage
+									src={wormfood}
+									alt="Wormfood"
+									sizes="100vw"
+									style={{
+										width: 'auto',
+										height: 'auto',
+									}}
+								/>
+							</div>
+
+							<div>
+								<h2
+									className={`${lucisubheading({
+										color: 'secondary',
+									})} text-center pb-1`}
+								>
+									Luci Image - Automatic Sizing
+								</h2>
+								<LuciImage
+									src={TheMuck}
+									alt="The Muck"
+									sizes="100vw"
+									style={{
+										width: '20%',
+										height: '20%',
+									}}
+								/>
+							</div>
+
+							<div>
+								<h2
+									className={`${lucisubheading({
+										color: 'secondary',
+									})} text-center pb-1`}
+								>
+									Luci Image - Automatic Sizing
+								</h2>
+								<LuciImage
+									src={TheMuck}
+									alt="The Muck"
+									sizes="100vw"
+									style={{
+										width: 'auto',
+										height: 'auto',
+									}}
+								/>
+							</div>
+
+							<div>
+								<h2
+									className={`${lucisubheading({
+										color: 'secondary',
+									})} text-center pb-1`}
+								>
 									Luci Image - Explicit Sizing
 								</h2>
 								<LuciImage src={wormfood} alt="Wormfood" width={500} height={500} />
@@ -293,57 +396,6 @@ export default function ExamplesPage() {
 					<div style={{ height: '3rem' }}></div>
 					{/* Add a divider */}
 					<Divider />
-
-					{/* INPUTS Subsection */}
-					<div className="flex flex-col justify-center gap-1">
-						<div>
-							<h2
-								className={`${lucisubtitle({
-									color: 'secondary',
-								})} text-center`}
-							>
-								INPUTS
-							</h2>
-						</div>
-						<div className="flex flex-wrap justify-center gap-8">
-							<div>
-								<h2
-									className={`${lucisubheading({
-										color: 'secondary',
-									})} text-center pb-1`}
-								>
-									LuciTextArea.tsx
-								</h2>
-
-								<ObservationTextInput />
-							</div>
-							<div>
-								<h2
-									className={`${lucisubheading({
-										color: 'secondary',
-									})} text-center pb-1`}
-								>
-									LuciTextArea.tsx
-								</h2>
-
-								<ObservationTextInput />
-							</div>
-							<div>
-								<h2
-									className={`${lucisubheading({
-										color: 'secondary',
-									})} text-center pb-1`}
-								>
-									MyForm.tsx
-								</h2>
-
-								<MyForm />
-							</div>
-				
-				
-							{/* Add more inputs here as needed */}
-						</div>
-					</div>
 				</div>
 			</section>
 		</>

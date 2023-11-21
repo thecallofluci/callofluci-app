@@ -4,8 +4,9 @@ import {
 	luciparagraph,
 } from '@/src/app/_components/_NextUI/primitives'
 
-import ObservationTextInput from '@/src/app/_components/_ui/LuciTextArea'
-import MyForm from '@/src/app/_components/_forms/MyForm'
+import ObservationTextInput from '@/src/app/_components/_ui-completed/LuciTextArea'
+import MyForm from '@/src/app/_components/_forms/ObservationForm'
+
 
 export default function ObservationPage() {
 	return (
@@ -17,6 +18,7 @@ export default function ObservationPage() {
 			<div className="mt-8">
 				<MyForm /> 
 			</div>
+	
 		</section>
 	)
 }

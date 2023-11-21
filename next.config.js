@@ -15,8 +15,17 @@ const nextConfig = {
 				pathname:
 					'/content/v1/53b6eb62e4b06e0feb2d8e86/1656776064476-ADETQUJY3NV2AOI39K3T/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'media.niftygateway.com',
+				port: '',
+				pathname:
+					'/image/upload/v1692056679/publishers/niftygateway_curated/91741/111343/**',
+			},
 		],
 	},
 }
 
 module.exports = nextConfig
+
+

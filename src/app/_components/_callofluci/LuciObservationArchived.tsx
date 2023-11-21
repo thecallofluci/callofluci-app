@@ -8,7 +8,7 @@ type LuciObservationProps = {
 	text: string
 }
 
-const LuciObservation: React.FC<LuciObservationProps> = ({ text }) => {
+export const LuciObservation: React.FC<LuciObservationProps> = ({ text }) => {
 	return (
 		<Card className="max-w-[400px] bg-primary">
 			<CardHeader className="flex gap-3">
@@ -70,5 +70,3 @@ const LuciObservation: React.FC<LuciObservationProps> = ({ text }) => {
 		</Card>
 	)
 }
-
-export default LuciObservation

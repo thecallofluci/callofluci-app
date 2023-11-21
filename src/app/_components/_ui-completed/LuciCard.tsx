@@ -6,8 +6,6 @@ import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
 import { Image } from '@nextui-org/image'
 
-
-
 interface LuciCardProps extends CardProps {
   imageSrc: string,
   imageAlt: string,
