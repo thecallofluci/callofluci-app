@@ -1,3 +1,5 @@
+// this can be deleted after launch, just for testing purposes.
+
 import React from 'react'
 import { Card, CardHeader, CardBody, CardFooter, CardProps } from '@nextui-org/card'
 import { Divider } from '@nextui-org/divider'

@@ -2,9 +2,9 @@ import {
 	lucititle,
 	lucisubtitle,
 	luciparagraph,
-} from '@/src/app/_components/_NextUI/primitives'
+} from '@/src/app/_components/_next-ui/primitives'
 
-import ObservationTextInput from '@/src/app/_components/_ui-completed/LuciTextArea'
+import ObservationTextInput from '@/src/app/_components/_ui/LuciTextArea'
 import MyForm from '@/src/app/_components/_forms/ObservationForm'
 
 

@@ -27,9 +27,9 @@ import { Controller } from 'react-hook-form'
 
 import { useObservationForm } from '@/src/app/_hooks/useObservationForm'
 
-import { LuciButton } from '@/src/app/_components/_ui-completed/LuciButton'
-import { LuciTextarea } from '@/src/app/_components/_ui-completed/LuciTextArea'
-import LuciCard from '@/src/app/_components/_ui-completed/LuciCard'
+import { LuciButton } from '@/src/app/_components/_ui/LuciButton'
+import { LuciTextarea } from '@/src/app/_components/_ui/LuciTextArea'
+import LuciCard from '@/src/app/_components/_ui/LuciCard'
 
 const ObservationForm: React.FC = () => {
 	const {

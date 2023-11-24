@@ -20,10 +20,8 @@ export const appConstants = {
     // Navigation links constants
     NAV_LINKS: [
         { name: 'Home', href: '/' },
-        { name: 'Docs', href: '/docs' },
         { name: 'Gallery', href: '/gallery' },
         { name: 'Observation', href: '/observation' },
-        { name: 'Blog', href: '/blog' },
         { name: 'About', href: '/about' },
         { name: 'Examples', href: '/examples' },
         // ...other nav items...

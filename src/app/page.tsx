@@ -4,14 +4,14 @@ import { Snippet } from '@nextui-org/snippet'
 import { Code } from '@nextui-org/code'
 import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
-import { title, subtitle } from '@/src/app/_components/_NextUI/primitives'
-import { GithubIcon } from '@/src/app/_components/_ui/icons'
+import { title, subtitle } from '@/src/app/_components/_next-ui/primitives'
+import { GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
 import { fontMono } from '@/src/app/_styles/fonts/fonts'
 import packageJson from '../../package.json'
 
 import wormfood from '@/public/wormfood.jpg'
-import LuciImage from '@/src/app/_components/_ui-completed/LuciImage'
-import { lucititle, lucisubtitle, lucisubheading } from '@/src/app/_components/_NextUI/primitives'
+import LuciImage from '@/src/app/_components/_ui/LuciImage'
+import { lucititle, lucisubtitle, lucisubheading } from '@/src/app/_components/_next-ui/primitives'
 
 export default function Home() {
 	return (

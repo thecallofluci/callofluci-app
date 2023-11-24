@@ -6,8 +6,8 @@ import { Snippet } from '@nextui-org/snippet'
 import { Code } from '@nextui-org/code'
 import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
-import { title, subtitle } from '@/src/app/_components/_NextUI/primitives'
-import { GithubIcon } from '@/src/app/_components/_ui/icons'
+import { title, subtitle } from '@/src/app/_components/_next-ui/primitives'
+import { GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
 
 export default function Home() {
     return (

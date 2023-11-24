@@ -2,7 +2,7 @@ import {
 	lucititle,
 	lucisubtitle,
 	luciparagraph,
-} from '@/src/app/_components/_NextUI/primitives'
+} from '@/src/app/_components/_next-ui/primitives'
 
 export default function AboutPage() {
 	return (

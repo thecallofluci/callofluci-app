@@ -2,7 +2,11 @@
 'use client'
 
 import * as React from 'react'
+
 import { NextUIProvider } from '@nextui-org/system'
+
+import {useRouter} from 'next/navigation'
+
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { ThemeProviderProps } from 'next-themes/dist/types'
 
@@ -15,14 +19,15 @@ export interface ProvidersProps {
 
 // The Providers component
 export function Providers({ children, themeProps }: ProvidersProps) {
+    const router = useRouter(); // Use the useRouter hook
    
     return (
-        <NextUIProvider >
-            {' '}
+        <NextUIProvider navigate={router.push}>
             <NextThemesProvider
                 attribute="class"
                 defaultTheme="luci-dark"
                 themes={['light', 'dark', 'luci-light', 'luci-dark']}
+                {...themeProps}
             >
                 {children} 
             </NextThemesProvider>

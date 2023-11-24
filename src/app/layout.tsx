@@ -5,10 +5,10 @@
 // Importing necessary modules and components
 import '@/src/app/_styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/_styles/fonts/fonts'
-import { Providers } from '@/src/app/_components/_NextUI/providers'
-import { LuciNavbar } from '@/src/app/_components/_ui-completed/LuciNavbar'
+import { Providers } from '@/src/app/_components/_next-ui/providers'
+import { LuciNavbar } from '@/src/app/_components/_layout/LuciNavbar'
 import clsx from 'clsx'
-import Footer from '@/src/app/_components/_ui/footer'
+import Footer from '@/src/app/_components/_layout/LuciFooter'
 
 // Defining the RootLayout component
 export default function RootLayout({

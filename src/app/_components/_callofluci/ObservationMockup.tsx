@@ -1,6 +1,6 @@
 // ObservationMockup.tsx
 import React from 'react'
-import LuciCard from '@/src/app/_components/_ui-completed/LuciCard'
+import LuciCard from '@/src/app/_components/_ui/LuciCard'
 
 const ObservationMockup: React.FC = () => {
 	return (

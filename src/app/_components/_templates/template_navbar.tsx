@@ -20,15 +20,15 @@ import { siteConfig } from '@/src/config/site'
 import NextLink from 'next/link'
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/src/app/_components/_NextUI/theme-switch'
+import { ThemeSwitch } from '@/src/app/_components/_next-ui/theme-switch'
 import {
     TwitterIcon,
     GithubIcon,
     HeartFilledIcon,
     SearchIcon,
-} from '@/src/app/_components/_ui/icons'
+} from '@/src/app/_components/_layout/LuciIcons'
 
-import { Logo } from '@/src/app/_components/_ui/icons'
+import { Logo } from '@/src/app/_components/_layout/LuciIcons'
 
 export const Navbar = () => {
     const searchInput = (
@@ -98,7 +98,7 @@ export const Navbar = () => {
                         href={siteConfig.links.github}
                         aria-label="Github"
                     >
-                        <GithubIcon className="text-default-500 text-success" />
+                        <GithubIcon className="text-default-500" />
                     </Link>
                     <ThemeSwitch />
                 </NavbarItem>

@@ -1,4 +1,4 @@
-import { lucititle, lucisubtitle, lucisubheading } from '@/src/app/_components/_NextUI/primitives'
+import { lucititle, lucisubtitle, lucisubheading } from '@/src/app/_components/_next-ui/primitives'
 
 import { Button } from '@nextui-org/button'
 import { Textarea } from '@nextui-org/input'
@@ -14,18 +14,18 @@ import ObservationMockup from '@/src/app/_components/_callofluci/ObservationMock
 import ObservationForm from '@/src/app/_components/_forms/ObservationForm'
 import App from '@/src/app/_components/_forms/ObservationForm'
 
-import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui-completed/LuciButton'
-import LuciCard from '@/src/app/_components/_ui-completed/LuciCard'
+import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
+import LuciCard from '@/src/app/_components/_ui/LuciCard'
 import NextUICard from '@/src/app/_components/_ui/NextUICard'
-import DefaultModal from '@/src/app/_components/_ui-completed/LuciModal'
+import DefaultModal from '@/src/app/_components/_ui/LuciModal'
 import {
 	LuciModal,
 	LuciModalFormFields,
 	LuciModalObservationForm,
-} from '@/src/app/_components/_ui-completed/LuciModal'
-import LuciCardGallery from '@/src/app/_components/_ui/LuciCardGallery'
-import LuciImage from '@/src/app/_components/_ui-completed/LuciImage'
-import { LuciTextarea } from '@/src/app/_components/_ui-completed/LuciTextArea'
+} from '@/src/app/_components/_ui/LuciModal'
+import LuciCardGallery from '@/src/app/_components/_layout/LuciCardGallery'
+import LuciImage from '@/src/app/_components/_ui/LuciImage'
+import { LuciTextarea } from '@/src/app/_components/_ui/LuciTextArea'
 
 import { siteConfig } from '@/src/config/site'
 
