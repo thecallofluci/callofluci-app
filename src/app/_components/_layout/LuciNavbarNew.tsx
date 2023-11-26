@@ -1,5 +1,7 @@
-// LuciNavbar.tsx UI component
+// LuciNavbarNew.tsx UI component
+'use client'
 
+import React from 'react'
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -25,41 +27,59 @@ import clsx from 'clsx'
 import { ThemeSwitch } from '@/src/app/_components/_next-ui/theme-switch'
 import { TwitterIcon, GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
 
+import { ChevronDown } from '@/src/app/_components/_layout/NavbarIcons'
+
 import { Logo } from '@/src/app/_components/_layout/LuciIcons'
 
-export const LuciNavbar = () => {
+export const LuciNavbarNew = () => {
 	return (
 		<NextUINavbar isBordered maxWidth="xl" position="sticky">
-			{/* This section is for the brand logo and navigation items */}
-			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-				<NavbarBrand as="li" className="gap-3 max-w-fit">
-					<NextLink className="flex justify-start items-center gap-1" href="/">
+			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="start">
+				<NavbarBrand as="li" className="gap-2 max-w-fit">
+					<NextLink className="flex justify-start items-center" href="/">
 						<Logo />
-						<p className="font-bold">LUCI</p>
 					</NextLink>
 				</NavbarBrand>
-				<ul className="hidden lg:flex gap-4 justify-start ml-2 font-sans font-bold">
-					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
-							<NextLink
-								className={clsx(linkStyles({ color: 'foreground' }), 'font-bold')}
-								color="foreground"
-								href={item.href}
-							>
-								{item.label}
-							</NextLink>
+
+				<ul>
+					<Dropdown>
+						<NavbarItem>
+							<DropdownTrigger>
+								<Button
+									disableRipple
+									className="bg-transparent data-[hover=true]:bg-transparent"
+									endContent={<ChevronDown />}
+									radius="sm"
+									variant="ghost"
+									color="primary"
+									style={{
+										fontWeight: 'bold',
+									}}
+								>
+									MENU
+								</Button>
+							</DropdownTrigger>
 						</NavbarItem>
-					))}
-					
-					<NavbarItem key="/">
-						<NextLink
-							className={clsx(linkStyles({ color: 'foreground' }), 'font-bold')}
-							color="foreground"
-							href="/"
+						<DropdownMenu
+							disableAnimation
+							aria-label="Menu"
+							className="w-[340px]"
+							itemClasses={{
+								base: 'gap-4',
+							}}
 						>
-							Home
-						</NextLink>
-					</NavbarItem>
+							{siteConfig.navItems.map((item) => (
+								<DropdownItem
+									key={item.href}
+									href={item.href}
+									description={item.description} // Use the description from your siteConfig
+									// startContent={item.icon} // Use the icon from your siteConfig
+								>
+									{item.label}
+								</DropdownItem>
+							))}
+						</DropdownMenu>
+					</Dropdown>
 				</ul>
 			</NavbarContent>
 
@@ -72,7 +92,6 @@ export const LuciNavbar = () => {
 				</NavbarItem>
 			</NavbarContent>
 
-			{/* This section is for mobile view with theme switch, and menu toggle */}
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
 				<ThemeSwitch />
 				<NavbarMenuToggle />

@@ -19,9 +19,12 @@ interface LuciButtonProps {
 	disableRipple?: boolean
 	disableAnimation?: boolean
 
-	href?: string                           // added custom Prop
-	type?: 'button' | 'submit' | 'reset'    // added custom Prop
-	onPress?: () => void                    // Button Event
+	href?: string // added custom Prop
+	type?: 'button' | 'submit' | 'reset' // added custom Prop
+	onPress?: () => void // Button Event
+
+	className?: string
+	
 }
 
 // regular Button component used throughout the app
@@ -33,6 +36,9 @@ export const LuciButton = ({
 	href,
 	type,
 	onPress,
+	disableRipple,
+	className,
+	endContent,
 	...props
 }: LuciButtonProps) => {
 	return (
@@ -44,6 +50,9 @@ export const LuciButton = ({
 			style={{ fontWeight: 'bold' }}
 			onPress={onPress}
 			type={type}
+			disableRipple={disableRipple}
+			className={className}
+			endContent={endContent}
 			{...props}
 		>
 			{children}
@@ -60,6 +69,9 @@ export const LuciButtonWide = ({
 	href,
 	type,
 	onPress,
+	disableRipple,
+	className,
+	endContent,
 	...props
 }: LuciButtonProps) => {
 	const padding = Math.min(2, children.length * 0.25) // Calculate padding based on text length
@@ -77,6 +89,9 @@ export const LuciButtonWide = ({
 			}}
 			onPress={onPress}
 			type={type}
+			disableRipple={disableRipple}
+			className={className}
+			endContent={endContent}
 			{...props}
 		>
 			{children}

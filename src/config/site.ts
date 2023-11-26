@@ -1,68 +1,70 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-    name: 'Call Of Luci',
-    description: 'Add your Observation through Call Of Luci.',
-    navItems: [
-        {
-            label: 'Home',
-            href: '/',
+	name: 'Call Of Luci',
+	description: 'Add your Observation through Call Of Luci.',
+	navItems: [
+		{
+			label: 'About',
+			href: '/about',
+            description: 'What is Call Of Luci?', 
+		},
+		{
+			label: 'Gallery',
+			href: '/gallery',
+            description: 'View the Gallery', 
+		},
+		{
+			label: 'Observation',
+			href: '/observation',
+            description: 'Create an Observation', 
+		},
+		{
+			label: 'Examples',
+			href: '/examples',
+            description: 'This is a temp page',
         },
-        {
-            label: 'Gallery',
-            href: '/gallery',
-        },
-        {
-            label: 'Observation',
-            href: '/observation',
-        },
-        {
-            label: 'About',
-            href: '/about',
-        },
-                {
-            label: 'Examples',
-            href: '/examples',
-        },
-    ],
-    navMenuItems: [
-        {
-            label: 'Profile',
-            href: '/profile',
-        },
-        {
-            label: 'Dashboard',
-            href: '/dashboard',
-        },
-        {
-            label: 'Projects',
-            href: '/projects',
-        },
-        {
-            label: 'Team',
-            href: '/team',
-        },
-        {
-            label: 'Calendar',
-            href: '/calendar',
-        },
-        {
-            label: 'Settings',
-            href: '/settings',
-        },
-        {
-            label: 'Help & Feedback',
-            href: '/help-feedback',
-        },
-        {
-            label: 'Logout',
-            href: '/logout',
-        },
-    ],
-    links: {
-        github: 'https://github.com/thecallofluci/callofluci-app',
-        twitter: 'https://twitter.com/callofluci',
-        docs: 'https://nextui.org',
-        sponsor: 'https://patreon.com/jrgarciadev',
-    },
+	],
+
+    // TODO: These secondary navMenuItems are not used yet, and currently reflect template content.
+	navMenuItems: [
+		{
+			label: 'Profile',
+			href: '/profile',
+		},
+		{
+			label: 'Dashboard',
+			href: '/dashboard',
+		},
+		{
+			label: 'Projects',
+			href: '/projects',
+		},
+		{
+			label: 'Team',
+			href: '/team',
+		},
+		{
+			label: 'Calendar',
+			href: '/calendar',
+		},
+		{
+			label: 'Settings',
+			href: '/settings',
+		},
+		{
+			label: 'Help & Feedback',
+			href: '/help-feedback',
+		},
+		{
+			label: 'Logout',
+			href: '/logout',
+		},
+	],
+	links: {
+		github: 'https://github.com/thecallofluci/callofluci-app',
+		twitter: 'https://twitter.com/callofluci',
+		docs: 'https://nextui.org',
+		sponsor: 'https://patreon.com/jrgarciadev',
+	},
 }

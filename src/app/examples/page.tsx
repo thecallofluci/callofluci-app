@@ -17,6 +17,7 @@ import App from '@/src/app/_components/_forms/ObservationForm'
 import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
 import LuciCard from '@/src/app/_components/_ui/LuciCard'
 import NextUICard from '@/src/app/_components/_ui/NextUICard'
+import LuciDropdown from '@/src/app/_components/_ui/LuciDropdown'
 import DefaultModal from '@/src/app/_components/_ui/LuciModal'
 import {
 	LuciModal,
@@ -142,6 +143,54 @@ export default function ExamplesPage() {
 								Luci Modal + Observation Form
 							</h2>
 							<LuciModalObservationForm />
+						</div>
+					</div>
+				</div>
+				<div style={{ height: '3rem' }}></div>{' '}
+				{/* This will force a space equivalent to 3 line breaks */}
+				{/* Add a divider */}
+				<Divider />
+				{/* MODALS Subsection */}
+				<div className="flex flex-col justify-center gap-1">
+					<div>
+						<h2
+							className={`${lucisubtitle({
+								color: 'secondary',
+							})} text-center`}
+						>
+							NAVIGATION
+						</h2>
+					</div>
+					<div className="flex flex-wrap justify-center gap-8">
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								NextUI Default Modal Form
+							</h2>
+							<DefaultModal />
+						</div>
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Luci Modal
+							</h2>
+							<LuciModal />
+						</div>
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Luci Dropdown
+							</h2>
+							{/* Add LuciDropdown.tsx here */}
 						</div>
 					</div>
 				</div>
