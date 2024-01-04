@@ -4,6 +4,13 @@ import { Code } from '@nextui-org/code'
 import { TwitterIcon, GithubIcon } from '@/src/app/_components/_layout/LuciIcons' // Import the icons
 import { siteConfig } from '@/src/config/site' // Import the siteConfig
 import packageJson from '../../../../package.json'
+import {
+	lucititle,
+	lucisubtitle,
+	lucisubheading,
+	luciparagraph,
+	lucinote,
+} from '@/src/app/_components/_next-ui/primitives'
 
 export default async function Footer() {
 	return (
@@ -18,6 +25,9 @@ export default async function Footer() {
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon />
 					</Link>
+					<Code size="sm" radius="sm">
+						v{packageJson.version}+{process.env.REACT_APP_GIT_HASH}
+					</Code>
 				</div>
 			</div>
 		</footer>

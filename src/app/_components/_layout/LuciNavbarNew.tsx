@@ -33,7 +33,7 @@ import { Logo } from '@/src/app/_components/_layout/LuciIcons'
 
 export const LuciNavbarNew = () => {
 	return (
-		<NextUINavbar isBordered maxWidth="xl" position="sticky">
+		<NextUINavbar isBordered maxWidth="lg" position="sticky">
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-2 max-w-fit">
 					<NextLink className="flex justify-start items-center" href="/">
