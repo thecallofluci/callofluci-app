@@ -11,18 +11,19 @@ import packageJson from '../../package.json'
 
 import wormfood from '@/public/wormfood.jpg'
 import LuciImage from '@/src/app/_components/_ui/LuciImage'
-import { lucititle, lucisubtitle, lucisubheading } from '@/src/app/_components/_next-ui/primitives'
+import { lucititle, lucisubtitle, lucisubheading, luciparagraph } from '@/src/app/_components/_next-ui/primitives'
 
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={`${title()}`}>I am Call Of Luci&nbsp;</h1>
+				<h1 className={`${lucititle()}`}>I am Call Of Luci&nbsp;</h1>
 				<br />
-				<h2 className={subtitle({ class: 'mt-4' })}>
-					Welcome, Player. Create a new Observation.
-				</h2>
+				<h2 className={lucisubtitle({ class: 'mt-4' })}>
+                    Welcome, Player. Enter a new Observation.
+                </h2>
 			</div>
+			
 
 			<div className="mt-8">
 				<Snippet hideSymbol hideCopyButton variant="bordered" radius="sm">

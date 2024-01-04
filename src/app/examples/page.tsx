@@ -1,4 +1,4 @@
-import { lucititle, lucisubtitle, lucisubheading } from '@/src/app/_components/_next-ui/primitives'
+import { lucititle, lucisubtitle, lucisubheading, lucinote } from '@/src/app/_components/_next-ui/primitives'
 
 import { Button } from '@nextui-org/button'
 import { Textarea } from '@nextui-org/input'
@@ -37,6 +37,11 @@ export default function ExamplesPage() {
 				<div>
 					<h1 className={lucititle({ color: 'primary' })}>Examples</h1>
 				</div>
+					<div>
+				<p className={lucinote({ color: 'primary', size: 'sm' })}>
+					This page displays custom components used throughout the app.
+				</p>
+			</div>
 				<div style={{ height: '3rem' }}></div>{' '}
 				{/* This will force a space equivalent to 3 line breaks */}
 				{/* Add a divider */}

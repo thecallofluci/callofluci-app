@@ -99,6 +99,32 @@ export const luciparagraph = tv({
 	},
 })
 
+// luciparagraph: This style is used for the main body text on the page. 
+export const lucinote = tv({
+	base: 'text-left mb-4',
+	variants: {
+		color: {
+			primary: 'text-primary',
+			secondary: 'text-secondary',
+			danger: 'text-danger',
+            focus: 'text-focus',
+            content3: 'text-content3',
+			// Add more colors as needed
+		},
+		size: {
+			sm: 'text-sm',
+			md: 'text-base',
+			lg: 'text-lg',
+		},
+		fullWidth: {
+			true: 'w-full block',
+		},
+	},
+	defaultVariants: {
+		size: 'md',
+		fullWidth: true,
+	},
+})
 
 // original primitives from template
 export const title = tv({
