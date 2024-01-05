@@ -1,0 +1,48 @@
+/* Typewriter effect */
+
+/* Define the typing animation. It changes the width of an element from 0 to 100%. */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* Apply the typewriter effect to elements with the .typewriter class. */
+.typewriter {
+	/* Hide any part of the text that exceeds the element's dimensions. */
+	overflow: hidden;
+	/* Prevent the text from wrapping to the next line. */
+	white-space: nowrap;
+	/* Center the element horizontally within its parent. */
+	margin: 0 auto;
+	/* Increase the space between letters. */
+	/* letter-spacing: 0.15em; */
+	/* Apply the typing animation. It lasts 3.5 seconds and makes 40 steps. */
+	/* Also apply the blink-caret animation, which lasts 0.75 seconds and repeats indefinitely. */
+	animation:
+		typing 2.5s steps(20, end);
+}
+
+/* Add a blinking cursor after the text. */
+.typewriter::after {
+	/* The content property specifies what to insert. In this case, it's an underscore. */
+	content: ' _';
+	/* Apply the blink-caret animation to make the cursor blink on and off. */
+	animation: blink-caret 1s infinite;
+}
+
+/* Define the blink-caret animation. It changes the opacity of an element to create a blinking effect. */
+@keyframes blink-caret {
+	/* The cursor is fully visible at the start and end of the animation. */
+	from,
+	to {
+		opacity: 1;
+	}
+	/* The cursor is invisible at the midpoint of the animation. */
+	50% {
+		opacity: 0;
+	}
+}

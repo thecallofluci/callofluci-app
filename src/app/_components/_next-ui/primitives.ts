@@ -126,6 +126,32 @@ export const lucinote = tv({
 	},
 })
 
+// custom animated class
+export const lucitypewriter = tv({
+	base: 'my-2 text-lg lg:text-xl block max-w-full text-left font-extrabold',
+	variants: {
+		color: {
+			primary: 'text-primary',
+			secondary: 'text-secondary',
+			danger: 'text-danger',
+            focus: 'text-focus',
+            content3: 'text-content3',
+			// Add more colors as needed
+		},
+		size: {
+			sm: 'text-sm lg:text-md',
+			md: 'text-md lg:text-lg',
+			lg: 'text-lg lg:text-xl',
+		},
+		fullWidth: {
+			true: 'w-full block',
+		},
+	},
+	defaultVariants: {
+		size: 'md',
+	},
+})
+
 // original primitives from template
 export const title = tv({
 	base: 'tracking-tight inline font-semibold',

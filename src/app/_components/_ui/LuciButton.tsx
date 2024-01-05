@@ -1,5 +1,5 @@
 // LuciButton.tsx UI component
-import { ReactNode } from 'react'
+import { ReactNode, ElementType } from 'react'
 import { Button } from '@nextui-org/button'
 
 interface LuciButtonProps {
@@ -22,6 +22,7 @@ interface LuciButtonProps {
 	href?: string // added custom Prop
 	type?: 'button' | 'submit' | 'reset' // added custom Prop
 	onPress?: () => void // Button Event
+	as?: ElementType // added 'as' prop
 
 	className?: string
 	
@@ -39,6 +40,7 @@ export const LuciButton = ({
 	disableRipple,
 	className,
 	endContent,
+	as,
 	...props
 }: LuciButtonProps) => {
 	return (
@@ -53,6 +55,7 @@ export const LuciButton = ({
 			disableRipple={disableRipple}
 			className={className}
 			endContent={endContent}
+			as={as}
 			{...props}
 		>
 			{children}
@@ -72,6 +75,7 @@ export const LuciButtonWide = ({
 	disableRipple,
 	className,
 	endContent,
+	as,
 	...props
 }: LuciButtonProps) => {
 	const padding = Math.min(2, children.length * 0.25) // Calculate padding based on text length
@@ -92,6 +96,7 @@ export const LuciButtonWide = ({
 			disableRipple={disableRipple}
 			className={className}
 			endContent={endContent}
+			as={as}
 			{...props}
 		>
 			{children}

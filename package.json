@@ -46,7 +46,7 @@
         "eslint": "8.56.0",
         "eslint-config-next": "14.0.4",
         "flat": "^6.0.1",
-        "framer-motion": "^10.17.6",
+        "framer-motion": "^10.17.9",
         "intl-messageformat": "^10.5.8",
         "json-schema": "^0.4.0",
         "latest": "^0.2.0",

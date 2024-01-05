@@ -1,5 +1,11 @@
-import { lucititle, lucisubtitle, luciparagraph, lucinote } from '@/src/app/_components/_next-ui/primitives'
+import {
+	lucititle,
+	lucisubtitle,
+	luciparagraph,
+	lucinote,
+} from '@/src/app/_components/_next-ui/primitives'
 import { LuciNavigation } from '@/src/app/_components/_ui/LuciDropdown'
+
 
 export default function AboutPage() {
 	return (
