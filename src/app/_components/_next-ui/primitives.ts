@@ -126,6 +126,47 @@ export const lucinote = tv({
 	},
 })
 
+// lucinumbered: This style is used for the main body text on the page to insert a numbered list. 
+export const lucinumbered = tv({
+	base: 'list-decimal pl-8 text-left font-semibold mb-4 space-y-2',
+	variants: {
+	  color: {
+		primary: 'text-primary',
+		secondary: 'text-secondary',
+		danger: 'text-danger',
+		focus: 'text-focus',
+		content3: 'text-content3',
+		// Add more colors as needed
+	  },
+	  size: {
+		sm: 'text-sm',
+		md: 'text-base',
+		lg: 'text-lg',
+	  },
+	  markerColor: {
+		primary: 'marker:text-primary',
+		secondary: 'marker:text-secondary',
+		danger: 'marker:text-danger',
+		focus: 'marker:text-focus',
+		content3: 'marker:text-content3',
+		// Add more marker colors as needed
+	  },
+	  listStyleType: {
+		disc: 'list-disc',
+		decimal: 'list-decimal',
+		// Add more list styles as needed
+	  },
+	  fullWidth: {
+		true: 'w-full block',
+	  },
+	},
+	defaultVariants: {
+	  size: 'md',
+	  listStyleType: 'decimal',
+	  fullWidth: true,
+	},
+  })
+
 // custom animated class
 export const lucitypewriter = tv({
 	base: 'my-2 text-lg lg:text-xl block max-w-full text-left font-extrabold',

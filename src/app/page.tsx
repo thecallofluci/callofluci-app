@@ -31,11 +31,7 @@ export default function Home() {
 			<div className="inline-block max-w-lg text-center justify-center">
 				<h1 className={`${lucititle()}`}>Welcome, Player.&nbsp;</h1>
 			</div>
-			{/*
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h2 className={`${lucisubtitle({ class: 'mt-4' })} `}>Welcome, Player.</h2>
-			</div>
-{*/}
+
 			<div>
 				<h2 className={`${lucitypewriter({ class: 'mt-4 typewriter' })} `}>
 					I am your guide, Call Of Luci.
@@ -47,6 +43,12 @@ export default function Home() {
 					ENTER
 				</LuciButton>
 			</div>
+
+			{/*
+			<div className="inline-block max-w-lg text-center justify-center">
+				<h2 className={`${lucisubtitle({ class: 'mt-4' })} `}>Welcome, Player.</h2>
+			</div>
+
 
 			<div className="mt-8">
 				<Snippet hideSymbol hideCopyButton variant="bordered" radius="sm">
@@ -67,7 +69,7 @@ export default function Home() {
 				</Snippet>
 			</div>
 
-			{/*
+		
     		Useful code that shows different usecases of link-enabled Buttons
 
 			<div className="flex justify-center gap-4 mt-8">
