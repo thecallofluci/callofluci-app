@@ -14,6 +14,7 @@ interface LuciCardProps extends CardProps {
   body: string,
   footerLink: string,
   footerText: string,
+  timestamp: string,
   additionalLinks?: { href: string, text: string }[],
   additionalAttributes?: string[],
 }
@@ -26,6 +27,7 @@ export default function LuciCard({
   body,
   footerLink,
   footerText,
+  timestamp,
   additionalLinks = [],
   additionalAttributes = [],
   ...props
@@ -40,18 +42,18 @@ export default function LuciCard({
           src={imageSrc}
           width={40}
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col items-start">
           <p className="text-md text-background">{title}</p>
           <p className="text-small text-background">{subtitle}</p>
-        </div>
+              </div>
       </CardHeader>
       <Divider />
-      <CardBody className="text-background">
+      <CardBody className="text-background text-md">
         <p>{body}</p>
       </CardBody>
       <Divider />
       <CardFooter>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-start">
           <Link
             className="text-sm text-background"
             isExternal
@@ -71,11 +73,13 @@ export default function LuciCard({
               {link.text}
             </Link>
           ))}
+           <p className="text-sm text-background">{timestamp}</p>
           {additionalAttributes.map((attr, index) => (
             <div key={index} className="text-left text-sm text-background">
               {attr}
             </div>
           ))}
+          
         </div>
       </CardFooter>
     </Card>

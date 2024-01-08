@@ -1,4 +1,9 @@
-import { lucititle, lucisubtitle, lucisubheading, lucinote } from '@/src/app/_components/_next-ui/primitives'
+import {
+	lucititle,
+	lucisubtitle,
+	lucisubheading,
+	lucinote,
+} from '@/src/app/_components/_next-ui/primitives'
 
 import { Button } from '@nextui-org/button'
 import { Textarea } from '@nextui-org/input'
@@ -11,6 +16,7 @@ import TheMuck from '@/public/TheMuck.jpg'
 
 import { LuciObservation } from '@/src/app/_components/_callofluci/LuciObservationArchived'
 import ObservationMockup from '@/src/app/_components/_callofluci/ObservationMockup'
+import ObservationMockupFields from '@/src/app/_components/_callofluci/ObservationMockupFields'
 import ObservationForm from '@/src/app/_components/_forms/ObservationForm'
 import App from '@/src/app/_components/_forms/ObservationForm'
 
@@ -37,11 +43,11 @@ export default function ExamplesPage() {
 				<div>
 					<h1 className={lucititle({ color: 'primary' })}>Examples</h1>
 				</div>
-					<div>
-				<p className={lucinote({ color: 'primary', size: 'sm' })}>
-					This page displays custom components used throughout the app.
-				</p>
-			</div>
+				<div>
+					<p className={lucinote({ color: 'primary', size: 'sm' })}>
+						This page displays custom components used throughout the app.
+					</p>
+				</div>
 				<div style={{ height: '3rem' }}></div>{' '}
 				{/* This will force a space equivalent to 3 line breaks */}
 				{/* Add a divider */}
@@ -222,9 +228,9 @@ export default function ExamplesPage() {
 									color: 'secondary',
 								})} text-center pb-1`}
 							>
-								NextUI Default Card with Divider
+								Observation Mockup Fields
 							</h2>
-							<NextUICard />
+							<ObservationMockupFields />
 						</div>
 
 						<div>
@@ -236,6 +242,17 @@ export default function ExamplesPage() {
 								Observation Mockup
 							</h2>
 							<ObservationMockup />
+						</div>
+
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								NextUI Default Card with Divider
+							</h2>
+							<NextUICard />
 						</div>
 					</div>
 
