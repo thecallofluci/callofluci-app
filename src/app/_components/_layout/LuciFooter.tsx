@@ -1,7 +1,13 @@
 import { Link } from '@nextui-org/link'
 import { Snippet } from '@nextui-org/snippet'
 import { Code } from '@nextui-org/code'
-import { TwitterIcon, GithubIcon } from '@/src/app/_components/_layout/LuciIcons' // Import the icons
+import {
+	LuciMaskIcon,
+	LuciMazeIcon,
+	NiftyIcon,
+	TwitterIcon,
+	GithubIcon,
+} from '@/src/app/_components/_layout/LuciIcons' // Import the icons
 import { siteConfig } from '@/src/config/site' // Import the siteConfig
 import packageJson from '../../../../package.json'
 import {
@@ -28,6 +34,13 @@ export default async function Footer() {
 					<Code size="sm" radius="sm">
 						v{packageJson.version}+{process.env.REACT_APP_GIT_HASH}
 					</Code>
+					<Link isExternal href={siteConfig.links.spratt} aria-label="Spratt">
+						<LuciMaskIcon size={22} />
+					</Link>
+					<Link isExternal href={siteConfig.links.nifty} aria-label="Nifty">
+						<NiftyIcon size={22} />
+					</Link>
+					
 				</div>
 			</div>
 		</footer>

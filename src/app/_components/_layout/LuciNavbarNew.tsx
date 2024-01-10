@@ -29,18 +29,22 @@ import { TwitterIcon, GithubIcon } from '@/src/app/_components/_layout/LuciIcons
 
 import { ChevronDown } from '@/src/app/_components/_layout/NavbarIcons'
 
-import { Logo } from '@/src/app/_components/_layout/LuciIcons'
+import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/_components/_layout/LuciIcons'
 
 export const LuciNavbarNew = () => {
 	return (
 		<NextUINavbar isBordered maxWidth="lg" position="sticky">
+			{/* NavbarContent for logo and dropdown menu, hidden on small screens */}
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="start">
+				{/* NavbarBrand for logo, always visible */}
 				<NavbarBrand as="li" className="gap-2 max-w-fit">
 					<NextLink className="flex justify-start items-center" href="/">
-						<Logo />
+					<LuciMaskIcon size={30} />
 					</NextLink>
 				</NavbarBrand>
 
+				{/* Dropdown menu for navigation items */}
+				{/* Note Dropdown menu for navigation items in mobile is broken */}
 				<ul>
 					<Dropdown>
 						<NavbarItem>
@@ -68,6 +72,7 @@ export const LuciNavbarNew = () => {
 								base: 'gap-4',
 							}}
 						>
+							{/* Map through navItems from siteConfig to create DropdownItems */}
 							{siteConfig.navItems.map((item) => (
 								<DropdownItem
 									key={item.href}
@@ -83,6 +88,7 @@ export const LuciNavbarNew = () => {
 				</ul>
 			</NavbarContent>
 
+			{/* NavbarContent for button and theme switch, hidden on small screens */}
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
 				<NextLink href="/">
 					<LuciButton>BUTTON</LuciButton>
@@ -92,6 +98,7 @@ export const LuciNavbarNew = () => {
 				</NavbarItem>
 			</NavbarContent>
 
+			{/* NavbarContent for theme switch and menu toggle, visible only on small screens */}
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
 				<ThemeSwitch />
 				<NavbarMenuToggle />

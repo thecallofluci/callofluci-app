@@ -66,5 +66,7 @@ export const siteConfig = {
 		twitter: 'https://twitter.com/callofluci',
 		docs: 'https://nextui.org',
 		sponsor: 'https://patreon.com/jrgarciadev',
+		spratt: 'https://www.samspratt.com',
+		nifty: 'https://www.niftygateway.com/collections/sam-spratt-the-monument-game',
 	},
 }

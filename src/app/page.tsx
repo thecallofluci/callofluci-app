@@ -25,6 +25,8 @@ import {
 
 import '@/src/app/_styles/typewriter.css'
 
+import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/_components/_layout/LuciIcons'
+
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -44,6 +46,9 @@ export default function Home() {
 				</LuciButton>
 			</div>
 
+			<div className="flex justify-center gap-4 mt-4">
+			<LuciMaskIcon size={100} />
+			</div>
 			{/*
 			<div className="inline-block max-w-lg text-center justify-center">
 				<h2 className={`${lucisubtitle({ class: 'mt-4' })} `}>Welcome, Player.</h2>
