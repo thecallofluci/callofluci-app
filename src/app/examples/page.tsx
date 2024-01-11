@@ -22,6 +22,7 @@ import App from '@/src/app/_components/_forms/ObservationForm'
 
 import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
 import LuciCard from '@/src/app/_components/_ui/LuciCard'
+import { LuciSpinner } from '@/src/app/_components/_ui/LuciSpinner'
 import NextUICard from '@/src/app/_components/_ui/NextUICard'
 import LuciDropdown from '@/src/app/_components/_ui/LuciDropdown'
 import DefaultModal from '@/src/app/_components/_ui/LuciModal'
@@ -48,6 +49,12 @@ export default function ExamplesPage() {
 						This page displays custom components used throughout the app.
 					</p>
 				</div>
+				<div style={{ height: '3rem' }}></div>{' '}
+				{/* This will force a space equivalent to 3 line breaks */}
+				{/* Add a divider */}
+				<Divider />
+				{/* BUTTONS Subsection */}
+				
 				<div style={{ height: '3rem' }}></div>{' '}
 				{/* This will force a space equivalent to 3 line breaks */}
 				{/* Add a divider */}

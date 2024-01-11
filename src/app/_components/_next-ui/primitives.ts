@@ -99,6 +99,39 @@ export const luciparagraph = tv({
 	},
 })
 
+// luciallcaps: This style is used for text that should be all caps and bold, similar to LuciButtonProps.
+export const luciallcaps = tv({
+	base: 'text-left font-bold mb-4',
+	variants: {
+		color: {
+			primary: 'text-primary',
+			secondary: 'text-secondary',
+			danger: 'text-danger',
+            focus: 'text-focus',
+            content3: 'text-content3',
+			// Add more colors as needed
+		},
+		size: {
+			xs: 'text-xs',
+			sm: 'text-sm',
+			md: 'text-base',
+			lg: 'text-lg',
+			xl: 'text-xl',
+			'2xl': 'text-2xl',
+			'3xl': 'text-3xl',
+			'4xl': 'text-4xl',
+			// Add more sizes as needed
+		},
+		fullWidth: {
+			true: 'w-full block',
+		},
+	},
+	defaultVariants: {
+		size: 'xs',
+		fullWidth: true,
+	},
+})
+
 // luciparagraph: This style is used for the main body text on the page. 
 export const lucinote = tv({
 	base: 'text-left mb-4',

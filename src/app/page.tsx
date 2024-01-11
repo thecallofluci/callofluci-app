@@ -14,6 +14,7 @@ import packageJson from '../../package.json'
 import wormfood from '@/public/wormfood.jpg'
 import LuciImage from '@/src/app/_components/_ui/LuciImage'
 import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
+import { LuciSpinner } from '@/src/app/_components/_ui/LuciSpinner'
 import {
 	lucititle,
 	lucisubtitle,
@@ -39,16 +40,20 @@ export default function Home() {
 					I am your guide, Call Of Luci.
 				</h2>
 			</div>
-
+			<div className="flex justify-center gap-4 mt-4">
+				<LuciMaskIcon size={100} />
+			</div>
+			<div className="flex justify-center gap-4 mt-4">
+				<LuciSpinner label="" />
+			</div>
 			<div className="flex justify-center gap-4 mt-4">
 				<LuciButton href="observation" as={Link}>
 					ENTER
 				</LuciButton>
 			</div>
 
-			<div className="flex justify-center gap-4 mt-4">
-			<LuciMaskIcon size={100} />
-			</div>
+			
+		
 			{/*
 			<div className="inline-block max-w-lg text-center justify-center">
 				<h2 className={`${lucisubtitle({ class: 'mt-4' })} `}>Welcome, Player.</h2>
