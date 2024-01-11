@@ -24,6 +24,7 @@ export const appConstants = {
         { name: 'Observation', href: '/observation' },
         { name: 'About', href: '/about' },
         { name: 'Examples', href: '/examples' },
+        { name: 'Mockup', href: '/mockup' },
         // ...other nav items...
     ],
 

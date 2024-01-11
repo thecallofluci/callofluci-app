@@ -24,6 +24,11 @@ export const siteConfig = {
 			href: '/examples',
             description: 'This is a temp page',
         },
+				{
+			label: 'Mockup',
+			href: '/mockup',
+            description: 'This is a temp page',
+        },
 	],
 
     // TODO: These secondary navMenuItems are not used yet, and currently reflect template content.
