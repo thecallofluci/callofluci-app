@@ -1,7 +1,7 @@
 // luciColors.ts // updated to check filename
 
 // custom orange color palette
-const buci = {
+const luci = {
 	50: '#FBF4EF', // Very light orange, almost white with a hint of orange
 	100: '#F7E9DE', // Light orange
 	200: '#EFD3BD', // Light-medium orange
