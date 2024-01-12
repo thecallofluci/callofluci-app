@@ -37,7 +37,7 @@ export default function MockupPage() {
 				</div>
 				<div>
 					<p className={lucinote({ color: 'primary', size: 'sm' })}>
-						This page displays wireframe mockups of the app from Excalidraw.
+						This page displays wireframe mockups of the app from Excalidraw:
 					</p>
 					<Link
 						isExternal
