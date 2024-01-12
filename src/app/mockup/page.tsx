@@ -10,9 +10,13 @@ import { Divider } from '@nextui-org/divider'
 import wormfood from '@/public/wormfood.jpg'
 import TheMuck from '@/public/TheMuck.jpg'
 
-import 1Home from '@/public/mockup/1Home.png'
+import Home1 from '@/public/mockup/Home1.png'
+import Gallery2 from '@/public/mockup/Gallery2.png'
+import AuthenticatedUser3 from '@/public/mockup/AuthenticatedUser3.png'
+import callofluci from '@/public/mockup/callofluci.svg'
 
 import LuciImage from '@/src/app/_components/_ui/LuciImage'
+import { Image } from '@nextui-org/image'
 
 export default function MockupPage() {
 	return (
@@ -40,40 +44,11 @@ export default function MockupPage() {
 								color: 'secondary',
 							})} text-center`}
 						>
-							IMAGES
+							WIRES
 						</h2>
 					</div>
 					<div className="flex flex-wrap justify-center gap-8">
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Image
-							</h2>
-							<LuciImage
-								src="https://images.squarespace-cdn.com/content/v1/53b6eb62e4b06e0feb2d8e86/1656776064476-ADETQUJY3NV2AOI39K3T/SamSpratt_LUCI_Chapter3_VI_TheMuck.jpg"
-								alt="The Muck"
-								width={400}
-								height={400}
-							/>
-						</div>
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Image
-							</h2>
-							<LuciImage
-								src="https://images.squarespace-cdn.com/content/v1/53b6eb62e4b06e0feb2d8e86/1656776064476-ADETQUJY3NV2AOI39K3T/SamSpratt_LUCI_Chapter3_VI_TheMuck.jpg"
-								alt="The Muck"
-								width={200}
-								height={200}
-							/>
-						</div>
+				
 
 						<div>
 							<h2
@@ -81,54 +56,17 @@ export default function MockupPage() {
 									color: 'secondary',
 								})} text-center pb-1`}
 							>
-								Luci Image - Automatic Sizing
+								1. Landing Page
 							</h2>
 							<LuciImage
-								src={wormfood}
-								alt="Wormfood"
-								sizes="100vw"
-								style={{
-									width: '100%',
-									height: 'auto',
-								}}
-							/>
-						</div>
-
-                        <div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Image - Automatic Sizing
-							</h2>
-							<LuciImage
-								src={1Home}
-								alt="1Home"
-								sizes="100vw"
-								style={{
-									width: '100%',
-									height: 'auto',
-								}}
-							/>
-						</div>
-
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Image - Automatic Sizing
-							</h2>
-							<LuciImage
-								src={wormfood}
-								alt="Wormfood"
-								sizes="100vw"
+								src={Home1}
+								alt="Home1"
+								sizes="80vw"
 								style={{
 									width: 'auto',
 									height: 'auto',
 								}}
+                                className="flex flex-wrap gap-4 items-center overflow-hidden radius-sm rounded-md shadow-medium box-border border-primary-700 border-none"
 							/>
 						</div>
 
@@ -138,37 +76,21 @@ export default function MockupPage() {
 									color: 'secondary',
 								})} text-center pb-1`}
 							>
-								Luci Image - Automatic Sizing
+								2. Gallery View Page, non-authenticated users
 							</h2>
 							<LuciImage
-								src={TheMuck}
-								alt="The Muck"
-								sizes="100vw"
-								style={{
-									width: '20%',
-									height: '20%',
-								}}
-							/>
-						</div>
-
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Image - Automatic Sizing
-							</h2>
-							<LuciImage
-								src={TheMuck}
-								alt="The Muck"
-								sizes="100vw"
+								src={Gallery2}
+								alt="Gallery2"
+                                sizes="80vw"
 								style={{
 									width: 'auto',
 									height: 'auto',
 								}}
+                                className="flex flex-wrap gap-4 items-center overflow-hidden radius-sm rounded-md shadow-medium box-border border-primary-700 border-none"
 							/>
+							
 						</div>
+
 
 						<div>
 							<h2
@@ -176,36 +98,23 @@ export default function MockupPage() {
 									color: 'secondary',
 								})} text-center pb-1`}
 							>
-								Luci Image - Explicit Sizing
+								2. Observation Page, authenticated users
 							</h2>
-							<LuciImage src={wormfood} alt="Wormfood" width={500} height={500} />
+							<LuciImage
+								src={AuthenticatedUser3}
+								alt="AuthenticatedUser3"
+                                sizes="80vw"
+								style={{
+									width: 'auto',
+									height: 'auto',
+								}}
+                                className="flex flex-wrap gap-4 items-center overflow-hidden radius-sm rounded-md shadow-medium box-border border-primary-700 border-none"
+							/>
+							
 						</div>
 
-						{/* This will force a space equivalent to 3 line breaks */}
-						<div style={{ height: '3rem' }}></div>
-						{/* Add a divider */}
-						<Divider />
 
-						<div>
-							<h2
-								className={`${lucisubheading({
-									color: 'secondary',
-								})} text-center pb-1`}
-							>
-								Luci Image - Implicit Sizing
-							</h2>
-							<div style={{ position: 'relative', height: '400px' }}>
-								<LuciImage
-									alt="Wormfood"
-									src={wormfood}
-									fill
-									sizes="(min-width: 808px) 50vw, 100vw"
-									style={{
-										objectFit: 'cover', // cover, contain, none
-									}}
-								/>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</section>
