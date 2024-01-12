@@ -1,4 +1,4 @@
-// luciColors.ts // updated to check filename
+// luciColors.ts 
 
 // custom orange color palette
 const luci = {
