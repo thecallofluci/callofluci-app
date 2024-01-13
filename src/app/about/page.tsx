@@ -23,7 +23,7 @@ export default function AboutPage() {
 				<h2 className={lucisubtitle({ color: 'primary' })}>Call Of Luci</h2>
 				<p className={luciparagraph({ color: 'primary' })}>
 					Call Of Luci allows users to create, submit, store, and view styled outputs
-					called an "Observation". The application will be built using existing
+					called an &quot;Observation&quot;. The application will be built using existing
 					frameworks, components, packages, and technology. The core tech stack is
 					Next.js, React, and Irys.
 				</p>

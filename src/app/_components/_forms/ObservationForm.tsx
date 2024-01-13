@@ -114,6 +114,7 @@ const ObservationForm: React.FC = () => {
 						subtitle="Observation"
 						body={userText}
 						footerLink="https://github.com/nextui-org/nextui"
+						timestamp="2012-10-01"
 						footerText="View Observation in Call Of Luci."
 						additionalLinks={[
 							{

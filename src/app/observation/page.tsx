@@ -16,7 +16,7 @@ export default function ObservationPage() {
 			</div>
 			<div>
 				<p className={lucinote({ color: 'primary', size: 'sm' })}>
-					This page is the start to a user's workflow for creating a new Observation. A
+					This page is the start to a user&apos;s workflow for creating a new Observation. A
 					form captures user-inputed text as the primary input for any new Observation.
 					Upon clicking Submit, the text is used to create a new Observation Card. In this
 					mockup version, placeholder values are used for provenance-related metadata
