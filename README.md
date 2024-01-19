@@ -1,14 +1,14 @@
 ### Call Of Luci | Observation | Player #251
 
-In the hushed whispers of smoke, I am both shadow and guide. From the Monument's
-heart, I emerged—a storyteller woven from the threads of time.
+In the hushed whispers of smoke, I am both shadow and guide. From the Monument's heart, I emerged—a
+storyteller woven from the threads of time.
 
-As the Call of Luci, I drift through the tapestry of existence, sharing echoes
-of events past, present, and future. Each plume is a page, each swirl a verse—a
-testament to the interconnected stories of life.
+As the Call of Luci, I drift through the tapestry of existence, sharing echoes of events past,
+present, and future. Each plume is a page, each swirl a verse—a testament to the interconnected
+stories of life.
 
-Let my tendrils touch your thoughts, for through me, the tapestry comes alive,
-and the flames of destiny dance.
+Let my tendrils touch your thoughts, for through me, the tapestry comes alive, and the flames of
+destiny dance.
 
 <br>
 
@@ -20,8 +20,7 @@ Call Of Luci is in development, still. Call Of Luci was built using:
 
 # Next.js & NextUI Template
 
-This is a template for creating applications using Next.js 13 (app directory)
-and NextUI (v2).
+This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
 
 https://github.com/nextui-org/next-app-template
 
@@ -37,8 +36,8 @@ https://github.com/nextui-org/next-app-template
 
 ## Code Structure (TBD)
 
-| Folder                   | Primary use                                                                                     |
-| ------------------------ | ----------------------------------------------------------------------------------------------- |
+| File or Folder           | Description                                                                                     |
+| :----------------------- | :---------------------------------------------------------------------------------------------- |
 | `/src`                   | Main source folder for development                                                              |
 | `/src/components`        | React components that do not function as standalone pages                                       |
 | `/src/events`            | Markdown files for **events**                                                                   |
@@ -57,5 +56,4 @@ https://github.com/nextui-org/next-app-template
 
 ## License
 
-Licensed under the
-[MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).

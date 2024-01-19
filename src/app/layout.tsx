@@ -12,33 +12,29 @@ import clsx from 'clsx'
 import Footer from '@/src/app/_components/_layout/LuciFooter'
 
 // Defining the RootLayout component
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
-    return (
-        // Defining the basic HTML structure
-        <html
-            lang="en"
-            suppressHydrationWarning
-            className={`${fontSans.variable} ${fontMono.variable}`}
-        >
-            <head />
-            <body
-                // Applying CSS styles to the body
-                className={clsx('min-h-screen bg-background antialiased')}
-            >
-                <Providers themeProps={{ attribute: "class", defaultTheme: "luci-dark" }}>
-                    <div className="relative flex flex-col h-screen">
-                        <LuciNavbarNew />
-                        <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-                            {children}
-                        </main>
-                        <Footer />
-                    </div>
-                </Providers>
-            </body>
-        </html>
-    )
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+	return (
+		// Defining the basic HTML structure
+		<html
+			lang="en"
+			suppressHydrationWarning
+			className={`${fontSans.variable} ${fontMono.variable}`}
+		>
+			<head />
+			<body
+				// Applying CSS styles to the body
+				className={clsx('min-h-screen bg-background antialiased')}
+			>
+				<Providers themeProps={{ attribute: 'class', defaultTheme: 'luci-dark' }}>
+					<div className="relative flex flex-col h-screen">
+						<LuciNavbarNew />
+						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+							{children}
+						</main>
+						<Footer />
+					</div>
+				</Providers>
+			</body>
+		</html>
+	)
 }
