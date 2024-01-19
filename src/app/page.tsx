@@ -6,7 +6,7 @@ import { Button } from '@nextui-org/button'
 
 import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
-import { title, subtitle } from '@/src/app/_components/_next-ui/primitives'
+import { title, subtitle } from '@/src/app/_styles/primitives'
 import { GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
 import { fontMono } from '@/src/app/_styles/fonts/fonts'
 import packageJson from '../../package.json'
@@ -22,7 +22,7 @@ import {
 	luciparagraph,
 	lucinote,
 	lucitypewriter,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 
 import '@/src/app/_styles/typewriter.css'
 

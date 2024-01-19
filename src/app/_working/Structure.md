@@ -13,17 +13,30 @@
 ## Current Working Structure
 
 .
-├── public // note: this directory is not up-to-date
+├── public 
 │   ├── assets
 │   ├── mockup
 │   └── icon.svg
 ├── src
 │   ├── app
 │   │   ├── _components
+│   │   │   ├── _forms
+│   │   │   │   └── ObservationForm.tsx
+│   │   │   ├── _layout
+│   │   │   │   └── XXXXX.tsx
+│   │   │   ├── _providers
+│   │   │   │   └── providers.tsx
+│   │   │   ├── _templates
+│   │   │   │   └── XXXXX.tsx
+│   │   │   ├── _ui
+│   │   │   │   └── XXXXX.tsx
 │   │   ├── _hooks
+│   │   │   └── _useObservationForm.ts
 │   │   ├── _lib
+│   │   │   ├── _actions
+│   │   │   │   └── submitObservation.ts
 │   │   ├── _styles
-│   │   ├── _util
+│   │   ├── _utils
 │   │   ├── _working
 │   │   ├── (routes)
 │   │   ├── error.tsx

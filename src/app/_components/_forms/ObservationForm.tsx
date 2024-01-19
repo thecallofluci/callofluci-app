@@ -29,6 +29,7 @@ import { useObservationForm } from '@/src/app/_hooks/useObservationForm'
 
 import { LuciButton } from '@/src/app/_components/_ui/LuciButton'
 import { LuciTextarea } from '@/src/app/_components/_ui/LuciTextArea'
+import { LuciSpinner } from '@/src/app/_components/_ui/LuciSpinner'
 import LuciCard from '@/src/app/_components/_ui/LuciCard'
 
 const ObservationForm: React.FC = () => {
@@ -37,6 +38,7 @@ const ObservationForm: React.FC = () => {
 		control,
 		errors,
 		loading,
+		successMessage,
 		serverError,
 		userText,
 	} = useObservationForm()
@@ -52,11 +54,14 @@ const ObservationForm: React.FC = () => {
 				<Controller
 					name="observationText"
 					control={control}
-					rules={{ required: true, maxLength: 256 }}
+					rules={{
+						required: 'This field is required',
+						maxLength: { value: 256, message: 'Maximum length exceeded' },
+					}}
 					render={({ field }) => (
 						<LuciTextarea
 							{...field}
-							errorMessage={errors.observationText && 'Error message'}
+							errorMessage={errors.observationText && errors.observationText.message}
 							isInvalid={!!errors.observationText}
 							minRows={35}
 							// maxRows={30}
@@ -86,7 +91,16 @@ const ObservationForm: React.FC = () => {
 			</div>
 
 			{/* Show loading message */}
-			{loading && <p>Loading...</p>}
+			{/* loading && <p>Loading...</p> */}
+			{loading && (
+				<div className="flex justify-center">
+					<LuciSpinner label="" />
+				</div>
+			)}
+
+			{/* Show success message */}
+			{successMessage && <p>{successMessage}</p>}
+
 			{/* Show server error message */}
 			{serverError && <p>{serverError}</p>}
 
@@ -101,8 +115,6 @@ const ObservationForm: React.FC = () => {
 					SUBMIT
 				</LuciButton>
 			</div>
-
-
 
 			<div className="flex justify-center items-center pt-8">
 				{/* Show LuciCard component with user's text */}

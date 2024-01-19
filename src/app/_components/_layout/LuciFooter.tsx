@@ -16,7 +16,7 @@ import {
 	lucisubheading,
 	luciparagraph,
 	lucinote,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 
 export default async function Footer() {
 	return (

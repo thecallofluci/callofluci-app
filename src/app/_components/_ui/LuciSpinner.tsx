@@ -8,7 +8,7 @@ import {
 	luciparagraph,
 	lucinote,
 	lucitypewriter,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 
 interface LuciSpinnerProps {
 	label?: string

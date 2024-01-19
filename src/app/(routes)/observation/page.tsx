@@ -3,7 +3,7 @@ import {
 	lucisubtitle,
 	luciparagraph,
 	lucinote,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 
 import ObservationTextInput from '@/src/app/_components/_ui/LuciTextArea'
 import MyForm from '@/src/app/_components/_forms/ObservationForm'

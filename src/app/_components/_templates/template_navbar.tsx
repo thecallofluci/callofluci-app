@@ -20,7 +20,7 @@ import { siteConfig } from '@/src/config/site'
 import NextLink from 'next/link'
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/src/app/_components/_next-ui/theme-switch'
+import { ThemeSwitch } from '@/src/app/_components/_layout/LuciThemeSwitcher'
 import {
     TwitterIcon,
     GithubIcon,

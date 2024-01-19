@@ -4,7 +4,7 @@ import {
 	luciparagraph,
 	lucinote,
 	lucinumbered,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 import { LuciNavigation } from '@/src/app/_components/_ui/LuciDropdown'
 
 export default function AboutPage() {

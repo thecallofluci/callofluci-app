@@ -3,7 +3,7 @@ import {
 	lucisubtitle,
 	luciparagraph,
 	lucinote,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 import GalleryTest from '@/src/app/_components/_callofluci/GalleryTest' // adjust the path according to your project structure
 
 export default function GalleryPage() {

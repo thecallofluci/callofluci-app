@@ -3,7 +3,7 @@ import {
 	lucisubtitle,
 	lucisubheading,
 	lucinote,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 
 import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'

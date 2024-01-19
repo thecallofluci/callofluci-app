@@ -3,7 +3,7 @@ import {
 	lucisubtitle,
 	lucisubheading,
 	lucinote,
-} from '@/src/app/_components/_next-ui/primitives'
+} from '@/src/app/_styles/primitives'
 
 import { Button } from '@nextui-org/button'
 import { Textarea } from '@nextui-org/input'
