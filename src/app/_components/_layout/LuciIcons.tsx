@@ -1,7 +1,7 @@
 // LuciIcons.tsx
 
 import * as React from 'react'
-import { IconSvgProps } from '@/types'
+import { IconSvgProps } from '@/src/types/types'
 
 export const LuciMaskIcon: React.FC<IconSvgProps> = ({ size = 32, width, height, ...props }) => (
 	<div style={{ padding: '2px' }}>

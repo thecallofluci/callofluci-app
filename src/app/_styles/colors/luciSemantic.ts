@@ -1,4 +1,4 @@
-import type { ThemeColors, SemanticBaseColors } from '../../../../types/index'
+import type { ThemeColors, SemanticBaseColors } from '../../../types/types'
 import {commonColors as common} from "./luciColors";
 
 const base: SemanticBaseColors = {
