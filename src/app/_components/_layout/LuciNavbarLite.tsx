@@ -18,6 +18,8 @@ import { Link } from '@nextui-org/link'
 import { link as linkStyles } from '@nextui-org/theme'
 import NextLink from 'next/link'
 
+import { commonColors } from '@/src/app/_styles/colors/luciColors'
+
 import { LuciButton, LuciButtonWide } from '../_ui/LuciButton'
 
 import { siteConfig } from '@/src/config/site'
@@ -33,13 +35,13 @@ import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/_components/_layout/LuciIc
 
 export const LuciNavbarNew = () => {
 	return (
-		<NextUINavbar isBordered maxWidth="lg" position="sticky">
+		<NextUINavbar isBordered maxWidth="lg" position="sticky" >
 			{/* NavbarContent for logo and dropdown menu, hidden on small screens */}
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="start">
 				{/* NavbarBrand for logo, always visible */}
 				<NavbarBrand as="li" className="gap-2 max-w-fit">
 					<NextLink className="flex justify-start items-center" href="/">
-					<LuciMaskIcon size={30} />
+						<LuciMaskIcon size={30} />
 					</NextLink>
 				</NavbarBrand>
 
