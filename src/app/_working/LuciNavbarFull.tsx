@@ -16,7 +16,7 @@ import { Link } from '@nextui-org/link'
 import { link as linkStyles } from '@nextui-org/theme'
 import NextLink from 'next/link'
 
-import { LuciButton, LuciButtonWide } from '../_ui/LuciButton'
+import { LuciButton, LuciButtonWide } from '../_components/_ui/LuciButton'
 
 import { siteConfig } from '@/src/config/site'
 

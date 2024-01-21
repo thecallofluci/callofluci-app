@@ -27,7 +27,7 @@ import clsx from 'clsx'
 import { ThemeSwitch } from '@/src/app/_components/_layout/LuciThemeSwitcher'
 import { TwitterIcon, GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
 
-import { ChevronDown } from '@/src/app/_components/_layout/NavbarIcons'
+import { ChevronDown } from '@/src/app/_working/NavbarIcons'
 
 import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/_components/_layout/LuciIcons'
 

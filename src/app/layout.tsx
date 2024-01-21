@@ -6,10 +6,12 @@
 import '@/src/app/_styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/_styles/fonts/fonts'
 import { Providers } from '@/src/app/_components/_providers/providers'
-import { LuciNavbar } from '@/src/app/_components/_layout/LuciNavbar'
-import { LuciNavbarNew } from '@/src/app/_components/_layout/LuciNavbarNew'
+import { LuciNavbar } from '@/src/app/_working/LuciNavbarFull'
+import { LuciNavbarNew } from '@/src/app/_components/_layout/LuciNavbarLite'
 import clsx from 'clsx'
 import Footer from '@/src/app/_components/_layout/LuciFooter'
+
+import AppWrapper from '@/src/app/_components/_layout/AppWrapper'
 
 // Defining the RootLayout component
 export default function RootLayout({ children }: { children: React.ReactNode }) {
