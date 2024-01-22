@@ -7,6 +7,8 @@
 │   └── icon.svg
 ├── src
 │   ├── app
+│   │   ├── (routes)
+│   │   │   └── XXXXX.tsx
 │   │   ├── components
 │   │   │   ├── forms
 │   │   │   │   └── ObservationForm.tsx
@@ -14,36 +16,39 @@
 │   │   │   │   ├── AppWrapper.tsx
 │   │   │   │   ├── Body.tsx
 │   │   │   │   ├── Footer.tsx
-│   │   │   │   ├── Header.tsx
-│   │   │   │   ├── LuciFooter.tsx
-│   │   │   │   ├── LuciIcons.tsx
-│   │   │   │   ├── LuciNavbarLite.tsx
-│   │   │   │   ├── LuciThemeSwitcher.tsx
-│   │   │   │   └── LuciCustoms.tsx
+│   │   │   │   └── Header.tsx
 │   │   │   ├── providers
 │   │   │   │   └── providers.tsx
-│   │   │   ├── templates
-│   │   │   │   └── XXXXX.tsx
 │   │   │   └── ui
 │   │   │       ├── LuciButton.tsx
 │   │   │       ├── LuciCard.tsx
+│   │   │       ├── LuciIcons.tsx
 │   │   │       ├── LuciImage.tsx
 │   │   │       ├── LuciModal.tsx
+│   │   │       ├── LuciNavbar.tsx
 │   │   │       ├── LuciSpinner.tsx
 │   │   │       ├── LuciTextArea.tsx
-│   │   │       └── LuciCustoms.tsx
+│   │   │       └── LuciThemeSwitch.tsx
 │   │   ├── hooks
 │   │   │   └── useObservationForm.ts
 │   │   ├── lib
 │   │   │   └── actions
 │   │   │       └── submitObservation.ts
 │   │   ├── styles
-│   │   │   └── XXXXX.tsx
+│   │   │   ├── colors
+│   │   │   │   ├── luciColors.ts
+│   │   │   │   └── luciSemantic.ts
+│   │   │   ├── fonts
+│   │   │   │   ├── fonts.ts
+│   │   │   │   └── typewriter.css
+│   │   │   ├── themes
+│   │   │   │   ├── luciDarkTheme.ts
+│   │   │   │   └── luciLightTheme.ts
+│   │   │   ├── globals.css
+│   │   │   └── primitives.ts
 │   │   ├── utils
 │   │   │   └── XXXXX.tsx
 │   │   ├── working
-│   │   │   └── XXXXX.tsx
-│   │   ├── (routes)
 │   │   │   └── XXXXX.tsx
 │   │   ├── error.tsx
 │   │   ├── layout.tsx

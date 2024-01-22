@@ -6,13 +6,13 @@ import { Providers } from '@/src/app/components/providers/providers'
 import clsx from 'clsx'
 import AppWrapper from '@/src/app/components/layout/AppWrapper'
 
-// Defining the RootLayout component
+// Defining the Root Layout component
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		// Defining the basic HTML structure
 		<html
 			lang="en"
-			// suppressHydrationWarning
+			
 			className={`${fontSans.variable} ${fontMono.variable}`}
 		>
 			<head />
