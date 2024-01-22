@@ -8,7 +8,7 @@ import { Checkbox } from '@nextui-org/checkbox'
 import { Link } from '@nextui-org/link'
 import { Button } from '@nextui-org/button'
 import { useDisclosure } from '@nextui-org/use-disclosure'
-import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
+import { LuciButton, LuciButtonWide } from '@/src/app/components/ui/LuciButton'
 
 export default DefaultModal
 

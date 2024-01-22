@@ -1,9 +1,9 @@
 /// tailwind.config.js
 // Import the nextui theme plugin and the theme configurations
 import { nextui } from '@nextui-org/theme'
-import { luciDarkTheme } from './src/app/_styles/themes/luciDarkTheme';
-import { luciLightTheme } from './src/app/_styles/themes/luciLightTheme';
-import { purpleDarkTheme } from './src/app/_styles/colors/purpleDarkTheme';
+import { luciDarkTheme } from './src/app/styles/themes/luciDarkTheme';
+import { luciLightTheme } from './src/app/styles/themes/luciLightTheme';
+import { purpleDarkTheme } from './src/app/styles/colors/purpleDarkTheme';
 
 /** @type {import('tailwindcss').Config} */
 const config = {

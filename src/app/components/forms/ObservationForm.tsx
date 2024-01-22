@@ -25,12 +25,12 @@ import React from 'react'
 
 import { Controller } from 'react-hook-form'
 
-import { useObservationForm } from '@/src/app/_hooks/useObservationForm'
+import { useObservationForm } from '@/src/app/hooks/useObservationForm'
 
-import { LuciButton } from '@/src/app/_components/_ui/LuciButton'
-import { LuciTextarea } from '@/src/app/_components/_ui/LuciTextArea'
-import { LuciSpinner } from '@/src/app/_components/_ui/LuciSpinner'
-import LuciCard from '@/src/app/_components/_ui/LuciCard'
+import { LuciButton } from '@/src/app/components/ui/LuciButton'
+import { LuciTextarea } from '@/src/app/components/ui/LuciTextArea'
+import { LuciSpinner } from '@/src/app/components/ui/LuciSpinner'
+import LuciCard from '@/src/app/components/ui/LuciCard'
 
 const ObservationForm: React.FC = () => {
 	const {

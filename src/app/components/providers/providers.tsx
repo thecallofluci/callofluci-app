@@ -1,4 +1,4 @@
-// src/app/_components/_NextUI/providers.tsx
+// providers.tsx
 'use client'
 
 import * as React from 'react'

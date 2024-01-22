@@ -3,7 +3,7 @@ import {
 	lucisubtitle,
 	lucisubheading,
 	lucinote,
-} from '@/src/app/_styles/primitives'
+} from '@/src/app/styles/primitives'
 
 import { Button } from '@nextui-org/button'
 import { Textarea } from '@nextui-org/input'
@@ -14,26 +14,26 @@ import Image from 'next/image'
 import wormfood from '@/public/wormfood.jpg'
 import TheMuck from '@/public/TheMuck.jpg'
 
-import { LuciObservation } from '@/src/app/_working/LuciObservationArchived'
-import ObservationMockup from '@/src/app/_working/ObservationMockup'
-import ObservationMockupFields from '@/src/app/_working/ObservationMockupFields'
-import ObservationForm from '@/src/app/_components/_forms/ObservationForm'
-import App from '@/src/app/_components/_forms/ObservationForm'
+import { LuciObservation } from '@/src/app/working/LuciObservationArchived'
+import ObservationMockup from '@/src/app/working/ObservationMockup'
+import ObservationMockupFields from '@/src/app/working/ObservationMockupFields'
+import ObservationForm from '@/src/app/components/forms/ObservationForm'
+import App from '@/src/app/components/forms/ObservationForm'
 
-import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
-import LuciCard from '@/src/app/_components/_ui/LuciCard'
-import { LuciSpinner } from '@/src/app/_components/_ui/LuciSpinner'
-import NextUICard from '@/src/app/_working/NextUICard'
+import { LuciButton, LuciButtonWide } from '@/src/app/components/ui/LuciButton'
+import LuciCard from '@/src/app/components/ui/LuciCard'
+import { LuciSpinner } from '@/src/app/components/ui/LuciSpinner'
+import NextUICard from '@/src/app/working/NextUICard'
 import LuciDropdown from '@/src/app/_components/_ui/LuciDropdown'
-import DefaultModal from '@/src/app/_components/_ui/LuciModal'
+import DefaultModal from '@/src/app/components/ui/LuciModal'
 import {
 	LuciModal,
 	LuciModalFormFields,
 	LuciModalObservationForm,
-} from '@/src/app/_components/_ui/LuciModal'
+} from '@/src/app/components/ui/LuciModal'
 import LuciCardGallery from '@/src/app/_components/_layout/LuciCardGallery'
-import LuciImage from '@/src/app/_components/_ui/LuciImage'
-import { LuciTextarea } from '@/src/app/_components/_ui/LuciTextArea'
+import LuciImage from '@/src/app/components/ui/LuciImage'
+import { LuciTextarea } from '@/src/app/components/ui/LuciTextArea'
 
 import { siteConfig } from '@/src/config/site'
 

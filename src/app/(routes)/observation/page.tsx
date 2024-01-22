@@ -3,10 +3,10 @@ import {
 	lucisubtitle,
 	luciparagraph,
 	lucinote,
-} from '@/src/app/_styles/primitives'
+} from '@/src/app/styles/primitives'
 
-import ObservationTextInput from '@/src/app/_components/_ui/LuciTextArea'
-import MyForm from '@/src/app/_components/_forms/ObservationForm'
+import ObservationTextInput from '@/src/app/components/ui/LuciTextArea'
+import MyForm from '@/src/app/components/forms/ObservationForm'
 
 export default function ObservationPage() {
 	return (

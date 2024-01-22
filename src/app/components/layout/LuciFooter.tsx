@@ -7,7 +7,7 @@ import {
 	NiftyIcon,
 	TwitterIcon,
 	GithubIcon,
-} from '@/src/app/_components/_layout/LuciIcons' // Import the icons
+} from '@/src/app/components/layout/LuciIcons' // Import the icons
 import { siteConfig } from '@/src/config/site' // Import the siteConfig
 import packageJson from '../../../../package.json'
 import {
@@ -16,7 +16,7 @@ import {
 	lucisubheading,
 	luciparagraph,
 	lucinote,
-} from '@/src/app/_styles/primitives'
+} from '@/src/app/styles/primitives'
 
 export default async function Footer() {
 	return (

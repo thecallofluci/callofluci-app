@@ -2,7 +2,7 @@
 // Working mockup of completed Observation Card
 
 import React from 'react'
-import LuciCard from '@/src/app/_components/_ui/LuciCard'
+import LuciCard from '@/src/app/components/ui/LuciCard'
 
 const ObservationMockupFields: React.FC = () => {
 	return (

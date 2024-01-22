@@ -15,7 +15,7 @@ the control object for react-hook-form, the form errors, and the states for load
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { submitObservation } from '@/src/app/_lib/_actions/submitObservation'
+import { submitObservation } from '@/src/app/lib/actions/submitObservation'
 
 type FormInputs = {
 	observationText: string

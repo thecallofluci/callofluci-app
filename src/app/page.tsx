@@ -6,15 +6,15 @@ import { Button } from '@nextui-org/button'
 
 import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
-import { title, subtitle } from '@/src/app/_styles/primitives'
-import { GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
-import { fontMono } from '@/src/app/_styles/fonts/fonts'
+import { title, subtitle } from '@/src/app/styles/primitives'
+import { GithubIcon } from '@/src/app/components/layout/LuciIcons'
+import { fontMono } from '@/src/app/styles/fonts/fonts'
 import packageJson from '../../package.json'
 
 import wormfood from '@/public/wormfood.jpg'
-import LuciImage from '@/src/app/_components/_ui/LuciImage'
-import { LuciButton, LuciButtonWide } from '@/src/app/_components/_ui/LuciButton'
-import { LuciSpinner } from '@/src/app/_components/_ui/LuciSpinner'
+import LuciImage from '@/src/app/components/ui/LuciImage'
+import { LuciButton, LuciButtonWide } from '@/src/app/components/ui/LuciButton'
+import { LuciSpinner } from '@/src/app/components/ui/LuciSpinner'
 import {
 	lucititle,
 	lucisubtitle,
@@ -22,11 +22,11 @@ import {
 	luciparagraph,
 	lucinote,
 	lucitypewriter,
-} from '@/src/app/_styles/primitives'
+} from '@/src/app/styles/primitives'
 
 import '@/src/app/_styles/typewriter.css'
 
-import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/_components/_layout/LuciIcons'
+import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/layout/LuciIcons'
 
 export default function Home() {
 	return (

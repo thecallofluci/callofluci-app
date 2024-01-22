@@ -18,20 +18,20 @@ import { Link } from '@nextui-org/link'
 import { link as linkStyles } from '@nextui-org/theme'
 import NextLink from 'next/link'
 
-import { commonColors } from '@/src/app/_styles/colors/luciColors'
+import { commonColors } from '@/src/app/styles/colors/luciColors'
 
-import { LuciButton, LuciButtonWide } from '../_ui/LuciButton'
+import { LuciButton, LuciButtonWide } from '../ui/LuciButton'
 
 import { siteConfig } from '@/src/config/site'
 
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/src/app/_components/_layout/LuciThemeSwitcher'
-import { TwitterIcon, GithubIcon } from '@/src/app/_components/_layout/LuciIcons'
+import { ThemeSwitch } from '@/src/app/components/layout/LuciThemeSwitcher'
+import { TwitterIcon, GithubIcon } from '@/src/app/components/layout/LuciIcons'
 
-import { ChevronDown } from '@/src/app/_working/NavbarIcons'
+import { ChevronDown } from '@/src/app/working/NavbarIcons'
 
-import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/_components/_layout/LuciIcons'
+import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/layout/LuciIcons'
 
 export const LuciNavbarNew = () => {
 	return (

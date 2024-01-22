@@ -3,8 +3,8 @@ import {
 	lucisubtitle,
 	luciparagraph,
 	lucinote,
-} from '@/src/app/_styles/primitives'
-import GalleryTest from '@/src/app/_working/GalleryTest' // adjust the path according to your project structure
+} from '@/src/app/styles/primitives'
+import GalleryTest from '@/src/app/working/GalleryTest' // adjust the path according to your project structure
 
 export default function GalleryPage() {
 	return (

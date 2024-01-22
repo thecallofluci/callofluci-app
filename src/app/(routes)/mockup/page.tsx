@@ -3,7 +3,7 @@ import {
 	lucisubtitle,
 	lucisubheading,
 	lucinote,
-} from '@/src/app/_styles/primitives'
+} from '@/src/app/styles/primitives'
 
 import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
@@ -25,7 +25,7 @@ import WorkFlowPart1 from '@/public/mockup/WorkFlowPart1.png'
 import WorkFlowPart2 from '@/public/mockup/WorkFlowPart2.png'
 import callofluci from '@/public/mockup/callofluci.svg'
 
-import LuciImage from '@/src/app/_components/_ui/LuciImage'
+import LuciImage from '@/src/app/components/ui/LuciImage'
 import { Image } from '@nextui-org/image'
 
 export default function MockupPage() {

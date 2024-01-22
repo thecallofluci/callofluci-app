@@ -1,6 +1,6 @@
 // Gallery.tsx
 import React from 'react';
-import ObservationMockup from '@/src/app/_working/ObservationMockup';
+import ObservationMockup from '@/src/app/working/ObservationMockup';
 
 const GalleryTest = () => {
     const data = Array(10).fill({
