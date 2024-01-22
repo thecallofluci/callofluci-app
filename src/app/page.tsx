@@ -24,7 +24,7 @@ import {
 	lucitypewriter,
 } from '@/src/app/styles/primitives'
 
-import '@/src/app/_styles/typewriter.css'
+import '@/src/app/styles/typewriter.css'
 
 import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/layout/LuciIcons'
 
