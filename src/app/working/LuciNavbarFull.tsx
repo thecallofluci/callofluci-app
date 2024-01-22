@@ -22,10 +22,10 @@ import { siteConfig } from '@/src/config/site'
 
 import clsx from 'clsx'
 
-import { ThemeSwitch } from '@/src/app/components/layout/LuciThemeSwitcher'
-import { TwitterIcon, GithubIcon } from '@/src/app/components/layout/LuciIcons'
+import { ThemeSwitch } from '@/src/app/components/ui/LuciThemeSwitch'
+import { TwitterIcon, GithubIcon } from '@/src/app/components/ui/LuciIcons'
 
-import { Logo } from '@/src/app/components/layout/LuciIcons'
+import { Logo } from '@/src/app/components/ui/LuciIcons'
 
 export const LuciNavbar = () => {
 	return (

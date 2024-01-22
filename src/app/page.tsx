@@ -7,7 +7,7 @@ import { Button } from '@nextui-org/button'
 import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
 import { title, subtitle } from '@/src/app/styles/primitives'
-import { GithubIcon } from '@/src/app/components/layout/LuciIcons'
+import { GithubIcon } from '@/src/app/components/ui/LuciIcons'
 import { fontMono } from '@/src/app/styles/fonts/fonts'
 import packageJson from '../../package.json'
 
@@ -26,7 +26,7 @@ import {
 
 import '@/src/app/styles/typewriter.css'
 
-import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/layout/LuciIcons'
+import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/ui/LuciIcons'
 
 export default function Home() {
 	return (

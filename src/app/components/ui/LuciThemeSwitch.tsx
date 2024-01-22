@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
 import clsx from 'clsx'
 
-import { SunIcon, MoonIcon } from '@/src/app/components/layout/LuciIcons'
+import { SunIcon, MoonIcon } from '@/src/app/components/ui/LuciIcons'
 
 // Define the props for the ThemeSwitch component
 export interface ThemeSwitchProps {
@@ -16,7 +16,7 @@ export interface ThemeSwitchProps {
 }
 
 // Define the ThemeSwitch component
-export const ThemeSwitch: FC<ThemeSwitchProps> = ({
+export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({
     className,
     classNames,
 }) => {

@@ -1,4 +1,4 @@
-// LuciNavbarNew.tsx UI component
+// LuciNavbar.tsx UI component
 'use client'
 
 import React from 'react'
@@ -13,29 +13,16 @@ import {
 } from '@nextui-org/navbar'
 import { DropdownItem, DropdownTrigger, Dropdown, DropdownMenu } from '@nextui-org/dropdown'
 import { Button } from '@nextui-org/button'
-
-import { Link } from '@nextui-org/link'
-import { link as linkStyles } from '@nextui-org/theme'
 import NextLink from 'next/link'
-
-import { commonColors } from '@/src/app/styles/colors/luciColors'
-
-import { LuciButton, LuciButtonWide } from '../ui/LuciButton'
-
 import { siteConfig } from '@/src/config/site'
-
-import clsx from 'clsx'
-
-import { ThemeSwitch } from '@/src/app/components/layout/LuciThemeSwitcher'
-import { TwitterIcon, GithubIcon } from '@/src/app/components/layout/LuciIcons'
-
+import { LuciThemeSwitch } from '@/src/app/components/ui/LuciThemeSwitch'
 import { ChevronDown } from '@/src/app/working/NavbarIcons'
+import { LuciMaskIcon } from '@/src/app/components/ui/LuciIcons'
+import { LuciButton } from './LuciButton'
 
-import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/layout/LuciIcons'
-
-export const LuciNavbarNew = () => {
+export const LuciNavbar = () => {
 	return (
-		<NextUINavbar isBordered maxWidth="lg" position="sticky" >
+		<NextUINavbar isBordered maxWidth="lg" position="sticky">
 			{/* NavbarContent for logo and dropdown menu, hidden on small screens */}
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="start">
 				{/* NavbarBrand for logo, always visible */}
@@ -96,13 +83,13 @@ export const LuciNavbarNew = () => {
 					<LuciButton>BUTTON</LuciButton>
 				</NextLink>
 				<NavbarItem className="hidden sm:flex gap-2">
-					<ThemeSwitch />
+					<LuciThemeSwitch />
 				</NavbarItem>
 			</NavbarContent>
 
 			{/* NavbarContent for theme switch and menu toggle, visible only on small screens */}
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<ThemeSwitch />
+				<LuciThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>
 		</NextUINavbar>

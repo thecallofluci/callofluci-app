@@ -1,16 +1,9 @@
-// This is the root layout of your application.
-// It sets up the global styles, context providers, and the structure of your application.
-// It also imports and uses various components and modules.
-
-// Importing necessary modules and components
+// src/app/layout.tsx
 import '@/src/app/styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/styles/fonts/fonts'
 import { Providers } from '@/src/app/components/providers/providers'
-import { LuciNavbar } from '@/src/app/working/LuciNavbarFull'
-import { LuciNavbarNew } from '@/src/app/components/layout/LuciNavbarLite'
-import clsx from 'clsx'
-import Footer from '@/src/app/components/layout/LuciFooter'
 
+import clsx from 'clsx'
 import AppWrapper from '@/src/app/components/layout/AppWrapper'
 
 // Defining the RootLayout component
@@ -19,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		// Defining the basic HTML structure
 		<html
 			lang="en"
-			suppressHydrationWarning
+			// suppressHydrationWarning
 			className={`${fontSans.variable} ${fontMono.variable}`}
 		>
 			<head />
@@ -28,13 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				className={clsx('min-h-screen bg-background antialiased')}
 			>
 				<Providers themeProps={{ attribute: 'class', defaultTheme: 'luci-dark' }}>
-					<div className="relative flex flex-col h-screen">
-						<LuciNavbarNew />
-						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-							{children}
-						</main>
-						<Footer />
-					</div>
+					<AppWrapper>{children}</AppWrapper>
 				</Providers>
 			</body>
 		</html>
