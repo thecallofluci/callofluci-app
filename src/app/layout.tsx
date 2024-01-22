@@ -3,7 +3,7 @@
 // It also imports and uses various components and modules.
 
 // Importing necessary modules and components
-import '@/src/app/_styles/globals.css'
+import '@/src/app/styles/globals.css'
 import { fontSans, fontMono } from '@/src/app/styles/fonts/fonts'
 import { Providers } from '@/src/app/components/providers/providers'
 import { LuciNavbar } from '@/src/app/working/LuciNavbarFull'
