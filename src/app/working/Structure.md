@@ -4,6 +4,11 @@ The Call Of Luci project adheres to the Next.js framework's [unopinion
 
 ## Root Directory
 
+The structure of Call Of Luci is divided into two root-level directories: `public` and `src`:
+
+-   `public` directory: static assets for Call Of Lcui.
+-   `src` directory: source code for Call Of Luci.
+
 Root-level files in the Call of Luci project primarily consist of configuration and metadata files that define the environment, coding standards, dependencies, and build processes.
 
 | **Root-Level Directories** |                                                     |
