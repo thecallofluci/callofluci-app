@@ -9,8 +9,7 @@ The structure of Call Of Luci is divided into two root-level directories: `publi
 -   `public`: static assets for Call Of Luci.
 -   `src`: source code for Call Of Luci.
 
-Root-level files primarily consist of configuration and metadata files that define the environment,
-coding standards, dependencies, and build processes.
+Root-level files primarily consist of configuration and metadata files that define the environment, coding standards, dependencies, and build processes.
 
 | **Root-Level Directories** |                                                     |
 | :------------------------- | :-------------------------------------------------- |
@@ -36,21 +35,18 @@ coding standards, dependencies, and build processes.
 
 ## Main Directories
 
-The structure of Call Of Luci's source code (`/src`) is divided into three main directories: `app`,
-`config`, and `types`:
+The structure of Call Of Luci's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
 
 | **Main Directories** |                                                                                                      |
 | :------------------- | :--------------------------------------------------------------------------------------------------- |
 |                      |                                                                                                      |
 | `/src/app`           | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
-| `/src/config`        | configuration files that define global settings and constants.                                       |
+| `/src/config`        | Configuration files that define global settings and constants.                                       |
 | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
 
 ## app Directory
 
-The `app` directory in the Call of Luci project is the central hub for the Next.js App Router,
-organizing the application's primary routes and housing the core functional elements of the
-application.
+The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
 | **app Directory**     |                                             |
 | :-------------------- | :------------------------------------------ |
@@ -66,10 +62,7 @@ application.
 
 ### components
 
-The `components` directory within the `app` folder organizes a collection of reusable React
-components that form the building blocks of the Call Of Luci application's user interface. It is
-organized into subdirectories that categorize components based on their functionality and usage
-within the application:
+The `components` directory within the `app` folder organizes a collection of reusable React components that form the building blocks of the Call Of Luci application's user interface. It is organized into subdirectories that categorize components based on their functionality and usage within the application:
 
 -   `forms`: Contains components related to form elements and structures, such as input fields, buttons, and form layouts, which are used to capture user input.
 -   `layout`: Houses components that define the structural layout of the application, including headers, footers, and navigation bars, ensuring a consistent look and feel across different pages.
@@ -105,17 +98,17 @@ The `lib` directory within the `app` folder organizes the shared library.
 |                                         |                                       |
 | `/app/lib/`                             | Shared library                        |
 |                                         |                                       |
-| `/app/lib/actions/`                     | File name description or explaination |
-| `/app/lib/actions/submitObservation.ts` | File name description or explaination |
+| `/app/lib/actions/`                     | File name description or explanation |
+| `/app/lib/actions/submitObservation.ts` | File name description or explanation |
 
 ### styles
 
-The `styles` directory within the `app` folder organizes
-the style-related files that define the visual aesthetics of the Call Of Luci application. It is organized into subdirectories for a clear separation of concerns:
+The `styles` directory within the `app` folder organizes the style-related files that define the visual aesthetics of the Call Of Luci application.
+It is organized into subdirectories for a clear separation of concerns:
 
--   `colors`: This subdirectory contains definitions for the color palette used throughout the application, including color variables and utility classes that ensure a consistent color scheme.
--   `fonts`: Houses font files and associated styling, such as font-face definitions and typographic scales, which are used to maintain a consistent typographic hierarchy.
--   `themes`: Includes theme configuration files that define the look and feel of the application for different themes, such as light or dark mode, allowing for theming flexibility and user preference settings.
+-   `colors`: color variables and utility classes.
+-   `fonts`: font files and associated styling.
+-   `themes`: theme configuration files.
 
 | **styles**                  |                                                                 |
 | :-------------------------- | :-------------------------------------------------------------- |
@@ -146,9 +139,9 @@ The `config` directory in the Call Of Luci project is designated for configurati
 |                           |                                     |
 | `/src/config/`            | Configuration Files                 |
 |                           |                                     |
-| `/src/config/constants.ts | constant values used throughout app |
-| `/src/config/metadata.ts  | metadata for Next.js app            |
-| `/src/config/site.ts      | site configuration                  |
+| `/src/config/constants.ts`| constant values used throughout app |
+| `/src/config/metadata.ts` | metadata for Next.js app            |
+| `/src/config/site.ts`     | site configuration                  |
 
 ## types Directory
 
@@ -159,13 +152,12 @@ The `types` directory in the Call Of Luci project is designated for type definit
 |                           |                                                    |
 | `/src/types/`             | Type definitions                                   |
 |                           |                                                    |
-| `/src/types/interfaces.ts | declares TypeScript interfaces used throughout app |
-| `/src/types/types.ts      | declares TypeScript types used throughout app      |
+| `/src/types/interfaces.ts`| declares TypeScript interfaces used throughout app |
+| `/src/types/types.ts`     | declares TypeScript types used throughout app      |
 
 ## public Directory
 
-The `public` directory in the Call Of Luci project is designated for static assets that are served
-directly by Next.js without the need for additional import statements.
+The `public` directory in the Call Of Luci project is designated for static assets that are served directly by Next.js without the need for additional import statements.
 
 | **public Directory**       |                             |
 | :------------------------- | :-------------------------- |
