@@ -6,19 +6,15 @@ The Call Of Luci project adheres to the Next.js framework's [unopinion
 
 The structure of Call Of Luci is divided into two root-level directories: `public` and `src`:
 
--   `public`: static assets for Call Of Luci.
--   `src`: source code for Call Of Luci.
-
-Root-level files primarily consist of configuration and metadata files that define the environment, coding standards, dependencies, and build processes.
-
 | **Root-Level Directories** |                                                     |
 | :------------------------- | :-------------------------------------------------- |
-|                            |                                                     |
 | `/public`                  | static assets served                                |
 | `/src`                     | source code for Call Of Luci                        |
-|                            |                                                     |
+
+Root-level files primarily consist of configuration and metadata files that define the environment, dependencies, and build processes:
+
 | **Root-Level Files**       |                                                     |
-|                            |                                                     |
+| :------------------------- | :-------------------------------------------------- |
 | `/LICENSE`                 | License file for project                            |
 | `/.env`                    | Environment variables                               |
 | `/.eslintrc.json`          | Configuration for ESLint to enforce code quality    |
@@ -39,10 +35,15 @@ The structure of Call Of Luci's source code `/src` directory is divided into thr
 
 | **Main Directories** |                                                                                                      |
 | :------------------- | :--------------------------------------------------------------------------------------------------- |
-|                      |                                                                                                      |
 | `/src/app`           | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
 | `/src/config`        | Configuration files that define global settings and constants.                                       |
 | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
+
+| #  | **Main Directories** |                                                                                                      |
+| -- | :------------------- | :--------------------------------------------------------------------------------------------------- |
+| 1  | `/src/app`           | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
+| 2  | `/src/config`        | Configuration files that define global settings and constants.                                       |
+| 3  | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
 
 ## app Directory
 
@@ -50,7 +51,6 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 
 | **app Directory**     |                                             |
 | :-------------------- | :------------------------------------------ |
-|                       |                                             |
 | `/src/app/`           | Next.js App Router                          |
 | `/src/app/(routes)`   | primary route group                         |
 | `/src/app/components` | reusable React components                   |
