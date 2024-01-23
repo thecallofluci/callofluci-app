@@ -172,3 +172,15 @@ The `public` directory in the Call Of Luci project is designated for static asse
 | `/src/public/TheMuck.jpg`  | The Muck art                    |
 | `/src/public/vercel.svg`   | SVG logo file for Vercel        |
 | `/src/public/wormfood.jpg` | Wormfood art                    |
+
+| **`/src/public/`**         | **Static assets to be served**  |
+| :------------------------- | :------------------------------ |
+|                            |                                 |
+| `/src/public/assets`       | global assets                   |
+| `/src/public/mockup`       | mockups and design files        |
+| `/src/public/icon.svg`     | SVG icon file                   |
+| `/src/public/lucilogo.svg` | SVG logo file for Luci          |
+| `/src/public/next.svg`     | SVG file related to Next.js     |
+| `/src/public/TheMuck.jpg`  | The Muck art                    |
+| `/src/public/vercel.svg`   | SVG logo file for Vercel        |
+| `/src/public/wormfood.jpg` | Wormfood art                    |
