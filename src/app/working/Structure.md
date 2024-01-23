@@ -1,8 +1,10 @@
 # Project Structure
 
+The Call Of Luci project adheres to the Next.js framework's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation.
+
 ## Root Directory
 
-The Call Of Luci project adheres to the Next.js framework's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation.
+Root-level files in the Call of Luci project primarily consist of configuration and metadata files that define the environment, coding standards, dependencies, and build processes.
 
 | **Root-Level Directories** |                                                     |
 | :------------------------- | :-------------------------------------------------- |
@@ -11,7 +13,6 @@ The Call Of Luci project adheres to the Next.js framework's [unopinion
 | `/src`                     | source code for Call Of Luci                        |
 |                            |                                                     |
 | **Root-Level Files**       |                                                     |
-| :--------------------      | :-------------------------------------------------- |
 |                            |                                                     |
 | `/LICENSE`                 | License file for project                            |
 | `/.env`                    | Environment variables                               |
@@ -26,7 +27,6 @@ The Call Of Luci project adheres to the Next.js framework's [unopinion
 | `/README.md`               | Project description                                 |
 | `/tailwind.config.js`      | Configuration for Tailwind CSS framework            |
 | `/tsconfig.json`           | Configuration file for TypeScript compiler options  |
-|                            |                                                     |
 
 ## Main Directories
 
