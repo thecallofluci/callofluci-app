@@ -159,16 +159,16 @@ The `types` directory in the Call Of Luci project is designated for type definit
 
 The `public` directory in the Call Of Luci project is designated for static assets that are served directly by Next.js without the need for additional import statements.
 
-| **public Directory**       |                             |
-| :------------------------- | :-------------------------- |
-|                            |                             |
-| `/src/public/`             | Static assets to be served  |
-| `/src/public/assets`       | global assets               |
-| `/src/public/mockup`       | mockups and design files    |
-|                            |                             |
-| `/src/public/icon.svg`     | SVG icon file               |
-| `/src/public/lucilogo.svg` | SVG logo file for Luci      |
-| `/src/public/next.svg`     | SVG file related to Next.js |
-| `/src/public/TheMuck.jpg`  | The Muck art                |
-| `/src/public/vercel.svg`   | SVG logo file for Vercel    |
-| `/src/public/wormfood.jpg` | Wormfood art                |
+| **public Directory**       |                                 |
+| :------------------------- | :------------------------------ |
+|                            |                                 |
+| **`/src/public/`**         | **Static assets to be served**  |
+| `/src/public/assets`       | global assets                   |
+| `/src/public/mockup`       | mockups and design files        |
+|                            |                                 |
+| `/src/public/icon.svg`     | SVG icon file                   |
+| `/src/public/lucilogo.svg` | SVG logo file for Luci          |
+| `/src/public/next.svg`     | SVG file related to Next.js     |
+| `/src/public/TheMuck.jpg`  | The Muck art                    |
+| `/src/public/vercel.svg`   | SVG logo file for Vercel        |
+| `/src/public/wormfood.jpg` | Wormfood art                    |
