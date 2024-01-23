@@ -33,19 +33,13 @@ Root-level files primarily consist of configuration and metadata files that defi
 
 The structure of Call Of Luci's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
 
-| **Main Directories** |                                                                                                      |
-| :------------------- | :--------------------------------------------------------------------------------------------------- |
-| `/src/app`           | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
-| `/src/config`        | Configuration files that define global settings and constants.                                       |
-| `/src/types`         | TypeScript type definitions and interfaces.                                                          |
-
 | #  | **Main Directories** |                                                                                                      |
 | -- | :------------------- | :--------------------------------------------------------------------------------------------------- |
 | 1  | `/src/app`           | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
 | 2  | `/src/config`        | Configuration files that define global settings and constants.                                       |
 | 3  | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
 
-## app Directory
+## 1. app Directory
 
 The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
@@ -130,7 +124,7 @@ The `utils` directory within the `app` folder organizes utility functions used t
 |              |                          |
 | `/app/utils` | shared utility functions |
 
-## config Directory
+## 2. config Directory
 
 The `config` directory in the Call Of Luci project is designated for configuration files.
 
@@ -143,7 +137,7 @@ The `config` directory in the Call Of Luci project is designated for configurati
 | `/src/config/metadata.ts` | metadata for Next.js app            |
 | `/src/config/site.ts`     | site configuration                  |
 
-## types Directory
+## 3. types Directory
 
 The `types` directory in the Call Of Luci project is designated for type definitions.
 
@@ -184,3 +178,73 @@ The `public` directory in the Call Of Luci project is designated for static asse
 | `/src/public/TheMuck.jpg`  | The Muck art                    |
 | `/src/public/vercel.svg`   | SVG logo file for Vercel        |
 | `/src/public/wormfood.jpg` | Wormfood art                    |
+
+# Project Structure Documentation
+
+## Introduction
+
+This document provides an overview of the Call Of Luci project structure, adhering to Next.js framework's conventions.
+
+## Root Directory
+
+The highest level of the project structure, providing context for the organization of the project.
+
+### Root-Level Files
+
+Describes the files at the root level, crucial for understanding the project setup.
+
+## Main Directories
+
+Enumerates the main directories within the `src` folder and their significance in the project.
+
+## Detailed Directory Breakdown
+
+For each main directory listed in the previous section, provide a detailed breakdown.
+
+### 1. app Directory
+
+Outlines the structure and contents of the `app` directory.
+
+### 2. config Directory
+
+Details the configuration files and their purposes.
+
+### 3. types Directory
+
+Explains the type definitions and their role in the project.
+
+## Subdirectory Details
+
+Delve into the subdirectories within each main directory section.
+
+### components
+
+Organizes reusable React components that form the building blocks of the user interface.
+
+### hooks
+
+Organizes the application’s custom React hooks.
+
+### lib
+
+Organizes the shared library.
+
+### styles
+
+Organizes the style-related files that define the visual aesthetics of the application.
+
+### utils
+
+Organizes utility functions used throughout the app.
+
+## Public Directory
+
+Details the `public` directory for static assets served directly by Next.js.
+
+## Appendices
+
+Includes additional information such as a glossary of terms, reference links, or a changelog.
+
+## Conclusion
+
+Summarizes the document and provides final remarks or pointers for navigating the project.
