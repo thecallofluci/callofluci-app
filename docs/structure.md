@@ -20,7 +20,7 @@ The project's source code `/src` directory is divided into three main subdirecto
 
 ## app Directory
 
-The `/app` folder within the `/src` directory organizes the central hub for the project, the Next.js
+The `/app` directory within the `/src` directory organizes the central hub for the project, the Next.js
 App Router. It organizes the application's primary routes and core functional elements:
 
 | **`/app`**        | **Next.js App Router**                      |
@@ -33,9 +33,9 @@ App Router. It organizes the application's primary routes and core functional el
 | `/app/utils`      | Utility functions                           |
 | `/app/working`    | Temp directory containing works in progress |
 
-### app/(routes)
+### Routing | app/(routes)
 
-The `/(routes)` folder within the `/app` directory organizes a collection of routes:
+The `/(routes)` subdirectory within the `/app` directory organizes a collection of routes:
 
 | **`/(routes)`**    | **Primary Route Group** |
 | :----------------- | :---------------------- |
@@ -45,9 +45,9 @@ The `/(routes)` folder within the `/app` directory organizes a collection of rou
 | `/(routes)/route3` | routing 3               |
 | `/(routes)/route4` | routing 4               |
 
-### app/components
+### Components | app/components
 
-The `/components` folder within the `/app` directory organizes a collection of reusable React
+The `/components` subdirectory within the `/app` directory organizes a collection of reusable React
 components that form the building blocks of the application's user interface:
 
 | **`/components`**       | **reusable React components**                        |
@@ -58,9 +58,9 @@ components that form the building blocks of the application's user interface:
 | `/components/providers` | context providers                                    |
 | `/components/ui`        | custom React components tailored using `nextui-org`  |
 
-### app/hooks
+### Hooks | app/hooks
 
-The `/hooks` directory within the `/app` folder organizes the application’s custom React hooks:
+The `/hooks` subdirectory within the `/app` directory organizes the application’s custom React hooks:
 
 | **`/hooks`**                   | **custom React hooks**                                           |
 | :----------------------------- | :--------------------------------------------------------------- |
@@ -68,9 +68,9 @@ The `/hooks` directory within the `/app` folder organizes the application’s cu
 | `/hooks/useObservationForm.ts` | managed observation form state, validation, and submission logic |
 | `/hooks/xxxxxxx.ts`            | file description                                                 |
 
-### app/styles
+### Styles | app/styles
 
-The `/styles` directory within the `/app` folder organizes
+The `/styles` subdirectory within the `/app` directory organizes
 the style-related files that define the visual aesthetics of the application:
 
 | **`/styles`**           | **global styles, colors, fonts, themes**                        |
@@ -83,9 +83,9 @@ the style-related files that define the visual aesthetics of the appli
 | `/styles/globals.css`   | globals                                                         |
 | `/styles/primitives.ts` | primitives                                                      |
 
-### app/util
+### Utilities | app/util
 
-The `/util` directory within the `/app` folder organizes shared utility functions:
+The `/util` subdirectory within the `/app` directory organizes shared utility functions:
 
 | **`/util`**                  | **Utility Functions**                |
 | :--------------------------- | :----------------------------------- |
@@ -94,7 +94,7 @@ The `/util` directory within the `/app` folder organizes shared utility function
 
 ## config Directory
 
-The `/config` folder within the `/src` directory organizes the project's configuration files.
+The `/config` directory within the `/src` directory organizes the project's configuration files:
 
 | **`/config`**          | **Configuration files**             |
 | :--------------------- | :---------------------------------- |
@@ -105,7 +105,7 @@ The `/config` folder within the `/src` directory organizes the project's configu
 
 ## types Directory
 
-The `/types` folder within the `/type` directory organizes the project's type definitions.
+The `/types` directory within the `/src` directory organizes the project's type definitions:
 
 | **`/types`**           | **Type definitions**                               |
 | :--------------------- | :------------------------------------------------- |
@@ -116,7 +116,7 @@ The `/types` folder within the `/type` directory organizes the project's type de
 ## public Directory
 
 The `/public` directory at the root of the project is designated for static assets that are served
-directly by Next.js without the need for additional import statements.
+directly by Next.js:
 
 | **/`public`**          | **Static assets to be served** |
 | :--------------------- | :----------------------------- |
@@ -133,8 +133,8 @@ directly by Next.js without the need for additional import statements.
 
 ## Root Directory
 
-The structure of the project codebase is divided into two root-level directories: `public` and
-`src`:
+The structure of the project codebase is divided into two root-level directories: `/public` and
+`/src`:
 
 | **Root-Level Directories** |                      |
 | :------------------------- | :------------------- |
