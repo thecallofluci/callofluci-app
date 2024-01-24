@@ -1,6 +1,5 @@
 # Project Structure
-
-The project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation. The codebase for Call Of Luci is organized as follows.
+The codebase is organized in alignment with the [Next.js Project Structure](https://nextjs.org/docs/getting-started/project-structure) guide. It adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) approach towards project organization and file colocation. 
 
 ## Main Directories
 
