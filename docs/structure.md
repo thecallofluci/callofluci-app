@@ -62,12 +62,12 @@ The `(routes)` folder within the `app` directory organizes a collection of route
 
 The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
 
-| **1.2** | **`/app/components`**          | **reusable React components**                          |
-| -------:| :----------------------------- | :----------------------------------------------------- |
-| 1.2.1   | &nbsp;&nbsp;&nbsp;`/forms`     | form elements and structures using `react-hook-form`   |
-| 1.2.2   | &nbsp;&nbsp;&nbsp;`/layout`    | structural layout of application                       |
-| 1.2.3   | &nbsp;&nbsp;&nbsp;`/providers` | context providers                                      |
-| 1.2.4   | &nbsp;&nbsp;&nbsp;`/ui`        | custom React components tailored using `nextui-org`    |
+| **1.2**             | **`/app/components`**          | **reusable React components**                          |
+| -------------------:| :----------------------------- | :----------------------------------------------------- |
+| &nbsp;&nbsp;1.2.1   | &nbsp;&nbsp;&nbsp;`/forms`     | form elements and structures using `react-hook-form`   |
+| &nbsp;&nbsp;1.2.2   | &nbsp;&nbsp;&nbsp;`/layout`    | structural layout of application                       |
+| &nbsp;&nbsp;1.2.3   | &nbsp;&nbsp;&nbsp;`/providers` | context providers                                      |
+| &nbsp;&nbsp;1.2.4   | &nbsp;&nbsp;&nbsp;`/ui`        | custom React components tailored using `nextui-org`    |
 
 ### 1.2.1 components/forms
 
