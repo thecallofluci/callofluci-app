@@ -54,7 +54,7 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 | 1.6  | `/app/utils`          | Utility functions                             |
 | 1.7  | `/app/working`        | Temp directory containing works in progress   |
 
-### components
+### 1.2 components
 
 The `components` directory within the `app` folder organizes a collection of reusable React components that form the building blocks of the Call Of Luci application's user interface. It is organized into subdirectories that categorize components based on their functionality and usage within the application:
 
@@ -72,7 +72,7 @@ The `components` directory within the `app` folder organizes a collection of reu
 | `/app/components/providers` | initializing and configuring global providers       |
 | `/app/components/ui`        | custom React components tailored from NextUI        |
 
-### hooks
+### 1.3 hooks
 
 The `hooks` directory within the `app` folder organizes the application’s custom React hooks.
 
@@ -83,7 +83,7 @@ The `hooks` directory within the `app` folder organizes the application’s cust
 |                                    |                                                                                        |
 | `/app/hooks/useObservationForm.ts` | Custom hook for managing the observation form state, validation, and submission logic. |
 
-### lib
+### 1.4 lib
 
 The `lib` directory within the `app` folder organizes the shared library.
 
@@ -95,7 +95,7 @@ The `lib` directory within the `app` folder organizes the shared library.
 | `/app/lib/actions/`                     | File name description or explanation |
 | `/app/lib/actions/submitObservation.ts` | File name description or explanation |
 
-### styles
+### 1.6 styles
 
 The `styles` directory within the `app` folder organizes the style-related files that define the visual aesthetics of the Call Of Luci application.
 It is organized into subdirectories for a clear separation of concerns:
@@ -115,7 +115,7 @@ It is organized into subdirectories for a clear separation of concerns
 | `/app/styles/globals.css`   | globals                                                         |
 | `/app/styles/primitives.ts` | primitives                                                      |
 
-### utils
+### 1.6 utils
 
 The `utils` directory within the `app` folder organizes utility functions used throughout the app.
 
