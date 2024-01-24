@@ -4,18 +4,18 @@ The project adopts Next.js's [unopinionated approach](https://nextjs.org/doc
 
 ## Main Directories
 
-The project's source code `/src` directory is divided into three main directories: `/app`, `/config`, and `/types`:
+The project's source code `/src` directory is divided into three main subdirectories: `/app`, `/config`, and `/types`:
 
 | **`/src`**            | **Source Code**                                                                                      |
 | :-------------------- | :--------------------------------------------------------------------------------------------------- |
 | **subfolders**        |                                                                                                      |
-| `/src/app`            | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
+| `/src/app`            | [Next.js App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
 | `/src/config`         | Configuration files that define global settings and constants.                                       |
 | `/src/types`          | TypeScript type definitions and interfaces.                                                          |
 
 ## app Directory
 
-The `/app` folder within the `/src` directory organizes is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
+The `/app` folder within the `/src` directory organizes the central hub for the project, the Next.js App Router. It organizes the application's primary routes and core functional elements:
 
 | **`/app`**            | **Next.js App Router**                        |
 | :-------------------- | :-------------------------------------------- |
@@ -46,7 +46,7 @@ The `/components` folder within the `/app` directory organizes a collection of r
 
 ### app/hooks
 
-The `/hooks` directory within the `/app` folder organizes the application’s custom React hooks.
+The `/hooks` directory within the `/app` folder organizes the application’s custom React hooks:
 
 | **`/hooks`**                   | **custom React hooks**                                             |
 | :------------------------------| :----------------------------------------------------------------- |
@@ -56,7 +56,7 @@ The `/hooks` directory within the `/app` folder organizes the application’s cu
 
 ### app/lib
 
-The `/lib` directory within the `/app` folder organizes the shared library.
+The `/lib` directory within the `/app` folder organizes the shared library:
 
 | **`/lib`**                     | **Shared library**                                                 |
 | :------------------------------| :----------------------------------------------------------------- |
@@ -65,12 +65,7 @@ The `/lib` directory within the `/app` folder organizes the shared library.
 
 ### app/styles
 
-The `/styles` directory within the `/app` folder organizes the style-related files that define the visual aesthetics of the Call Of Luci application.
-It is organized into subdirectories for a clear separation of concerns:
-
--   `/colors`: color variables and utility classes.
--   `/fonts`: font files and associated styling.
--   `/themes`: theme configuration files.
+The `/styles` directory within the `/app` folder organizes the style-related files that define the visual aesthetics of the application:
 
 | **`/styles`**                  | **global styles, colors, fonts, themes**                           |
 | :------------------------------| :----------------------------------------------------------------- |
