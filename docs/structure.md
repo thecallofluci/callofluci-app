@@ -8,8 +8,7 @@ approach towards project organization and file colocation.
 
 ## src Directory
 
-[callofluciapp/src/app](callofluciapp/src/app)
-[callofluciapp/src/app/page.tsx](callofluciapp/src/app/page.tsx)
+[`ObservationForm.tsx`](../src/app/components/forms/ObservationForm.tsx)
 
 The project's source code `/src` directory is divided into three main subdirectories: `/app`,
 `/config`, and `/types`:
