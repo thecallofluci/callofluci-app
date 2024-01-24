@@ -4,7 +4,7 @@ The project adopts Next.js's [unopinionated approach](https://nextjs.org/doc
 
 ## Main Directories
 
-The project's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
+The project's source code `/src` directory is divided into three main directories: `/app`, `/config`, and `/types`:
 
 | **`/src`**            | **Source Code**                                                                                      |
 | :-------------------- | :--------------------------------------------------------------------------------------------------- |
@@ -15,7 +15,7 @@ The project's source code `/src` directory is divided into three main directorie
 
 ## app Directory
 
-The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
+The `/app` folder within the `/src` directory organizes is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
 | **`/app`**            | **Next.js App Router**                        |
 | :-------------------- | :-------------------------------------------- |
@@ -30,11 +30,11 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 
 ### app/(routes)
 
-The `(routes)` folder within the `app` directory organizes a collection of routes ...
+The `/(routes)` folder within the `/app` directory organizes a collection of routes ...
 
 ### app/components
 
-The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
+The `/components` folder within the `/app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
 
 | **`/components`**              | **reusable React components**                          |
 | :------------------------------| :----------------------------------------------------- |
@@ -46,7 +46,7 @@ The `components` folder within the `app` directory organizes a collection of reu
 
 ### app/hooks
 
-The `hooks` directory within the `app` folder organizes the application’s custom React hooks.
+The `/hooks` directory within the `/app` folder organizes the application’s custom React hooks.
 
 | **`/hooks`**                   | **custom React hooks**                                             |
 | :------------------------------| :----------------------------------------------------------------- |
@@ -54,101 +54,71 @@ The `hooks` directory within the `app` folder organizes the application’s cust
 | `/hooks/useObservationForm.ts` | managed observation form state, validation, and submission logic   |
 | `/hooks/xxxxxxx.ts`            | file description                                                   |
 
-### 1.4 lib
+### app/lib
 
-The `lib` directory within the `app` folder organizes the shared library.
+The `/lib` directory within the `/app` folder organizes the shared library.
 
-| **lib**                                 |                                       |
-| :-------------------------------------- | :------------------------------------ |
-|                                         |                                       |
-| `/app/lib/`                             | Shared library                        |
-|                                         |                                       |
-| `/app/lib/actions/`                     | File name description or explanation |
-| `/app/lib/actions/submitObservation.ts` | File name description or explanation |
+| **`/lib`**                     | **Shared library**                                                 |
+| :------------------------------| :----------------------------------------------------------------- |
+| **subfolders**                 |                                                                    |
+| `/lib/submitObservation.ts`    | File name description or explanation                               |
 
-### 1.6 styles
+### app/styles
 
-The `styles` directory within the `app` folder organizes the style-related files that define the visual aesthetics of the Call Of Luci application.
+The `/styles` directory within the `/app` folder organizes the style-related files that define the visual aesthetics of the Call Of Luci application.
 It is organized into subdirectories for a clear separation of concerns:
 
--   `colors`: color variables and utility classes.
--   `fonts`: font files and associated styling.
--   `themes`: theme configuration files.
+-   `/colors`: color variables and utility classes.
+-   `/fonts`: font files and associated styling.
+-   `/themes`: theme configuration files.
 
-| **styles**                  |                                                                 |
-| :-------------------------- | :-------------------------------------------------------------- |
-|                             |                                                                 |
-| `/app/styles`               | global styles, colors, fonts, themes                            |
-| `/app/styles/colors`        | color definitions and utility classes for consistent theming    |
-| `/app/styles/font`          | font files and typographic styles                               |
-| `/app/styles/themes`        | theme configuration for light/dark modes and design consistency |
-|                             |                                                                 |
-| `/app/styles/globals.css`   | globals                                                         |
-| `/app/styles/primitives.ts` | primitives                                                      |
+| **`/styles`**                  | **global styles, colors, fonts, themes**                           |
+| :------------------------------| :----------------------------------------------------------------- |
+| **subfolders**                 |                                                                    |
+| `/styles/colors`               | color definitions and utility classes for consistent theming       |
+| `/styles/font`                 | font files and typographic styles                                  |
+| `/styles/themes`               | theme configuration for light/dark modes and design consistency    |
+|                                |                                                                    |
+| `/styles/globals.css`          | globals                                                            |
+| `/styles/primitives.ts`        | primitives                                                         |
 
-### 1.6 utils
+## config Directory
 
-The `utils` directory within the `app` folder organizes utility functions used throughout the app.
+The `/config` folder within the `/src` directory organizes the project's configuration files.
 
-| **utils**    |                          |
-| :----------- | :----------------------- |
-|              |                          |
-| `/app/utils` | shared utility functions |
+| **`/config`**              | **Configuration files**                      |
+| :------------------------ | :------------------------------------------- |
+| **subfolders**            |                                              |
+| `/config/constants.ts`| constant values used throughout app          |
+| `/config/metadata.ts` | metadata for Next.js app                     |
+| `/config/site.ts`     | site configuration                           |
 
-## 2. config Directory
+## types Directory
 
-The `config` directory in the Call Of Luci project is designated for configuration files.
+The `/types` folder within the `/type` directory organizes the project's type definitions.
 
-| **config Directory**      |                                     |
-| :------------------------ | :---------------------------------- |
-|                           |                                     |
-| `/src/config/`            | Configuration Files                 |
-|                           |                                     |
-| `/src/config/constants.ts`| constant values used throughout app |
-| `/src/config/metadata.ts` | metadata for Next.js app            |
-| `/src/config/site.ts`     | site configuration                  |
-
-## 3. types Directory
-
-The `types` directory in the Call Of Luci project is designated for type definitions.
-
-| **types Directory**       |                                                    |
+| **`/types`**               | **Type definitions**                               |
 | :------------------------ | :------------------------------------------------- |
-|                           |                                                    |
-| `/src/types/`             | Type definitions                                   |
-|                           |                                                    |
-| `/src/types/interfaces.ts`| declares TypeScript interfaces used throughout app |
-| `/src/types/types.ts`     | declares TypeScript types used throughout app      |
+| **subfolders**            |                                                    |
+| `/types/interfaces.ts`| declares TypeScript interfaces used throughout app |
+| `/types/types.ts`     | declares TypeScript types used throughout app      |
 
 ## public Directory
 
-The `public` directory in the Call Of Luci project is designated for static assets that are served directly by Next.js without the need for additional import statements.
+The `/public` directory at the root of the project is designated for static assets that are served directly by Next.js without the need for additional import statements.
 
-| **public Directory**       |                                 |
+| **/`public`**              | **Static assets to be served**  |
 | :------------------------- | :------------------------------ |
+| **subfolders**             |                                 |
+| `/public/assets`           | global assets                   |
+| `/public/mockup`           | mockups and design files        |
 |                            |                                 |
-| **`/src/public/`**         | **Static assets to be served**  |
-| `/src/public/assets`       | global assets                   |
-| `/src/public/mockup`       | mockups and design files        |
-|                            |                                 |
-| `/src/public/icon.svg`     | SVG icon file                   |
-| `/src/public/lucilogo.svg` | SVG logo file for Luci          |
-| `/src/public/next.svg`     | SVG file related to Next.js     |
-| `/src/public/TheMuck.jpg`  | The Muck art                    |
-| `/src/public/vercel.svg`   | SVG logo file for Vercel        |
-| `/src/public/wormfood.jpg` | Wormfood art                    |
-
-| **/src/public/**         | **Static assets to be served**  |
-| :------------------------- | :------------------------------ |
-|                            |                                 |
-| `/src/public/assets`       | global assets                   |
-| `/src/public/mockup`       | mockups and design files        |
-| `/src/public/icon.svg`     | SVG icon file                   |
-| `/src/public/lucilogo.svg` | SVG logo file for Luci          |
-| `/src/public/next.svg`     | SVG file related to Next.js     |
-| `/src/public/TheMuck.jpg`  | The Muck art                    |
-| `/src/public/vercel.svg`   | SVG logo file for Vercel        |
-| `/src/public/wormfood.jpg` | Wormfood art                    |
+| `/public/icon.svg`         | SVG icon file                   |
+| `/public/lucilogo.svg`     | SVG logo file for Luci          |
+| `/public/next.svg`         | SVG file related to Next.js     |
+| `/public/TheMuck.jpg`      | The Muck art                    |
+| `/public/vercel.svg`       | SVG logo file for Vercel        |
+| `/public/wormfood.jpg`     | Wormfood art                    |
 
 ## Root Directory
 
