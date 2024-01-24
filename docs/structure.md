@@ -1,6 +1,6 @@
 # Project Structure
 
-This project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation. The codebase for Call Of Luci is organized as follows.
+The project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation. The codebase for Call Of Luci is organized as follows.
 
 ## Root Directory
 
@@ -54,6 +54,10 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 | 1.6  | `/app/utils`          | Utility functions                             |
 | 1.7  | `/app/working`        | Temp directory containing works in progress   |
 
+### 1.1 (routes)
+
+The `(routes)` folder within the `app` directory organizes a collection of routes ...
+
 ### 1.2 components
 
 The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface. It is organized into subdirectories that categorize components based on their functionality and usage within the application:
@@ -65,12 +69,20 @@ The `components` folder within the `app` directory organizes a collection of reu
 
 | **components**              |                                                     |
 | :-------------------------- | :-------------------------------------------------- |
+| `/app/components`           | reusable React components                           |
 |                             |                                                     |
-| `/app/components`           | custom React components                             |
-| `/app/components/forms`     | React form components using React Hook Form library |
-| `/app/components/layout`    | root layout components                              |
-| `/app/components/providers` | initializing and configuring global providers       |
-| `/app/components/ui`        | custom React components tailored from NextUI        |
+| `/components/forms`         | React form components using React Hook Form library |
+| `/components/layout`        | root layout components                              |
+| `/components/providers`     | initializing and configuring global providers       |
+| `/components/ui`            | custom React components tailored from NextUI        |
+
+| **`/app/components`**       | **reusable React components**                       |
+| :-------------------------- | :-------------------------------------------------- |
+|                             |                                                     |
+| `/components/forms`         | React form components using React Hook Form library |
+| `/components/layout`        | root layout components                              |
+| `/components/providers`     | initializing and configuring global providers       |
+| `/components/ui`            | custom React components tailored from NextUI        |
 
 ### 1.2.1 components/forms
 
