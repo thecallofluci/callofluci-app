@@ -16,20 +16,25 @@ The project's source code `/src` directory is divided into three main directorie
 
 The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
-| #    | **app Directory**     | Description                                   |
-| ---- | :-------------------- | :-------------------------------------------- |
-| 1    | `/app`                | Next.js App Router                            |
-| 1.1  | `/app/(routes)`       | Primary route group                           |
-| 1.2  | `/app/components`     | Reusable React components                     |
-| 1.3  | `/app/hooks`          | Custom React hooks                            |
-| 1.4  | `/app/lib`            | Shared library                                |
-| 1.5  | `/app/styles`         | Global styles, colors, fonts, themes          |
-| 1.6  | `/app/utils`          | Utility functions                             |
-| 1.7  | `/app/working`        | Temp directory containing works in progress   |
+| **app Directory**     | **Purpose**                                   |
+| :-------------------- | :-------------------------------------------- |
+| **`/app`**            | **Next.js App Router**                        |
+|                       |                                               |
+| `/app/(routes)`       | Primary route group                           |
+| `/app/components`     | Reusable React components                     |
+| `/app/hooks`          | Custom React hooks                            |
+| `/app/lib`            | Shared library                                |
+| `/app/styles`         | Global styles, colors, fonts, themes          |
+| `/app/utils`          | Utility functions                             |
+| `/app/working`        | Temp directory containing works in progress   |
 
 | **app Directory**     | **Purpose**                                   |
 | :-------------------- | :-------------------------------------------- |
 | **`/app`**            | **Next.js App Router**                        |
+|                       |                                               |
+
+| **sub-directory**     | **Purpose**                                   |
+| :-------------------- | :-------------------------------------------- |
 | `/app/(routes)`       | Primary route group                           |
 | `/app/components`     | Reusable React components                     |
 | `/app/hooks`          | Custom React hooks                            |
