@@ -8,6 +8,9 @@ approach towards project organization and file colocation.
 
 ## src Directory
 
+[src/app](src/app)
+[src/app/page.tsx](src/app/page.tsx)
+
 The project's source code `/src` directory is divided into three main subdirectories: `/app`,
 `/config`, and `/types`:
 
@@ -114,7 +117,6 @@ The `/hooks` subdirectory within the `/app` directory organizes the applicationâ
 | :----------------------------- | :--------------------------------------------------------------- |
 | **subfolders**                 |                                                                  |
 | `/hooks/useObservationForm.ts` | managed observation form state, validation, and submission logic |
-| `/hooks/xxxxxxx.ts`            | file description                                                 |
 
 ### Styles | app/styles
 
