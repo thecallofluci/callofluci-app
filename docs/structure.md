@@ -70,7 +70,7 @@ The `components` folder within the `app` directory organizes a collection of reu
 | &nbsp;&nbsp;1.2.4   | &nbsp;&nbsp;&nbsp;`/ui`        | custom React components tailored using `nextui-org`    |
 
 | **1.2**             | **`/components/...`**          | **reusable React components**                          |
-| -------------------:| :----------------------------- | :----------------------------------------------------- |
+| :-------------------| :----------------------------- | :----------------------------------------------------- |
 | &nbsp;&nbsp;1.2.1   | &nbsp;&nbsp;&nbsp;`/forms`     | form elements and structures using `react-hook-form`   |
 | &nbsp;&nbsp;1.2.2   | &nbsp;&nbsp;&nbsp;`/layout`    | structural layout of application                       |
 | &nbsp;&nbsp;1.2.3   | &nbsp;&nbsp;&nbsp;`/providers` | context providers                                      |
