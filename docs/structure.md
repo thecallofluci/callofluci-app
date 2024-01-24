@@ -8,8 +8,6 @@ approach towards project organization and file colocation.
 
 ## src Directory
 
-[`ObservationForm.tsx`](../src/app/components/forms/ObservationForm.tsx)
-
 The project's source code `/src` directory is divided into three main subdirectories: `/app`,
 `/config`, and `/types`:
 
@@ -68,7 +66,7 @@ The `/forms` subdirectory within the `/app/components` directory contains form-r
 | **`/components/forms`** | **Form Elements and Structures**                                  |
 | :----------------------- | :--------------------------------------------------------------- |
 | **files**                |                                                                  |
-| `ObservationForm.tsx`   | Manages the creation of new Observations using `react-hook-form`. |
+| [`ObservationForm.tsx`](../src/app/components/forms/ObservationForm.tsx)   | Manages the creation of new Observations using `react-hook-form`. |
 
 ### Layout | app/components/layout
 
