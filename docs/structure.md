@@ -1,17 +1,19 @@
 # Project Structure
 
-The Call Of Luci project adheres to the Next.js framework's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation.
+This project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation.
 
 ## Root Directory
 
-The structure of Call Of Luci is divided into two root-level directories: `public` and `src`:
+The structure of the project codebase is divided into two root-level directories: `public` and `src`:
 
 | **Root-Level Directories** |                                                     |
 | :------------------------- | :-------------------------------------------------- |
 | `/public`                  | static assets served                                |
 | `/src`                     | source code for Call Of Luci                        |
 
-Root-level files primarily consist of configuration and metadata files that define the environment, dependencies, and build processes:
+## Root Files
+
+The root-level files in the project include essential configurations for the application's environment, coding standards, dependencies, and metadata:
 
 | **Root-Level Files**       |                                                     |
 | :------------------------- | :-------------------------------------------------- |
@@ -31,7 +33,7 @@ Root-level files primarily consist of configuration and metadata files that defi
 
 ## Main Directories
 
-The structure of Call Of Luci's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
+The project's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
 
 | #  | **Main Directories** |                                                                                                      |
 | -- | :------------------- | :--------------------------------------------------------------------------------------------------- |
