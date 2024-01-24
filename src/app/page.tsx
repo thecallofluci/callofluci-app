@@ -26,6 +26,8 @@ import {
 
 import { LuciMaskIcon, LuciMazeIcon } from '@/src/app/components/ui/LuciIcons'
 
+import '@/src/app/styles/fonts/typewriter.css'
+
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
