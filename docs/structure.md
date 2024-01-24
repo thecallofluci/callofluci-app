@@ -6,11 +6,13 @@ The project adopts Next.js's [unopinionated approach](https://nextjs.org/doc
 
 The project's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
 
-| #  | **Main Directories** |                                                                                                      |
-| -- | :------------------- | :--------------------------------------------------------------------------------------------------- |
-| 1  | `/src/app`           | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
-| 2  | `/src/config`        | Configuration files that define global settings and constants.                                       |
-| 3  | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
+| **src Directory**     | **Purpose**                                                                                          |
+| :-------------------- | :--------------------------------------------------------------------------------------------------- |
+| `/src`                | Source code                                                                                          |
+| **subfolders**        |                                                                                                      |
+| `/src/app`            | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
+| `/src/config`         | Configuration files that define global settings and constants.                                       |
+| `/src/types`          | TypeScript type definitions and interfaces.                                                          |
 
 ## 1. app Directory
 
