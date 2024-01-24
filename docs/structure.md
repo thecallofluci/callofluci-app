@@ -79,10 +79,10 @@ The `components` folder within the `app` directory organizes a collection of reu
 | **`/app/components`**       | **reusable React components**                       |
 | :-------------------------- | :-------------------------------------------------- |
 |                             |                                                     |
-| ( )( )`/forms`                  | React form components using React Hook Form library |
-| ( )( )`/layout`                 | root layout components                              |
-| ( )( )`/providers`              | initializing and configuring global providers       |
-| ( )( )`/ui`                     | custom React components tailored from NextUI        |
+| &nbsp;&nbsp;`/forms`        | React form components using React Hook Form library |
+| &nbsp;&nbsp;`/layout`       | root layout components                              |
+| &nbsp;&nbsp;`/providers`    | initializing and configuring global providers       |
+| &nbsp;&nbsp;`/ui`           | custom React components tailored from NextUI        |
 
 ### 1.2.1 components/forms
 
