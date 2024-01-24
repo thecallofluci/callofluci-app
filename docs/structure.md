@@ -62,7 +62,7 @@ The `(routes)` folder within the `app` directory organizes a collection of route
 
 The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
 
-| **1.2**             | **`/app/components`**          | **reusable React components**                          |
+| **1.2**             | **`/components`**              | **reusable React components**                          |
 | --------------------| :----------------------------- | :----------------------------------------------------- |
 | &nbsp;&nbsp;1.2.1   | &nbsp;&nbsp;&nbsp;`/forms`     | form elements and structures using `react-hook-form`   |
 | &nbsp;&nbsp;1.2.2   | &nbsp;&nbsp;&nbsp;`/layout`    | structural layout of application                       |
