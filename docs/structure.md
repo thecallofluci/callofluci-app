@@ -60,29 +60,15 @@ The `(routes)` folder within the `app` directory organizes a collection of route
 
 ### 1.2 components
 
-The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface. It is organized into subdirectories that categorize components based on their functionality and usage within the application:
+The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
 
--   `forms`: components related to form elements and structures.
--   `layout`: components that define the structural layout of the application.
--   `ui`: user interface components that are used across the application.
--   `providers`: context providers that manage and distribute application state or functionality to components.
-
-| **components**              |                                                     |
-| :-------------------------- | :-------------------------------------------------- |
-| `/app/components`           | reusable React components                           |
-|                             |                                                     |
-| `/components/forms`         | React form components using React Hook Form library |
-| `/components/layout`        | root layout components                              |
-| `/components/providers`     | initializing and configuring global providers       |
-| `/components/ui`            | custom React components tailored from NextUI        |
-
-| **`/app/components`**       | **reusable React components**                       |
-| :-------------------------- | :-------------------------------------------------- |
-|                             |                                                     |
-| &nbsp;&nbsp;`/forms`        | React form components using React Hook Form library |
-| &nbsp;&nbsp;`/layout`       | root layout components                              |
-| &nbsp;&nbsp;`/providers`    | initializing and configuring global providers       |
-| &nbsp;&nbsp;`/ui`           | custom React components tailored from NextUI        |
+| **`/app/components`**             | **reusable React components**                          |
+| :-------------------------------- | :----------------------------------------------------- |
+|                                   |                                                        |
+| &nbsp;&nbsp;&nbsp;`/forms`        | form elements and structures using `react-hook-form`   |
+| &nbsp;&nbsp;&nbsp;`/layout`       | structural layout of application                       |
+| &nbsp;&nbsp;&nbsp;`/providers`    | context providers                                      |
+| &nbsp;&nbsp;&nbsp;`/ui`           | custom React components tailored using `nextui-org`    |
 
 ### 1.2.1 components/forms
 
