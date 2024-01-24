@@ -28,26 +28,11 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 | `/app/utils`          | Utility functions                             |
 | `/app/working`        | Temp directory containing works in progress   |
 
-| **app Directory**     | **Purpose**                                   |
-| :-------------------- | :-------------------------------------------- |
-| **`/app`**            | **Next.js App Router**                        |
-|                       |                                               |
-
-| **sub-directory**     | **Purpose**                                   |
-| :-------------------- | :-------------------------------------------- |
-| `/app/(routes)`       | Primary route group                           |
-| `/app/components`     | Reusable React components                     |
-| `/app/hooks`          | Custom React hooks                            |
-| `/app/lib`            | Shared library                                |
-| `/app/styles`         | Global styles, colors, fonts, themes          |
-| `/app/utils`          | Utility functions                             |
-| `/app/working`        | Temp directory containing works in progress   |
-
-### 1.1 (routes)
+### app/(routes)
 
 The `(routes)` folder within the `app` directory organizes a collection of routes ...
 
-### 1.2 components
+### app/components
 
 The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
 
@@ -65,7 +50,7 @@ The `components` folder within the `app` directory organizes a collection of reu
 | &nbsp;&nbsp;1.2.3   | &nbsp;&nbsp;&nbsp;`/providers` | context providers                                      |
 | &nbsp;&nbsp;1.2.4   | &nbsp;&nbsp;&nbsp;`/ui`        | custom React components tailored using `nextui-org`    |
 
-### 1.2.1 components/forms
+### app/components/forms
 
 The `forms` folder within the `components` directory organizes ...
 
