@@ -18,19 +18,7 @@ The project's source code `/src` directory is divided into three main directorie
 
 The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
-| **app Directory**     | **Purpose**                                   |
-| :-------------------- | :-------------------------------------------- |
-| `/app`                | Next.js App Router                            |
-| **subfolders**        |                                               |
-| `/app/(routes)`       | Primary route group                           |
-| `/app/components`     | Reusable React components                     |
-| `/app/hooks`          | Custom React hooks                            |
-| `/app/lib`            | Shared library                                |
-| `/app/styles`         | Global styles, colors, fonts, themes          |
-| `/app/utils`          | Utility functions                             |
-| `/app/working`        | Temp directory containing works in progress   |
-
-| `/app`                | Next.js App Router                            |
+| **`/app`**            | **Next.js App Router**                        |
 | :-------------------- | :-------------------------------------------- |
 | **subfolders**        |                                               |
 | `/app/(routes)`       | Primary route group                           |
