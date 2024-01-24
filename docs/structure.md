@@ -61,7 +61,9 @@ components that form the building blocks of the application's user interface:
 
 ### Forms | app/components/forms
 
-The `/forms` subdirectory within the `/app/components` directory contains form-related components, utilizing `react-hook-form` for form state management and validation:
+The `/forms` subdirectory within the `/app/components` directory contains form-related components, utilizing `react-hook-form` for form state management and validation.
+
+This project uses [`react-hook-form`](https://react-hook-form.com/) for form state management and validation.
 
 | **`/components/forms`** | **Form Elements and Structures**                                  |
 | :----------------------- | :--------------------------------------------------------------- |
