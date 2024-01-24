@@ -35,15 +35,16 @@ App Router. It organizes the application's primary routes and core functional el
 
 ### Routing | app/(routes)
 
-The `/(routes)` subdirectory within the `/app` directory organizes a collection of routes:
+The `/(routes)` subdirectory within the `/app` directory organizes a collection of routes using the Next.js App Router, locating the application's pages into a structured and accessible hierarchy. It contains subdirectories for each primary view of the application. 
 
-| **`/(routes)`**    | **Primary Route Group** |
-| :----------------- | :---------------------- |
-| **subfolders**     |                         |
-| `/(routes)/route1` | routing 1               |
-| `/(routes)/route2` | routing 2               |
-| `/(routes)/route3` | routing 3               |
-| `/(routes)/route4` | routing 4               |
+| **`/(routes)`**            | **Primary Route Group**                                  |
+| :------------------------- | :------------------------------------------------------- |
+| **subfolders**             |                                                          |
+| `/(routes)/about`          | about page                                               |
+| `/(routes)/examples`       | examples page                                            |
+| `/(routes)/gallery`        | gallery page                                             |
+| `/(routes)/mockup`         | mockup page                                              |
+| `/(routes)/observation`    | observation page                                         |
 
 ### Components | app/components
 
