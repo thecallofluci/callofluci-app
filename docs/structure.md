@@ -2,33 +2,6 @@
 
 The project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation. The codebase for Call Of Luci is organized as follows.
 
-## Root Directory
-
-The structure of the project codebase is divided into two root-level directories: `public` and `src`:
-
-| **Root-Level Directories** |                                                     |
-| :------------------------- | :-------------------------------------------------- |
-| `/public`                  | static assets served                                |
-| `/src`                     | source code                                         |
-
-## Root Files
-
-The root-level files in the project include configurations for the application's environment, coding standards, dependencies, and metadata:
-
-| **Root-Level Files**       |                                                     |
-| :------------------------- | :-------------------------------------------------- |
-| `/.eslintrc.json`          | Configuration for ESLint to enforce code quality    |
-| `/.gitignore`              | Specifies files to ignore by Git                    |
-| `/.prettierignore`         | Specifies files to ignore by Prettier               |
-| `/.prettierrc`             | Configuration file for Prettier code formatter      |
-| `/next.config.js`          | Configuration file for customizing Next.js behavior |
-| `/package-lock.json`       | Locks versions of project dependencies              |
-| `/package.json`            | Defines project dependencies and scripts            |
-| `/postcss.config.js`       | Configuration file for PostCSS                      |
-| `/README.md`               | Project description                                 |
-| `/tailwind.config.js`      | Configuration file for Tailwind CSS framework       |
-| `/tsconfig.json`           | Configuration file for TypeScript compiler options  |
-
 ## Main Directories
 
 The project's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
@@ -39,7 +12,7 @@ The project's source code `/src` directory is divided into three main directorie
 | 2  | `/src/config`        | Configuration files that define global settings and constants.                                       |
 | 3  | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
 
-## 1. `app` Directory
+## 1. app Directory
 
 The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
@@ -198,6 +171,33 @@ The `public` directory in the Call Of Luci project is designated for static asse
 | `/src/public/TheMuck.jpg`  | The Muck art                    |
 | `/src/public/vercel.svg`   | SVG logo file for Vercel        |
 | `/src/public/wormfood.jpg` | Wormfood art                    |
+
+## Root Directory
+
+The structure of the project codebase is divided into two root-level directories: `public` and `src`:
+
+| **Root-Level Directories** |                                                     |
+| :------------------------- | :-------------------------------------------------- |
+| `/public`                  | static assets served                                |
+| `/src`                     | source code                                         |
+
+## Root Files
+
+The root-level files in the project include configurations for the application's environment, coding standards, dependencies, and metadata:
+
+| **Root-Level Files**       |                                                     |
+| :------------------------- | :-------------------------------------------------- |
+| `/.eslintrc.json`          | Configuration for ESLint to enforce code quality    |
+| `/.gitignore`              | Specifies files to ignore by Git                    |
+| `/.prettierignore`         | Specifies files to ignore by Prettier               |
+| `/.prettierrc`             | Configuration file for Prettier code formatter      |
+| `/next.config.js`          | Configuration file for customizing Next.js behavior |
+| `/package-lock.json`       | Locks versions of project dependencies              |
+| `/package.json`            | Defines project dependencies and scripts            |
+| `/postcss.config.js`       | Configuration file for PostCSS                      |
+| `/README.md`               | Project description                                 |
+| `/tailwind.config.js`      | Configuration file for Tailwind CSS framework       |
+| `/tsconfig.json`           | Configuration file for TypeScript compiler options  |
 
 # Project Structure Documentation
 
