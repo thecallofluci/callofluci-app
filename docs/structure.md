@@ -13,7 +13,7 @@ The structure of the project codebase is divided into two root-level directories
 
 ## Root Files
 
-The root-level files in the project include essential configurations for the application's environment, coding standards, dependencies, and metadata:
+The root-level files in the project include configurations for the application's environment, coding standards, dependencies, and metadata:
 
 | **Root-Level Files**       |                                                     |
 | :------------------------- | :-------------------------------------------------- |
@@ -39,7 +39,7 @@ The project's source code `/src` directory is divided into three main directorie
 | 2  | `/src/config`        | Configuration files that define global settings and constants.                                       |
 | 3  | `/src/types`         | TypeScript type definitions and interfaces.                                                          |
 
-## 1. app Directory
+## 1. `app` Directory
 
 The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
