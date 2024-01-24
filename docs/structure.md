@@ -1,7 +1,7 @@
 # Project Structure
 The codebase is organized in alignment with the [Next.js Project Structure](https://nextjs.org/docs/getting-started/project-structure) guide. It adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) approach towards project organization and file colocation. 
 
-## Main Directories
+## src Directory
 
 The project's source code `/src` directory is divided into three main subdirectories: `/app`, `/config`, and `/types`:
 
@@ -22,7 +22,6 @@ The `/app` folder within the `/src` directory organizes the central hub for the 
 | `/app/(routes)`       | Primary route group                           |
 | `/app/components`     | Reusable React components                     |
 | `/app/hooks`          | Custom React hooks                            |
-| `/app/lib`            | Shared library                                |
 | `/app/styles`         | Global styles, colors, fonts, themes          |
 | `/app/utils`          | Utility functions                             |
 | `/app/working`        | Temp directory containing works in progress   |
@@ -61,15 +60,6 @@ The `/hooks` directory within the `/app` folder organizes the application’s cu
 | `/hooks/useObservationForm.ts` | managed observation form state, validation, and submission logic   |
 | `/hooks/xxxxxxx.ts`            | file description                                                   |
 
-### app/lib
-
-The `/lib` directory within the `/app` folder organizes the shared library:
-
-| **`/lib`**                     | **Shared library**                                                 |
-| :------------------------------| :----------------------------------------------------------------- |
-| **subfolders**                 |                                                                    |
-| `/lib/submitObservation.ts`    | File name description or explanation                               |
-
 ### app/styles
 
 The `/styles` directory within the `/app` folder organizes the style-related files that define the visual aesthetics of the application:
@@ -83,6 +73,15 @@ The `/styles` directory within the `/app` folder organizes the style-related f
 |                                |                                                                    |
 | `/styles/globals.css`          | globals                                                            |
 | `/styles/primitives.ts`        | primitives                                                         |
+
+### app/util
+
+The `/util` directory within the `/app` folder organizes shared utility functions:
+
+| **`/util`**                    | **Utility Functions**                                              |
+| :------------------------------| :----------------------------------------------------------------- |
+| **subfolders**                 |                                                                    |
+| `/util/submitObservation.ts`   | File name description or explanation                               |
 
 ## config Directory
 

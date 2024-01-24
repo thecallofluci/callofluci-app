@@ -1,4 +1,4 @@
-// src/app/_actions/submitObservation.ts
+// submitObservation.ts
 'use server'
 
 import { generateObservation } from './generateObservation';
