@@ -19,7 +19,6 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 | **app Directory**     | **Purpose**                                   |
 | :-------------------- | :-------------------------------------------- |
 | **`/app`**            | **Next.js App Router**                        |
-|                       |                                               |
 | **subfolders**        |                                               |
 | `/app/(routes)`       | Primary route group                           |
 | `/app/components`     | Reusable React components                     |
