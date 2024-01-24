@@ -30,7 +30,15 @@ The `/app` folder within the `/src` directory organizes the central hub for the 
 
 ### app/(routes)
 
-The `/(routes)` folder within the `/app` directory organizes a collection of routes ...
+The `/(routes)` folder within the `/app` directory organizes a collection of routes:
+
+| **`/(routes)`**                | **Primary Route Group**                                |
+| :------------------------------| :----------------------------------------------------- |
+| **subfolders**                 |                                                        |
+| `/(routes)/route1`             | routing 1                                              |
+| `/(routes)/route2`             | routing 2                                              |
+| `/(routes)/route3`             | routing 3                                              |
+| `/(routes)/route4`             | routing 4                                              |
 
 ### app/components
 
