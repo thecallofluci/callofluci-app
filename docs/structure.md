@@ -33,7 +33,7 @@ App Router. It organizes the application's primary routes and core functional el
 | `/app/utils`      | Utility functions                           |
 | `/app/working`    | Temp directory containing works in progress |
 
-### Routing | `app/(routes)`
+### Routing | app/(routes)
 
 The `/(routes)` subdirectory within the `/app` directory organizes a collection of routes:
 
