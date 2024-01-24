@@ -1,6 +1,6 @@
 # Project Structure
 
-This project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation.
+This project adopts Next.js's [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation) towards project organization and file colocation. The codebase for Call Of Luci is organized as follows.
 
 ## Root Directory
 
@@ -9,7 +9,7 @@ The structure of the project codebase is divided into two root-level directories
 | **Root-Level Directories** |                                                     |
 | :------------------------- | :-------------------------------------------------- |
 | `/public`                  | static assets served                                |
-| `/src`                     | source code for Call Of Luci                        |
+| `/src`                     | source code                                         |
 
 ## Root Files
 
@@ -17,18 +17,16 @@ The root-level files in the project include essential configurations for the app
 
 | **Root-Level Files**       |                                                     |
 | :------------------------- | :-------------------------------------------------- |
-| `/LICENSE`                 | License file for project                            |
-| `/.env`                    | Environment variables                               |
 | `/.eslintrc.json`          | Configuration for ESLint to enforce code quality    |
-| `/.gitignore`              | Git files and folders to ignore                     |
+| `/.gitignore`              | Specifies files to ignore by Git                    |
 | `/.prettierignore`         | Specifies files to ignore by Prettier               |
-| `/.prettierrc`             | Configuration for Prettier code formatter           |
+| `/.prettierrc`             | Configuration file for Prettier code formatter      |
 | `/next.config.js`          | Configuration file for customizing Next.js behavior |
 | `/package-lock.json`       | Locks versions of project dependencies              |
 | `/package.json`            | Defines project dependencies and scripts            |
-| `/postcss.config.js`       | Configuration for PostCSS                           |
+| `/postcss.config.js`       | Configuration file for PostCSS                      |
 | `/README.md`               | Project description                                 |
-| `/tailwind.config.js`      | Configuration for Tailwind CSS framework            |
+| `/tailwind.config.js`      | Configuration file for Tailwind CSS framework       |
 | `/tsconfig.json`           | Configuration file for TypeScript compiler options  |
 
 ## Main Directories
@@ -58,12 +56,12 @@ The `app` directory in the Call of Luci project is the central hub for the Next.
 
 ### 1.2 components
 
-The `components` directory within the `app` folder organizes a collection of reusable React components that form the building blocks of the Call Of Luci application's user interface. It is organized into subdirectories that categorize components based on their functionality and usage within the application:
+The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface. It is organized into subdirectories that categorize components based on their functionality and usage within the application:
 
--   `forms`: Contains components related to form elements and structures, such as input fields, buttons, and form layouts, which are used to capture user input.
--   `layout`: Houses components that define the structural layout of the application, including headers, footers, and navigation bars, ensuring a consistent look and feel across different pages.
--   `ui`: Includes user interface components that are used across the application, such as modals, cards, and dropdowns, providing a uniform design language.
--   `providers`: Contains context providers that manage and distribute application state or functionality to components, enabling state management and data flow across the component tree.
+-   `forms`: components related to form elements and structures.
+-   `layout`: components that define the structural layout of the application.
+-   `ui`: user interface components that are used across the application.
+-   `providers`: context providers that manage and distribute application state or functionality to components.
 
 | **components**              |                                                     |
 | :-------------------------- | :-------------------------------------------------- |
@@ -73,6 +71,22 @@ The `components` directory within the `app` folder organizes a collection of reu
 | `/app/components/layout`    | root layout components                              |
 | `/app/components/providers` | initializing and configuring global providers       |
 | `/app/components/ui`        | custom React components tailored from NextUI        |
+
+### 1.2.1 components/forms
+
+The `forms` folder within the `components` directory organizes ...
+
+### 1.2.2 components/layout
+
+The `layout` folder within the `components` directory organizes ...
+
+### 1.2.3 components/providers
+
+The `providers` folder within the `components` directory organizes ...
+
+### 1.2.4 components/ui
+
+The `ui` folder within the `components` directory organizes ...
 
 ### 1.3 hooks
 
