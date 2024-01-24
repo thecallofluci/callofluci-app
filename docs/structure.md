@@ -59,6 +59,53 @@ components that form the building blocks of the application's user interface:
 | `/components/providers` | context providers                                    |
 | `/components/ui`        | custom React components tailored using `nextui-org`  |
 
+### Forms | app/components/forms
+
+The `/forms` subdirectory within the `/app/components` directory contains form-related components, utilizing `react-hook-form` for form state management and validation:
+
+| **`/components/forms`** | **Form Elements and Structures**                                  |
+| :----------------------- | :--------------------------------------------------------------- |
+| **files**                |                                                                  |
+| `ObservationForm.tsx`   | Manages the creation of new Observations using `react-hook-form`. |
+
+### Layout | app/components/layout
+
+The `/layout` subdirectory within the `/app/components` directory holds components that are responsible for the structural layout of the application, which together form the common layout used across different pages of the application.
+
+| **`/components/layout`** | **Structural Layout Components**                                 |
+| :----------------------- | :--------------------------------------------------------------- |
+| **files**                |                                                                  |
+| `AppWrapper.tsx`         | Wraps the main application layout.                               |
+| `Body.tsx`               | Represents the main body of a page layout.                       |
+| `Footer.tsx`             | Contains the footer component used across the application.       |
+| `Header.tsx`             | Contains the header component with navigation links.             |
+
+### Providers | app/components/providers
+
+The `/providers` subdirectory within the `/app/components` directory contains context providers that manage global application state. The `providers.tsx` file exports a Providers component that wraps the application with necessary context providers, such as theme providers from `next-themes` and `nextui-org`.
+
+| **`/components/providers`** | **Context Providers**                                            |
+| :-------------------------- | :--------------------------------------------------------------- |
+| **files**                   |                                                                  |
+| `providers.tsx`             | wraps application with necessary context providers.              |
+
+### UI | app/components/ui
+
+The `/ui` subdirectory within the `/app/components` directory is dedicated to custom React components that are styled using `nextui-org`.
+
+| **`/components/ui`**        | **Custom UI Components**                                         |
+| :-------------------------- | :--------------------------------------------------------------- |
+| **files**                   |                                                                  |
+| `LuciButton.tsx`            | Custom button component styled with `nextui-org`.                |
+| `LuciCard.tsx`              | Card component for displaying Observations.                      |
+| `LuciIcons.tsx`             | Collection of icon components.                                   |
+| `LuciImage.tsx`             | Custom image component.                                          |
+| `LuciModal.tsx`             | Modal component for overlays.                                    |
+| `LuciNavbar.tsx`            | Navigation bar component.                                        |
+| `LuciSpinner.tsx`           | Spinner component for loading states.                            |
+| `LuciTextArea.tsx`          | Text area component for form inputs.                             |
+| `LuciThemeSwitch.tsx`       | Theme switch component for toggling between light and dark modes.|
+
 ### Hooks | app/hooks
 
 The `/hooks` subdirectory within the `/app` directory organizes the application’s custom React hooks:

@@ -48,9 +48,6 @@
 │   │   │       └── LuciThemeSwitch.tsx
 │   │   ├── hooks
 │   │   │   └── useObservationForm.ts
-│   │   ├── lib
-│   │   │   └── actions
-│   │   │       └── submitObservation.ts
 │   │   ├── styles
 │   │   │   ├── colors
 │   │   │   │   ├── luciColors.ts
@@ -64,7 +61,7 @@
 │   │   │   ├── globals.css
 │   │   │   └── primitives.ts
 │   │   ├── utils
-│   │   │   └── XXXXX.tsx
+│   │   │   └── submitObservation.ts
 │   │   ├── working
 │   │   │   └── XXXXX.tsx
 │   │   ├── error.tsx
