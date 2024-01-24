@@ -6,15 +6,14 @@ The project adopts Next.js's [unopinionated approach](https://nextjs.org/doc
 
 The project's source code `/src` directory is divided into three main directories: `app`, `config`, and `types`:
 
-| **src Directory**     | **Purpose**                                                                                          |
+| **`/src`**            | **Source Code**                                                                                      |
 | :-------------------- | :--------------------------------------------------------------------------------------------------- |
-| `/src`                | Source code                                                                                          |
 | **subfolders**        |                                                                                                      |
 | `/src/app`            | Next.js [App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
 | `/src/config`         | Configuration files that define global settings and constants.                                       |
 | `/src/types`          | TypeScript type definitions and interfaces.                                                          |
 
-## 1. app Directory
+## app Directory
 
 The `app` directory in the Call of Luci project is the central hub for the Next.js App Router, organizing the application's primary routes and housing the core functional elements of the application.
 
@@ -37,19 +36,13 @@ The `(routes)` folder within the `app` directory organizes a collection of route
 
 The `components` folder within the `app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface:
 
-| **1.2**             | **`/components`**              | **reusable React components**                          |
-| --------------------| :----------------------------- | :----------------------------------------------------- |
-| &nbsp;&nbsp;1.2.1   | &nbsp;&nbsp;&nbsp;`/forms`     | form elements and structures using `react-hook-form`   |
-| &nbsp;&nbsp;1.2.2   | &nbsp;&nbsp;&nbsp;`/layout`    | structural layout of application                       |
-| &nbsp;&nbsp;1.2.3   | &nbsp;&nbsp;&nbsp;`/providers` | context providers                                      |
-| &nbsp;&nbsp;1.2.4   | &nbsp;&nbsp;&nbsp;`/ui`        | custom React components tailored using `nextui-org`    |
-
-| **1.2**             | **`/components/...`**          | **reusable React components**                          |
-| :-------------------| :----------------------------- | :----------------------------------------------------- |
-| &nbsp;&nbsp;1.2.1   | &nbsp;&nbsp;&nbsp;`/forms`     | form elements and structures using `react-hook-form`   |
-| &nbsp;&nbsp;1.2.2   | &nbsp;&nbsp;&nbsp;`/layout`    | structural layout of application                       |
-| &nbsp;&nbsp;1.2.3   | &nbsp;&nbsp;&nbsp;`/providers` | context providers                                      |
-| &nbsp;&nbsp;1.2.4   | &nbsp;&nbsp;&nbsp;`/ui`        | custom React components tailored using `nextui-org`    |
+| **`/components`**              | **reusable React components**                          |
+| -------------------------------| :----------------------------------------------------- |
+| **subfolders**                 |                                                        |
+| `/components/forms`            | form elements and structures using `react-hook-form`   |
+| `/components/layout`           | structural layout of application                       |
+| `/components/providers`        | context providers                                      |
+| `/components/ui`               | custom React components tailored using `nextui-org`    |
 
 ### app/components/forms
 
