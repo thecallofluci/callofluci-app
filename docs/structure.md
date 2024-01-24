@@ -44,32 +44,15 @@ The `components` folder within the `app` directory organizes a collection of reu
 | `/components/providers`        | context providers                                      |
 | `/components/ui`               | custom React components tailored using `nextui-org`    |
 
-### app/components/forms
-
-The `forms` folder within the `components` directory organizes ...
-
-### 1.2.2 components/layout
-
-The `layout` folder within the `components` directory organizes ...
-
-### 1.2.3 components/providers
-
-The `providers` folder within the `components` directory organizes ...
-
-### 1.2.4 components/ui
-
-The `ui` folder within the `components` directory organizes ...
-
-### 1.3 hooks
+### app/hooks
 
 The `hooks` directory within the `app` folder organizes the application’s custom React hooks.
 
-| **hooks**                          |                                                                                        |
-| :--------------------------------- | :------------------------------------------------------------------------------------- |
-|                                    |                                                                                        |
-| `/app/hooks/`                      | Custom React hooks                                                                     |
-|                                    |                                                                                        |
-| `/app/hooks/useObservationForm.ts` | Custom hook for managing the observation form state, validation, and submission logic. |
+| **`/hooks`**                   | **custom React hooks**                                             |
+| :------------------------------| :----------------------------------------------------------------- |
+| **subfolders**                 |                                                                    |
+| `/hooks/useObservationForm.ts` | managed observation form state, validation, and submission logic   |
+| `/hooks/xxxxxxx.ts`            | file description                                                   |
 
 ### 1.4 lib
 
@@ -193,6 +176,22 @@ The root-level files in the project include configurations for the application's
 | `/README.md`               | Project description                                 |
 | `/tailwind.config.js`      | Configuration file for Tailwind CSS framework       |
 | `/tsconfig.json`           | Configuration file for TypeScript compiler options  |
+
+### app/components/forms
+
+The `forms` folder within the `components` directory organizes ...
+
+### 1.2.2 components/layout
+
+The `layout` folder within the `components` directory organizes ...
+
+### 1.2.3 components/providers
+
+The `providers` folder within the `components` directory organizes ...
+
+### 1.2.4 components/ui
+
+The `ui` folder within the `components` directory organizes ...
 
 # Project Structure Documentation
 
