@@ -187,7 +187,7 @@ The `public` directory in the Call Of Luci project is designated for static asse
 | `/src/public/vercel.svg`   | SVG logo file for Vercel        |
 | `/src/public/wormfood.jpg` | Wormfood art                    |
 
-| **`/src/public/`**         | **Static assets to be served**  |
+| **/src/public/**         | **Static assets to be served**  |
 | :------------------------- | :------------------------------ |
 |                            |                                 |
 | `/src/public/assets`       | global assets                   |
