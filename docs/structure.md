@@ -8,8 +8,7 @@ approach towards project organization and file colocation.
 
 ## src Directory
 
-The project's source code `/src` directory is divided into three main subdirectories: `/app`,
-`/config`, and `/types`:
+The project's source code [`/src`](../src) directory is divided into three main subdirectories: [`/app`](../src/app), [`/config`](../src/config), and [`/types`](../src/types):
 
 | **`/src`**     | **Source Code**                                                                                      |
 | :------------- | :--------------------------------------------------------------------------------------------------- |
