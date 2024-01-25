@@ -1,6 +1,10 @@
 ## Directory Tree
 ````
 .
+├── docs
+│   ├── appendix.md
+│   ├── structure.md
+│   └── tree.md
 ├── public
 │   ├── assets
 │   ├── mockup
