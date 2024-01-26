@@ -14,13 +14,13 @@
 
 ### app Directory
 
-| **Directory**      | **Description**                                                                                                                 |
-| :----------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| **`/app`**         | **The `/app` directory organizes the central hub for the project, the Next.js App Router.**                                     |
-| **Subdirectories** |                                                                                                                                 |
-| `/app/(routes)`    | `/(routes)` organizes a group of routes using Next.js App Router, locating the application's pages into a structured hierarchy. |
-| `/app/components`  | `/components` organizes reusable React components that form building blocks of application's user interface.                    |
-| `/app/hooks`       | `/hooks` organizes application’s custom React hooks.                                                                            |
-| `/app/styles`      | `/styles` organizes style related files that define visual aesthetics of application.                                           |
-| `/app/utils`       | `/utils` organizes shared utility functions.                                                                                    |
-| `/app/working`     | temp directory containing works in progress                                                                                     |
+| **Directory**      | **Description**                                                                                                     |
+| :----------------- | :------------------------------------------------------------------------------------------------------------------ |
+| **`/app`**         | **Organizes Next.js App Router as central hub for application.**                                                    |
+| **Subdirectories** |                                                                                                                     |
+| `/app/(routes)`    | Organizes a group of routes using Next.js App Router, locating the application's pages into a structured hierarchy. |
+| `/app/components`  | Organizes reusable React components that form building blocks of application's user interface.                      |
+| `/app/hooks`       | Organizes application’s custom React hooks.                                                                         |
+| `/app/styles`      | Organizes style related files that define visual aesthetics of application.                                         |
+| `/app/utils`       | Organizes shared utility functions.                                                                                 |
+| `/app/working`     | temp directory containing works in progress                                                                         |
