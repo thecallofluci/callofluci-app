@@ -86,16 +86,16 @@
 
 ### config Directory Files
 
-| **File**        | **Description**                                      |
-| :-------------- | :--------------------------------------------------- |
-| `default.js`    | Contains default configuration settings.             |
-| `production.js` | Contains production-specific configuration settings. |
+| **File**       | **Description**                                                               |
+| :------------- | :---------------------------------------------------------------------------- |
+| `constants.ts` | Central store for constants used throughout application.                      |
+| `metadata.ts`  | Defines application-wide metadata, aligning with site configuration.          |
+| `site.ts`      | Central configuration module outlining site structure and external resources. |
 
 ### types Directory Files
 
-| **File**      | **Description**                                   |
-| :------------ | :------------------------------------------------ |
-| `index.d.ts`  | Central file for TypeScript type definitions.     |
-| `models.d.ts` | Contains type definitions related to data models. |
+| **File**        | **Description**                                                              |
+| :-------------- | :--------------------------------------------------------------------------- |
+| `types.ts`      | Defines custom TypeScript types for consistent typing across application.    |
+| `interfaces.ts` | Defines TypeScript interfaces for structured data objects and UI components. |
 
-end
