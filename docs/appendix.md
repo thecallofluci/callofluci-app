@@ -4,13 +4,13 @@
 
 ### src Directory
 
-| **Directory**      | **Description**                                                                              |
-| :----------------- | :------------------------------------------------------------------------------------------- |
-| `/src`             | The `/src` directory at the root of the project is designated for the project’s source code. |
-| **subdirectories** |                                                                                              |
-| `/app`             | `/app` organizes the central hub for the project, the Next.js App Router.                    |
-| `/config`          | `/config` organizes the project's configuration files.                                       |
-| `/types`           | `/types` organizes the project's type definitions.                                           |
+| **Directory**      | **Description**                                                                                                                                                               |
+| :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/src`             | The `/src` directory at the root of the project is designated for the project’s source code.                                                                                  |
+| **subdirectories** |                                                                                                                                                                               |
+| `/app`             | `/app` serves as the central hub for the Next.js App Router, containing the application's routes, components, hooks, styles, utilities, and temporary work-in-progress files. |
+| `/config`          | `/config` organizes the project's configuration files.                                                                                                                        |
+| `/types`           | `/types` organizes the project's type definitions.                                                                                                                            |
 
 ### app Directory
 
