@@ -4,23 +4,23 @@
 
 ### src Directory
 
-| **Directory**      | **Description**                                                                                  |
-| :----------------- | :----------------------------------------------------------------------------------------------- |
-| **`/src`**         | **The `/src` directory at the root of the project is designated for the project’s source code.** |
-| **Subdirectories** |                                                                                                  |
-| `/src/app`         | `/app` organizes the central hub for the project, the Next.js App Router.                        |
-| `/src/config`      | `/config` organizes the project's configuration files.                                           |
-| `/src/types`       | `/types` organizes the project's type definitions.                                               |
+| **Directory**      | **Description**                                                                              |
+| :----------------- | :------------------------------------------------------------------------------------------- |
+| `/src`             | The `/src` directory at the root of the project is designated for the project’s source code. |
+| **subdirectories** |                                                                                              |
+| `/app`             | `/app` organizes the central hub for the project, the Next.js App Router.                    |
+| `/config`          | `/config` organizes the project's configuration files.                                       |
+| `/types`           | `/types` organizes the project's type definitions.                                           |
 
 ### app Directory
 
-| **Directory**      | **Description**                                                                                                     |
-| :----------------- | :------------------------------------------------------------------------------------------------------------------ |
-| **`/app`**         | **Organizes Next.js App Router as central hub for application.**                                                    |
-| **Subdirectories** |                                                                                                                     |
-| `/app/(routes)`    | Organizes a group of routes using Next.js App Router, locating the application's pages into a structured hierarchy. |
-| `/app/components`  | Organizes reusable React components that form building blocks of application's user interface.                      |
-| `/app/hooks`       | Organizes application’s custom React hooks.                                                                         |
-| `/app/styles`      | Organizes style related files that define visual aesthetics of application.                                         |
-| `/app/utils`       | Organizes shared utility functions.                                                                                 |
-| `/app/working`     | temp directory containing works in progress                                                                         |
+| **Directory**      | **Description**                                              |
+| :----------------- | :----------------------------------------------------------- |
+| `/app`             | Organizes Next.js App Router as central hub for application. |
+| **subdirectories** |                                                              |
+| `(routes)`         | Organizes page routes using Next.js App Router.              |
+| `/components`      | Organizes reusable React components for user interface.      |
+| `/hooks`           | Organizes custom React hooks.                                |
+| `/styles`          | Organizes style-related files for visual aesthetics.         |
+| `/utils`           | Organizes shared utility functions.                          |
+| `/working`         | Stores works-in-progress as a temp directory.                |
