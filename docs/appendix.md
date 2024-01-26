@@ -38,3 +38,92 @@ conditionally renders messages based on the submission outcome. Additionally, it
 submitted Observation in a `LuciCard` component, enriching the user experience with visual feedback.
 This component is a central element of the CREATE route, facilitating user engagement and
 interaction with the Observation submission process.
+
+# Project Structure Outline
+
+1. **Project Structure**
+   - Introduction to codebase organization
+   - Reference to Next.js Project Structure guide
+
+2. **src Directory**
+   - Overview of `/src` directory
+   - Subdirectories:
+     - `/app`
+     - `/config`
+     - `/types`
+
+3. **app Directory**
+   - Role of `/app` directory
+   - Subdirectories:
+     - `/app/(routes)`
+     - `/app/components`
+     - `/app/hooks`
+     - `/app/styles`
+     - `/app/utils`
+     - `/app/working`
+
+4. **Routing | app/(routes)**
+   - The `/(routes)` subdirectory within the `/app` directory organizes a collection of routes using the Next.js App Router, locating the application's pages into a structured and accessible hierarchy. It contains subdirectories for each primary view of the application. 
+   - Route groups:
+     - `/about`
+     - `/examples`
+     - `/gallery`
+     - `/mockup`
+     - `/observation`
+
+5. **Components | app/components**
+   - The `/components` subdirectory within the `/app` directory organizes a collection of reusable React components that form the building blocks of the application's user interface
+   - Component types:
+     - `/forms`
+     - `/layout`
+     - `/providers`
+     - `/ui`
+
+6. **Forms | app/components/forms**
+   - Description of `/forms` subdirectory
+   - Form-related components
+
+7. **Layout | app/components/layout**
+   - Description of `/layout` subdirectory
+   - Layout components
+
+8. **Providers | app/components/providers**
+   - Description of `/providers` subdirectory
+   - Context provider components
+
+9. **UI | app/components/ui**
+   - Description of `/ui` subdirectory
+   - UI components
+
+10. **Hooks | app/hooks**
+    - Description of `/hooks` subdirectory
+    - Custom React hooks
+
+11. **Styles | app/styles**
+    - Description of `/styles` subdirectory
+    - Style-related files
+
+12. **Utilities | app/util**
+    - Description of `/util` subdirectory
+    - Utility functions
+
+13. **config Directory**
+    - Role of `/config` directory
+    - Configuration files
+
+14. **types Directory**
+    - Role of `/types` directory
+    - Type definitions
+
+15. **public Directory**
+    - Role of `/public` directory
+    - Static assets
+
+16. **Root Directory**
+    - Overview of root-level directories
+    - `/public`
+    - `/src`
+
+17. **Root Files**
+    - Overview of root-level files
+    - Configuration and metadata files

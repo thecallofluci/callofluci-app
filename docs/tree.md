@@ -69,6 +69,7 @@
 │   │   ├── working
 │   │   │   └── XXXXX.tsx
 │   │   ├── error.tsx
+│   │   ├── loading.tsx
 │   │   ├── layout.tsx
 │   │   └── page.tsx
 │   ├── config
