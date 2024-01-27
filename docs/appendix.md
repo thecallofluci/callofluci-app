@@ -99,3 +99,20 @@
 | `types.ts`      | Defines custom TypeScript types for consistent typing across application.    |
 | `interfaces.ts` | Defines TypeScript interfaces for structured data objects and UI components. |
 
+### root Directory Files
+
+| **File**             | **Description**                                                            |
+| :------------------- | :------------------------------------------------------------------------- |
+| `.eslintrc.json`     | ESLint configuration for enforcing code quality standards.                 |
+| `.gitignore`         | Lists files for Git to ignore.                                             |
+| `.prettierignore`    | Lists files for Prettier to ignore.                                        |
+| `.prettierrc`        | Configuration for Prettier code formatter.                                 |
+| `next.config.js`     | Customizes Next.js behavior and configurations.                            |
+| `package-lock.json`  | Generates locked down versions of installed packages.                      |
+| `package.json`       | Manages project's dependencies, scripts, and version information.          |
+| `postcss.config.js`  | Configuration for PostCSS, a tool for transforming CSS with JavaScript.    |
+| `README.md`          | Provides an overview and documentation for project.                        |
+| `tailwind.config.js` | Configuration for Tailwind CSS framework.                                  |
+| `tsconfig.json`      | Specifies root files and compiler options required to compile application. |
+| `LICENSE`            | Specifies terms under which project can be used.                           |
+| `.env`               | Environment variables for configuring Next.js application.                 |
