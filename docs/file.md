@@ -1,97 +1,70 @@
 # Files
 
-| **Filename**          | **Parent** | **Description**                       |
-| :-------------------- | :--------- | :------------------------------------ |
-| `.env`                | /          | needs updateEnvironment variables     |
-| `.eslintrc.json`      | /          | ESLint configuration                  |
-| `.gitignore`          | /          | Files for Git to ignore               |
-| `.LICENSE`            | /          | Project license                       |
-| `.prettierignore`     | /          | Files for Prettier to ignore          |
-| `.prettierrc`         | /          | Prettier configuration                |
-| `next.config.js`      | /          | Next.js configuration                 |
-| `package-lock.json`   | /          | Locks package versions                |
-| `package.json`        | /          | Project dependencies and scripts      |
-| `postcss.config.js`   | /          | PostCSS configuration                 |
-| `README.md`           | /          | Project documentation                 |
-| `tailwind.config.js`  | /          | Tailwind CSS configuration            |
-| `tsconfig.json`       | /          | TypeScript Configuration              |
-|                       |            |                                       |
-| `layout.tsx`          | /app       | root layout component application     |
-| `page.tsx`            | /app       | Directory tree documentation          |
-| `error.tsx`           | /app       | custom error page component           |
-| `loading.tsx`         | /app       | Directory tree documentation          |
-|                       |            |                                       |
-| `LuciButton.tsx`      | /ui        | Custom NextUI Button component        |
-| `LuciCard.tsx`        | /ui        | Custom NextUI Card component          |
-| `LuciIcons.tsx`       | /ui        | Custom React components for SVG icons |
-| `LuciImage.tsx`       | /ui        | Custom Next.js Image component        |
-| `LuciModal.tsx`       | /ui        | Custom NextUI Modal component         |
-| `LuciNavbar.tsx`      | /ui        | Custom NextUI Navbar component        |
-| `LuciSpinner.tsx`     | /ui        | Custom NextUI Spinner component       |
-| `LuciTextArea.tsx`    | /ui        | Custom NextUI TextArea component      |
-| `LuciThemeSwitch.tsx` | /ui        | Custom NextUI Switch component        |
-|                       |            |                                       |
-| `appendix.md`         | /docs      | File appendix documentation           |
-| `structure.md`        | /docs      | Project structure documentation       |
-| `tree.md`             | /docs      | Directory tree documentation          |
-|                       |            |                                       |
-| `constants.ts`        | /config    | description of file ...               |
-| `metadata.ts`         | /config    | description of file ...               |
-| `site.ts`             | /config    | description of file ...               |
-|                       |            |                                       |
-| `interfaces.ts`       | /types     | description of file ...               |
-| `types.ts`            | /types     | description of file ...               |
+| **Filename**            | **Parent**               | **Description**                                           |
+| :---------------------- | :----------------------- | :-------------------------------------------------------- |
+| `.env`                  | /                        | Placeholder description for file functionality and usage. |
+| `.eslintrc.json`        | /                        | Placeholder description for file functionality and usage. |
+| `.gitignore`            | /                        | Placeholder description for file functionality and usage. |
+| `.LICENSE`              | /                        | Placeholder description for file functionality and usage. |
+| `.prettierignore`       | /                        | Placeholder description for file functionality and usage. |
+| `.prettierrc`           | /                        | Placeholder description for file functionality and usage. |
+| `next.config.js`        | /                        | Placeholder description for file functionality and usage. |
+| `package-lock.json`     | /                        | Placeholder description for file functionality and usage. |
+| `package.json`          | /                        | Placeholder description for file functionality and usage. |
+| `postcss.config.js`     | /                        | Placeholder description for file functionality and usage. |
+| `README.md`             | /                        | Placeholder description for file functionality and usage. |
+| `tailwind.config.js`    | /                        | Placeholder description for file functionality and usage. |
+| `tsconfig.json`         | /                        | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `error.tsx`             | /app                     | Placeholder description for file functionality and usage. |
+| `loading.tsx`           | /app                     | Placeholder description for file functionality and usage. |
+| `layout.tsx`            | /app                     | Placeholder description for file functionality and usage. |
+| `page.tsx`              | /app                     | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `ObservationForm.tsx`   | app/components/forms     | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `AppWrapper.tsx`        | app/components/layout    | Placeholder description for file functionality and usage. |
+| `Body.tsx`              | app/components/layout    | Placeholder description for file functionality and usage. |
+| `Footer.tsx`            | app/components/layout    | Placeholder description for file functionality and usage. |
+| `Header.tsx`            | app/components/layout    | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `providers.tsx`         | app/components/providers | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `LuciButton.tsx`        | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciCard.tsx`          | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciIcons.tsx`         | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciImage.tsx`         | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciModal.tsx`         | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciNavbar.tsx`        | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciSpinner.tsx`       | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciTextArea.tsx`      | app/components/ui        | Placeholder description for file functionality and usage. |
+| `LuciThemeSwitch.tsx`   | app/components/ui        | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `useObservationForm.ts` | app/hooks                | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `luciColors.ts`         | app/styles/colors        | Placeholder description for file functionality and usage. |
+| `luciSemantic.ts`       | app/styles/colors        | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `fonts.ts`              | app/styles/fonts         | Placeholder description for file functionality and usage. |
+| `typewriter.css`        | app/styles/fonts         | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `luciDarkTheme.ts`      | app/styles/themes        | Placeholder description for file functionality and usage. |
+| `luciLightTheme.ts`     | app/styles/themes        | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `globals.css`           | app/styles               | Placeholder description for file functionality and usage. |
+| `primitives.ts`         | app/styles               | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `submitObservation.ts`  | app/utils                | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `constants.ts`          | config                   | Placeholder description for file functionality and usage. |
+| `metadata.ts`           | config                   | Placeholder description for file functionality and usage. |
+| `site.ts`               | config                   | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `appendix.md`           | /docs                    | Placeholder description for file functionality and usage. |
+| `structure.md`          | /docs                    | Placeholder description for file functionality and usage. |
+| `tree.md`               | /docs                    | Placeholder description for file functionality and usage. |
+| ----------------------- | ------------------------ | --------------------------------------------------------- |
+| `interfaces.ts`         | types                    | Placeholder description for file functionality and usage. |
+| `types.ts`              | types                    | Placeholder description for file functionality and usage. |
 
-| **Filename**            | **Parent**               | **Description**                        |
-| :---------------------- | :----------------------- | :------------------------------------- |
-| `.env`                  | /                        | Environment variables                  |
-| `.eslintrc.json`        | /                        | ESLint configuration                   |
-| `.gitignore`            | /                        | Files for Git to ignore                |
-| `.LICENSE`              | /                        | Project license                        |
-| `.prettierignore`       | /                        | Files for Prettier to ignore           |
-| `.prettierrc`           | /                        | Prettier configuration                 |
-| `next.config.js`        | /                        | Next.js configuration                  |
-| `package-lock.json`     | /                        | Locks package versions                 |
-| `package.json`          | /                        | Project dependencies and scripts       |
-| `postcss.config.js`     | /                        | PostCSS configuration                  |
-| `README.md`             | /                        | Project documentation                  |
-| `tailwind.config.js`    | /                        | Tailwind CSS configuration             |
-| `tsconfig.json`         | /                        | TypeScript Configuration               |
-| ----------------------- | ------------------------ | -------------------------------------- |
-| `appendix.md`           | /docs                    | File appendix documentation            |
-| `structure.md`          | /docs                    | Project structure documentation        |
-| `tree.md`               | /docs                    | Directory tree documentation           |
-| `AppWrapper.tsx`        | app/components/layout    | Layout component wrapping main content |
-| `Body.tsx`              | app/components/layout    | Main content container                 |
-| `Footer.tsx`            | app/components/layout    | Footer layout component                |
-| `Header.tsx`            | app/components/layout    | Header layout component                |
-| `providers.tsx`         | app/components/providers | Context providers component            |
-| `LuciButton.tsx`        | app/components/ui        | Custom NextUI Button component         |
-| `LuciCard.tsx`          | app/components/ui        | Custom NextUI Card component           |
-| `LuciIcons.tsx`         | app/components/ui        | Custom React components for SVG icons  |
-| `LuciImage.tsx`         | app/components/ui        | Custom Next.js Image component         |
-| `LuciModal.tsx`         | app/components/ui        | Custom NextUI Modal component          |
-| `LuciNavbar.tsx`        | app/components/ui        | Custom NextUI Navbar component         |
-| `LuciSpinner.tsx`       | app/components/ui        | Custom NextUI Spinner component        |
-| `LuciTextArea.tsx`      | app/components/ui        | Custom NextUI TextArea component       |
-| `LuciThemeSwitch.tsx`   | app/components/ui        | Custom NextUI Switch component         |
-| `ObservationForm.tsx`   | app/components/forms     | UI component for Observations          |
-| `useObservationForm.ts` | app/hooks                | Manages form state for Observations    |
-| `luciColors.ts`         | app/styles/colors        | Custom color palette                   |
-| `luciSemantic.ts`       | app/styles/colors        | Semantic color themes                  |
-| `fonts.ts`              | app/styles/fonts         | Configures global fonts                |
-| `typewriter.css`        | app/styles/fonts         | CSS animation for typewriter effect    |
-| `luciDarkTheme.ts`      | app/styles/themes        | Custom dark mode theme                 |
-| `luciLightTheme.ts`     | app/styles/themes        | Custom light mode theme                |
-| `globals.css`           | app/styles               | Globals stylesheet                     |
-| `primitives.ts`         | app/styles               | Design primitives                      |
-| `submitObservation.ts`  | app/utils                | Handler for Observation submissions    |
-| `error.tsx`             | app                      | Custom error page component            |
-| `loading.tsx`           | app                      | Custom loading component               |
-| `layout.tsx`            | app                      | Root layout component                  |
-| `page.tsx`              | app                      | Page component with navigation links   |
-| `constants.ts`          | config                   | Global constants                       |
-| `metadata.ts`           | config                   | Defines metadata for Next.js app       |
-| `site.ts`               | config                   | Site configuration                     |
-| `interfaces.ts`         | types                    | Custom TypeScript interfaces           |
-| `types.ts`              | types                    | Custom TypeScript types                |
+
