@@ -54,7 +54,7 @@
 | `useObservationForm.ts` | Manages form state and submission for Observation creation         |
 
 | **File**                | **Parent**      | **Description**                                                    |
-| :---------------------- | --------------- | ------------------------------------------------------------------ |
+| :---------------------- | :-------------- | :----------------------------------------------------------------- |
 | `.env`                  | /               | Environment variables                                              |
 | `.eslintrc.json`        | /               | ESLint configuration                                               |
 | `.gitignore`            | /               | Files for Git to ignore                                            |
