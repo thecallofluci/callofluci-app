@@ -1,28 +1,54 @@
 # Files
 
-| **File**          | **Description**                                            |
-| :---------------- | :--------------------------------------------------------- |
-| `.env`            | Environment variables for configuring Next.js application. |
-| `.eslintrc.json`  | ESLint configuration for enforcing code quality standards. |
-| `.gitignore`      | Lists files for Git to ignore.                             |
-| `.LICENSE`        | Specifies terms under which project can be used.           |
-| `.prettierignore` | Lists files for Prettier to ignore.                        |
-
-| **File**               | **Description**                                                                                                                                                                                                                                                                                                                                                   |
-|:-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.env`             | Environment variables for configuring Next.js application.                                                                                                                                                                                                                                                                                                   |
-| `.eslintrc.json`   | ESLint configuration for enforcing code quality standards.                                                                                                                                                                                                                                                                                                   |
-| `.gitignore`       | Lists files for Git to ignore.                                                                                                                                                                                                                                                                                                                               |
-| `.LICENSE`         | Specifies terms under which project can be used.                                                                                                                                                                                                                                                                                                             |
-| `.prettierignore`  | Lists files for Prettier to ignore.                                                                                                                                                                                                                                                                                                                          |
-| `.prettierrc`      | Configuration for Prettier code formatter.                                                                                                                                                                                                                                                                                                                   |
-| `appendix.md`      | The appendix.md document serves as a comprehensive reference for specific files within the project repository.                                                                                                                                                                                                                                               |
-| `AppWrapper.tsx`   | AppWrapper.tsx serves as the primary layout structure for the application. It utilizes a flex container to ensure that the header, body, and footer components are laid out vertically and occupy the full height of the viewport. The fontSans and fontMono styles are applied to provide consistent typography throughout the application.                 |
-| `Body.tsx`         | Body.tsx is a Server Component which acts as the main content container for the application, wrapping the children components passed to it. It ensures that the content is centered and maintains a maximum width for readability and consistency.                                                                                                            |
-| `constants.ts`     | Central configuration module outlining site structure and external resources.                                                                                                                                                                                                                                                                                |
-| `error.tsx`        | error.tsx provides a user-friendly error interface. This file is responsible for catching client-side errors and presenting them in a structured and informative manner. It is rendered automatically by Next.js when an unhandled exception occurs on the client side.                                                                                      |
-| `fonts.ts`         | fonts.ts imports and configures global fonts for the application using the Next.js font optimization feature. It defines two fonts from Google Fonts: Overpass and Overpass_Mono.                                                                                                                                                                             |
-| `Footer.tsx`       | Footer.tsx is the layout component for the application's footer. It displays a set of icons linking to social media and other external sites, as defined in siteConfig. It also shows the application version and build hash, dynamically pulled from package.json and environment variables. This component is key for offering additional navigation options. |
-| `globals.css`      | globals.css is a foundational stylesheet for the application that integrates Tailwind CSS's base, components, and utilities layers. This file ensures that the Tailwind CSS framework is properly imported and available throughout the application.                                                                                                         |
-| `Header.tsx`       | Header.tsx is a dedicated layout component for the application's header section. It imports and renders the LuciNavbar component, which contains the navigation and theme-switching functionality. This component is responsible for presenting the top part of the application's UI.                                                                      |
-| `interfaces.ts`    | Defines TypeScript interfaces for structured data objects and UI components.                                                                                                                                                                                                                                                                                  |
+| **Filename**            | **Description**                                                    |
+| :---------------------- | :----------------------------------------------------------------- |
+| `.env`                  | Environment variables                                              |
+| `.eslintrc.json`        | ESLint configuration                                               |
+| `.gitignore`            | Files for Git to ignore                                            |
+| `.LICENSE`              | Project license                                                    |
+| `.prettierignore`       | Files for Prettier to ignore                                       |
+| `.prettierrc`           | Prettier configuration                                             |
+| `appendix.md`           | File appendix documentation                                        |
+| `AppWrapper.tsx`        | Layout component wrapping main content with header, body, & footer |
+| `Body.tsx`              | Main content container                                             |
+| `constants.ts`          | Global constants                                                   |
+| `error.tsx`             | Custom error page component                                        |
+| `fonts.ts`              | Configures global fonts                                            |
+| `Footer.tsx`            | Footer layout component                                            |
+| `globals.css`           | Globals stylesheet                                                 |
+| `Header.tsx`            | Header layout component                                            |
+| `interfaces.ts`         | Custom TypeScript interfaces                                       |
+| `layout.tsx`            | Root layout component                                              |
+| `loading.tsx`           | Custom loading component                                           |
+| `LuciButton.tsx`        | Custom NextUI Button component                                     |
+| `LuciCard.tsx`          | Custom NextUI Card component                                       |
+| `luciColors.ts`         | Custom color palette                                               |
+| `luciDarkTheme.ts`      | Custom dark mode theme                                             |
+| `LuciIcons.tsx`         | Custom React components for SVG icons                              |
+| `LuciImage.tsx`         | Custom Next.js Image component                                     |
+| `luciLightTheme.ts`     | Custom light mode theme                                            |
+| `LuciModal.tsx`         | Custom NextUI Modal component                                      |
+| `LuciNavbar.tsx`        | Custom NextUI Navbar component                                     |
+| `luciSemantic.ts`       | Semantic color themes                                              |
+| `LuciSpinner.tsx`       | Custom NextUI Spinner component                                    |
+| `LuciTextArea.tsx`      | Custom NextUI TextArea component                                   |
+| `LuciThemeSwitch.tsx`   | Custom NextUI Switch component                                     |
+| `metadata.ts`           | Defines metadata for Next.js app                                   |
+| `next.config.js`        | Next.js configuration                                              |
+| `ObservationForm.tsx`   | UI component for users to input and submit Observations            |
+| `package-lock.json`     | Locks package versions                                             |
+| `package.json`          | Project dependencies and scripts                                   |
+| `page.tsx`              | Various page components including home, gallery, observation, etc. |
+| `postcss.config.js`     | PostCSS configuration                                              |
+| `primitives.ts`         | Design primitives using tailwind-variants                          |
+| `providers.tsx`         | Wraps the application with necessary context providers             |
+| `README.md`             | Project documentation                                              |
+| `site.ts`               | Site configuration                                                 |
+| `structure.md`          | Project structure documentation                                    |
+| `submitObservation.ts`  | Server-side handler for processing Observation submissions         |
+| `tailwind.config.js`    | Tailwind CSS configuration                                         |
+| `tree.md`               | Directory tree documentation                                       |
+| `tsconfig.json`         | TypeScript Configuration                                           |
+| `types.ts`              | Custom TypeScript types                                            |
+| `typewriter.css`        | CSS animation for typewriter effect                                |
+| `useObservationForm.ts` | Manages form state and submission for Observation creation         |
