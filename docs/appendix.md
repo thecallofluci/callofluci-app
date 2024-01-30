@@ -116,3 +116,6 @@
 | `tsconfig.json`      | Specifies root files and compiler options required to compile application. |
 | `LICENSE`            | Specifies terms under which project can be used.                           |
 | `.env`               | Environment variables for configuring Next.js application.                 |
+
+--
+
