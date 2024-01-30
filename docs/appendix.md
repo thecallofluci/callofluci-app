@@ -40,6 +40,18 @@
 | `metadata.ts`  | Defines application-wide metadata, aligning with site configuration.          |
 | `site.ts`      | Central configuration module outlining site structure and external resources. |
 
+### config Directory Structure
+
+| **File/Directory**        | **Description**                                                               |
+| :------------------------ | :---------------------------------------------------------------------------- |
+| `/config`                 | Configuration files that define global settings and constants.                |
+| ├─ `constants.ts`         | Central store for constants used throughout the application.                  |
+| ├─ `metadata.ts`          | Defines application-wide metadata, aligning with site configuration.          |
+| ├─ `site.ts`              | Central configuration module outlining site structure and external resources. |
+| └─ `/nestedConfig`        | Subdirectory for more specific configuration files.                           |
+|    ├─ `apiConfig.ts`      | Configuration for API-related settings.                                       |
+|    └─ `featureFlags.ts`   | Toggles for enabling/disabling application features.                          |
+
 ### types Directory
 
 | **Directory**      | **Description**                             |
