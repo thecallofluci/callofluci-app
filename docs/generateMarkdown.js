@@ -15,10 +15,12 @@ var markdownFilePath = (0, path_1.join)(__dirname, 'Documentation.md'); // Corre
     var jsonData = JSON.parse(data);
     // Start the markdown table with headers
     var markdownTable = "| Filename | Short Description | Long Description |\n";
-    markdownTable += "| -------- | ----------------- | ---------------- |\n";
+    // Adjust the separator row for left alignment
+    markdownTable += "| :------- | :---------------- | :--------------- |\n";
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach(function (file) {
-        markdownTable += "| ".concat(file.fileName, " | ").concat(file.shortDescription, " | ").concat(file.longDescription.replace(/\n/g, ' '), " |\n");
+        // Wrap the fileName with backticks for code formatting
+        markdownTable += "| `".concat(file.fileName, "` | ").concat(file.shortDescription, " | ").concat(file.longDescription.replace(/\n/g, ' '), " |\n");
     });
     // Write the markdown table to a file
     (0, fs_1.writeFile)(markdownFilePath, markdownTable, function (err) {

@@ -13,9 +13,8 @@ interface ProjectStructure {
 }
 
 // Correct the paths to not include an extra 'docs' since __dirname already points to the current directory of the script
-const jsonFilePath = join(__dirname, 'projectStructure.json'); // Corrected path
-const markdownFilePath = join(__dirname, 'Documentation.md'); // Corrected path
-
+const jsonFilePath = join(__dirname, 'projectStructure.json') // Corrected path
+const markdownFilePath = join(__dirname, 'Documentation.md') // Corrected path
 
 // Read the JSON file
 readFile(jsonFilePath, 'utf8', (err, data) => {
@@ -29,11 +28,13 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 
 	// Start the markdown table with headers
 	let markdownTable = `| Filename | Short Description | Long Description |\n`
-	markdownTable += `| -------- | ----------------- | ---------------- |\n`
+	// Adjust the separator row for left alignment
+	markdownTable += `| :------- | :---------------- | :--------------- |\n`
 
 	// Iterate over the JSON "file" array and add each file to the markdown table
 	jsonData.file.forEach((file) => {
-		markdownTable += `| ${file.fileName} | ${
+		// Wrap the fileName with backticks for code formatting
+		markdownTable += `| \`${file.fileName}\` | ${
 			file.shortDescription
 		} | ${file.longDescription.replace(/\n/g, ' ')} |\n`
 	})
