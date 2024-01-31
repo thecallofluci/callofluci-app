@@ -3,9 +3,11 @@
 ## Overview
 
 This README.md discusses how simple Documentation is created and maintained for the development of
-Call Of Luci. It includes three primary documents:
+Call Of Luci. 
 
-1. **Compendium** (`compendium.md`) serves as a detailed exploration of the project's codebase,
+It includes three primary documents:
+
+1. **Compendium** (`compendium.md`) serves as an exploration of the project's codebase,
    detailing its structure and the organization of its components. This document is generated manually.
 
 2. **Manifest** (`manifest.md`) acts as a meticulous inventory, cataloging every file within the
@@ -15,13 +17,9 @@ Call Of Luci. It includes three primary documents:
 3. **Tree** (`tree.md`) offers a graphical index of the project's directory structure, serving as a
    visual guide to its layout. This document is generated manually.
 
-## Automation and Maintenance
+## Updates
 
 Manifest is dynamically generated from `manifest.json`, a master file containing names and descriptions of all project files. 
-
-The `generateManifest.ts` script is responsible for converting `manifest.json` into the markdown
-table found in `manifest.md`. This script reads the JSON file, iterates over its contents, and
-formats them into a markdown table, which is then written to `manifest.md`.
 
 The `generateManifest.ts` script transforms `manifest.json` into a markdown table in `manifest.md`. This script is the linchpin in our documentation automation, reading the JSON file, iterating over its contents, and formatting them into a markdown table.
 
@@ -35,7 +33,7 @@ First, ensure that `manifest.json` is up-to-date with the latest file names and 
 
 Next, navigate to the directory containing `generateManifest.ts` and compile the TypeScript file to JavaScript by running:
 
-```bash
+```ts
 tsc generateManifest.ts
 ```
 
@@ -43,7 +41,7 @@ This command generates a `generateManifest.js` file in the same directory.
 
 Next, execute the compiled JavaScript file with Node.js to generate `manifest.md` by running the following command:
 
-```bash
+```ts
 node generateManifest.js
 ```
 
