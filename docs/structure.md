@@ -1,6 +1,6 @@
 # Project Structure
 
-The codebase is organized in alignment with the
+The codebase for Call Of Luci is organized in alignment with the
 [Next.js Project Structure](https://nextjs.org/docs/getting-started/project-structure) guide. It
 adopts Next.js's
 [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation)
@@ -10,27 +10,29 @@ approach towards project organization and file colocation.
 
 The project's source code [`/src`](../src) directory is divided into three main subdirectories: [`/app`](../src/app), [`/config`](../src/config), and [`/types`](../src/types):
 
-| **`/src`**     | **Source Code**                                                                                      |
-| :------------- | :--------------------------------------------------------------------------------------------------- |
-| **subfolders** |                                                                                                      |
-| `/src/app`     | [Next.js App Router](https://nextjs.org/docs/app), containing routes, components, hooks, and styles. |
-| `/src/config`  | Configuration files that define global settings and constants.                                       |
-| `/src/types`   | TypeScript type definitions and interfaces.                                                          |
+| **Directory**      | **Description**                                                                              |
+| :----------------- | :------------------------------------------------------------------------------------------- |
+| `/src`             | Root of project's source code.                                                               |
+| **subdirectories** |                                                                                              |
+| `/app`             | Central hub for Next.js App Router, containing routes, components, hooks, styles, utilities. |
+| `/config`          | Global settings and constants.                                                               |
+| `/types`           | TypeScript type definitions and interfaces.                                                  |
 
 ## app Directory
 
 The `/app` directory within the `/src` directory organizes the central hub for the project, the Next.js
 App Router. It organizes the application's primary routes and core functional elements:
 
-| **`/app`**        | **Next.js App Router**                      |
-| :---------------- | :------------------------------------------ |
-| **subfolders**    |                                             |
-| `/app/(routes)`   | Primary route group                         |
-| `/app/components` | Reusable React components                   |
-| `/app/hooks`      | Custom React hooks                          |
-| `/app/styles`     | Global styles, colors, fonts, themes        |
-| `/app/utils`      | Utility functions                           |
-| `/app/working`    | Temp directory containing works in progress |
+| **Directory**      | **Description**                                                                              |
+| :----------------- | :------------------------------------------------------------------------------------------- |
+| `/app`             | Central hub for Next.js App Router, containing routes, components, hooks, styles, utilities. |
+| **subdirectories** |                                                                                              |
+| `(routes)`         | Organizes page routes using Next.js App Router.                                              |
+| `/components`      | Organizes reusable React components for user interface.                                      |
+| `/hooks`           | Organizes custom React hooks.                                                                |
+| `/styles`          | Organizes style-related files for visual aesthetics.                                         |
+| `/utils`           | Organizes shared utility functions.                                                          |
+| `/working`         | Stores works-in-progress as temp directory.                                                  |
 
 ### Routing | app/(routes)
 
@@ -144,22 +146,30 @@ The `/util` subdirectory within the `/app` directory organizes shared utility fu
 
 The `/config` directory within the `/src` directory organizes the project's configuration files:
 
-| **`/config`**          | **Configuration files**             |
-| :--------------------- | :---------------------------------- |
-| **subfolders**         |                                     |
-| `/config/constants.ts` | constant values used throughout app |
-| `/config/metadata.ts`  | metadata for Next.js app            |
-| `/config/site.ts`      | site configuration                  |
+| **Directory**      | **Description**                                                |
+| :----------------- | :------------------------------------------------------------- |
+| `/config`          | Configuration files that define global settings and constants. |
+| **subdirectories** | None                                                           |
+
+| **File**       | **Description**                                                               |
+| :------------- | :---------------------------------------------------------------------------- |
+| `constants.ts` | Central store for constants used throughout application.                      |
+| `metadata.ts`  | Defines application-wide metadata, aligning with site configuration.          |
+| `site.ts`      | Central configuration module outlining site structure and external resources. |
 
 ## types Directory
 
 The `/types` directory within the `/src` directory organizes the project's type definitions:
 
-| **`/types`**           | **Type definitions**                               |
-| :--------------------- | :------------------------------------------------- |
-| **subfolders**         |                                                    |
-| `/types/interfaces.ts` | declares TypeScript interfaces used throughout app |
-| `/types/types.ts`      | declares TypeScript types used throughout app      |
+| **Directory**      | **Description**                             |
+| :----------------- | :------------------------------------------ |
+| `/types`           | TypeScript type definitions and interfaces. |
+| **subdirectories** | None                                        |
+
+| **File**        | **Description**                                                              |
+| :-------------- | :--------------------------------------------------------------------------- |
+| `types.ts`      | Defines custom TypeScript types for consistent typing across application.    |
+| `interfaces.ts` | Defines TypeScript interfaces for structured data objects and UI components. |
 
 ## public Directory
 
