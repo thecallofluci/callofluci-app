@@ -23,50 +23,11 @@ The `generateManifest.ts` script is responsible for converting `manifest.json` i
 table found in `manifest.md`. This script reads the JSON file, iterates over its contents, and
 formats them into a markdown table, which is then written to `manifest.md`.
 
---
-
 The `generateManifest.ts` script transforms `manifest.json` into a markdown table in `manifest.md`. This script is the linchpin in our documentation automation, reading the JSON file, iterating over its contents, and formatting them into a markdown table.
 
-To use the `generateManifest.ts` script, follow these steps:
-
-1. **Ensure Node.js is Installed**: The script requires Node.js. Verify its installation by running `node -v` in your terminal. If Node.js is not installed, download and install it from [the official Node.js website](https://nodejs.org/).
-
-2. **Prepare `manifest.json`**: Ensure that `manifest.json` is up-to-date with the latest file names and descriptions. This file should be structured as follows:
-
-json
-{
-"file": [
-{
-"fileName": "exampleFile.js",
-"shortDescription": "Short file description.",
-"longDescription": "Long file description detailing the file's purpose and usage within the project."
-},
-...
-]
-}
-
-
-3. **Run the Script**: Navigate to the directory containing `generateManifest.ts` and run the following command:
-
-bash
-npx ts-node generateManifest.ts
-
-
-*Note: This command assumes you have TypeScript and ts-node installed globally. If not, you may need to install them via npm (`npm install -g typescript ts-node`) or use a local installation.*
-
-4. **Check `manifest.md`**: After running the script, `manifest.md` will be updated with a markdown table reflecting the contents of `manifest.json`. Verify that the document accurately represents your project's files.
-
-### Manual Updates
-
-While automation covers the generation of the Manifest, the Compendium and the Tree documents are updated manually. These documents require a nuanced understanding of the project's evolution and architectural changes, necessitating human insight for updates.
-
-### Continuous Improvement
-
-Our documentation is a living entity, evolving with the project. Regular reviews and updates ensure accuracy and relevance. We encourage community feedback to refine and enhance our documentation further.
-
 --
 
-#### Generating The Manifest with `generateManifest.ts`
+## Generating Manifest with `generateManifest.ts`
 
 To generate the Manifest (`manifest.md`) from `manifest.json` using the `generateManifest.ts` script, follow these steps:
 
