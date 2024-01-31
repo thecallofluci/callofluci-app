@@ -21,8 +21,8 @@ var markdownFilePath = (0, path_1.join)(__dirname, 'manifest.md'); // output fil
     markdownContent += "| :------- | :---------- |\n";
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach(function (file) {
-        // Combine short and long descriptions with a line break
-        var combinedDescription = "".concat(file.shortDescription, "\n\n").concat(file.longDescription.replace(/\n/g, ' '));
+        // Combine short and long descriptions with an HTML line break
+        var combinedDescription = "".concat(file.shortDescription, "<br><br>").concat(file.longDescription.replace(/\n/g, ' '));
         // Wrap the fileName with backticks for code formatting
         // Add the combined description to the second column
         markdownContent += "| `".concat(file.fileName, "` | ").concat(combinedDescription, " |\n");
