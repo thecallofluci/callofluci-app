@@ -84,7 +84,7 @@ This command generates a `generateManifest.js` file in the same directory.
 
 4. **Run the Generated JavaScript File**: Execute the compiled JavaScript file with Node.js to generate `manifest.md`:
 
-codeblock
+```codeblock```
 
 
 *Note: This process assumes you have the TypeScript compiler (`tsc`) installed globally. If not, you may need to install it via npm (`npm install -g typescript`).*
