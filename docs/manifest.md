@@ -1,5 +1,7 @@
-| Filename | Short Description      | Long Description      |
-| :------- | :----------------------- | :------------------- |
+# Manifest
+
+| Filename | Short Description               | Long Description |
+| :------- | :-------------------------------- | :--------------- |
 | `.env` | Configures environment variables. | This file contains environment variables essential for configuring the Next.js application, including API keys, database URLs, and other sensitive information that should not be hardcoded into the application's source code. |
 | `.eslintrc.json` | Enforces code quality standards. | ESLint configuration file that defines rules and standards for code quality and consistency across the project helping developers avoid common mistakes and maintain a unified coding style. |
 | `.gitignore` | Specifies files for Git to ignore. | Lists files and directories that Git should ignore, preventing them from being tracked or uploaded to the repository. This includes node_modules, environment variables, and other non-source code files. |

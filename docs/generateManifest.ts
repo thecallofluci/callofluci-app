@@ -15,7 +15,6 @@ interface ProjectManifest {
 	file: FileDescription[]
 }
 
-// Correct the paths to not include an extra 'docs' since __dirname already points to the current directory of the script
 const jsonFilePath = join(__dirname, 'manifest.json') // Corrected path
 const markdownFilePath = join(__dirname, 'manifest.md') // Corrected path
 
@@ -29,21 +28,24 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 	// Parse the JSON data
 	const jsonData: ProjectManifest = JSON.parse(data)
 
+	// Start the markdown content with a Heading 1
+	let markdownContent = `# Manifest\n\n`
+
 	// Start the markdown table with headers
-	let markdownTable = `| Filename | Short Description      | Long Description      |\n`
-	// Adjust the separator row for left alignment
-	markdownTable += `| :------- | :----------------------- | :------------------- |\n`
+	// Adjust the separator row for left alignment and increase the width of the second column by approximately 30%
+	markdownContent += `| Filename | Short Description               | Long Description |\n`
+	markdownContent += `| :------- | :-------------------------------- | :--------------- |\n`
 
 	// Iterate over the JSON "file" array and add each file to the markdown table
 	jsonData.file.forEach((file) => {
 		// Wrap the fileName with backticks for code formatting
-		markdownTable += `| \`${file.fileName}\` | ${
+		markdownContent += `| \`${file.fileName}\` | ${
 			file.shortDescription
 		} | ${file.longDescription.replace(/\n/g, ' ')} |\n`
 	})
 
-	// Write the markdown table to a file
-	writeFile(markdownFilePath, markdownTable, (err) => {
+	// Write the markdown content to a file
+	writeFile(markdownFilePath, markdownContent, (err) => {
 		if (err) {
 			console.error('Error writing the Markdown file:', err)
 			return
