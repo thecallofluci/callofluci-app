@@ -1,4 +1,6 @@
 "use strict";
+// generateManifest.ts
+// markdown script that parses JSON to create a markdown table in .md output file
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = require("fs");
 var path_1 = require("path");
@@ -14,9 +16,9 @@ var markdownFilePath = (0, path_1.join)(__dirname, 'manifest.md'); // Corrected 
     // Parse the JSON data
     var jsonData = JSON.parse(data);
     // Start the markdown table with headers
-    var markdownTable = "| Filename | Short Description | Long Description |\n";
+    var markdownTable = "| Filename | Short Description      | Long Description      |\n";
     // Adjust the separator row for left alignment
-    markdownTable += "| :------- | :-------------------- | :------------------- |\n";
+    markdownTable += "| :------- | :----------------------- | :------------------- |\n";
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach(function (file) {
         // Wrap the fileName with backticks for code formatting

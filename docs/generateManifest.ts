@@ -1,3 +1,6 @@
+// generateManifest.ts
+// markdown script that parses JSON to create a markdown table in .md output file
+
 import { readFile, writeFile } from 'fs'
 import { join } from 'path'
 
@@ -27,9 +30,9 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 	const jsonData: ProjectManifest = JSON.parse(data)
 
 	// Start the markdown table with headers
-	let markdownTable = `| Filename | Short Description | Long Description |\n`
+	let markdownTable = `| Filename | Short Description      | Long Description      |\n`
 	// Adjust the separator row for left alignment
-	markdownTable += `| :------- | :-------------------- | :------------------- |\n`
+	markdownTable += `| :------- | :----------------------- | :------------------- |\n`
 
 	// Iterate over the JSON "file" array and add each file to the markdown table
 	jsonData.file.forEach((file) => {
