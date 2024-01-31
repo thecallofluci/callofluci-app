@@ -1,14 +1,18 @@
-# Maintaining Technical Documentation
+# Documentation
 
-This README.md discusses how Documentation is created and maintained for Call Of Luci. It includes three primary documents:
+## Overview
 
-1. **The Compendium** (`compendium.md`): The Compendium serves as a detailed exploration of the project's codebase, detailing its structure and the organization of its components. 
+This README.md discusses how simple Documentation is created and maintained for the development of Call Of Luci. It includes three primary documents:
 
-2. **The Manifest** (`manifest.md`): The Manifest acts as a meticulous inventory, cataloging every file within the project's codebase.
+1. **The Compendium** (`compendium.md`) serves as a detailed exploration of the project's codebase, detailing its structure and the organization of its components. 
 
-3. **The Tree** (`tree.md`): the Tree offers a graphical index of the project's directory structure, serving as a visual guide to its layout.
+2. **The Manifest** (`manifest.md`) acts as a meticulous inventory, cataloging every file within the project's codebase.
 
-The manifest is formatted as a markdown table and created from `projectStructure.json` using the `generateMarkdown.ts` script.
+3. **The Tree** (`tree.md`) offers a graphical index of the project's directory structure, serving as a visual guide to its layout.
+
+## Automation and Maintenance
+
+The Manifest (`manifest.md`) is generated from a JSON object formatted as a markdown table and created from `projectStructure.json` using the `generateMarkdown.ts` script.
 
 Supporting files:
 

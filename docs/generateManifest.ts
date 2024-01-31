@@ -8,13 +8,13 @@ interface FileDescription {
 	longDescription: string
 }
 
-interface ProjectStructure {
+interface ProjectManifest {
 	file: FileDescription[]
 }
 
 // Correct the paths to not include an extra 'docs' since __dirname already points to the current directory of the script
-const jsonFilePath = join(__dirname, 'projectStructure.json') // Corrected path
-const markdownFilePath = join(__dirname, 'Documentation.md') // Corrected path
+const jsonFilePath = join(__dirname, 'manifest.json') // Corrected path
+const markdownFilePath = join(__dirname, 'manifest.md') // Corrected path
 
 // Read the JSON file
 readFile(jsonFilePath, 'utf8', (err, data) => {
@@ -24,7 +24,7 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 	}
 
 	// Parse the JSON data
-	const jsonData: ProjectStructure = JSON.parse(data)
+	const jsonData: ProjectManifest = JSON.parse(data)
 
 	// Start the markdown table with headers
 	let markdownTable = `| Filename | Short Description | Long Description |\n`
