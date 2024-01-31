@@ -36,23 +36,20 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 	markdownContent += `| :------- | :---------- |\n`
 
 	// Iterate over the JSON "file" array and add each file to the markdown table
-	jsonData.file.forEach((file) => {
-		// Combine short and long descriptions with a line break
-		const combinedDescription = `${file.shortDescription}\n\n${file.longDescription.replace(
-			/\n/g,
-			' '
-		)}`
-		// Wrap the fileName with backticks for code formatting
-		// Add the combined description to the second column
-		markdownContent += `| \`${file.fileName}\` | ${combinedDescription} |\n`
-	})
+    jsonData.file.forEach((file) => {
+        // Combine short and long descriptions with a line break
+        const combinedDescription = `${file.shortDescription}\n\n${file.longDescription.replace(/\n/g, ' ')}`;
+        // Wrap the fileName with backticks for code formatting
+        // Add the combined description to the second column
+        markdownContent += `| \`${file.fileName}\` | ${combinedDescription} |\n`;
+    });
 
-	// Write the markdown content to a file
-	writeFile(markdownFilePath, markdownContent, (err) => {
-		if (err) {
-			console.error('Error writing the Markdown file:', err)
-			return
-		}
-		console.log('Markdown documentation has been generated successfully!')
-	})
-})
+    // Write the markdown content to a file
+    writeFile(markdownFilePath, markdownContent, (err) => {
+        if (err) {
+            console.error('Error writing the Markdown file:', err);
+            return;
+        }
+        console.log('Markdown documentation has been generated successfully!');
+    });
+});
