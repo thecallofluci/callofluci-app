@@ -1,22 +1,22 @@
 // generateManifest.ts
 // markdown script that parses JSON to create a markdown table in .md output file
 
-import { readFile, writeFile } from 'fs'
-import { join } from 'path'
+import { readFile, writeFile } from 'fs';
+import { join } from 'path';
 
 // Define the interface for the file structure
 interface FileDescription {
-	fileName: string
-	shortDescription: string
-	longDescription: string
+    fileName: string;
+    shortDescription: string;
+    longDescription: string;
 }
 
 interface ProjectManifest {
-	file: FileDescription[]
+    file: FileDescription[];
 }
 
-const jsonFilePath = join(__dirname, 'manifest.json') 		// source data
-const markdownFilePath = join(__dirname, 'manifest.md')  	// output file
+const jsonFilePath = join(__dirname, 'manifest.json'); // source data
+const markdownFilePath = join(__dirname, 'manifest.md'); // output file
 
 // Read the JSON file
 readFile(jsonFilePath, 'utf8', (err, data) => {
@@ -37,11 +37,10 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach((file) => {
-        // Wrap the fileName with backticks for code formatting
-        markdownContent += `| \`${file.fileName}\` | Short Description: |\n`;
-        markdownContent += `|  | ${file.shortDescription} |\n`;
-        markdownContent += `|  | Long Description: |\n`;
-        markdownContent += `|  | ${file.longDescription.replace(/\n/g, ' ')} |\n`;
+        // Combine short and long descriptions into a single string, separated by a newline for markdown formatting
+        let descriptions = `${file.shortDescription}\n\n${file.longDescription.replace(/\n/g, ' ')}`;
+        // Wrap the fileName with backticks for code formatting and add the combined descriptions to the second column
+        markdownContent += `| \`${file.fileName}\` | ${descriptions} |\n`;
     });
 
     // Write the markdown content to a file
