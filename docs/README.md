@@ -90,3 +90,9 @@ This command generates a `generateManifest.js` file in the same directory.
 *Note: This process assumes you have the TypeScript compiler (`tsc`) installed globally. If not, you may need to install it via npm (`npm install -g typescript`).*
 
 5. **Check `manifest.md`**: After running the script, `manifest.md` will be updated with a markdown table reflecting the contents of `manifest.json`. Verify that the document accurately represents your project's files.
+
+Ensure you're using the correct version of Node.js:
+
+```bash
+nvm use
+```
