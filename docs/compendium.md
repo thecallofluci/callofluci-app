@@ -1,4 +1,4 @@
-# Project Structure
+# The Compendium
 
 The codebase for Call Of Luci is organized in alignment with the
 [Next.js Project Structure](https://nextjs.org/docs/getting-started/project-structure) guide. It
