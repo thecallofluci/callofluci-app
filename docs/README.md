@@ -70,25 +70,14 @@ Our documentation is a living entity, evolving with the project. Regular reviews
 
 To generate the Manifest (`manifest.md`) from `manifest.json` using the `generateManifest.ts` script, follow these steps:
 
-1. **Ensure Node.js and TypeScript are Installed**: This process requires both Node.js and TypeScript. Verify Node.js installation by running `node -v` and TypeScript by running `tsc -v` in your terminal. If either is not installed, download and install Node.js from [the official Node.js website](https://nodejs.org/) and TypeScript via npm (`npm install -g typescript`).
+1. **Ensure Node.js and TypeScript are Installed** 
+This process requires both Node.js and TypeScript. Verify Node.js installation by running `node -v` and TypeScript by running `tsc -v` in your terminal. If either is not installed, download and install Node.js from [the official Node.js website](https://nodejs.org/) and TypeScript via npm (`npm install -g typescript`).
 
-2. **Prepare `manifest.json`**: Make sure that `manifest.json` is up-to-date with the latest file names and descriptions. The structure of this file should look like this:
+2. **Prepare `manifest.json`** 
+Make sure that `manifest.json` is up-to-date with the latest file names and descriptions. 
 
-```bash
-json
-{
-"file": [
-{
-"fileName": "exampleFile.js",
-"shortDescription": "Short file description.",
-"longDescription": "Long file description detailing the file's purpose and usage within the project."
-},
-...
-]
-}
-```
-
-3. **Compile TypeScript to JavaScript**: Navigate to the directory containing `generateManifest.ts` and compile the TypeScript file to JavaScript by running:
+3. **Compile TypeScript to JavaScript**
+Navigate to the directory containing `generateManifest.ts` and compile the TypeScript file to JavaScript by running:
 
 ```bash
 tsc generateManifest.ts
@@ -96,16 +85,15 @@ tsc generateManifest.ts
 
 This command generates a `generateManifest.js` file in the same directory.
 
-4. **Run the Generated JavaScript File**: Execute the compiled JavaScript file with Node.js to generate `manifest.md`:
+4. **Run the Generated JavaScript File**
+Execute the compiled JavaScript file with Node.js to generate `manifest.md`:
 
 ```bash
 node generateManifest.js
 ```
 
-
-*Note: This process assumes you have the TypeScript compiler (`tsc`) installed globally. If not, you may need to install it via npm (`npm install -g typescript`).*
-
-5. **Check `manifest.md`**: After running the script, `manifest.md` will be updated with a markdown table reflecting the contents of `manifest.json`. Verify that the document accurately represents your project's files.
+5. **Check `manifest.md`** 
+After running the script, `manifest.md` will be updated with a markdown table reflecting the contents of `manifest.json`. Verify that the document accurately represents your project's files.
 
 
 
