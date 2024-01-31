@@ -29,7 +29,7 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
 	// Start the markdown table with headers
 	let markdownTable = `| Filename | Short Description | Long Description |\n`
 	// Adjust the separator row for left alignment
-	markdownTable += `| :------- | :---------------- | :--------------- |\n`
+	markdownTable += `| :------- | :-------------------- | :------------------- |\n`
 
 	// Iterate over the JSON "file" array and add each file to the markdown table
 	jsonData.file.forEach((file) => {
