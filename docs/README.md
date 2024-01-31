@@ -2,11 +2,13 @@
 
 This README.md discusses how Documentation is created and maintained for Call Of Luci. It includes three primary documents:
 
-1. Repository Structure (`repository.md`): explains the organization of the codebase, how the project is structured and how its various parts interact. 
+1. **The Compendium** (`compendium.md`): The Compendium serves as a detailed exploration of the project's codebase, detailing its structure and the organization of its components. 
 
-2. File Manifest (`manifest.md`): comprehensive list of all files with descriptions (short and long). It is a markdown table created from `projectStructure.json` using the `generateMarkdown.ts` script.
+2. **The Manifest** (`manifest.md`): The Manifest acts as a meticulous inventory, cataloging every file within the project's codebase.
 
-3. Directory Tree (`tree.md`): a graphical index of the project, providing a quick and intuitive way to grasp the project's layout.
+3. **The Tree** (`tree.md`): the Tree offers a graphical index of the project's directory structure, serving as a visual guide to its layout.
+
+The manifest is formatted as a markdown table and created from `projectStructure.json` using the `generateMarkdown.ts` script.
 
 Supporting files:
 
