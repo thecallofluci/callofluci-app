@@ -36,3 +36,17 @@ node generateManifest.js
 
 After running the script, `manifest.md` will be updated with a markdown table reflecting the contents of `manifest.json`. Verify that the document accurately represents your project's files.
 
+## Manifest Key Values
+
+The `manifest.json` file serves as a comprehensive catalog of the project's files, outlining their purpose and organization. Below is a description of each key used in the manifest:
+
+- **`fileName`**: Specifies the name of the file, including its extension. It uniquely identifies the file within the project.
+
+- **`shortDescription`**: Provides a concise summary of the file's purpose or its primary functionality, offering a quick overview without the need to open the file.
+
+- **`longDescription`**: Offers a detailed explanation of the file's role within the application, including its interactions with other parts of the project and any specific functionalities it provides.
+
+- **`directory`**: Indicates the directory or logical grouping within the project to which the file belongs, helping to understand the file's placement in the project's architecture.
+
+This documentation aims to clarify the structure and purpose of the `manifest.json` file, ensuring that team members can easily navigate and understand the project's organization.
+
