@@ -37,7 +37,6 @@
         "@nextui-org/use-disclosure": "^2.0.6",
         "@react-aria/ssr": "^3.9.1",
         "@react-aria/visually-hidden": "^3.8.8",
-        "@types/node": "20.10.6",
         "@types/react": "18.2.46",
         "@types/react-dom": "18.2.18",
         "autoprefixer": "10.4.16",
@@ -65,6 +64,7 @@
         "typescript": "5.3.3"
     },
     "devDependencies": {
+        "@types/node": "^20.11.13",
         "eslint-config-prettier": "^9.1.0",
         "prettier": "3.1.1",
         "tailwind-config-viewer": "^1.7.3"
