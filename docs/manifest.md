@@ -2,50 +2,50 @@
 
 | Filename | Description |
 | :------- | :---------- |
-| `.env` | Configures environment variables.<br><br>This file contains environment variables essential for configuring the Next.js application, including API keys, database URLs, and other sensitive information that should not be hardcoded into the application's source code. |
-| `.eslintrc.json` | Enforces code quality standards.<br><br>ESLint configuration file that defines rules and standards for code quality and consistency across the project helping developers avoid common mistakes and maintain a unified coding style. |
-| `.gitignore` | Specifies files for Git to ignore.<br><br>Lists files and directories that Git should ignore, preventing them from being tracked or uploaded to the repository. This includes node_modules, environment variables, and other non-source code files. |
-| `.LICENSE` | Defines usage terms.<br><br>Contains the license under which the project is released, specifying the terms under which others can use, modify, and distribute the project. |
-| `.prettierignore` | Lists files for Prettier to ignore.<br><br>Specifies files and directories that the Prettier code formatter should not format. This is used to exclude files that either do not need formatting or where formatting could cause issues. |
-| `.prettierrc` | Configures Prettier formatter.<br><br>Configuration file for Prettier, a code formatter that enforces a consistent style by parsing code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary. |
-| `next.config.js` | Customizes Next.js configurations.<br><br>Provides custom configurations for the Next.js application, including optimizations, redirects, rewrites, and other advanced configurations to enhance the app's performance and functionality. |
-| `package-lock.json` | Locks package versions.<br><br>Automatically generated file that locks down the versions of installed packages, ensuring that the same versions are installed in all environments to avoid discrepancies in dependencies. |
-| `package.json` | Manages dependencies and scripts.<br><br>Central file for managing project dependencies, scripts, and version information. It includes scripts for building, testing, and starting the application, as well as listing all npm packages the project depends on. |
-| `postcss.config.js` | Configures PostCSS.<br><br>Configuration file for PostCSS, a tool for transforming CSS with JavaScript plugins. This file specifies plugins used to autoprefix CSS, optimize performance, and support future CSS features. |
-| `README.md` | Provides project overview.<br><br>The main documentation file that offers an overview of the project, including its purpose, features, installation instructions, usage examples, and contribution guidelines. |
-| `tailwind.config.js` | Configures Tailwind CSS.<br><br>Customizes the Tailwind CSS framework for the project, defining themes, breakpoints, and custom utilities to ensure a consistent design system across the application. |
-| `tsconfig.json` | Specifies TypeScript compiler options.<br><br>Configuration file for TypeScript, specifying the root files and the compiler options required to compile the project. It includes settings for JSX, module resolution, and output directories. |
-| `error.tsx` | Handles client-side errors.<br><br>A custom error page component that catches client-side exceptions and renders user-friendly error messages. It enhances the user experience by providing clear information on errors and potential resolutions. |
-| `layout.tsx` | Defines the app's root layout.<br><br>Serves as the foundational layout component for the entire application, establishing the HTML structure and incorporating global styles, context providers, and the main layout components like headers and footers. |
-| `loading.tsx` | Manages loading states.<br><br>A custom component that handles loading states across the application, utilizing React's Suspense feature. It displays a loading indicator during data fetching or component lazy loading, improving the user's perception of the app's responsiveness. |
-| `page.tsx` | Entry point for the home page.<br><br>Acts as the main component for the application's home page, integrating various UI components and custom styles to create an engaging and informative landing page for users. |
-| `luciColors.ts` | Defines custom color palette.<br><br>Custom color palette definition for the application, establishing a unique and consistent visual theme. |
-| `luciSemantic.ts` | Establishes semantic color themes.<br><br>Builds upon luciColors.ts to define semantic color themes for light and dark modes, enhancing accessibility and user experience. |
-| `fonts.ts` | Configures global fonts.<br><br>Imports and configures global fonts for the application, utilizing Next.js's font optimization feature for improved performance. |
-| `typewriter.css` | Simulates typewriter effect.<br><br>Contains CSS animations designed to simulate a typewriter effect, adding a unique stylistic element to text presentations within the application. |
-| `ObservationForm.tsx` | UI for creating Observations.<br><br>Functional component serving as the user interface for users to create and submit Observations. |
-| `useObservationForm.ts` | Handles Observation form logic.<br><br>Custom React hook encapsulating the logic for handling the creation and submission of Observations. |
-| `AppWrapper.tsx` | Primary layout structure.<br><br>Serves as the overarching layout component that wraps around the entire application, providing a consistent structure. |
-| `Body.tsx` | Main content container.<br><br>Server Component acting as the primary container for the main content of the application, facilitating server-side rendering. |
-| `Footer.tsx` | Layout component for the footer.<br><br>Responsible for rendering the application's footer, containing copyright and other relevant information. |
-| `Header.tsx` | Layout component for the header.<br><br>Dedicated layout component for rendering the application's header section, including navigation and branding. |
-| `providers.tsx` | Context providers wrapper.<br><br>Wraps the application's UI components with necessary context providers for state management and theming. |
-| `globals.css` | Global stylesheet.<br><br>Foundational stylesheet for the application integrating Tailwind CSS's base, components, and utilities layers for a consistent styling across the application. |
-| `primitives.ts` | Design primitives utility.<br><br>Custom utility file leveraging tailwind-variants to define a cohesive set of design primitives for the application. |
-| `luciDarkTheme.ts` | Defines the dark theme.<br><br>A custom theme configuration file that outlines the dark theme settings for the application, ensuring a consistent and visually appealing dark mode experience. |
-| `luciLightTheme.ts` | Defines the light theme.<br><br>Custom theme configuration file that specifies the light theme settings for the application, providing a bright and clear visual experience for users. |
-| `LuciButton.tsx` | Custom NextUI Button component.<br><br>LuciButton.tsx delivers a custom Button component, built on the NextUI Button. It facilitates user interaction, allowing for actions to be performed with a single tap, and is a staple across the application. |
-| `LuciCard.tsx` | Custom NextUI Card component.<br><br>LuciCard.tsx is deployed to showcase Observations created by users, utilizing the NextUI Card component. This component serves as a versatile container for text, photos, and actions related to a single subject. |
-| `LuciIcons.tsx` | Custom React components for SVG icons.<br><br>LuciIcons.tsx compiles a set of React components dedicated to rendering SVG icons, offering a diverse iconography palette for the application. This collection enhances the visual language and user interface. |
-| `LuciImage.tsx` | Custom Next.js Image component.<br><br>LuciImage.tsx wraps the Next.js Image component, enriching it with additional styling and layout options. It ensures images are consistently styled with borders, rounded corners, and shadows across the application. |
-| `LuciModal.tsx` | Custom NextUI Modal component.<br><br>LuciModal.tsx crafts a bespoke Modal component suite, employing the NextUI Modal for displaying dialogs that demand attention or convey additional information, seamlessly integrating with the application's design. |
-| `LuciNavbar.tsx` | Custom NextUI Navbar component.<br><br>LuciNavbar.tsx establishes a comprehensive navigation bar, leveraging the NextUI Navbar component. It supports branding, navigation links, a collapse menu, and more, ensuring a responsive navigation experience. |
-| `LuciSpinner.tsx` | Custom NextUI Spinner component.<br><br>LuciSpinner.tsx introduces a visual loading or processing state indicator, utilizing the NextUI Spinner element. This component is adept at signaling unspecified wait times or the duration of processes. |
-| `LuciTextArea.tsx` | Custom NextUI TextArea component.<br><br>LuciTextArea.tsx enhances the NextUI Textarea component into a customizable text area, designed for writing extensive texts. It leverages the multi-line input capability of NextUI to facilitate user text input. |
-| `LuciThemeSwitch.tsx` | Custom NextUI Switch component.<br><br>LuciThemeSwitch.tsx offers a theme toggle switch, enabling users to alternate between light and dark themes. It is constructed using the NextUI Switch component, providing a clear choice between two states. |
-| `submitObservation.ts` | Handles Observation submissions.<br><br>Contains the submitObservation function, a server-side utility for processing Observation submissions. It exemplifies server-side functionality within the Next.js framework, showcasing how to handle data submissions securely and efficiently. |
-| `constants.ts` | Outlines site structure.<br><br>Central configuration module that defines the site structure and external resources, serving as a repository for constants used throughout the application. |
-| `metadata.ts` | Defines app-wide metadata.<br><br>Aligns with site configuration to define application-wide metadata, ensuring consistent metadata usage across the application for SEO and usability enhancements. |
-| `site.ts` | Stores constants used throughout the app.<br><br>Acts as a central store for constants, facilitating consistent access to key configuration values across the application, enhancing maintainability and scalability. |
-| `interfaces.ts` | TypeScript interfaces for data and UI.<br><br>Defines TypeScript interfaces for structured data objects and UI components, promoting type safety and consistency across the application's codebase. |
-| `types.ts` | Custom TypeScript types.<br><br>Specifies custom TypeScript types, aiding in maintaining a consistent and type-safe codebase by defining common types used across the application. |
+| `.env` | Environment variable configuration.<br><br>Contains essential environment variables for Next.js application setup, including API keys and database URLs. |
+| `.eslintrc.json` | Code quality enforcement.<br><br>ESLint configuration for maintaining code quality and consistency, helping avoid common mistakes. |
+| `.gitignore` | Git ignore rules.<br><br>Specifies files and directories for Git to exclude from tracking, such as node_modules and environment variables. |
+| `.LICENSE` | Project license.<br><br>Details the terms under which the project is released and can be used, modified, and distributed. |
+| `.prettierignore` | Prettier ignore rules.<br><br>Defines files and directories Prettier should not format, avoiding unnecessary changes or issues. |
+| `.prettierrc` | Prettier configuration.<br><br>Prettier configuration file for enforcing consistent code style, considering line length and wrapping. |
+| `next.config.js` | Next.js custom settings.<br><br>Adjusts Next.js configurations for performance and functionality, including optimizations and routing. |
+| `package-lock.json` | Dependency version lock.<br><br>Locks installed package versions to ensure consistency across different environments. |
+| `package.json` | Dependency and script management.<br><br>Manages project dependencies, scripts, and versioning, including build and start commands. |
+| `postcss.config.js` | PostCSS setup.<br><br>Configures PostCSS for CSS transformation with plugins for autoprefixing and performance optimization. |
+| `README.md` | Project documentation.<br><br>Overview documentation, detailing project purpose, features, and guidelines for installation and contribution. |
+| `tailwind.config.js` | Tailwind CSS configuration.<br><br>Tailors Tailwind CSS framework to the project, setting themes, breakpoints, and utilities for design consistency. |
+| `tsconfig.json` | TypeScript compiler setup.<br><br>Configures TypeScript compiler with root files and options for project compilation, including JSX and module resolution. |
+| `error.tsx` | Client-side error handling.<br><br>Custom error page that renders user-friendly messages for client-side exceptions. |
+| `layout.tsx` | Root layout definition.<br><br>Foundational layout component that structures the HTML and integrates global styles and main layout elements. |
+| `loading.tsx` | Loading state management.<br><br>Component that indicates loading during data fetches or lazy loading, enhancing perceived responsiveness. |
+| `page.tsx` | Home page component.<br><br>Serves as the home page, combining UI components and styles for an engaging user landing experience. |
+| `luciColors.ts` | Custom color palette.<br><br>Defines a unique and consistent color scheme for the application. |
+| `luciSemantic.ts` | Semantic color themes.<br><br>Expands on luciColors.ts to provide color themes for different modes, improving accessibility and user experience. |
+| `fonts.ts` | Global font configuration.<br><br>Sets up global fonts, optimizing performance with Next.js's font features. |
+| `typewriter.css` | Typewriter effect.<br><br>CSS for a typewriter animation, adding a distinctive style to text. |
+| `ObservationForm.tsx` | Observation creation UI.<br><br>Interface for users to create and submit Observations. |
+| `useObservationForm.ts` | Observation form logic.<br><br>Encapsulates logic for creating and submitting Observations with a custom React hook. |
+| `AppWrapper.tsx` | App structure wrapper.<br><br>Central layout component providing consistent structure across the application. |
+| `Body.tsx` | Content container.<br><br>Primary content container for the application, enabling server-side rendering. |
+| `Footer.tsx` | Footer layout.<br><br>Displays the application's footer with copyright and relevant information. |
+| `Header.tsx` | Header layout.<br><br>Presents the application's header with navigation and branding elements. |
+| `providers.tsx` | Context provider integration.<br><br>Integrates context providers for state management and theming with UI components. |
+| `globals.css` | Global styles.<br><br>Integrates Tailwind CSS's foundational styles for consistent application-wide appearance. |
+| `primitives.ts` | Design primitives.<br><br>Defines design primitives using tailwind-variants for a unified design language. |
+| `luciDarkTheme.ts` | Dark theme settings.<br><br>Configures dark mode visual settings, ensuring a consistent dark theme throughout the application. |
+| `luciLightTheme.ts` | Light theme settings.<br><br>Details light mode theme configurations for a bright and clear user interface. |
+| `LuciButton.tsx` | Interactive Button component.<br><br>Provides a customizable Button component for user actions, based on NextUI. |
+| `LuciCard.tsx` | Display Card component.<br><br>Presents Observations in a NextUI Card, offering a text and photo container. |
+| `LuciIcons.tsx` | SVG icon components.<br><br>Collection of SVG icons as React components, enhancing the application's visual language. |
+| `LuciImage.tsx` | Styled Image component.<br><br>Enhances Next.js Image component with additional styles for consistent imagery. |
+| `LuciModal.tsx` | Dialog Modal component.<br><br>Creates modals for user attention and information display, utilizing NextUI Modal. |
+| `LuciNavbar.tsx` | Navigation bar component.<br><br>Implements a responsive Navbar with branding and navigation links using NextUI. |
+| `LuciSpinner.tsx` | Loading indicator component.<br><br>Visual loading state indicator, based on NextUI Spinner, for process duration signaling. |
+| `LuciTextArea.tsx` | Text input area component.<br><br>Customizable multi-line text area for extensive user input, built with NextUI Textarea. |
+| `LuciThemeSwitch.tsx` | Theme toggle switch.<br><br>Allows users to switch between light and dark themes using a NextUI Switch component. |
+| `submitObservation.ts` | Observation submission handler.<br><br>Server-side function for processing Observation submissions within the Next.js framework. |
+| `constants.ts` | Site structure definition.<br><br>Defines site structure and external resources, centralizing constants for the application. |
+| `metadata.ts` | App-wide metadata configuration.<br><br>Sets application-wide metadata in line with site configuration for enhanced SEO and usability. |
+| `site.ts` | Constant storage.<br><br>Central repository for constants, streamlining access to configuration values for the application. |
+| `interfaces.ts` | Data and UI TypeScript interfaces.<br><br>Outlines structured data and UI component interfaces to ensure type safety and consistency. |
+| `types.ts` | TypeScript type definitions.<br><br>Provides custom type definitions, supporting a consistent and type-safe codebase. |
