@@ -16,7 +16,7 @@ var markdownFilePath = (0, path_1.join)(__dirname, 'manifest.md'); // Corrected 
     // Start the markdown table with headers
     var markdownTable = "| Filename | Short Description | Long Description |\n";
     // Adjust the separator row for left alignment
-    markdownTable += "| :------- | :---------------- | :--------------- |\n";
+    markdownTable += "| :------- | :-------------------- | :------------------- |\n";
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach(function (file) {
         // Wrap the fileName with backticks for code formatting
