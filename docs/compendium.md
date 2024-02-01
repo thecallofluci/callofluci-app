@@ -219,3 +219,20 @@ standards, dependencies, and metadata:
 | `/tsconfig.json`      | Configuration file for TypeScript compiler options  |
 
 ---
+Here are the "directory" key names from Manifest:
+
+1. root
+2. app
+3. (routes)
+4. colors
+5. fonts
+6. forms
+7. hooks
+8. layout
+9. providers
+10. styles
+11. themes
+12. ui
+13. utils
+14. config
+15. types

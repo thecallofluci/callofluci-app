@@ -3,19 +3,19 @@
 		{
 			"fileName": ".env",
 			"shortDescription": "Environment variable configuration.",
-			"longDescription": "Contains essential environment variables for Next.js application setup, including API keys and database URLs.",
+			"longDescription": "Defines environment variables for Next.js application setup.",
 			"directory": "root"
 		},
 		{
 			"fileName": ".eslintrc.json",
 			"shortDescription": "Code quality enforcement.",
-			"longDescription": "ESLint configuration for maintaining code quality and consistency, helping avoid common mistakes.",
+			"longDescription": "ESLint configuration for maintaining code quality and consistency.",
 			"directory": "root"
 		},
 		{
 			"fileName": ".gitignore",
 			"shortDescription": "Git ignore rules.",
-			"longDescription": "Specifies files and directories for Git to exclude from tracking, such as node_modules and environment variables.",
+			"longDescription": "Specifies files and directories for Git to exclude from tracking.",
 			"directory": "root"
 		},
 		{
@@ -27,19 +27,19 @@
 		{
 			"fileName": ".prettierignore",
 			"shortDescription": "Prettier ignore rules.",
-			"longDescription": "Defines files and directories Prettier should not format, avoiding unnecessary changes or issues.",
+			"longDescription": "Defines files and directories Prettier should not format.",
 			"directory": "root"
 		},
 		{
 			"fileName": ".prettierrc",
 			"shortDescription": "Prettier configuration.",
-			"longDescription": "Prettier configuration file for enforcing consistent code style, considering line length and wrapping.",
+			"longDescription": "Prettier configuration file for enforcing consistent code formatting.",
 			"directory": "root"
 		},
 		{
 			"fileName": "next.config.js",
 			"shortDescription": "Next.js custom settings.",
-			"longDescription": "Adjusts Next.js configurations for performance and functionality, including optimizations and routing.",
+			"longDescription": "Adjusts Next.js configurations for performance and functionality.",
 			"directory": "root"
 		},
 		{
@@ -69,62 +69,38 @@
 		{
 			"fileName": "tailwind.config.js",
 			"shortDescription": "Tailwind CSS configuration.",
-			"longDescription": "Tailors Tailwind CSS framework to the project, setting themes, breakpoints, and utilities for design consistency.",
+			"longDescription": "Tailors Tailwind CSS framework to the project.",
 			"directory": "root"
 		},
 		{
 			"fileName": "tsconfig.json",
 			"shortDescription": "TypeScript compiler setup.",
-			"longDescription": "Configures TypeScript compiler with root files and options for project compilation, including JSX and module resolution.",
+			"longDescription": "Configures TypeScript compiler with root files and options for project compilation.",
 			"directory": "root"
 		},
 		{
 			"fileName": "error.tsx",
-			"shortDescription": "Client-side error handling.",
-			"longDescription": "Custom error page that renders user-friendly messages for client-side exceptions.",
+			"shortDescription": "Error UI.",
+			"longDescription": "Automatically creates a React Error Boundary that wraps a nested child segment or page.tsx component.",
 			"directory": "app"
 		},
 		{
 			"fileName": "layout.tsx",
 			"shortDescription": "Root layout definition.",
-			"longDescription": "Foundational layout component that structures the HTML and integrates global styles and main layout elements.",
+			"longDescription": "Root layout component defined at top level of app directory and applies to all routes.",
 			"directory": "app"
 		},
 		{
 			"fileName": "loading.tsx",
-			"shortDescription": "Loading state management.",
-			"longDescription": "Component that indicates loading during data fetches or lazy loading, enhancing perceived responsiveness.",
+			"shortDescription": "Loading UI.",
+			"longDescription": "Shows an instant loading state from server while content of route segment loads.",
 			"directory": "app"
 		},
 		{
 			"fileName": "page.tsx",
-			"shortDescription": "Home page component.",
-			"longDescription": "Serves as the home page, combining UI components and styles for an engaging user landing experience.",
+			"shortDescription": "Landing page.",
+			"longDescription": "Landing page for Call Of Luci.",
 			"directory": "app"
-		},
-		{
-			"fileName": "luciColors.ts",
-			"shortDescription": "Custom color palette.",
-			"longDescription": "Defines a unique and consistent color scheme for the application.",
-			"directory": "colors"
-		},
-		{
-			"fileName": "luciSemantic.ts",
-			"shortDescription": "Semantic color themes.",
-			"longDescription": "Expands on luciColors.ts to provide color themes for different modes, improving accessibility and user experience.",
-			"directory": "colors"
-		},
-		{
-			"fileName": "fonts.ts",
-			"shortDescription": "Global font configuration.",
-			"longDescription": "Sets up global fonts, optimizing performance with Next.js's font features.",
-			"directory": "fonts"
-		},
-		{
-			"fileName": "typewriter.css",
-			"shortDescription": "Typewriter effect.",
-			"longDescription": "CSS for a typewriter animation, adding a distinctive style to text.",
-			"directory": "fonts"
 		},
 		{
 			"fileName": "ObservationForm.tsx",
@@ -133,40 +109,100 @@
 			"directory": "forms"
 		},
 		{
+			"fileName": "AppWrapper.tsx",
+			"shortDescription": "Application structure.",
+			"longDescription": "Central layout component providing consistent structure across the application, ensuring that the header, body, and footer are laid out vertically.",
+			"directory": "layout"
+		},
+		{
+			"fileName": "Body.tsx",
+			"shortDescription": "Main content container.",
+			"longDescription": "Provides a container for the main content of the application.",
+			"directory": "layout"
+		},
+		{
+			"fileName": "Footer.tsx",
+			"shortDescription": "Footer layout.",
+			"longDescription": "Displays the application's footer.",
+			"directory": "layout"
+		},
+		{
+			"fileName": "Header.tsx",
+			"shortDescription": "Header layout.",
+			"longDescription": "Displays the application's header.",
+			"directory": "layout"
+		},
+		{
+			"fileName": "providers.tsx",
+			"shortDescription": "Context provider integration.",
+			"longDescription": "Integrates nextui-org and next-themes libraries for UI components and theming.",
+			"directory": "providers"
+		},
+		{
+			"fileName": "LuciButton.tsx",
+			"shortDescription": "Custom Button component.",
+			"longDescription": "Provides a custom Button for user actions, built using the NextUI Button component.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciCard.tsx",
+			"shortDescription": "Custom Card component.",
+			"longDescription": "Provides a custom Card to display Observations, built using the NextUI Card component.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciIcons.tsx",
+			"shortDescription": "Custom icon components.",
+			"longDescription": "Collection of SVG icons as React components used throughout application.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciImage.tsx",
+			"shortDescription": "Custom Image component.",
+			"longDescription": "Enhances Next.js Image component with additional styles for consistent imagery.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciModal.tsx",
+			"shortDescription": "Custom Modal component.",
+			"longDescription": "Creates a custom Modal suite for displaying a dialog, built using the NextUI Modal component.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciNavbar.tsx",
+			"shortDescription": "Custom Navbar component.",
+			"longDescription": "Implements a responsive Navbar with branding and navigation links, built on top of the NextUI Navbar component.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciSpinner.tsx",
+			"shortDescription": "Custom Spinner component.",
+			"longDescription": "Visual loading state indicator, built using the NextUI Spinner component.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciTextArea.tsx",
+			"shortDescription": "Custom TextArea component.",
+			"longDescription": "Customizable multi-line text area for extensive user input, built using the NextUI Textarea component.",
+			"directory": "ui"
+		},
+		{
+			"fileName": "LuciThemeSwitch.tsx",
+			"shortDescription": "Custom Switch component.",
+			"longDescription": "Allows users to switch between light and dark themes using a customized NextUI Switch component.",
+			"directory": "ui"
+		},
+		{
 			"fileName": "useObservationForm.ts",
 			"shortDescription": "Observation form logic.",
 			"longDescription": "Encapsulates logic for creating and submitting Observations with a custom React hook.",
 			"directory": "hooks"
 		},
 		{
-			"fileName": "AppWrapper.tsx",
-			"shortDescription": "App structure wrapper.",
-			"longDescription": "Central layout component providing consistent structure across the application.",
-			"directory": "layout"
-		},
-		{
-			"fileName": "Body.tsx",
-			"shortDescription": "Content container.",
-			"longDescription": "Primary content container for the application, enabling server-side rendering.",
-			"directory": "layout"
-		},
-		{
-			"fileName": "Footer.tsx",
-			"shortDescription": "Footer layout.",
-			"longDescription": "Displays the application's footer with copyright and relevant information.",
-			"directory": "layout"
-		},
-		{
-			"fileName": "Header.tsx",
-			"shortDescription": "Header layout.",
-			"longDescription": "Presents the application's header with navigation and branding elements.",
-			"directory": "layout"
-		},
-		{
-			"fileName": "providers.tsx",
-			"shortDescription": "Context provider integration.",
-			"longDescription": "Integrates context providers for state management and theming with UI components.",
-			"directory": "providers"
+			"fileName": "submitObservation.ts",
+			"shortDescription": "Observation submission handler.",
+			"longDescription": "Server-side function for processing Observation submissions within Next.js.",
+			"directory": "utils"
 		},
 		{
 			"fileName": "globals.css",
@@ -181,105 +217,69 @@
 			"directory": "styles"
 		},
 		{
+			"fileName": "luciColors.ts",
+			"shortDescription": "Custom color palette.",
+			"longDescription": "Defines a color scheme for Call Of Luci.",
+			"directory": "colors"
+		},
+		{
+			"fileName": "luciSemantic.ts",
+			"shortDescription": "Semantic color themes.",
+			"longDescription": "Expands on luciColors.ts to provide color themes for different modes.",
+			"directory": "colors"
+		},
+		{
+			"fileName": "fonts.ts",
+			"shortDescription": "Global font configuration.",
+			"longDescription": "Sets up global fonts using Next.js's font features.",
+			"directory": "fonts"
+		},
+		{
+			"fileName": "typewriter.css",
+			"shortDescription": "Typewriter effect.",
+			"longDescription": "CSS for a typewriter animation effect.",
+			"directory": "fonts"
+		},
+		{
 			"fileName": "luciDarkTheme.ts",
 			"shortDescription": "Dark theme settings.",
-			"longDescription": "Configures dark mode visual settings, ensuring a consistent dark theme throughout the application.",
+			"longDescription": "Configures dark mode theme.",
 			"directory": "themes"
 		},
 		{
 			"fileName": "luciLightTheme.ts",
 			"shortDescription": "Light theme settings.",
-			"longDescription": "Details light mode theme configurations for a bright and clear user interface.",
+			"longDescription": "onfigures light mode theme.",
 			"directory": "themes"
 		},
 		{
-			"fileName": "LuciButton.tsx",
-			"shortDescription": "Interactive Button component.",
-			"longDescription": "Provides a customizable Button component for user actions, based on NextUI.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciCard.tsx",
-			"shortDescription": "Display Card component.",
-			"longDescription": "Presents Observations in a NextUI Card, offering a text and photo container.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciIcons.tsx",
-			"shortDescription": "SVG icon components.",
-			"longDescription": "Collection of SVG icons as React components, enhancing the application's visual language.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciImage.tsx",
-			"shortDescription": "Styled Image component.",
-			"longDescription": "Enhances Next.js Image component with additional styles for consistent imagery.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciModal.tsx",
-			"shortDescription": "Dialog Modal component.",
-			"longDescription": "Creates modals for user attention and information display, utilizing NextUI Modal.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciNavbar.tsx",
-			"shortDescription": "Navigation bar component.",
-			"longDescription": "Implements a responsive Navbar with branding and navigation links using NextUI.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciSpinner.tsx",
-			"shortDescription": "Loading indicator component.",
-			"longDescription": "Visual loading state indicator, based on NextUI Spinner, for process duration signaling.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciTextArea.tsx",
-			"shortDescription": "Text input area component.",
-			"longDescription": "Customizable multi-line text area for extensive user input, built with NextUI Textarea.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "LuciThemeSwitch.tsx",
-			"shortDescription": "Theme toggle switch.",
-			"longDescription": "Allows users to switch between light and dark themes using a NextUI Switch component.",
-			"directory": "ui"
-		},
-		{
-			"fileName": "submitObservation.ts",
-			"shortDescription": "Observation submission handler.",
-			"longDescription": "Server-side function for processing Observation submissions within the Next.js framework.",
-			"directory": "utils"
-		},
-		{
 			"fileName": "constants.ts",
-			"shortDescription": "Site structure definition.",
-			"longDescription": "Defines site structure and external resources, centralizing constants for the application.",
+			"shortDescription": "Global constants.",
+			"longDescription": "Centralizes constants used across the application.",
 			"directory": "config"
 		},
 		{
 			"fileName": "metadata.ts",
-			"shortDescription": "App-wide metadata configuration.",
-			"longDescription": "Sets application-wide metadata in line with site configuration for enhanced SEO and usability.",
+			"shortDescription": "Application metadata.",
+			"longDescription": "Defines application metadata for enhanced SEO and usability.",
 			"directory": "config"
 		},
 		{
 			"fileName": "site.ts",
-			"shortDescription": "Constant storage.",
-			"longDescription": "Central repository for constants, streamlining access to configuration values for the application.",
+			"shortDescription": "Site structure.",
+			"longDescription": "Defines configurations for site's structure and content,",
 			"directory": "config"
 		},
 		{
 			"fileName": "interfaces.ts",
-			"shortDescription": "Data and UI TypeScript interfaces.",
-			"longDescription": "Outlines structured data and UI component interfaces to ensure type safety and consistency.",
+			"shortDescription": "TypeScript interfaces.",
+			"longDescription": "Defines structured data and UI component interfaces used across application.",
 			"directory": "types"
 		},
 		{
 			"fileName": "types.ts",
 			"shortDescription": "TypeScript type definitions.",
-			"longDescription": "Provides custom type definitions, supporting a consistent and type-safe codebase.",
+			"longDescription": "Provides custom type definitions used across application.",
 			"directory": "types"
 		}
 	]
