@@ -24,14 +24,12 @@ import { LuciButton, LuciButtonWide } from '@/src/app/components/ui/LuciButton'
 import LuciCard from '@/src/app/components/ui/LuciCard'
 import { LuciSpinner } from '@/src/app/components/ui/LuciSpinner'
 import NextUICard from '@/src/app/working/NextUICard'
-import LuciDropdown from '@/src/app/_components/_ui/LuciDropdown'
 import DefaultModal from '@/src/app/components/ui/LuciModal'
 import {
 	LuciModal,
 	LuciModalFormFields,
 	LuciModalObservationForm,
 } from '@/src/app/components/ui/LuciModal'
-import LuciCardGallery from '@/src/app/_components/_layout/LuciCardGallery'
 import LuciImage from '@/src/app/components/ui/LuciImage'
 import { LuciTextarea } from '@/src/app/components/ui/LuciTextArea'
 
