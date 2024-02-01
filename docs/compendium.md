@@ -42,6 +42,15 @@ Routes in the Call Of Luci application are organized starting from a master Next
 - `about`: A static page detailing the background and purpose of the Call Of Luci project. This route is straightforward and serves as an informational resource for users.
 - `(temporary)`: A collection of temporary pages for mockups and examples during app development. These routes are useful for testing and demonstration purposes but are not intended for the final application structure.
 
+| **`/(routes)`**      | **Next.js App Router**                                                               |
+| :------------------- | :----------------------------------------------------------------------------------- |
+| **subdirectories**   |                                                                                      |
+| `/create`            | A static route directory where users can create new Observations.                    |
+| `/gallery`           | A static route directory that aggregates and displays Observations created by users. |
+| `/observations`      | A dynamic route directory which generates unique routes for each Observation.        |
+| `/about`             | A static page detailing the background and purpose of the project.                   |
+| `/(temporary)`       | A collection of temporary pages for mockups and examples during app development.     |
+
 ```markdown
 Call Of Luci Routing
 
