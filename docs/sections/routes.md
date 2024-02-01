@@ -6,14 +6,14 @@ This section details the routing strategy for the application from both us
 
 Call Of Luci leverages Next.js's powerful routing system to create a seamless and dynamic user experience. Routes for the application are organized starting from a master Next.js Route Group, `(routes)`, located inside of the `/app` directory . This `(routes)` directory is then split into the following subdirectories:
 
-| /(routes) | Next.js App Router |
-| --- | --- |
-| subdirectories |  |
-| /create | A static route directory where users can create new Observations. |
-| /gallery | A static route directory that aggregates and displays Observations created by users. |
-| /observations | A dynamic route directory which generates unique routes for each Observation. |
-| /about | A static page detailing the background and purpose of the project. |
-| /(temporary) | A collection of temporary pages for mockups and examples during app development. |
+| **`/(routes)`**         | **Next.js App Router** |
+| :---------------------- | :----------------------------------------------------------------------------------- |
+| **subdirectories**      |                                                                                      |
+| `/create`               | A static route directory where users can create new Observations.                    |
+| `/gallery`              | A static route directory that aggregates and displays Observations created by users. |
+| `/observations`         | A dynamic route directory which generates unique routes for each Observation.        |
+| `/about`                | A static page detailing the background and purpose of the project.                   |
+| `/(temporary)`          | A collection of temporary pages for mockups and examples during app development.     |
 
 ## Primary Routes
 
