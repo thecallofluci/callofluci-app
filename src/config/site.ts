@@ -10,14 +10,19 @@ export const siteConfig = {
             description: 'What is Call Of Luci?', 
 		},
 		{
-			label: 'Gallery',
-			href: '/gallery',
-            description: 'View the Gallery', 
-		},
-		{
 			label: 'Create',
 			href: '/create',
             description: 'Create an Observation', 
+		},
+		{
+			label: 'Observations',
+			href: '/observations',
+            description: 'Access an Observation', 
+		},
+		{
+			label: 'Gallery',
+			href: '/gallery',
+            description: 'View all Observations', 
 		},
 		{
 			label: 'Examples',
