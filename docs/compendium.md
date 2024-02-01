@@ -34,19 +34,35 @@ The `/app` directory organizes the central hub for the project, the App Router. 
 
 ### Routes
 
-Routes in the Call Of Luci application are organized starting from a master Next.js Route Group, `(routes)`, located inside of the `/app` directory . This `(routes)` directory is then split into two different nested route groups: 
+Routes in the Call Of Luci application are organized starting from a master Next.js Route Group, `(routes)`, located inside of the `/app` directory . This `(routes)` directory is then split into the following subdirectories: 
 
-1. Observation
-2. Gallery
+- `create`: A static route directory where users can create new Observations. This route is accessible to all users and serves as the entry point for creating content. 
+- `gallery`: A static route directory that aggregates and displays Observations created by users. It fetches existing Observations and presents them to the user, supporting functionalities like browsing and searching.
+- `observations`: A dynamic route directory which generates unique routes for each Observation. The `page.tsx` file within the [id] directory is responsible for rendering the UI of each individual Observation based on its unique identifiers.
+- `about`: A static page detailing the background and purpose of the Call Of Luci project. This route is straightforward and serves as an informational resource for users.
+- `(temporary)`: A collection of temporary pages for mockups and examples during app development. These routes are useful for testing and demonstration purposes but are not intended for the final application structure.
 
-| **`/(routes)`**            | **Primary Route Group**                                  |
-| :------------------------- | :------------------------------------------------------- |
-| **subfolders**             |                                                          |
-| `/(routes)/about`          | about page                                               |
-| `/(routes)/examples`       | examples page                                            |
-| `/(routes)/gallery`        | gallery page                                             |
-| `/(routes)/mockup`         | mockup page                                              |
-| `/(routes)/observation`    | observation page                                         |
+```markdown
+Call Of Luci Routing
+
+├── app                        # Next.js App Router
+│   ├── (routing)
+│   │   ├── create             # Static route for creating Observations
+│   │   │   └── page.tsx       # Page for creating Observations
+│   │   ├── observations       # Dynamic route for individual Observations
+│   │   │   └── [id]
+│   │   │       └── page.tsx   # Pages for each unique Observation
+│   │   └── gallery            # Static route for viewing existing Observations
+│   │       ├── page.tsx       # Main Gallery page
+│   │       ├── browse
+│   │       │   └── page.tsx   # Gallery browsing functionality
+│   │       └── search
+│   │           └── page.tsx   # Gallery search functionality
+│   └── ...
+│   └── ...
+│   └── ...
+└── ...  
+```
 
 ## Components
 
