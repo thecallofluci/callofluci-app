@@ -249,7 +249,7 @@
 		{
 			"fileName": "luciLightTheme.ts",
 			"shortDescription": "Light theme settings.",
-			"longDescription": "onfigures light mode theme.",
+			"longDescription": "Configures light mode theme.",
 			"directory": "themes"
 		},
 		{

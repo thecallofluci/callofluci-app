@@ -4,9 +4,10 @@
 import { readFile, writeFile } from 'fs';
 import { join } from 'path';
 
-// Define the interface for the file structure
+// Define the interface for the file structure including the directory
 interface FileDescription {
     fileName: string;
+    directory: string; // Added directory field
     longDescription: string;
 }
 
@@ -31,16 +32,16 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
     let markdownContent = `# Manifest\n\n`;
 
     // Start the markdown table with headers
-    markdownContent += `| Filename | Long Description |\n`;
-    markdownContent += `| :------- | :--------------- |\n`;
+    markdownContent += `| Filename | Directory | Long Description |\n`;
+    markdownContent += `| :------- | :-------- | :--------------- |\n`;
 
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach((file) => {
         // Replace newlines in longDescription with spaces for better markdown formatting
         const formattedLongDescription = file.longDescription.replace(/\n/g, ' ');
         // Wrap the fileName with backticks for code formatting
-        // Add the long description to the second column
-        markdownContent += `| \`${file.fileName}\` | ${formattedLongDescription} |\n`;
+        // Add the directory and the long description to the respective columns
+        markdownContent += `| \`${file.fileName}\` | ${file.directory} | ${formattedLongDescription} |\n`;
     });
 
     // Write the markdown content to a file
