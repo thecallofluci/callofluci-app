@@ -1,4 +1,4 @@
-export default function ObservationLayout({
+export default function CreateLayout({
     children,
 }: {
     children: React.ReactNode

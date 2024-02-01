@@ -8,7 +8,7 @@ import {
 import ObservationTextInput from '@/src/app/components/ui/LuciTextArea'
 import MyForm from '@/src/app/components/forms/ObservationForm'
 
-export default function ObservationPage() {
+export default function CreatePage() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div>
