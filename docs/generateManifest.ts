@@ -7,7 +7,6 @@ import { join } from 'path';
 // Define the interface for the file structure
 interface FileDescription {
     fileName: string;
-    shortDescription: string; // Ensure this is included in the interface
     longDescription: string;
 }
 
@@ -32,16 +31,16 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
     let markdownContent = `# Manifest\n\n`;
 
     // Start the markdown table with headers
-    markdownContent += `| Filename | Description |\n`;
-    markdownContent += `| :------- | :---------- |\n`;
+    markdownContent += `| Filename | Long Description |\n`;
+    markdownContent += `| :------- | :--------------- |\n`;
 
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach((file) => {
-        // Combine short and long descriptions with an HTML line break
-        const combinedDescription = `${file.shortDescription}<br><br>${file.longDescription.replace(/\n/g, ' ')}`;
+        // Replace newlines in longDescription with spaces for better markdown formatting
+        const formattedLongDescription = file.longDescription.replace(/\n/g, ' ');
         // Wrap the fileName with backticks for code formatting
-        // Add the combined description to the second column
-        markdownContent += `| \`${file.fileName}\` | ${combinedDescription} |\n`;
+        // Add the long description to the second column
+        markdownContent += `| \`${file.fileName}\` | ${formattedLongDescription} |\n`;
     });
 
     // Write the markdown content to a file
