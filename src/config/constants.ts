@@ -21,7 +21,7 @@ export const appConstants = {
     NAV_LINKS: [
         { name: 'Home', href: '/' },
         { name: 'Gallery', href: '/gallery' },
-        { name: 'Observation', href: '/observation' },
+        { name: 'Create', href: '/create' },
         { name: 'About', href: '/about' },
         { name: 'Examples', href: '/examples' },
         { name: 'Mockup', href: '/mockup' },

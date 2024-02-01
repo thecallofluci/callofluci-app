@@ -15,8 +15,8 @@ export const siteConfig = {
             description: 'View the Gallery', 
 		},
 		{
-			label: 'Observation',
-			href: '/observation',
+			label: 'Create',
+			href: '/create',
             description: 'Create an Observation', 
 		},
 		{
