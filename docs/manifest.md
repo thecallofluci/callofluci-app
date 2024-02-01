@@ -1,6 +1,6 @@
 # Manifest
 
-| Filename | Directory | Long Description |
+| Filename | Directory | Description      |
 | :------- | :-------- | :--------------- |
 | `.env` | root | Defines environment variables for Next.js application setup. |
 | `.eslintrc.json` | root | ESLint configuration for maintaining code quality and consistency. |

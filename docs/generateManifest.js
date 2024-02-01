@@ -17,7 +17,7 @@ var markdownFilePath = (0, path_1.join)(__dirname, 'manifest.md'); // output fil
     // Start the markdown content with a Heading 1
     var markdownContent = "# Manifest\n\n";
     // Start the markdown table with headers
-    markdownContent += "| Filename | Directory | Long Description |\n";
+    markdownContent += "| Filename | Directory | Description      |\n";
     markdownContent += "| :------- | :-------- | :--------------- |\n";
     // Iterate over the JSON "file" array and add each file to the markdown table
     jsonData.file.forEach(function (file) {

@@ -32,7 +32,7 @@ readFile(jsonFilePath, 'utf8', (err, data) => {
     let markdownContent = `# Manifest\n\n`;
 
     // Start the markdown table with headers
-    markdownContent += `| Filename | Directory | Long Description |\n`;
+    markdownContent += `| Filename | Directory | Description      |\n`;
     markdownContent += `| :------- | :-------- | :--------------- |\n`;
 
     // Iterate over the JSON "file" array and add each file to the markdown table

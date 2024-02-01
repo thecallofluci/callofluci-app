@@ -1,42 +1,43 @@
-# The Compendium
+# Compendium
 
-The codebase for Call Of Luci is organized in alignment with the
-[Next.js Project Structure](https://nextjs.org/docs/getting-started/project-structure) guide. It
-adopts Next.js's
+Compendium provides an overview of the file and folder structure of Call Of Luci. The codebase for Call Of Luci is organized following Next.js's
 [unopinionated approach](https://nextjs.org/docs/app/building-your-application/routing/colocation)
-approach towards project organization and file colocation.
+approach towards project structure and file colocation.
 
-## src Directory
-
-The project's source code [`/src`](../src) directory is divided into three main subdirectories: [`/app`](../src/app), [`/config`](../src/config), and [`/types`](../src/types):
-
-| **Directory**      | **Description**                                                                              |
-| :----------------- | :------------------------------------------------------------------------------------------- |
-| `/src`             | Root of project's source code.                                                               |
-| **subdirectories** |                                                                                              |
-| `/app`             | Central hub for Next.js App Router, containing routes, components, hooks, styles, utilities. |
-| `/config`          | Global settings and constants.                                                               |
-| `/types`           | TypeScript type definitions and interfaces.                                                  |
+Compendium
+├── app
+│   ├── route 1
+│   ├── route 2
+│   └── route 3
+├── components
+│   ├── providers
+│   ├── layout
+│   ├── ui
+│   └── forms
+├── utilities
+│   ├── utils
+│   └── hooks
+├── styling
+│   ├── styles
+│   ├── colors
+│   ├── fonts
+│   └── themes
+├── root
+│   ├── root
+│   ├── config
+│   ├── types
+│   └── misc.
 
 ## app Directory
 
-The `/app` directory within the `/src` directory organizes the central hub for the project, the Next.js
-App Router. It organizes the application's primary routes and core functional elements:
+The `/app` directory organizes the central hub for the project, the App Router. Next.js uses a file-system based router called the App Router, where folders are used to define routes and files are used to create UI that is shown for a route segment.
 
-| **Directory**      | **Description**                                                                              |
-| :----------------- | :------------------------------------------------------------------------------------------- |
-| `/app`             | Central hub for Next.js App Router, containing routes, components, hooks, styles, utilities. |
-| **subdirectories** |                                                                                              |
-| `(routes)`         | Organizes page routes using Next.js App Router.                                              |
-| `/components`      | Organizes reusable React components for user interface.                                      |
-| `/hooks`           | Organizes custom React hooks.                                                                |
-| `/styles`          | Organizes style-related files for visual aesthetics.                                         |
-| `/utils`           | Organizes shared utility functions.                                                          |
-| `/working`         | Stores works-in-progress as temp directory.                                                  |
+### Routes
 
-### Routing | app/(routes)
+Routes in the Call Of Luci application are organized starting from a master Next.js Route Group, `(routes)`, located inside of the `/app` directory . This `(routes)` directory is then split into two different nested route groups: 
 
-The `/(routes)` subdirectory within the `/app` directory organizes a collection of routes using the Next.js App Router, locating the application's pages into a structured and accessible hierarchy. It contains subdirectories for each primary view of the application. 
+1. Observation
+2. Gallery
 
 | **`/(routes)`**            | **Primary Route Group**                                  |
 | :------------------------- | :------------------------------------------------------- |
@@ -47,7 +48,7 @@ The `/(routes)` subdirectory within the `/app` directory organizes a collection 
 | `/(routes)/mockup`         | mockup page                                              |
 | `/(routes)/observation`    | observation page                                         |
 
-### Components | app/components
+## Components
 
 The `/components` subdirectory within the `/app` directory organizes a collection of reusable React
 components that form the building blocks of the application's user interface:
@@ -204,6 +205,8 @@ The structure of the project codebase is divided into two root-level directories
 The root-level files in the project include configurations for the application's environment, coding
 standards, dependencies, and metadata:
 
+-- print markdown table for root-level fileName, short description.
+
 | **Root-Level Files**  |                                                     |
 | :-------------------- | :-------------------------------------------------- |
 | `/.eslintrc.json`     | Configuration for ESLint to enforce code quality    |
@@ -221,18 +224,13 @@ standards, dependencies, and metadata:
 ---
 Here are the "directory" key names from Manifest:
 
-1. root
-2. app
-3. (routes)
-4. colors
-5. fonts
-6. forms
-7. hooks
-8. layout
-9. providers
-10. styles
-11. themes
-12. ui
-13. utils
-14. config
-15. types
+| **Directory**      | **Description**                                                                              |
+| :----------------- | :------------------------------------------------------------------------------------------- |
+| `/app`             | Central hub for Next.js App Router, containing routes, components, hooks, styles, utilities. |
+| **subdirectories** |                                                                                              |
+| `(routes)`         | Organizes page routes using Next.js App Router.                                              |
+| `/components`      | Organizes reusable React components for user interface.                                      |
+| `/hooks`           | Organizes custom React hooks.                                                                |
+| `/styles`          | Organizes style-related files for visual aesthetics.                                         |
+| `/utils`           | Organizes shared utility functions.                                                          |
+| `/working`         | Stores works-in-progress as temp directory.                                                  |
