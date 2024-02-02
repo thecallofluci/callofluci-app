@@ -1,8 +1,9 @@
 // Note this does not yet have Dynamic Routing integrated
 // Instead, this version uses mock data and the useRouter hook to simulate dynamic routing
 // based on the observation ID.
+'use client'
 
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/navigation'
 
 // Import styles
 import {
