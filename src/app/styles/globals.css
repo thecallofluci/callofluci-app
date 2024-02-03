@@ -1,3 +1,14 @@
+@import './fonts/fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--font-neue-haas-grotesk-text: 'neue-haas-grotesk-text', sans-serif;
+}
+
+html,
+body {
+	font-family: var(--font-neue-haas-grotesk-text);
+}

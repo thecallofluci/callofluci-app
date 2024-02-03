@@ -36,6 +36,12 @@ export default function Home() {
 			</div>
 
 			<div>
+				<h2 className="font-neue">
+					I am your guide, Call Of Luci.
+				</h2>
+			</div>
+
+						<div>
 				<h2 className={`${lucitypewriter({ class: 'mt-4 typewriter' })} `}>
 					I am your guide, Call Of Luci.
 				</h2>

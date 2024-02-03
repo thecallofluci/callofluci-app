@@ -1,7 +1,7 @@
 // AppWrapper.tsx
 import React, { ReactNode } from 'react'
 
-import { fontSans, fontMono } from '@/src/app/styles/fonts/fonts'
+import { fontSans } from '@/src/app/styles/fonts/fonts'
 
 import Header from '@/src/app/components/layout/Header'
 import Body from '@/src/app/components/layout/Body'
@@ -13,9 +13,7 @@ interface AppWrapperProps {
 
 const AppWrapper: React.FC<AppWrapperProps> = ({ children }) => {
 	return (
-		<div
-			className={`${fontSans.variable} ${fontMono.variable} relative flex flex-col h-screen`}
-		>
+		<div className={`${fontSans.variable} relative flex flex-col h-screen`}>
 			<Header />
 			<Body>{children}</Body>
 			<Footer />
