@@ -3,7 +3,7 @@
 import { nextui } from '@nextui-org/theme'
 import { luciDarkTheme } from './src/app/styles/themes/luciDarkTheme'
 import { luciLightTheme } from './src/app/styles/themes/luciLightTheme'
-import { purpleDarkTheme } from './src/app/styles/colors/purpleDarkTheme'
+
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -21,7 +21,7 @@ const config = {
 		extend: {
 			// Specify custom font families.
 			fontFamily: {
-				sans: ['var(--font-neue-haas-grotesk-text)', 'sans-serif'], // The 'primary' font family
+				grotesk: ['var(--font-grotesk)', 'grotesk'], // The 'grotesk' font family
 			},
 		},
 	},

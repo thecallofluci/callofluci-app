@@ -8,7 +8,7 @@ import { button as buttonStyles } from '@nextui-org/theme'
 import { siteConfig } from '@/src/config/site'
 import { title, subtitle } from '@/src/app/styles/primitives'
 import { GithubIcon } from '@/src/app/components/ui/LuciIcons'
-import { fontMono } from '@/src/app/styles/fonts/fonts'
+
 import packageJson from '../../package.json'
 
 import wormfood from '@/public/wormfood.jpg'
@@ -35,11 +35,7 @@ export default function Home() {
 				<h1 className={`${lucititle()}`}>Welcome, Player.&nbsp;</h1>
 			</div>
 
-			<div>
-				<h2 className="font-neue">
-					I am your guide, Call Of Luci.
-				</h2>
-			</div>
+			
 
 						<div>
 				<h2 className={`${lucitypewriter({ class: 'mt-4 typewriter' })} `}>
