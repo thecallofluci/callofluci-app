@@ -21,7 +21,7 @@ const config = {
 		extend: {
 			// Specify custom font families.
 			fontFamily: {
-				grotesk: ['var(--font-grotesk)', 'grotesk'], // The 'grotesk' font family
+				sans: ['var(--font-grotesk)', 'sans-serif'],
 			},
 		},
 	},

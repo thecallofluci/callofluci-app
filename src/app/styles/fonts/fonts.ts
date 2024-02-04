@@ -14,7 +14,7 @@ export const fontMono = Overpass_Mono({
 	display: 'swap',
 })
 */
-export const fontGrotesk = localFont({
+export const fontSans = localFont({
 	src: './grotesk.woff2',
 	variable: '--font-grotesk',
 	display: 'swap',

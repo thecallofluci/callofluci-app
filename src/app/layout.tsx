@@ -1,6 +1,6 @@
 // src/app/layout.tsx
 import '@/src/app/styles/globals.css'
-import { fontGrotesk } from '@/src/app/styles/fonts/fonts'
+import { fontSans } from '@/src/app/styles/fonts/fonts'
 
 import { Providers } from '@/src/app/components/providers/providers'
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		// Defining the basic HTML structure
 		// <html lang="en" className={`${fontSans.variable} ${fontMono.variable}`}>
-		<html lang="en" className={fontGrotesk.variable}>
+		<html lang="en" className={fontSans.variable}>
 			<head />
 
 			<body
