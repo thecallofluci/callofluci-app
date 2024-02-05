@@ -16,7 +16,7 @@ declarations: An array of font face descriptor key-value pairs that define the g
 */
 
 export const ultraThin = localFont({
-	src: '/fonts/woff2/neue1.woff2',
+	src: './woff2/neue1.woff2',
 	weight: '100',
 	style: 'normal',
 	display: 'swap',
@@ -38,7 +38,7 @@ export const ultraThin = localFont({
 })
 
 export const ultraThinItalic = localFont({
-	src: '/fonts/woff2/neue2.woff2',
+	src: './woff2/neue2.woff2',
 	weight: '100',
 	style: 'italic',
 	display: 'swap',
@@ -60,7 +60,7 @@ export const ultraThinItalic = localFont({
 })
 
 export const thin = localFont({
-	src: '/fonts/woff2/neue3.woff2',
+	src: './woff2/neue3.woff2',
 	weight: '200',
 	style: 'normal',
 	display: 'swap',
@@ -82,7 +82,7 @@ export const thin = localFont({
 })
 
 export const thinItalic = localFont({
-	src: '/fonts/woff2/neue4.woff2',
+	src: './woff2/neue4.woff2',
 	weight: '200',
 	style: 'italic',
 	display: 'swap',
@@ -104,7 +104,7 @@ export const thinItalic = localFont({
 })
 
 export const extraLight = localFont({
-	src: '/fonts/woff2/neue5.woff2',
+	src: './woff2/neue5.woff2',
 	weight: '300',
 	style: 'normal',
 	display: 'swap',
@@ -126,7 +126,7 @@ export const extraLight = localFont({
 })
 
 export const extraLightItalic = localFont({
-	src: '/fonts/woff2/neue6.woff2',
+	src: './woff2/neue6.woff2',
 	weight: '300',
 	style: 'italic',
 	display: 'swap',
@@ -148,7 +148,7 @@ export const extraLightItalic = localFont({
 })
 
 export const light = localFont({
-	src: '/fonts/woff2/neue7.woff2',
+	src: './woff2/neue7.woff2',
 	weight: '400',
 	style: 'normal',
 	display: 'swap',
@@ -170,7 +170,7 @@ export const light = localFont({
 })
 
 export const lightItalic = localFont({
-	src: '/fonts/woff2/neue8.woff2',
+	src: './woff2/neue8.woff2',
 	weight: '400',
 	style: 'italic',
 	display: 'swap',
@@ -192,7 +192,7 @@ export const lightItalic = localFont({
 })
 
 export const roman = localFont({
-	src: '/fonts/woff2/neue9.woff2',
+	src: './woff2/neue9.woff2',
 	weight: '500',
 	style: 'normal',
 	display: 'swap',
@@ -214,7 +214,7 @@ export const roman = localFont({
 })
 
 export const italic = localFont({
-	src: '/fonts/woff2/neue10.woff2',
+	src: './woff2/neue10.woff2',
 	weight: '500',
 	style: 'italic',
 	display: 'swap',
@@ -236,7 +236,7 @@ export const italic = localFont({
 })
 
 export const medium = localFont({
-	src: '/fonts/woff2/neue11.woff2',
+	src: './woff2/neue11.woff2',
 	weight: '600',
 	style: 'normal',
 	display: 'swap',
@@ -258,7 +258,7 @@ export const medium = localFont({
 })
 
 export const mediumItalic = localFont({
-	src: '/fonts/woff2/neue12.woff2',
+	src: './woff2/neue12.woff2',
 	weight: '600',
 	style: 'italic',
 	display: 'swap',
@@ -280,7 +280,7 @@ export const mediumItalic = localFont({
 })
 
 export const bold = localFont({
-	src: '/fonts/woff2/neue13.woff2',
+	src: './woff2/neue13.woff2',
 	weight: '700',
 	style: 'normal',
 	display: 'swap',
@@ -302,7 +302,7 @@ export const bold = localFont({
 })
 
 export const boldItalic = localFont({
-	src: '/fonts/woff2/neue14.woff2',
+	src: './woff2/neue14.woff2',
 	weight: '700',
 	style: 'italic',
 	display: 'swap',
@@ -324,7 +324,7 @@ export const boldItalic = localFont({
 })
 
 export const black = localFont({
-	src: '/fonts/woff2/neue15.woff2',
+	src: './woff2/neue15.woff2',
 	weight: '900',
 	style: 'normal',
 	display: 'swap',
@@ -346,7 +346,7 @@ export const black = localFont({
 })
 
 export const blackItalic = localFont({
-	src: '/fonts/woff2/neue16.woff2',
+	src: './woff2/neue16.woff2',
 	weight: '900',
 	style: 'italic',
 	display: 'swap',

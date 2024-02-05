@@ -6,6 +6,7 @@ import {
 	lucinote,
 	lucinumbered,
 } from '@/src/app/styles/primitives'
+import typography from '@/src/app/styles/typegraphy/typegraphy'
 
 export default function AboutPage() {
 	return (
@@ -90,6 +91,62 @@ export default function AboutPage() {
 				<p>
 					For more information, visit our <a href="#">documentation</a>.
 				</p>
+			</section>
+
+			{/* Enhanced section utilizing typography styles */}
+			<section className="py-8">
+				<div className="max-w-4xl mx-auto" style={typography.DEFAULT.css}>
+					<h1>About Our Typography</h1>
+					<p>
+						This section demonstrates the application of our custom typography styles
+						defined in <code>@typegraphy.ts</code>.
+					</p>
+
+					<h2>Typography in Action</h2>
+					<p className="lead">Here's a lead paragraph showcasing our light font style.</p>
+					<p>
+						<strong>Bold text</strong> and <em>italic text</em> are styled distinctly to
+						demonstrate the versatility of our typography system.
+					</p>
+					<a href="#">This is a link</a>
+					<blockquote>
+						"Blockquotes have a unique style too, making them stand out."
+					</blockquote>
+					<code>Code blocks are styled to differentiate from regular text.</code>
+
+					<h3>Headings and Body</h3>
+					<p>
+						The body text uses the Roman style for easy reading, while headings are
+						bolded for emphasis.
+					</p>
+
+					<h4>Lists and Links</h4>
+					<ul>
+						<li>
+							List items use a thinner font weight to distinguish from the body text.
+						</li>
+						<li>
+							Links are medium weight and change color on hover to indicate
+							interactivity.
+						</li>
+					</ul>
+
+					<h5>Special Text Elements</h5>
+					<p>
+						<strong>Bold text</strong> is used to draw attention, while{' '}
+						<em>italic text</em> is used for emphasis or to denote foreign words,
+						thoughts, or titles.
+					</p>
+
+					<h6>Code and Quotes</h6>
+					<p>
+						Code elements have a medium weight to stand out from the body text, and
+						blockquotes are italicized to differentiate quoted text from the author's
+						own words.
+					</p>
+
+					{/* You can add more examples to showcase different styles */}
+				</div>
 			</section>
 		</div>
 	)
