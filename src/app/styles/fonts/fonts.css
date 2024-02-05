@@ -1,57 +1,130 @@
-/*
- * The Typekit service used to deliver this font or fonts for use on websites
- * is provided by Adobe and is subject to these Terms of Use
- * http://www.adobe.com/products/eulas/tou_typekit. For font license
- * information, see the list below.
- *
- * neue-haas-grotesk-text:
- *   - http://typekit.com/eulas/00000000000000007735bb33
- *   - http://typekit.com/eulas/00000000000000007735bb35
- *   - http://typekit.com/eulas/00000000000000007735bb32
- *   - http://typekit.com/eulas/00000000000000007735bb4b
- *   - http://typekit.com/eulas/00000000000000007735bb39
- *   - http://typekit.com/eulas/00000000000000007735bb3d
- *
- * © 2009-2024 Adobe Systems Incorporated. All Rights Reserved.
- */
-/*{"last_published":"2024-02-03 03:44:48 UTC"}*/
+/* fonts.css contains @font-face declarations for 16 versions of Neue Haas Grotesk Display font. */
+/* Note: static .woff2 font files for 16 versions of Neue Haas Grotesk Display font, stored in /public/fonts/woff2. */
 
-@import url("https://p.typekit.net/p.css?s=1&k=and7bkt&ht=tk&f=39504.39505.39506.39507.39508.39509&a=111910270&app=typekit&e=css");
-
+/* 15 Ultra Thin */
 @font-face {
-font-family:"neue-haas-grotesk-text";
-src:url("https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD1.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
 }
 
+/* 16 Ultra Thin Italic */
 @font-face {
-font-family:"neue-haas-grotesk-text";
-src:url("https://use.typekit.net/af/aed66e/00000000000000007735bb35/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/aed66e/00000000000000007735bb35/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/aed66e/00000000000000007735bb35/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("opentype");
-font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD2.woff2') format('woff2');
+	font-weight: 100;
+	font-style: italic;
 }
 
+/* 25 Thin */
 @font-face {
-font-family:"neue-haas-grotesk-text";
-src:url("https://use.typekit.net/af/160664/00000000000000007735bb32/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/160664/00000000000000007735bb32/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/160664/00000000000000007735bb32/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD3.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
 }
 
+/* 26 Thin Italic */
 @font-face {
-font-family:"neue-haas-grotesk-text";
-src:url("https://use.typekit.net/af/fe63ce/00000000000000007735bb4b/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/fe63ce/00000000000000007735bb4b/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i5&v=3") format("woff"),url("https://use.typekit.net/af/fe63ce/00000000000000007735bb4b/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i5&v=3") format("opentype");
-font-display:auto;font-style:italic;font-weight:500;font-stretch:normal;
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD4.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
 }
 
+/* 35 Extra Light */
 @font-face {
-font-family:"neue-haas-grotesk-text";
-src:url("https://use.typekit.net/af/305037/00000000000000007735bb39/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/305037/00000000000000007735bb39/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/305037/00000000000000007735bb39/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD5.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
 }
 
+/* 36 Extra Light Italic */
 @font-face {
-font-family:"neue-haas-grotesk-text";
-src:url("https://use.typekit.net/af/68a7c6/00000000000000007735bb3d/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/68a7c6/00000000000000007735bb3d/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/68a7c6/00000000000000007735bb3d/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i7&v=3") format("opentype");
-font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD6.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
 }
 
-.tk-neue-haas-grotesk-text { font-family: "neue-haas-grotesk-text",sans-serif; }
+/* 45 Light */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD7.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* 46 Light Italic */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD8.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* 55 Roman */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD9.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* 56 Italic */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD10.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
+}
+
+/* 65 Medium */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD11.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* 66 Medium Italic */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD12.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* 75 Bold */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD13.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* 76 Bold Italic */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD14.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* 95 Black */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD15.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* 96 Black Italic */
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	src: url('/fonts/NHGD16.woff2') format('woff2');
+	font-weight: 900;
+	font-style: italic;
+}

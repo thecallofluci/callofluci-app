@@ -4,7 +4,6 @@ import { nextui } from '@nextui-org/theme'
 import { luciDarkTheme } from './src/app/styles/themes/luciDarkTheme'
 import { luciLightTheme } from './src/app/styles/themes/luciLightTheme'
 
-
 /** @type {import('tailwindcss').Config} */
 const config = {
 	// Specify the paths to all files that will use Tailwind CSS class names.
@@ -19,9 +18,23 @@ const config = {
 	// Customize Tailwind's default configuration.
 	theme: {
 		extend: {
-			// Specify custom font families.
 			fontFamily: {
-				sans: ['var(--font-grotesk)', 'sans-serif'],
+				'ultra-thin': ['var(--font-ultra-thin)', 'Arial', 'sans-serif'],
+				'ultra-thin-italic': ['var(--font-ultra-thin-italic)', 'Arial', 'sans-serif'],
+				thin: ['var(--font-thin)', 'Arial', 'sans-serif'],
+				'thin-italic': ['var(--font-thin-italic)', 'Arial', 'sans-serif'],
+				'extra-light': ['var(--font-extra-light)', 'Arial', 'sans-serif'],
+				'extra-light-italic': ['var(--font-extra-light-italic)', 'Arial', 'sans-serif'],
+				light: ['var(--font-light)', 'Arial', 'sans-serif'],
+				'light-italic': ['var(--font-light-italic)', 'Arial', 'sans-serif'],
+				roman: ['var(--font-roman)', 'Arial', 'sans-serif'],
+				italic: ['var(--font-italic)', 'Arial', 'sans-serif'],
+				medium: ['var(--font-medium)', 'Arial', 'sans-serif'],
+				'medium-italic': ['var(--font-medium-italic)', 'Arial', 'sans-serif'],
+				bold: ['var(--font-bold)', 'Arial', 'sans-serif'],
+				'bold-italic': ['var(--font-bold-italic)', 'Arial', 'sans-serif'],
+				black: ['var(--font-black)', 'Arial', 'sans-serif'],
+				'black-italic': ['var(--font-black-italic)', 'Arial', 'sans-serif'],
 			},
 		},
 	},
