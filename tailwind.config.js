@@ -44,6 +44,7 @@ const config = {
 				// ... other themes
 			},
 		}),
+		require('@tailwindcss/typography'),
 	],
 }
 
