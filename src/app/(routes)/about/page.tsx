@@ -148,6 +148,30 @@ export default function AboutPage() {
 					{/* You can add more examples to showcase different styles */}
 				</div>
 			</section>
+
+			{/* Section with Preflight styles */}
+			<section>
+				<h1 className="text-3xl font-bold">Preflight Typography</h1>
+				<p>This section demonstrates the base styles applied by Tailwind's Preflight.</p>
+				<h2 className="text-2xl font-semibold">Heading 2</h2>
+				<h3 className="text-xl font-medium">Heading 3</h3>
+				<blockquote>"This is a blockquote styled by Preflight's base styles."</blockquote>
+				<p className="mt-4">Body text styled with Preflight's base styles.</p>
+			</section>
+
+			{/* Section with Typography plugin styles */}
+			<section className="prose">
+				<h1>Typography Plugin Styles</h1>
+				<p>
+					This section demonstrates the styles applied by the{' '}
+					<code>@tailwindcss/typography</code> plugin, as customized in{' '}
+					<code>typography.ts</code>.
+				</p>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<blockquote>"This is a blockquote styled by the Typography plugin."</blockquote>
+				<p>Body text styled with the Typography plugin's styles.</p>
+			</section>
 		</div>
 	)
 }
