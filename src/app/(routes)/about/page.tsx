@@ -150,17 +150,31 @@ export default function AboutPage() {
 			</section>
 
 			{/* Section with Preflight styles */}
-			<section>
-				<h1 className="text-3xl font-bold">Preflight Typography</h1>
+			<section className="my-8">
+				<h1 className="text-4xl font-bold mb-4">Preflight Typography</h1>
 				<p>This section demonstrates the base styles applied by Tailwind's Preflight.</p>
-				<h2 className="text-2xl font-semibold">Heading 2</h2>
-				<h3 className="text-xl font-medium">Heading 3</h3>
-				<blockquote>"This is a blockquote styled by Preflight's base styles."</blockquote>
+				<h2 className="text-3xl font-semibold mt-6">Heading 2</h2>
+				<h3 className="text-2xl font-medium mt-4">Heading 3</h3>
+				<h4 className="text-xl font-normal mt-3">Heading 4</h4>
+				<blockquote className="pl-4 border-l-4 border-gray-200 mt-4">
+					"This is a blockquote styled by Preflight's base styles."
+				</blockquote>
+				<ul className="list-disc pl-8 mt-4">
+					<li>Unordered list item</li>
+					<li>Another list item</li>
+				</ul>
+				<ol className="list-decimal pl-8 mt-4">
+					<li>Ordered list item</li>
+					<li>Another ordered item</li>
+				</ol>
 				<p className="mt-4">Body text styled with Preflight's base styles.</p>
+				<a href="#" className="text-blue-600 hover:underline mt-4">
+					This is a link
+				</a>
 			</section>
 
 			{/* Section with Typography plugin styles */}
-			<section className="prose">
+			<section className="prose my-8" style={{ fontFamily: 'var(--font-roman)' }}>
 				<h1>Typography Plugin Styles</h1>
 				<p>
 					This section demonstrates the styles applied by the{' '}
@@ -169,8 +183,22 @@ export default function AboutPage() {
 				</p>
 				<h2>Heading 2</h2>
 				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
 				<blockquote>"This is a blockquote styled by the Typography plugin."</blockquote>
+				<ul>
+					<li>Unordered list item styled by the plugin</li>
+					<li>Another list item</li>
+				</ul>
+				<ol>
+					<li>Ordered list item styled by the plugin</li>
+					<li>Another ordered item</li>
+				</ol>
 				<p>Body text styled with the Typography plugin's styles.</p>
+				<a href="#">This is a link styled by the plugin</a>
+				<code>Inline code is styled too.</code>
+				<pre>
+					<code class="language-js">const example = "This is a block of code";</code>
+				</pre>
 			</section>
 		</div>
 	)
