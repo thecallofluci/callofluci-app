@@ -6,7 +6,7 @@ import {
 	lucinote,
 	lucinumbered,
 } from '@/src/app/styles/primitives'
-import typography from '@/src/app/styles/typegraphy/typegraphy'
+import typography from '@/src/app/styles/typography/typography'
 
 export default function AboutPage() {
 	return (
