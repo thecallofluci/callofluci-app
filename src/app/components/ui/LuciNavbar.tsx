@@ -22,7 +22,7 @@ import { LuciButton } from './LuciButton'
 
 export const LuciNavbar = () => {
 	return (
-		<NextUINavbar maxWidth="lg" >
+		<NextUINavbar maxWidth="lg" disableScrollHandler >
 			{/* NavbarContent for logo and dropdown menu, hidden on small screens */}
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="start">
 				{/* NavbarBrand for logo, always visible */}

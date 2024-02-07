@@ -4,7 +4,7 @@ import { LuciNavbar } from '../ui/LuciNavbar';
 
 const Header = () => {
   return (
-    <header>
+    <header className="bg-transparent">
       <LuciNavbar />
     </header>
   );
