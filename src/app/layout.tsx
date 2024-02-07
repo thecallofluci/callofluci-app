@@ -7,9 +7,9 @@ import AppWrapper from '@/src/app/components/layout/AppWrapper'
 // Defining the Root Layout component
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html suppressHydrationWarning lang="en" className="var(--font-roman)">
+		<html suppressHydrationWarning lang="en" className="var(--font-medium)">
 			<head />
-			<body className={clsx('min-h-screen bg-background antialiased')}>
+			<body className={clsx('luci-light min-h-screen bg-background antialiased')}>
 				<Providers themeProps={{ attribute: 'class', defaultTheme: 'luci-light' }}>
 					<AppWrapper>{children}</AppWrapper>
 				</Providers>
