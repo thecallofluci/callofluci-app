@@ -1,8 +1,8 @@
-/// tailwind.config.js
-// Import the nextui theme plugin and the theme configurations
-import { nextui } from '@nextui-org/theme'
-import { NEWluciLightTheme } from './src/app/styles/themes/themes'
-import { NEWluciDarkTheme } from './src/app/styles/themes/themes'
+// tailwind.config.js
+
+import { nextui } from '@nextui-org/theme' // Import the nextui theme plugin to use NextUI theming capability 
+import { NEWluciLightTheme } from './src/app/styles/themes/themes' // Import custom light theme to extend NextUI 'light' theme
+import { NEWluciDarkTheme } from './src/app/styles/themes/themes' // Import custom light theme to extend NextUI 'dark' theme
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -15,7 +15,7 @@ const config = {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}', // All files in the 'app' directory
 		'./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}', // All files in the 'node_modules/@nextui-org/theme/dist' directory
 	],
-	// set the dark mode property to class for net-themes
+	// set the dark mode property to class for next-themes
 	darkMode: 'class',
 	// Customize Tailwind's default configuration.
 	theme: {
@@ -40,26 +40,27 @@ const config = {
 			},
 		},
 	},
-	// Enable dark mode in Tailwind.
-	// The value 'class' means that dark mode styles will be applied when the 'dark' class is present on the root element.
-	// darkMode: "class",
-	// Add custom plugins to Tailwind.
+
 	// Here, we're adding the NextUI theme as a plugin and specifying our custom themes.
 	plugins: [
 		nextui({
-			themes: {
-				'luci-dark': {
-					extend: 'dark', // Extend the 'dark' theme
-					...NEWluciDarkTheme, // Apply your custom 'luci-dark' theme
-				},
-				'luci-light': {
-					extend: 'light', // Extend the 'light' theme
-					...NEWluciLightTheme, // Apply your custom 'luci-light' theme
-				},
-				// ... other themes
+		  prefix: "nextui", // Prefix for theme variables
+		  addCommonColors: false, // Override common colors (e.g., "blue", "green", "pink").
+		  defaultTheme: "luci-light", // Default theme from the themes object
+		  defaultExtendTheme: "light", // Default base theme to extend on custom themes
+		  themes: {
+			'luci-light': {
+			  extend: 'light', // Extend the next-ui 'light' theme
+			  ...NEWluciLightTheme, // Apply your custom 'luci-light' theme
 			},
+			'luci-dark': {
+			  extend: 'dark', // Extend the next-ui 'dark' theme
+			  ...NEWluciDarkTheme, // Apply your custom 'luci-dark' theme
+			},
+			// ... other themes
+		  },
 		}),
-	],
+	  ],
 }
 
 export default config
