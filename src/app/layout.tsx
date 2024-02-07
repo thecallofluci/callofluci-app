@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html suppressHydrationWarning lang="en" className="var(--font-roman)">
 			<head />
 			<body className={clsx('min-h-screen bg-background antialiased')}>
-				<Providers themeProps={{ attribute: 'class', defaultTheme: 'luci-dark' }}>
+				<Providers themeProps={{ attribute: 'class', defaultTheme: 'luci-light' }}>
 					<AppWrapper>{children}</AppWrapper>
 				</Providers>
 			</body>
