@@ -1,8 +1,6 @@
 /// tailwind.config.js
 // Import the nextui theme plugin and the theme configurations
 import { nextui } from '@nextui-org/theme'
-import { luciDarkTheme } from './src/app/styles/themes/luciDarkTheme'
-import { luciLightTheme } from './src/app/styles/themes/luciLightTheme'
 import { NEWluciLightTheme } from './src/app/styles/themes/themes'
 import { NEWluciDarkTheme } from './src/app/styles/themes/themes'
 
@@ -61,7 +59,6 @@ const config = {
 				// ... other themes
 			},
 		}),
-		require('@tailwindcss/typography'),
 	],
 }
 
