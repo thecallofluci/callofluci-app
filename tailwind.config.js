@@ -3,6 +3,8 @@
 import { nextui } from '@nextui-org/theme'
 import { luciDarkTheme } from './src/app/styles/themes/luciDarkTheme'
 import { luciLightTheme } from './src/app/styles/themes/luciLightTheme'
+import { NEWluciLightTheme } from './src/app/styles/themes/themes'
+import { NEWluciDarkTheme } from './src/app/styles/themes/themes'
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -48,11 +50,11 @@ const config = {
 			themes: {
 				'luci-dark': {
 					extend: 'dark', // Extend the 'dark' theme
-					...luciDarkTheme, // Apply your custom 'luci-dark' theme
+					...NEWluciDarkTheme, // Apply your custom 'luci-dark' theme
 				},
 				'luci-light': {
 					extend: 'light', // Extend the 'light' theme
-					...luciLightTheme, // Apply your custom 'luci-light' theme
+					...NEWluciLightTheme, // Apply your custom 'luci-light' theme
 				},
 				// ... other themes
 			},
