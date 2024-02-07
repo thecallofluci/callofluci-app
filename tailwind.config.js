@@ -17,6 +17,8 @@ const config = {
 		'./app/**/*.{js,ts,jsx,tsx,mdx}', // All files in the 'app' directory
 		'./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}', // All files in the 'node_modules/@nextui-org/theme/dist' directory
 	],
+	// set the dark mode property to class for net-themes
+	darkMode: 'class',
 	// Customize Tailwind's default configuration.
 	theme: {
 		extend: {
