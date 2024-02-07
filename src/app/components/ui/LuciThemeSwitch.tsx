@@ -27,7 +27,7 @@ export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({
 
     // Define the onChange function to toggle the theme
     const onChange = () => {
-        theme === 'luci-light' ? setTheme('luci-dark') : setTheme('luci-light')
+        theme === 'luci-dark' ? setTheme('luci-light') : setTheme('luci-dark')
     }
 
     const {
@@ -38,9 +38,9 @@ export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({
         getInputProps,
         getWrapperProps,
     } = useSwitch({
-        isSelected: theme === 'luci-light' || isSSR,
+        isSelected: theme === 'luci-dark' || isSSR,
         'aria-label': `Switch to ${
-            theme === 'luci-light' || isSSR ? 'luci-dark' : 'luci-light'
+            theme === 'luci-dark' || isSSR ? 'luci-light' : 'luci-dark'
         } mode`,
         onChange,
     })
