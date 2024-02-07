@@ -1,6 +1,7 @@
 // import colors from './colors';
 // import typography from './typography';
-import { testThemes } from '@/src/app/styles/colors/semantic';
+
+import { testThemes } from '../colors/semantic'
 
 /* 
 //  const theme = {
