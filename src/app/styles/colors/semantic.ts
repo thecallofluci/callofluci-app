@@ -2,7 +2,7 @@
 // semantic color definitions using base colors in colors.ts
 
 // Importing the base colors
-import { baseColors } from '@/src/app/styles/colors/colors'
+import { baseColors } from '../colors/colors'
 
 // Defining SemanticBaseColors for light and dark themes
 export const semanticBaseColors = {
