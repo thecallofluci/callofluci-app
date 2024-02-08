@@ -119,13 +119,17 @@ export const GithubIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, .
 	)
 }
 
-export const MoonIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => (
+export const MoonIcon: React.FC<IconSvgProps> = ({ 
+	size = 24, 
+	width, 
+	height,
+	...props }) => (
 	<svg
-		aria-hidden="false"
-		focusable="true"
+		aria-hidden="true"
+		focusable="false"
 		aria-label="Switch to dark mode"
 		height={size || height}
-		role="img"
+		role="presentation"
 		viewBox="0 0 24 24"
 		width={size || width}
 		{...props}
@@ -137,13 +141,17 @@ export const MoonIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...
 	</svg>
 )
 
-export const SunIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => (
+export const SunIcon: React.FC<IconSvgProps> = ({ 
+	size = 24, 
+	width, 
+	height,
+	 ...props }) => (
 	<svg
-		aria-hidden="false"
-		focusable="true"
+		aria-hidden="true"
+		focusable="false"
 		aria-label="Switch to light mode"
 		height={size || height}
-		role="img"
+		role="presentation"
 		viewBox="0 0 24 24"
 		width={size || width}
 		{...props}
