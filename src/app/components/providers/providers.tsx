@@ -13,7 +13,7 @@ import { useRouter } from 'next/navigation'
 
 // Interface defining the props accepted by the Providers component
 export interface ProvidersProps {
-	children: React.ReactNode // Child components to be rendered within the Providers component
+	children: React.ReactNode       // Child components to be rendered within the Providers component
 	themeProps?: ThemeProviderProps // Optional: Additional props for configuring the NextThemesProvider
 }
 
@@ -21,17 +21,24 @@ export interface ProvidersProps {
 export function Providers({ children, themeProps }: ProvidersProps) {
 	const router = useRouter() // Initialize useRouter hook for navigation support in NextUI
 
-	// Return a composition of NextUIProvider and NextThemesProvider wrapping the child components
+	// Return composition of NextUIProvider (next-ui) and NextThemesProvider (next-themes) wrapping the child components
 	// NextUIProvider is configured for navigation, and NextThemesProvider manages theme switching
 	return (
 		<NextUIProvider navigate={router.push}>
 			{' '}
 			{/* Utilize Next.js router for NextUI navigation */}
-			<NextThemesProvider
-				attribute="class" // Use the 'class' attribute for theme switching to ensure compatibility with NextUI
-				defaultTheme="luci-light" // Set the default theme; consider using "system" for automatic theme based on system preferences
-				themes={['light', 'dark', 'luci-light', 'luci-dark']} // Define available themes
-				{...themeProps} // Spread any additional theme configuration props
+			<NextThemesProvider //  lists theme configuration options passed to next-themes ThemeProvider
+				storageKey="theme"          // Key used to store theme setting in localStorage
+				defaultTheme="luci-light"   // Default theme name
+				forcedTheme={undefined}     // Explicitly set to undefined unless you have a specific need to force a theme
+				enableSystem={false}        // Whether to switch between dark and light based on prefers-color-scheme
+				enableColorScheme={true}    // Whether to indicate to browsers which color scheme is used 
+				disableTransitionOnChange={true} // Disable all CSS transitions when switching themes 
+				themes={['light', 'dark', 'luci-light', 'luci-dark']} // List of theme names
+				attribute="class"           // Use the 'class' attribute for theme switching to ensure compatibility with NextUI
+				value={{}}                  // Define if you have specific attribute values for each theme
+				nonce={undefined}           // Set if you need to specify a nonce for CSP
+				{...themeProps}             // Spread any additional theme configuration props
 			>
 				{children} {/* Render child components within the theme providers */}
 			</NextThemesProvider>
