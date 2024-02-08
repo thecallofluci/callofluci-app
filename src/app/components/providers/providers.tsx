@@ -22,15 +22,18 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 	const router = useRouter() // Initialize useRouter hook for navigation support in NextUI
 
 	// Return a composition of NextUIProvider and NextThemesProvider wrapping the child components
-	// NextUIProvider is configured for navigation, and NextThemesProvider manages theme switching
+	// next-ui NextUIProvider is configured for navigation, next-themes NextThemesProvider manages theme switching
 	return (
 		<NextUIProvider navigate={router.push}>
+			{/*// Define configuration props for next-theme ThemeProvider */}
 			<NextThemesProvider
-				attribute="class"
+				storageKey="theme"
 				defaultTheme="luci-light"
-				enableSystem={true}
+				enableSystem={false}
 				enableColorScheme={true}
+				disableTransitionOnChange={true}
 				themes={['light', 'dark', 'luci-light', 'luci-dark']}
+				attribute="class"
 				{...themeProps} // Allows for dynamic extension if needed
 			>
 				{children} {/* Render child components within the theme providers */}
