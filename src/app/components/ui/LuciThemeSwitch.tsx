@@ -80,7 +80,7 @@ return (
                         classNames?.wrapper
                     ),
                 })}
-                    >
+            >
                     {isSelected ? (
                         <SunIcon className="size={22}" />
                     ) : (
