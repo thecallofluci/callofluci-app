@@ -18,8 +18,8 @@ export const semanticBaseColors = {
 		background: baseColors.echo,
 		foreground: baseColors.bone,
 		divider: baseColors.skull,
-		overlay: baseColors.echo,
-		focus: baseColors.echo,
+		overlay: baseColors.skull,
+		focus: baseColors.skull,
 		// Additional base semantic colors can be defined here
 	},
 }
