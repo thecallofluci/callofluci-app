@@ -9,7 +9,7 @@ export const semanticBaseColors = {
 	lightTest: {
 		background: baseColors.bone,
 		foreground: baseColors.echo,
-		divider: baseColors.shadow,
+		divider: baseColors.echo,
 		overlay: baseColors.sulfuric,
 		focus: baseColors.tendril,
 		// Additional base semantic colors can be defined here
