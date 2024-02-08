@@ -42,6 +42,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
 			onChange,
 		})
 
+	// Renders a placeholder until mounted on the client side
 	if (!mounted) {
 		return (
 			<div
@@ -50,7 +51,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
 					width: '22px',
 					height: '22px',
 					borderRadius: '50%',
-					backgroundColor: '#ccc',
+					backgroundColor: 'background',
 				}}
 			></div>
 		)
