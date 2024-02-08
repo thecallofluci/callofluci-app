@@ -56,11 +56,11 @@ export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames })
                             classNames?.wrapper
                         ),
                     })}
-                >
+                    >
                     {isSelected ? (
-                        <SunIcon style={{ fontSize: 22 }} />
+                        <SunIcon className="size={22}" />
                     ) : (
-                        <MoonIcon style={{ fontSize: 22 }} />
+                        <MoonIcon className="size={22}" />
                     )}
                 </div>
             </Component>
