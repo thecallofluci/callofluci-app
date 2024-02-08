@@ -10,16 +10,16 @@ export const semanticBaseColors = {
 		background: baseColors.bone,
 		foreground: baseColors.echo,
 		divider: baseColors.shadow,
-		overlay: baseColors.luci,
-		focus: baseColors.luci,
+		overlay: baseColors.sulfuric,
+		focus: baseColors.tendril,
 		// Additional base semantic colors can be defined here
 	},
 	darkTest: {
 		background: baseColors.echo,
 		foreground: baseColors.bone,
 		divider: baseColors.skull,
-		overlay: baseColors.skull,
-		focus: baseColors.skull,
+		overlay: baseColors.sulfuric,
+		focus: baseColors.tendril,
 		// Additional base semantic colors can be defined here
 	},
 }
@@ -29,9 +29,9 @@ export const themeColorsLightTest = {
 	...semanticBaseColors.lightTest,
 	primary: baseColors.echo,
 	secondary: baseColors.luci,
-	success: baseColors.luci,
-	warning: baseColors.luci,
-	danger: baseColors.luci,
+	success: baseColors.tendril,
+	warning: baseColors.sulfuric,
+	danger: baseColors.sulfuric,
 	// Additional theme-specific semantic colors can be defined here
 }
 
@@ -39,9 +39,9 @@ export const themeColorsDarkTest = {
 	...semanticBaseColors.darkTest,
 	primary: baseColors.bone,
 	secondary: baseColors.skull,
-	success: baseColors.skull,
-	warning: baseColors.skull,
-	danger: baseColors.skull,
+	success: baseColors.tendril,
+	warning: baseColors.sulfuric,
+	danger: baseColors.sulfuric,
 	// Additional theme-specific semantic colors can be defined here
 }
 
