@@ -27,14 +27,14 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 		<NextUIProvider navigate={router.push}>
 			{/*// Define configuration props for next-theme ThemeProvider */}
 			<NextThemesProvider
-				storageKey="theme"
-				defaultTheme="luci-light"
-				enableSystem={false}
-				enableColorScheme={true}
-				disableTransitionOnChange={true}
-				themes={['light', 'dark', 'luci-light', 'luci-dark']}
-				attribute="class"
-				{...themeProps} // Allows for dynamic extension if needed
+				storageKey="theme" 					// Key used to store theme setting in localStorage
+				defaultTheme="luci-light" 			// Default theme name
+				enableSystem={false} 				// Whether to switch between dark and light based on prefers-color-scheme
+				enableColorScheme={true} 			// Whether to indicate to browsers which color scheme is used
+				disableTransitionOnChange={true} 	// Disable all CSS transitions when switching themes 
+				themes={['light', 'dark', 'luci-light', 'luci-dark']} 	// List of theme names
+				attribute="class" 										// HTML attribute modified based on active theme 
+				{...themeProps} 					// Allows for dynamic extension if needed
 			>
 				{children} {/* Render child components within the theme providers */}
 			</NextThemesProvider>
