@@ -23,7 +23,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   const isSSR = useIsSSR();
 
 	const onChange = () => {
-		theme === "luci-light" ? setTheme("luci-dark") : setTheme("luci-light");
+		theme === "luci-dark" ? setTheme("luci-light") : setTheme("luci-dark");
 	};
 
 	const {
@@ -35,7 +35,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 		getWrapperProps,
 	} = useSwitch({
 		isSelected: theme === "luci-dark" || isSSR,
-    "aria-label": `Switch to ${theme === "luci-light" || isSSR ? "luci-dark" : "luci-light"} mode`,
+    "aria-label": `Switch to ${theme === "luci-dark" || isSSR ? "luci-light" : "luci-dark"} mode`,
 		onChange,
 	});
 
@@ -71,7 +71,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 					),
 				})}
 			>
-			 {!isSelected || isSSR ? <SunIcon size={22} /> : <MoonIcon size={22} />}
+			 {!isSelected || isSSR ? <MoonIcon size={22}/> : <SunIcon size={22} />}
 			</div>
 		</Component>
 	);
