@@ -51,7 +51,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
 					width: '22px',
 					height: '22px',
 					borderRadius: '50%',
-					backgroundColor: 'background',
+					backgroundColor: 'primary',
 				}}
 			></div>
 		)
