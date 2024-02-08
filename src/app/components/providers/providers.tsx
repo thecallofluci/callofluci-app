@@ -25,13 +25,13 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 	// NextUIProvider is configured for navigation, and NextThemesProvider manages theme switching
 	return (
 		<NextUIProvider navigate={router.push}>
-			{' '}
-			{/* Utilize Next.js router for NextUI navigation */}
 			<NextThemesProvider
-				attribute="class" // Use the 'class' attribute for theme switching to ensure compatibility with NextUI
-				defaultTheme="luci-light" // Set the default theme; consider using "system" for automatic theme based on system preferences
-				themes={['light', 'dark', 'luci-light', 'luci-dark']} // Define available themes
-				{...themeProps} // Spread any additional theme configuration props
+				attribute="class"
+				defaultTheme="luci-light"
+				enableSystem={true}
+				enableColorScheme={true}
+				themes={['light', 'dark', 'luci-light', 'luci-dark']}
+				{...themeProps} // Allows for dynamic extension if needed
 			>
 				{children} {/* Render child components within the theme providers */}
 			</NextThemesProvider>
