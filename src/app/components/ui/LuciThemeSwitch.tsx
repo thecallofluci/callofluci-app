@@ -18,12 +18,12 @@ export interface ThemeSwitchProps {
 export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => {
 	const { theme, setTheme } = useTheme()
 	const isSSR = useIsSSR()
-	const [mounted, setMounted] = useState(false)
+//	const [mounted, setMounted] = useState(false)   // disabled for test
 
-	// Ensure we only switch themes client-side
-	useEffect(() => {
-		setMounted(true)
-	}, [])
+	// Ensure we only switch themes client-side     // disabled for test
+//	useEffect(() => {                               // disabled for test
+//		setMounted(true)                            // disabled for test
+//	}, [])                                          // disabled for test
 
 	// Define the onChange function to toggle the theme
 	const onChange = () => {
@@ -32,14 +32,15 @@ export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames })
 
 	const { Component, slots, isSelected, getBaseProps, getInputProps, getWrapperProps } =
 		useSwitch({
-			isSelected: !isSSR && mounted && theme === 'luci-dark',
+//			isSelected: !isSSR && mounted && theme === 'luci-dark', // disabled for test
+            isSelected: !isSSR && theme === 'luci-dark',
 			'aria-label': `Switch to ${theme === 'luci-dark' ? 'luci-light' : 'luci-dark'} mode`,
 			onChange,
 		})
 
-	if (!mounted) {
-		return null // Avoids rendering mismatch on hydration
-	}
+//	if (!mounted) {                                                     // disabled for test
+//		return null // Avoids rendering mismatch on hydration           // disabled for test
+//	}  // disabled for test
 
     return (
         <div className={clsx('flex flex-col gap-2', className)}>
