@@ -7,7 +7,6 @@ import { VisuallyHidden } from '@react-aria/visually-hidden'
 import { SwitchProps, useSwitch } from '@nextui-org/switch'
 import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
-import Image from 'next/image'
 import clsx from 'clsx'
 
 import { SunIcon, MoonIcon } from '@/src/app/components/ui/LuciIcons'
@@ -44,19 +43,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
 		})
 
 		if (!mounted) {
-			// Placeholder: Using an empty image or a generic loading icon
-			return (
-			  <div className={className} style={{ width: '22px', height: '22px' }}>
-				<Image
-				  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-				  alt="loading"
-				  width={22}
-				  height={22}
-				  placeholder="blur"
-				  blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-				/>
-			  </div>
-			)
+			return null;
 		  }
 
 	return (
