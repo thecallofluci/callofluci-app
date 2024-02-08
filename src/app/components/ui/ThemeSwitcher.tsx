@@ -19,7 +19,7 @@ export interface ThemeSwitchProps {
 
 // Define the ThemeSwitch component
 export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => {
-	const [mounted, setMounted] = useState(false) 
+	const [mounted, setMounted] = useState(false)
 	const { theme, setTheme } = useTheme()
 	const isSSR = useIsSSR()
 
@@ -37,12 +37,23 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
 		useSwitch({
 			isSelected: theme === 'luci-dark' || isSSR,
 			'aria-label': `Switch to ${
-				theme === 'luci-dark' || isSSR ? 'luci-light' : 'luci-dark'} mode`,
-    	onChange,
+				theme === 'luci-dark' || isSSR ? 'luci-light' : 'luci-dark'
+			} mode`,
+			onChange,
 		})
 
 	if (!mounted) {
-		return null
+		return (
+			<div
+				className="theme-switcher-placeholder"
+				style={{
+					width: '22px',
+					height: '22px',
+					borderRadius: '50%',
+					backgroundColor: '#ccc',
+				}}
+			></div>
+		)
 	}
 
 	return (
