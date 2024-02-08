@@ -20,7 +20,7 @@ export interface ThemeSwitchProps {
 // Define the ThemeSwitch component
 export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => {
 	const [mounted, setMounted] = useState(false) 
-	const { theme, setTheme, resolvedTheme } = useTheme()
+	const { theme, setTheme } = useTheme()
 	const isSSR = useIsSSR()
 
 	// useEffect only runs on the client, so now we can safely show the UI
@@ -35,9 +35,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => 
 
 	const { Component, slots, isSelected, getBaseProps, getInputProps, getWrapperProps } =
 		useSwitch({
-			isSelected: resolvedTheme === 'luci-dark' || isSSR,
+			isSelected: theme === 'luci-dark' || isSSR,
 			'aria-label': `Switch to ${
-				resolvedTheme === 'luci-dark' || isSSR ? 'luci-light' : 'luci-dark'} mode`,
+				theme === 'luci-dark' || isSSR ? 'luci-light' : 'luci-dark'} mode`,
     	onChange,
 		})
 
