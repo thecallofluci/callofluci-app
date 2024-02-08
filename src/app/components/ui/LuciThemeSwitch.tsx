@@ -41,29 +41,29 @@ export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames })
 		return null // Avoids rendering mismatch on hydration
 	}
 
-	return (
-		<div className={clsx('flex flex-col gap-2', className)}>
-			<Component {...getBaseProps()}>
-				<VisuallyHidden>
-					<input {...getInputProps()} />
-				</VisuallyHidden>
-				<div
-					{...getWrapperProps()}
-					className={slots.wrapper({
-						class: clsx(
-							'w-auto h-auto bg-transparent rounded-lg flex items-center justify-center',
-							isSelected ? '!text-primary' : '!text-foreground',
-							classNames?.wrapper
-						),
-					})}
-				>
-					{isSelected ? (
-						<SunIcon className="size={22}" />
-					) : (
-						<MoonIcon className="size={22}" />
-					)}
-				</div>
-			</Component>
-		</div>
-	)
+    return (
+        <div className={clsx('flex flex-col gap-2', className)}>
+            <Component {...getBaseProps()}>
+                <VisuallyHidden>
+                    <input {...getInputProps()} />
+                </VisuallyHidden>
+                <div
+                    {...getWrapperProps()}
+                    className={slots.wrapper({
+                        class: clsx(
+                            'w-auto h-auto bg-transparent rounded-lg flex items-center justify-center',
+                            isSelected ? '!text-primary' : '!text-foreground',
+                            classNames?.wrapper
+                        ),
+                    })}
+                >
+                    {isSelected ? (
+                        <SunIcon style={{ fontSize: 22 }} />
+                    ) : (
+                        <MoonIcon style={{ fontSize: 22 }} />
+                    )}
+                </div>
+            </Component>
+        </div>
+    )
 }
