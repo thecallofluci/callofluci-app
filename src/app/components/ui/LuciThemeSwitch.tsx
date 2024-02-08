@@ -15,7 +15,11 @@ export interface ThemeSwitchProps {
 }
 
 // Define the ThemeSwitch component
-export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames }) => {
+export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ 
+        className, 
+        classNames 
+    }) => {
+
 	const { theme, setTheme } = useTheme()
 	const isSSR = useIsSSR()
 //	const [mounted, setMounted] = useState(false)   // disabled for test
@@ -27,36 +31,55 @@ export const LuciThemeSwitch: FC<ThemeSwitchProps> = ({ className, classNames })
 
 	// Define the onChange function to toggle the theme
 	const onChange = () => {
-		setTheme(theme === 'luci-dark' ? 'luci-light' : 'luci-dark')
+		theme === 'luci-dark' ? setTheme('luci-light') : setTheme('luci-dark')
 	}
 
-	const { Component, slots, isSelected, getBaseProps, getInputProps, getWrapperProps } =
-		useSwitch({
-//			isSelected: !isSSR && mounted && theme === 'luci-dark', // disabled for test
-            isSelected: !isSSR && theme === 'luci-dark',
-			'aria-label': `Switch to ${theme === 'luci-dark' ? 'luci-light' : 'luci-dark'} mode`,
-			onChange,
+	const { 
+        Component, 
+        slots, 
+        isSelected, 
+        getBaseProps, 
+        getInputProps, 
+        getWrapperProps, 
+    
+    } = useSwitch({
+    isSelected: theme === 'luci-dark' || isSSR,
+    'aria-label': `Switch to ${
+        theme === 'luci-dark' || isSSR ? 'luci-light' : 'luci-dark'
+    } mode`,
+    onChange,
 		})
 
 //	if (!mounted) {                                                     // disabled for test
 //		return null // Avoids rendering mismatch on hydration           // disabled for test
 //	}  // disabled for test
 
-    return (
-        <div className={clsx('flex flex-col gap-2', className)}>
-            <Component {...getBaseProps()}>
-                <VisuallyHidden>
-                    <input {...getInputProps()} />
-                </VisuallyHidden>
-                <div
-                    {...getWrapperProps()}
-                    className={slots.wrapper({
-                        class: clsx(
-                            'w-auto h-auto bg-transparent rounded-lg flex items-center justify-center',
-                            isSelected ? '!text-primary' : '!text-foreground',
-                            classNames?.wrapper
-                        ),
-                    })}
+return (
+    <div className="flex flex-col gap-2">
+        <Component {...getBaseProps()}>
+            <VisuallyHidden>
+                <input {...getInputProps()} />
+            </VisuallyHidden>
+            <div
+                {...getWrapperProps()}
+                className={slots.wrapper({
+                    class: clsx(
+                        [
+                            'w-auto h-auto',
+                            'bg-transparent',
+                            'rounded-lg',
+                            'flex items-center justify-center',
+                            'group-data-[selected=true]:bg-transparent',
+                            isSelected
+                                ? '!text-primary'
+                                : '!text-foreground',
+                            'pt-px',
+                            'px-0',
+                            'mx-0',
+                        ],
+                        classNames?.wrapper
+                    ),
+                })}
                     >
                     {isSelected ? (
                         <SunIcon className="size={22}" />
