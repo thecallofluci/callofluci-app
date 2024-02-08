@@ -30,14 +30,14 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 			<NextThemesProvider //  lists theme configuration options passed to next-themes ThemeProvider
 				storageKey="theme"          // Key used to store theme setting in localStorage
 				defaultTheme="luci-light"   // Default theme name
-				forcedTheme={undefined}     // Explicitly set to undefined unless you have a specific need to force a theme
+				// forcedTheme={undefined}     // Explicitly set to undefined unless you have a specific need to force a theme
 				enableSystem={false}        // Whether to switch between dark and light based on prefers-color-scheme
 				enableColorScheme={true}    // Whether to indicate to browsers which color scheme is used 
 				disableTransitionOnChange={true} // Disable all CSS transitions when switching themes 
 				themes={['light', 'dark', 'luci-light', 'luci-dark']} // List of theme names
 				attribute="class"           // Use the 'class' attribute for theme switching to ensure compatibility with NextUI
-				value={{}}                  // Define if you have specific attribute values for each theme
-				nonce={undefined}           // Set if you need to specify a nonce for CSP
+				// value={{}}                  // Define if you have specific attribute values for each theme
+				// nonce={undefined}           // Set if you need to specify a nonce for CSP
 				{...themeProps}             // Spread any additional theme configuration props
 			>
 				{children} {/* Render child components within the theme providers */}
