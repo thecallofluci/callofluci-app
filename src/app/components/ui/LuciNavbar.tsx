@@ -15,7 +15,8 @@ import { DropdownItem, DropdownTrigger, Dropdown, DropdownMenu } from '@nextui-o
 import { Button } from '@nextui-org/button'
 import NextLink from 'next/link'
 import { siteConfig } from '@/src/config/site'
-import { LuciThemeSwitch } from '@/src/app/components/ui/LuciThemeSwitch'
+// import { LuciThemeSwitch } from '@/src/app/components/ui/LuciThemeSwitch'
+import { ThemeSwitcher } from '@/src/app/components/ui/ThemeSwitcher'
 import { ChevronDown } from '@/src/app/working/NavbarIcons'
 import { LuciMaskIcon } from '@/src/app/components/ui/LuciIcons'
 import { LuciButton } from './LuciButton'
@@ -83,13 +84,13 @@ export const LuciNavbar = () => {
 					<LuciButton>BUTTON</LuciButton>
 				</NextLink>
 				<NavbarItem className="hidden sm:flex gap-2">
-					<LuciThemeSwitch />
+					<ThemeSwitcher />
 				</NavbarItem>
 			</NavbarContent>
 
 			{/* NavbarContent for theme switch and menu toggle, visible only on small screens */}
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<LuciThemeSwitch />
+				<ThemeSwitcher />
 				<NavbarMenuToggle />
 			</NavbarContent>
 		</NextUINavbar>
