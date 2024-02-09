@@ -1,9 +1,4 @@
-import {
-	lucititle,
-	lucisubtitle,
-	lucisubheading,
-	lucinote,
-} from '@/src/app/styles/primitives'
+import { lucititle, lucisubtitle, lucisubheading, lucinote } from '@/src/app/styles/primitives'
 
 import { Button } from '@nextui-org/button'
 import { Textarea } from '@nextui-org/input'
@@ -52,12 +47,6 @@ export default function ExamplesPage() {
 				{/* Add a divider */}
 				<Divider />
 				{/* BUTTONS Subsection */}
-				
-				<div style={{ height: '3rem' }}></div>{' '}
-				{/* This will force a space equivalent to 3 line breaks */}
-				{/* Add a divider */}
-				<Divider />
-				{/* BUTTONS Subsection */}
 				<div className="flex flex-col justify-center gap-1">
 					<div>
 						<h2
@@ -100,6 +89,77 @@ export default function ExamplesPage() {
 							<LuciButtonWide href={siteConfig.links.sponsor}>
 								WIDE BUTTON
 							</LuciButtonWide>
+						</div>
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Test 1
+							</h2>
+							<LuciButton
+								variant="solid"
+								color="primary"
+								href={siteConfig.links.sponsor}
+							>
+								BUTTON
+							</LuciButton>
+						</div>
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Test 2
+							</h2>
+							<LuciButton
+								variant="faded"
+								color="primary"
+								href={siteConfig.links.sponsor}
+							>
+								BUTTON
+							</LuciButton>
+						</div>
+						<div>
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Test 3
+							</h2>
+							<LuciButton
+								variant="bordered"
+								color="primary"
+								href={siteConfig.links.sponsor}
+							>
+								BUTTON
+							</LuciButton>
+						</div>
+						<div className="flex flex-wrap gap-4 items-center">
+							<LuciButton color="primary" variant="solid">
+								Solid
+							</LuciButton>
+							<LuciButton color="primary" variant="faded">
+								Faded
+							</LuciButton>
+							<LuciButton color="primary" variant="bordered">
+								Bordered
+							</LuciButton>
+							<LuciButton color="primary" variant="light">
+								Light
+							</LuciButton>
+							<LuciButton color="primary" variant="flat">
+								Flat
+							</LuciButton>
+							<LuciButton color="primary" variant="ghost">
+								Ghost
+							</LuciButton>
+							<LuciButton color="primary" variant="shadow">
+								Shadow
+							</LuciButton>
 						</div>
 					</div>
 				</div>
