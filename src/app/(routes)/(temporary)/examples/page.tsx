@@ -27,6 +27,7 @@ import {
 } from '@/src/app/components/ui/LuciModal'
 import LuciImage from '@/src/app/components/ui/LuciImage'
 import { LuciTextarea } from '@/src/app/components/ui/LuciTextArea'
+import { LuciMaskIcon } from '@/src/app/components/ui/LuciIcons'
 
 import { siteConfig } from '@/src/config/site'
 
@@ -139,6 +140,14 @@ export default function ExamplesPage() {
 							</LuciButton>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
+							<Button color="default">Default</Button>
+							<Button color="primary">Primary</Button>
+							<Button color="secondary">Secondary</Button>
+							<Button color="success">Success</Button>
+							<Button color="warning">Warning</Button>
+							<Button color="danger">Danger</Button>
+						</div>
+						<div className="flex flex-wrap gap-4 items-center">
 							<LuciButton color="primary" variant="solid">
 								Solid
 							</LuciButton>
@@ -160,6 +169,19 @@ export default function ExamplesPage() {
 							<LuciButton color="primary" variant="shadow">
 								Shadow
 							</LuciButton>
+						</div>
+
+						<div className="flex gap-4 items-center">
+							<Button color="success" endContent={<LuciMaskIcon />}>
+								Take a photo
+							</Button>
+							<Button
+								color="danger"
+								variant="bordered"
+								startContent={<LuciMaskIcon />}
+							>
+								Delete user
+							</Button>
 						</div>
 					</div>
 				</div>
