@@ -25,14 +25,14 @@ import { baseColors } from '../colors/colors'
 export const semanticBaseColors = {
 	lightTest: {
 		background: baseColors.bone,
-		foreground: baseColors.shadow,
+		foreground: baseColors.echo,
 		divider: baseColors.luciLightGrayTemp,
 		overlay: baseColors.sulfuric,
 		focus: baseColors.luciBlueTemp,
 		// Additional base semantic colors can be defined here
 	},
 	darkTest: {
-		background: baseColors.shadow,
+		background: baseColors.echo,
 		foreground: baseColors.bone,
 		divider: baseColors.luciDarkGrayTemp,
 		overlay: baseColors.sulfuric,
@@ -57,7 +57,7 @@ export const themeColorsLightTest = {
 export const themeColorsDarkTest = {
 	...semanticBaseColors.darkTest,
 	default: baseColors.luciDarkGrayTemp,
-	primary: baseColors.luci,
+	primary: baseColors.luciBlueTemp,
 	secondary: baseColors.luciPurpleTemp,
 	success: baseColors.tendril,
 	warning: baseColors.sulfuric,
