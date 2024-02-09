@@ -148,6 +148,37 @@ export default function ExamplesPage() {
 							<Button color="danger">Danger</Button>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
+							<LuciButton color="default">Default</LuciButton>
+							<LuciButton color="primary">Primary</LuciButton>
+							<LuciButton color="secondary">Secondary</LuciButton>
+							<Button color="success">Success</Button>
+							<LuciButton color="warning">Warning</LuciButton>
+							<LuciButton color="danger">Danger</LuciButton>
+						</div>
+						<div className="flex flex-wrap gap-4 items-center">
+							<Button color="primary" variant="solid">
+								Solid
+							</Button>
+							<Button color="primary" variant="faded">
+								Faded
+							</Button>
+							<Button color="primary" variant="bordered">
+								Bordered
+							</Button>
+							<Button color="primary" variant="light">
+								Light
+							</Button>
+							<Button color="primary" variant="flat">
+								Flat
+							</Button>
+							<Button color="primary" variant="ghost">
+								Ghost
+							</Button>
+							<Button color="primary" variant="shadow">
+								Shadow
+							</Button>
+						</div>
+						<div className="flex flex-wrap gap-4 items-center">
 							<LuciButton color="primary" variant="solid">
 								Solid
 							</LuciButton>
