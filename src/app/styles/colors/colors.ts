@@ -9,5 +9,11 @@ export const baseColors = {
 	skull:  	'#FFFCFA',        // Lotion White
 	sulfuric:  	'#DEB23E',     	  // Sulfur Yellow
 	tendril: 	'#8C9A8D',		  // Laurel Green
+
+	luciRedTemp: 		'#f31260',    // NextUI red
+	luciPurpleTemp: 	'#7828c8',    // NextUI purple
+	luciBlueTemp: 		'#006FEE',	  // NextUI blue
+	luciLightGrayTemp:  '#d4d4d8',    // NextUI light gray for light theme default
+	luciDarkGrayTemp:   '#3f3f46',    // NextUI dark gray for dark theme default
 };
 
