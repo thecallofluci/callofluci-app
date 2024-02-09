@@ -140,6 +140,13 @@ export default function ExamplesPage() {
 							</LuciButton>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								NextUI Buttons
+							</h2>
 							<Button color="default">Default</Button>
 							<Button color="primary">Primary</Button>
 							<Button color="secondary">Secondary</Button>
@@ -148,6 +155,13 @@ export default function ExamplesPage() {
 							<Button color="danger">Danger</Button>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Luci Buttons
+							</h2>
 							<LuciButton color="default">Default</LuciButton>
 							<LuciButton color="primary">Primary</LuciButton>
 							<LuciButton color="secondary">Secondary</LuciButton>
@@ -156,6 +170,13 @@ export default function ExamplesPage() {
 							<LuciButton color="danger">Danger</LuciButton>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								NextUI Buttons
+							</h2>
 							<Button color="primary" variant="solid">
 								Solid
 							</Button>
@@ -179,6 +200,13 @@ export default function ExamplesPage() {
 							</Button>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
+												<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								Luci Buttons
+							</h2>
 							<LuciButton color="primary" variant="solid">
 								Solid
 							</LuciButton>
