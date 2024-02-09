@@ -81,7 +81,7 @@ export const LuciNavbar = () => {
 			{/* NavbarContent for button and theme switch, hidden on small screens */}
 			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
 				<NextLink href="/">
-				<LuciButton textColor="secondary">BUTTON</LuciButton>
+				<LuciButton className="text-echo">BUTTON</LuciButton>
 				</NextLink>
 				<NavbarItem className="hidden sm:flex gap-2">
 					<ThemeSwitch />
