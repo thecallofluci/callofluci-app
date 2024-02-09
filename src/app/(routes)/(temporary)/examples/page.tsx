@@ -200,7 +200,7 @@ export default function ExamplesPage() {
 							</Button>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
-												<h2
+							<h2
 								className={`${lucisubheading({
 									color: 'secondary',
 								})} text-center pb-1`}
@@ -231,6 +231,13 @@ export default function ExamplesPage() {
 						</div>
 
 						<div className="flex gap-4 items-center">
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								NextUI Buttons
+							</h2>
 							<Button color="success" endContent={<LuciMaskIcon />}>
 								Take a photo
 							</Button>
