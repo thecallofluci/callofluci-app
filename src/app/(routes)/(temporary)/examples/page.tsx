@@ -199,7 +199,7 @@ export default function ExamplesPage() {
 								Shadow
 							</Button>
 						</div>
-							<div className="flex flex-wrap gap-4 items-center">
+						<div className="flex flex-wrap gap-4 items-center">
 							<h2
 								className={`${lucisubheading({
 									color: 'secondary',
@@ -220,7 +220,7 @@ export default function ExamplesPage() {
 								Ghost
 							</Button>
 							<Button color="warning" variant="ghost">
-								Flat
+								Ghost
 							</Button>
 							<Button color="danger" variant="ghost">
 								Ghost
@@ -228,7 +228,7 @@ export default function ExamplesPage() {
 							<Button color="background" variant="ghost">
 								Ghost
 							</Button>
-								<Button color="foreground" variant="ghost">
+							<Button color="foreground" variant="ghost">
 								Ghost
 							</Button>
 						</div>
@@ -240,30 +240,30 @@ export default function ExamplesPage() {
 							>
 								Luci Buttons (Ghost with varying colors)
 							</h2>
-							<Button color="default" variant="ghost">
+							<LuciButton color="default" variant="ghost">
 								Ghost
-							</Button>
-							<Button color="primary" variant="ghost">
+							</LuciButton>
+							<LuciButton color="primary" variant="ghost">
 								Ghost
-							</Button>
-							<Button color="secondary" variant="ghost">
+							</LuciButton>
+							<LuciButton color="secondary" variant="ghost">
 								Ghost
-							</Button>
-							<Button color="success" variant="ghost">
+							</LuciButton>
+							<LuciButton color="success" variant="ghost">
 								Ghost
-							</Button>
-							<Button color="warning" variant="ghost">
-								Flat
-							</Button>
-							<Button color="danger" variant="ghost">
+							</LuciButton>
+							<LuciButton color="warning" variant="ghost">
 								Ghost
-							</Button>
-							<Button color="background" variant="ghost">
+							</LuciButton>
+							<LuciButton color="danger" variant="ghost">
 								Ghost
-							</Button>
-								<Button color="foreground" variant="ghost">
+							</LuciButton>
+							<LuciButton color="background" variant="ghost">
 								Ghost
-							</Button>
+							</LuciButton>
+							<LuciButton color="foreground" variant="ghost">
+								Ghost
+							</LuciButton>
 						</div>
 						<div className="flex flex-wrap gap-4 items-center">
 							<h2
