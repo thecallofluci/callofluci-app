@@ -47,7 +47,7 @@ export const semanticBaseColors = {
 export const themeColorsLightTest = {
 	...semanticBaseColors.lightTest,
 	default: baseColors.luciLightGrayTemp,
-	primary: baseColors.luciLightGrayTemp,
+	primary: baseColors.luciBlueTemp,
 	secondary: baseColors.luciPurpleTemp,
 	success: baseColors.tendril,
 	warning: baseColors.sulfuric,
