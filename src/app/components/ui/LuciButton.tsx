@@ -6,7 +6,7 @@ interface LuciButtonProps {
 	// NextUI Button Props
 	children: ReactNode
 	variant?: 'solid' | 'bordered' | 'light' | 'flat' | 'faded' | 'shadow' | 'ghost'
-	color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
+	color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'background' | 'foreground'
 	size?: 'sm' | 'md' | 'lg'
 	radius?: 'none' | 'sm' | 'md' | 'lg' | 'full'
 	startContent?: ReactNode
