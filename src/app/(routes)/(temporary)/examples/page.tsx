@@ -199,6 +199,39 @@ export default function ExamplesPage() {
 								Shadow
 							</Button>
 						</div>
+												<div className="flex flex-wrap gap-4 items-center">
+							<h2
+								className={`${lucisubheading({
+									color: 'secondary',
+								})} text-center pb-1`}
+							>
+								NextUI Buttons (Ghost with varying colors)
+							</h2>
+							<Button color="default" variant="ghost">
+								Ghost
+							</Button>
+							<Button color="primary" variant="ghost">
+								Ghost
+							</Button>
+							<Button color="secondary" variant="ghost">
+								Ghost
+							</Button>
+							<Button color="success" variant="ghost">
+								Ghost
+							</Button>
+							<Button color="warning" variant="flat">
+								Flat
+							</Button>
+							<Button color="danger" variant="ghost">
+								Ghost
+							</Button>
+							<Button color="background" variant="ghost">
+								Ghost
+							</Button>
+								<Button color="foreground" variant="ghost">
+								Ghost
+							</Button>
+						</div>
 						<div className="flex flex-wrap gap-4 items-center">
 							<h2
 								className={`${lucisubheading({
