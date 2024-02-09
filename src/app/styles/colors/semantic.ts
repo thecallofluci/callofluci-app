@@ -21,6 +21,8 @@ import { baseColors } from '../colors/colors'
 
 */}
 
+// Button text uses foreground, which is why having it also as primary is tricky for button
+
 // Defining SemanticBaseColors for light and dark themes
 export const semanticBaseColors = {
 	lightTest: {
