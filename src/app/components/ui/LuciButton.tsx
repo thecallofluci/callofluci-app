@@ -30,6 +30,7 @@ interface LuciButtonProps {
 	onKeyUp?: (e: KeyboardEvent) => void
 
 	// Custom Props
+	textColor?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' // added custom Prop
 	href?: string // added custom Prop
 	type?: 'button' | 'submit' | 'reset' // added custom Prop
 	as?: ElementType // added custom Prop
@@ -61,6 +62,7 @@ export const LuciButton = ({
 	onPressUp = null,
 	onKeyDown = null,
 	onKeyUp = null,
+	textColor = 'secondary',
 	href = null,
 	type = 'button',
 	as = null,
@@ -99,7 +101,7 @@ export const LuciButton = ({
 			}}
 			{...props}
 		>
-			{children}
+			{textColor ? <span className={textColor}>{children}</span> : children}
 		</Button>
 	)
 }
