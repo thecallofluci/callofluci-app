@@ -25,7 +25,7 @@ import { baseColors } from '../colors/colors'
 export const semanticBaseColors = {
 	lightTest: {
 		background: baseColors.bone,
-		foreground: baseColors.echo,
+		foreground: baseColors.shadow,
 		divider: baseColors.luciLightGrayTemp,
 		overlay: baseColors.sulfuric,
 		focus: baseColors.luciBlueTemp,
