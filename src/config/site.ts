@@ -29,9 +29,14 @@ export const siteConfig = {
 			href: '/examples',
             description: 'This is a temp page',
         },
-				{
+		{
 			label: 'Mockup',
 			href: '/mockup',
+            description: 'This is a temp page',
+        },
+				{
+			label: 'Testing',
+			href: '/testing',
             description: 'This is a temp page',
         },
 	],
