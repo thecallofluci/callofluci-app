@@ -18,6 +18,7 @@ const config = {
 	// set the dark mode property to class for next-themes
 	darkMode: 'class',
 	// Customize Tailwind's default configuration.
+	/* 
 	theme: {
 		extend: {
 			fontFamily: {
@@ -40,7 +41,7 @@ const config = {
 			},
 		},
 	},
-
+	*/
 	// Here, we're adding the NextUI theme as a plugin and specifying our custom themes.
 	plugins: [
 		nextui({
