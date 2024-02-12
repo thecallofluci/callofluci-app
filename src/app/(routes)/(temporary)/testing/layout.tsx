@@ -1,14 +1,19 @@
 import React from 'react'
-import typography from '@/src/app/styles/typography/typography'
+import '@/src/app/styles/globals.css'
+import clsx from 'clsx'
+import { Providers } from '@/src/app/components/providers/providers'
+import AppWrapper from '@/src/app/components/layout/AppWrapper'
 
+// Defining the Root Layout component
 export default function TestingLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				{/* Example heading with custom typography style */}
-				<h1 style={typography.h1}>About Us</h1>
-				{children}
-			</div>
-		</section>
+		<html suppressHydrationWarning lang="en" className="var(--font-medium)">
+			<head />
+			<body className={clsx('min-h-screen antialiased')}>
+				<Providers themeProps={{ attribute: 'class', defaultTheme: 'luci-light' }}>
+					<AppWrapper>{children}</AppWrapper>
+				</Providers>
+			</body>
+		</html>
 	)
 }
