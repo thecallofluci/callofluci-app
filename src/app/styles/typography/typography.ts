@@ -7,7 +7,7 @@ const typography = {
 		fontSize: '16px',
 		lineHeight: '24px',
 		letterSpacing: '0.2px',
-	},testing
+	},
 	h1: {
 		fontFamily: black.variable,
 		fontWeight: '900', // 95 Black weight from fonts.ts
