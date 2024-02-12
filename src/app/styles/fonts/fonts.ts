@@ -246,6 +246,9 @@ export const italic = localFont({
 })
 
 /* 65 Medium */
+/* used for:
+body-normal: size: 16px, height: 24px, space: 0.2px
+*/
 export const medium = localFont({
 	src: './woff2/neue11.woff2',
 	weight: '600',
@@ -338,6 +341,17 @@ export const boldItalic = localFont({
 })
 
 /* 95 Black */
+/* used in:
+h1, size: 24px, height: 32px, space: 0px
+h2, size: 16px, height: 24px, space: 0px
+h3, size: 14px, height: 21px, space: 0px
+body-bold,  size: 16px, height: 24px, space: 0.2px
+figure-caption, size: 18px, height: 28px, space: 0px
+hero, size: 48px, height: 56px, space: 0px
+title, size: 32px, height: 40px, space: 0px
+number-huge, size: 60px, height: 56px, space: 0px
+
+*/
 export const black = localFont({
 	src: './woff2/neue15.woff2',
 	weight: '900',

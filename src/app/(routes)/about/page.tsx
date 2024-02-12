@@ -173,33 +173,23 @@ export default function AboutPage() {
 				</a>
 			</section>
 
-			{/* Section with Typography plugin styles */}
-			<section className="prose my-8" style={{ fontFamily: 'var(--font-roman)' }}>
-				<h1>Typography Plugin Styles</h1>
-				<p>
-					This section demonstrates the styles applied by the{' '}
-					<code>@tailwindcss/typography</code> plugin, as customized in{' '}
-					<code>typography.ts</code>.
+		{/* New section for testing typography styles */}
+			<section className="typography-test-section my-8">
+				<h1 style={typography.h1}>Heading 1</h1>
+				<h2 style={typography.h2}>Heading 2</h2>
+				<h3 style={typography.h3}>Heading 3</h3>
+				<p style={typography['body-normal']}>
+				This is a normal body text. It uses the 'body-normal' typography style.
 				</p>
-				<h2>Heading 2</h2>
-				<h3>Heading 3</h3>
-				<h4>Heading 4</h4>
-				<blockquote>"This is a blockquote styled by the Typography plugin."</blockquote>
-				<ul>
-					<li>Unordered list item styled by the plugin</li>
-					<li>Another list item</li>
-				</ul>
-				<ol>
-					<li>Ordered list item styled by the plugin</li>
-					<li>Another ordered item</li>
-				</ol>
-				<p>Body text styled with the Typography plugin's styles.</p>
-				<a href="#">This is a link styled by the plugin</a>
-				<code>Inline code is styled too.</code>
-				<pre>
-					<code class="language-js">const example = "This is a block of code";</code>
-				</pre>
+				<p style={typography['body-bold']}>
+				This is a bold body text. It uses the 'body-bold' typography style.
+				</p>
+				<figcaption style={typography['figure-caption']}>
+				Figure Caption: Styled with 'figure-caption' typography.
+				</figcaption>
+				{/* Add more elements as needed to test all typography styles */}
 			</section>
+
 		</div>
 	)
 }
