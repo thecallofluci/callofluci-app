@@ -19,6 +19,17 @@ export default function TestingPage() {
 			<p style={typography.hero}>Hero text: Large impactful text styled with 'hero'.</p>
 			<h1 style={typography.title}>Title: A larger title styled with 'title'.</h1>
 			<p style={typography['number-huge']}>Huge Number: Styled with 'number-huge'.</p>
+
+
+			<p style={typography['body-normal']}>
+				This is normal body text. It uses the 'body-normal' typography style.
+			</p>
+			<p style={typography['body-normal']}>
+				This is normal body text. It uses the 'body-normal' typography style.
+			</p>
+			<p style={typography['body-normal']}>
+				This is normal body text. It uses the 'body-normal' typography style.
+			</p>
 			{/* Add more elements as needed to test all typography styles */}
 		</div>
 	)
